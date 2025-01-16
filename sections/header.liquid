@@ -173,7 +173,22 @@
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
-              <!-- custom Logo Name !-->
+              
+              <div class="header__heading-logo-wrapper">
+                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                {{ settings.logo | image_url: width: 600 | image_tag:
+                  class: 'header__heading-logo motion-reduce',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true
+                }}
+                <!-- custom Logo Name !-->
               <div class="me">
                 <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293.55 178.5">
                   <defs>
@@ -191,21 +206,6 @@
                   <path class="cls-1" d="M289.45,162.39c-9.4-.08-17.77-1.99-25.33-5.44-3.72-1.7-7.38-3.46-11.29-4.98-14.29-5.57-29.04-7.44-44-5.85,14.51-15.37,23.3-35.98,22.72-58.26.92-47.79-38.5-84.61-83.36-85.39-47.45-.83-89.17,38.4-86.59,90.12,1.01,20.2,9.54,39.24,23.22,53.74-8.6-1.04-17.54-.93-26.75.13-9.19,1.07-17.24,4-24.62,7.52-9.63,4.59-19.62,8.52-32.34,8.46-.36,0-.73.2-1.11.31v10.78c5.88-.6,11.38-1.01,16.75-1.76,10.9-1.52,19.41-5.81,28.26-9.73,17.13-7.58,37.86-7.55,54.99,0,2.55,1.12,5.1,2.24,7.59,3.41,15.53,7.25,32.91,9.01,51.65,6.87,11.29-1.29,20.46-5.13,29.46-9.28,19.41-8.95,39.36-8.96,58.97-.26,5.4,2.39,10.89,4.78,16.73,6.7,9,2.96,18.8,3.93,29.14,3.54v-10.49c-1.47-.06-2.78-.14-4.1-.15ZM146.58,13.33c41.21-.01,75.23,33.96,74.22,74.53.92,40.82-33.03,73.2-71.11,74.34-45.1,1.36-75.33-34.05-77.27-69.76-2.46-45.16,33.45-79.09,74.16-79.1Z"/>
                 </svg>
               </div>
-              
-              <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
-                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo motion-reduce',
-                  widths: widths,
-                  height: logo_height,
-                  width: settings.logo_width,
-                  alt: logo_alt,
-                  sizes: sizes,
-                  preload: true
-                }}
               </div>
               
             {%- else -%}
