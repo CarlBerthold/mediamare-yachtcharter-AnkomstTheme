@@ -53,9 +53,20 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "blocks": {
+      "background-image": {
+        "type": "background-image",
+        "settings": {
+          "type": "image_picker",
+          "id": "header_background",
+          "label": "Header Background Image",
+        }
+      }
     }
   },
   "order": [
+    "background-image",	
     "announcement-bar",
     "header"
   ]
