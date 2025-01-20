@@ -157,7 +157,10 @@
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}"style="background-image: url({{ settings.header_background | img_url: '2048x' }});">
     {%- liquid
       if section.settings.menu != blank
+        render 'header-LogoName'
         render 'header-drawer'
+
+      
       endif
 
       if section.settings.logo_position == 'top-center' or section.settings.menu == blank
@@ -169,24 +172,7 @@
       {%- if request.page_type == 'index' -%}
        
           <h1 class="header__heading">
-            <!-- custom Logo Name !-->
-            <div class="me">
-              <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293.55 178.5">
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #0d71b9;
-                    }
-              
-                    .cls-2 {
-                      fill: #1d71b8;
-                    }
-                  </style>
-                </defs>
-                <path class="cls-2" d="M178.58,135.74c-.98,0-1.86-.62-2.19-1.54l-8.13-22.95c-.09-.25-.33-.43-.6-.43h-43.18c-.27,0-.51.17-.6.43l-8.13,22.95c-.33.92-1.21,1.54-2.19,1.54h-11.67c-.76,0-1.47-.37-1.9-.99-.43-.62-.54-1.41-.28-2.12l37.72-103.51c.33-.91,1.21-1.52,2.18-1.52h14.02c.97,0,1.84.61,2.18,1.52l38.03,103.51c.26.71.16,1.51-.28,2.13s-1.14.99-1.9.99h-13.08ZM145.99,47.34c-1.16,4.42-2.59,8.95-4.26,13.51l-13,35.76c-.07.2-.04.41.08.58.12.17.31.27.52.27h33.31c.21,0,.4-.1.52-.27.12-.17.15-.39.08-.59l-13.15-35.91c-1.58-4.47-2.96-8.95-4.1-13.35Z"/>
-                <path class="cls-1" d="M289.45,162.39c-9.4-.08-17.77-1.99-25.33-5.44-3.72-1.7-7.38-3.46-11.29-4.98-14.29-5.57-29.04-7.44-44-5.85,14.51-15.37,23.3-35.98,22.72-58.26.92-47.79-38.5-84.61-83.36-85.39-47.45-.83-89.17,38.4-86.59,90.12,1.01,20.2,9.54,39.24,23.22,53.74-8.6-1.04-17.54-.93-26.75.13-9.19,1.07-17.24,4-24.62,7.52-9.63,4.59-19.62,8.52-32.34,8.46-.36,0-.73.2-1.11.31v10.78c5.88-.6,11.38-1.01,16.75-1.76,10.9-1.52,19.41-5.81,28.26-9.73,17.13-7.58,37.86-7.55,54.99,0,2.55,1.12,5.1,2.24,7.59,3.41,15.53,7.25,32.91,9.01,51.65,6.87,11.29-1.29,20.46-5.13,29.46-9.28,19.41-8.95,39.36-8.96,58.97-.26,5.4,2.39,10.89,4.78,16.73,6.7,9,2.96,18.8,3.93,29.14,3.54v-10.49c-1.47-.06-2.78-.14-4.1-.15ZM146.58,13.33c41.21-.01,75.23,33.96,74.22,74.53.92,40.82-33.03,73.2-71.11,74.34-45.1,1.36-75.33-34.05-77.27-69.76-2.46-45.16,33.45-79.09,74.16-79.1Z"/>
-              </svg>
-            </div>
+            
       
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
