@@ -164,6 +164,7 @@
                       {% if localization_forms %} header--has-localizations{% endif %}">
     {%- liquid
       if section.settings.menu != blank
+        render 'header-LogoName'
         render 'header-drawer'
       endif
 
