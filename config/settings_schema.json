@@ -8,6 +8,16 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Header Settings",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "header-background",
+        "label": "Header Background Image",
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
