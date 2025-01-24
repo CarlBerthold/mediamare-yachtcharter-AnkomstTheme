@@ -91,10 +91,11 @@
   }
 
   .header-background {
-     background-image: url('{{ section.settings.image }}');
-      height: 200px;
-      position: relative;
-    top:0;
+    background-image: url('{{ section.settings.image }}');
+    height: 200px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
   }
 
   .section-header {
