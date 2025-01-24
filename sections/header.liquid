@@ -158,10 +158,8 @@
 
   {% if section.settings.backgroundImage %}
     <div class="header-background">
-    <p>{{ section.settings.backgroundImage }}</p>
-    <img src="{{ section.settings.backgroundImage | escape}}" />
-  
-</div>
+      <p>{{ section.settings.backgroundImage }}</p>
+    </div>
       
   {% else %}
        {{ section.settings.backgroundImage }}
