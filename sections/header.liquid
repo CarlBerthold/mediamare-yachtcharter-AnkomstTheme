@@ -162,6 +162,15 @@
                     {% if social_links %} header--has-social{% endif %}
                      {% if shop.customer_accounts_enabled %} header--has-account{% endif %}
                       {% if localization_forms %} header--has-localizations{% endif %}">
+          <div class="header-gallery">
+        {% for block in section.blocks %}
+          {% if block.settings.block_image %}
+            <div class="gallery-item">
+              <img src="{{ block.settings.block_image | image_url: 'master' }}" alt="Gallery Image">
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     {%- liquid
       if section.settings.menu != blank
         render 'header-LogoName'
