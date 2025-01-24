@@ -156,9 +156,9 @@
   -%}
 
 <div class="header-background" 
-  {% if section.settings.image %}
-    <p>{{ section.settings.image }}</p>
-    background-image: url('{{ section.settings.image | image_url }}');
+  {% if section.settings.backgroundImage %}
+    <p>{{ section.settings.backgroundImage }}</p>
+    background-image: url('{{ section.settings.backgroundImage | image_url }}');
   {% else %}
    
   {% endif %}>
