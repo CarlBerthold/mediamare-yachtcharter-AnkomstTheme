@@ -155,16 +155,16 @@
     endif
   -%}
 
-<div class="header-background" style="
+<div class="header-background" 
   {% if section.settings.image %}
     <p>{{ section.settings.image }}</p>
     background-image: url('{{ section.settings.image | image_url }}');
   {% else %}
-    background-image: url('https://cdn.shopify.com/s/files/1/0000/0000/your-test-image.jpg');
-
-    <p>{{ section.settings.image }}</p>
+    <p>Image URL: {{ section.settings.image }}</p>
+    <p>Background Color: {{ section.settings.background }}</p>
+    <p>Logo Position: {{ section.settings.logo_position }}</p>
     
-  {% endif %}">
+  {% endif %}>
 </div>
 
   <header class="header header--{{ section.settings.logo_position }}"
