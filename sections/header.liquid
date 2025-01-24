@@ -156,13 +156,13 @@
   -%}
 
 <div class="header-background" style="
-  background-image: url('{{ section.settings.image | image_url: 'master' }}'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;">
-  <!-- Optional content inside the header -->
+  {% if section.settings.image %}
+    background-image: url('{{ section.settings.image | image_url }}');
+  {% else %}
+    background-color: #f4f4f4; /* Fallback color if no image is set */
+  {% endif %}">
+</div>
 
-  </div>
   <header class="header header--{{ section.settings.logo_position }}"
                   header--mobile-{{ section.settings.mobile_logo_position }} 
                   page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}
