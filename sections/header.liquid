@@ -154,6 +154,15 @@
       assign localization_forms = true
     endif
   -%}
+
+<div class="header-background" style="
+  background-image: url('{{ section.settings.image | image_url: 'master' }}'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;">
+  <!-- Optional content inside the header -->
+
+  
   <header class="header header--{{ section.settings.logo_position }}"
                   header--mobile-{{ section.settings.mobile_logo_position }} 
                   page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}
@@ -162,15 +171,7 @@
                     {% if social_links %} header--has-social{% endif %}
                      {% if shop.customer_accounts_enabled %} header--has-account{% endif %}
                       {% if localization_forms %} header--has-localizations{% endif %}">
-          <div class="header-background">
-        {% for block in section.blocks %}
-          {% if block.settings.block_image %}
-            <div class="background-item">
-              <img src="{{ block.settings.block_image | image_url: 'master' }}" alt="Gallery Image">
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+    </div>
     {%- liquid
       if section.settings.menu != blank
         render 'header-LogoName'
