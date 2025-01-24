@@ -162,15 +162,8 @@
 
   {% if section.settings.backgroundImage != blank -%}
     <div class="header-background">
-       {{ settings.backgroundImage | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo motion-reduce',
-                  widths: widths,
-                  height: backgroundImage_height,
-                  width: settings.backgroundImage_width,
-                  alt: backgroundImage_alt,
-                  sizes: sizes,
-                  preload: true
-                }}
+        <img src="{{ section.settings.image | image_url }}" alt="Uploaded Image">
+
     </div>
       
   {% else %}
