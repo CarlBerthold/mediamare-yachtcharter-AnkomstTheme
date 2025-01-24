@@ -160,8 +160,9 @@
     <p>{{ section.settings.image }}</p>
     background-image: url('{{ section.settings.image | image_url }}');
   {% else %}
+    background-image: url('https://cdn.shopify.com/s/files/1/0000/0000/your-test-image.jpg');
+
     <p>{{ section.settings.image }}</p>
-    background-color: #f4f4f4; /* Fallback color if no image is set */
   {% endif %}">
 </div>
 
