@@ -157,8 +157,10 @@
 
 <div class="header-background" style="
   {% if section.settings.image %}
+    <p>{{ section.settings.image }}</p>
     background-image: url('{{ section.settings.image | image_url }}');
   {% else %}
+    <p>{{ section.settings.image }}</p>
     background-color: #f4f4f4; /* Fallback color if no image is set */
   {% endif %}">
 </div>
