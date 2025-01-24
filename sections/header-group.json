@@ -39,6 +39,7 @@
     "header": {
       "type": "header",
       "settings": {
+        "backgroundImage": "shopify://shop_images/241223_Carl_Paperwall.jpg",
         "logo_position": "middle-center",
         "menu": "main-menu",
         "menu_type_desktop": "drawer",
