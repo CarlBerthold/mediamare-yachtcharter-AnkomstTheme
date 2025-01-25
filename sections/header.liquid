@@ -92,8 +92,8 @@
 
   
   .header-background {
+    background-image: url('{{ section.settings.backgroundImage | file_url }}');
 
-    background-image: url('https:{{ section.settings.backgroundImage | file_url: 'large' | replace: '?', '?auto=format,compress&' | replace: 'https://', 'https://cdn.shopify.com/s/files/1/0767/5215/9056/files/' }}');
   }
 
   .section-header {
