@@ -92,7 +92,7 @@
 
   
   .header-background {
-    background-image: url('https://', '{{ section.settings.backgroundImage | img_url: 'large' | replace: '?', '?auto=format,compress&' | replace: 'https://', 'https://cdn.shopify.com/s/files/1/0767/5215/9056/files/' }}';)
+    background-image: url('https:{{ section.settings.backgroundImage | img_url: 'large' | replace: '?', '?auto=format,compress&' | replace: 'https://', 'https://cdn.shopify.com/s/files/1/0767/5215/9056/files/' }}';)
     
     
   }
