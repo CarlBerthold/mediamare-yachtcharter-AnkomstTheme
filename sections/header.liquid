@@ -86,9 +86,6 @@
 </style>
 
 {%- style -%}
-  header {
-    background
-  }
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
@@ -97,10 +94,6 @@
   .header-background {
     background-image: url('https://cdn.shopify.com/s/files/1/0767/5215/9056/files/241223_Carl_Paperwall.jpg?v=1737757936');
     
-  }
-
-  .header-wrapper {
-    background:transparent;
   }
 
   .section-header {
@@ -169,15 +162,6 @@
   -%}
 
   {% if section.settings.backgroundImage != blank -%}
-    <div class="header-background">
-       {% comment %} <img src="{{ section.settings.backgroundImage | image_url }}" alt="Uploaded Image"> {% endcomment %}
-    </div>
-      
-  {% else %}
-       <h1 style="color:red">test</h1>
-  {% endif %}
-  
-
   <header class="header header--{{ section.settings.logo_position }} header-background"
                   header--mobile-{{ section.settings.mobile_logo_position }} 
                   page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}
@@ -186,6 +170,7 @@
                     {% if social_links %} header--has-social{% endif %}
                      {% if shop.customer_accounts_enabled %} header--has-account{% endif %}
                       {% if localization_forms %} header--has-localizations{% endif %}">
+  {% endif %}
 
   
     
