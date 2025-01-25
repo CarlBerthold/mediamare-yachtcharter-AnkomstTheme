@@ -86,10 +86,11 @@
 </style>
 
 {%- style -%}
+  header {
+    background
+  }
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
-    
-    
   }
 
   .header-background {
@@ -170,8 +171,7 @@
 
   {% if section.settings.backgroundImage != blank -%}
     <div class="header-background">
-        <img src="{{ section.settings.backgroundImage | image_url }}" alt="Uploaded Image">
-
+       {% comment %} <img src="{{ section.settings.backgroundImage | image_url }}" alt="Uploaded Image"> {% endcomment %}
     </div>
       
   {% else %}
@@ -179,7 +179,7 @@
   {% endif %}
   
 
-  <header class="header header--{{ section.settings.logo_position }} "
+  <header class="header header--{{ section.settings.logo_position }} header-background"
                   header--mobile-{{ section.settings.mobile_logo_position }} 
                   page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}
                   {% if section.settings.menu != blank %} header--has-menu{% endif %}
