@@ -37,6 +37,7 @@
         "paragraph",
         "email_form"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "full_width": true,
@@ -50,12 +51,13 @@
         "link_list_VfNGbX": {
           "type": "link_list",
           "settings": {
-            "heading": "Informatives",
-            "menu": "informatives"
+            "heading": "",
+            "menu": "footermenu"
           }
         },
         "link_list_4XG8zJ": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Quick links",
             "menu": "rechtliiches"
@@ -67,18 +69,18 @@
         "link_list_4XG8zJ"
       ],
       "settings": {
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "color_scheme": "accent-1",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": false,
+        "payment_enable": false,
+        "show_policy": true,
         "margin_top": 0,
-        "padding_top": 0,
-        "padding_bottom": 36
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     }
   },

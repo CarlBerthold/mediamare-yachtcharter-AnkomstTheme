@@ -9,39 +9,6 @@
  */
 {
   "sections": {
-    "rich_text_Dw4Gzg": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_in7cTH": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Yachtcharter Ostsee Ankommen und Segeln",
-            "heading_size": "h0"
-          }
-        },
-        "text_km3YkM": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Unsere Yacht- Charterflotten  an der Ostsee liegen inmitten der <br/>schönsten Segelreviere, geschützt durch die vorgelagerten Inseln Rügen <br/>und Usedom.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_in7cTH",
-        "text_km3YkM"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": false,
-        "padding_top": 52,
-        "padding_bottom": 0
-      }
-    },
     "slideshow_cemdgG": {
       "type": "slideshow",
       "blocks": {
@@ -108,12 +75,12 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
-        "slider_visual": "numbers",
+        "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 3,
         "image_behavior": "ambient",
         "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
+        "accessibility_info": "unsere Flotte"
       }
     },
     "collage-0": {
@@ -136,6 +103,7 @@
         "collection-0",
         "collection-1"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -150,16 +118,25 @@
     "collection_list_Gj3wnz": {
       "type": "collection-list",
       "blocks": {
+        "featured_collection_pgzj49": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
         "featured_collection_Vw6rYA": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "standorte-deutschland"
           }
         }
       },
       "block_order": [
+        "featured_collection_pgzj49",
         "featured_collection_Vw6rYA"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -187,6 +164,7 @@
       "block_order": [
         "heading"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -198,6 +176,7 @@
     },
     "featured-collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -226,7 +205,6 @@
     }
   },
   "order": [
-    "rich_text_Dw4Gzg",
     "slideshow_cemdgG",
     "collage-0",
     "collection_list_Gj3wnz",
