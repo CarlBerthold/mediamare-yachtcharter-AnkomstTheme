@@ -87,7 +87,7 @@
                       {{ block.settings.subtext }}
                     </div>
                   {%- when 'link_list' -%}
-                    <div class="tes1t">
+                    <div class="test">
                       {%- if block.settings.menu != blank -%}
                         <ul class="footer-block__details-content list-unstyled">
                           {%- for link in block.settings.menu.links -%}
@@ -101,12 +101,10 @@
                             </li>
                           {%- endfor -%}
                         </ul>
-                        
-                          {% liquid
-                              render 'social-icons', class: 'footer__list-social'
-                          %}
-                        {%- endif -%}
-                      
+                        {% liquid
+                          render 'social-icons', class: 'footer__list-social'
+                      %}
+                      {%- endif -%}
                   </div>
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
@@ -135,7 +133,9 @@
                       {%- if settings.brand_description != blank -%}
                         <div class="rte">{{ settings.brand_description }}</div>
                       {%- endif -%}
-                    
+                      {%- if block.settings.show_social and has_social_icons -%}
+                        {%- render 'social-icons', class: 'footer__list-social' -%}
+                      {%- endif -%}
                     </div>
                   {%- when 'image' -%}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
@@ -244,9 +244,11 @@
             </div>
           {%- endif -%}
 
-          {%- if section.settings.show_social and has_social_icons -%}
+          {% comment %} 
+            {%- if section.settings.show_social and has_social_icons -%} 
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
+          {% endcomment %}
         </div>
       </div>
     {%- endunless -%}
