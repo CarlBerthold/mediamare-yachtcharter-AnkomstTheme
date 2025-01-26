@@ -15,6 +15,13 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .link-social-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+  }
+
   @media screen and (min-width: 750px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
@@ -87,7 +94,7 @@
                       {{ block.settings.subtext }}
                     </div>
                   {%- when 'link_list' -%}
-                    <div class="test">
+                    <div class="link-social-container">
                       {%- if block.settings.menu != blank -%}
                         <ul class="footer-block__details-content list-unstyled">
                           {%- for link in block.settings.menu.links -%}
