@@ -64,9 +64,7 @@
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
-            {%- if block.settings.show_social and has_social_icons -%}
-              {%- render 'social-icons', class: 'footer__list-social' -%}
-            {%- endif -%}
+            
           >
             {%- for block in section.blocks -%}
               <div
@@ -101,6 +99,9 @@
                             </a>
                           </li>
                         {%- endfor -%}
+                        {% liquid
+                           render 'social-icons', class: 'footer__list-social'
+                        %}
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
