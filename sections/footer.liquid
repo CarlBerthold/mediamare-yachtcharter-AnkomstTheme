@@ -101,12 +101,12 @@
                             </li>
                           {%- endfor -%}
                         </ul>
-                        {%- if block.settings.show_social and has_social_icons -%}
+                        
                           {% liquid
                               render 'social-icons', class: 'footer__list-social'
                           %}
                         {%- endif -%}
-                      {%- endif -%}
+                      
                   </div>
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
