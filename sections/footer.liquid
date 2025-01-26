@@ -99,10 +99,10 @@
                             </a>
                           </li>
                         {%- endfor -%}
-                        {% liquid
-                           render 'social-icons', class: 'footer__list-social'
-                        %}
                       </ul>
+                      {% liquid
+                        render 'social-icons', class: 'footer__list-social'
+                     %}
                     {%- endif -%}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
