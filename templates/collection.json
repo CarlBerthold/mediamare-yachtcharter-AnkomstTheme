@@ -47,7 +47,7 @@
         "buttons_XxjVLe"
       ],
       "settings": {
-        "image": "shopify://shop_images/pankaj-patel-SCgrYErvpbE-unsplash.jpg",
+        "image": "shopify://shop_images/BILD-IF-Schweden-scaled-1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
@@ -88,7 +88,7 @@
         "featured_collection_pFTe7T"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "{{ collection.title }}",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -102,6 +102,7 @@
     },
     "main-collection-banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -110,6 +111,7 @@
     },
     "main-collection-product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
