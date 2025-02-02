@@ -57,6 +57,7 @@
         },
         "link_list_VfNGbX": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "",
             "menu": "footermenu"
@@ -70,14 +71,14 @@
       "settings": {
         "color_scheme": "accent-1",
         "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": false,
         "show_policy": true,
-        "margin_top": 0,
+        "margin_top": 20,
         "padding_top": 12,
         "padding_bottom": 12
       }
