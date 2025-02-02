@@ -15,7 +15,7 @@
         "slide_mkzwQ4": {
           "type": "slide",
           "settings": {
-            "image": "{{ collection.metafields.custom.kolbild.value.slide_1.value }}",
+            "image": "{{ collection.metafields.custom.herobilder.value.slide_1.value }}",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -27,6 +27,42 @@
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_ztP4aD": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ collection.metafields.custom.herobilder.value.slide_2.value }}",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_LtzzmA": {
+          "type": "slide",
+          "settings": {
+            "image": "{{ collection.metafields.custom.herobilder.value.slide_3.value }}",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         },
@@ -50,6 +86,8 @@
       },
       "block_order": [
         "slide_mkzwQ4",
+        "slide_ztP4aD",
+        "slide_LtzzmA",
         "slide_6cKK83"
       ],
       "settings": {
