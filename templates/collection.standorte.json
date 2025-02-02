@@ -102,15 +102,56 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "collection_list_UketdL": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_LLt8yp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boote"
+          }
+        },
+        "featured_collection_qPpzAN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bavaria"
+          }
+        },
+        "featured_collection_EXF8dd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "karlshamn-se"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_LLt8yp",
+        "featured_collection_qPpzAN",
+        "featured_collection_EXF8dd"
+      ],
+      "settings": {
+        "title": "{{ collection.title }}",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_ECKYEa": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "{{ collection.title }}",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "standorte-deutschland",
+        "collection": "bavaria",
         "products_to_show": 6,
         "columns_desktop": 3,
         "full_width": false,
@@ -315,6 +356,7 @@
   },
   "order": [
     "slideshow_qx8JCy",
+    "collection_list_UketdL",
     "featured_collection_ECKYEa",
     "main-collection-product-grid",
     "main-collection-banner",
