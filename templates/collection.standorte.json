@@ -372,8 +372,8 @@
         "button_Ureg8R": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "unsere Folkeboote",
+            "button_link": "shopify://collections/if-folkeboote",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -391,8 +391,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 32
       }
     }
   },
