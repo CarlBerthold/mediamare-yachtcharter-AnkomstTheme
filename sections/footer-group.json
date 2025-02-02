@@ -48,24 +48,24 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "link_list_VfNGbX": {
-          "type": "link_list",
-          "settings": {
-            "heading": "",
-            "menu": "footermenu"
-          }
-        },
         "link_list_4XG8zJ": {
           "type": "link_list",
           "settings": {
             "heading": "",
             "menu": "informatives"
           }
+        },
+        "link_list_VfNGbX": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footermenu"
+          }
         }
       },
       "block_order": [
-        "link_list_VfNGbX",
-        "link_list_4XG8zJ"
+        "link_list_4XG8zJ",
+        "link_list_VfNGbX"
       ],
       "settings": {
         "color_scheme": "accent-1",
