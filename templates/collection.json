@@ -87,6 +87,7 @@
         "featured_collection_fePGDU",
         "featured_collection_pFTe7T"
       ],
+      "disabled": true,
       "settings": {
         "title": "{{ collection.title }}",
         "heading_size": "h1",
@@ -111,7 +112,6 @@
     },
     "main-collection-product-grid": {
       "type": "main-collection-product-grid",
-      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
