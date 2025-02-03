@@ -132,7 +132,7 @@
       "settings": {
         "title": "{{ collection.title }}",
         "heading_size": "h2",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "columns_desktop": 3,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "show_view_all": false,
