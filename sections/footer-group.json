@@ -55,9 +55,15 @@
             "menu": "informatives"
           }
         },
+        "link_list_PcXMLa": {
+          "type": "link_list",
+          "settings": {
+            "heading": "hier kommen Top Produkte als Link",
+            "menu": ""
+          }
+        },
         "link_list_VfNGbX": {
           "type": "link_list",
-          "disabled": true,
           "settings": {
             "heading": "",
             "menu": "footermenu"
@@ -66,6 +72,7 @@
       },
       "block_order": [
         "link_list_4XG8zJ",
+        "link_list_PcXMLa",
         "link_list_VfNGbX"
       ],
       "settings": {
