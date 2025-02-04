@@ -65,8 +65,8 @@
         "link_list_VfNGbX": {
           "type": "link_list",
           "settings": {
-            "heading": "Legal stuff",
-            "menu": "footermenu"
+            "heading": "",
+            "menu": "main-menu"
           }
         }
       },
