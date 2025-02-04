@@ -202,6 +202,34 @@
         "padding_top": 0,
         "padding_bottom": 68
       }
+    },
+    "1738703331a115570f": {
+      "type": "apps",
+      "blocks": {
+        "izyrent_global_calendar_EHqD3P": {
+          "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
+          "settings": {
+            "title": "",
+            "range": true,
+            "maxdates": 5,
+            "mindays": 0,
+            "collection": "boote-1",
+            "filter-options": true,
+            "filter-tags": false,
+            "description": false,
+            "vendor": false,
+            "price": true,
+            "tab": false,
+            "search-tags": ""
+          }
+        }
+      },
+      "block_order": [
+        "izyrent_global_calendar_EHqD3P"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -209,6 +237,7 @@
     "collage-0",
     "collection_list_Gj3wnz",
     "rich_text",
-    "featured-collection"
+    "featured-collection",
+    "1738703331a115570f"
   ]
 }
