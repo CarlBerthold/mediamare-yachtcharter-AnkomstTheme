@@ -108,9 +108,9 @@
                             </li>
                           {%- endfor -%}
                         </ul>
-                        {% liquid
+                        {% comment %} {% liquid
                           render 'social-icons', class: 'footer__list-social'
-                      %}
+                      %} {% endcomment %}
                       {%- endif -%}
                   </div>
                   {%- when 'brand_information' -%}
