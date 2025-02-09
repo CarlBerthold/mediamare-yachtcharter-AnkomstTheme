@@ -26,8 +26,7 @@ slideshow-component .slideshow.banner {
 }
 
 @media screen and (max-width: 1024px) {
-  .slideshow--placeholder.banner--mobile-bottom.banner--adapt_image .slideshow__media,
-  .slideshow--placeholder.banner--adapt_image:not(.banner--mobile-bottom) {
+  .slideshow__slide .grid__item .grid--1-col .slider__slide {
     height: 640px;
   }
 }
