@@ -131,6 +131,7 @@ slider-component.slider-component-full-width {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 1rem;
+  height: 640px;
 }
 
 .slider.slider--everywhere .slider__slide {
