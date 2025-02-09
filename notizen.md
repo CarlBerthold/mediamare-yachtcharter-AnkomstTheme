@@ -113,3 +113,15 @@ Abonnieren Sie unseren Newsletter, um stets auf dem neuesten Stand über dieses 
     - alter text: 
             Karlshamn Vägga
             Moderner Fischerei- und Sportboothafen am Rand der Stadt. Bis zum Zentrum sind es ungefähr 30 Minuten zu Fuss. Am Hafen gibt es eine Schwimmhalle mit Freiluftbad. Die Infrastruktur des Hafens ist gut.
+
+
+
+
+Image Wave als Clippath
+.box {
+  --mask:
+    radial-gradient(360.35px at 50% calc(100% - 490px),#000 99%,#0000 101%) calc(50% - 350px) 0/700px 100%,
+    radial-gradient(360.35px at 50% calc(100% + 315px),#0000 99%,#000 101%) 50% calc(100% - 175px)/700px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
