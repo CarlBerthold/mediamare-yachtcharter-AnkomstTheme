@@ -71,6 +71,13 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
+
+/* custom */
+
+.shopify-section .section {
+  background-color: white;
+}
+
 /* base */
 
 .no-js:not(html) {
