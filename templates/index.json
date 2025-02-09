@@ -210,7 +210,7 @@
           "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
             "title": "",
-            "range": true,
+            "range": false,
             "maxdates": 5,
             "mindays": 0,
             "collection": "boote-1",
@@ -226,6 +226,9 @@
       },
       "block_order": [
         "izyrent_global_calendar_EHqD3P"
+      ],
+      "custom_css": [
+        "div {background-color:white;}"
       ],
       "settings": {
         "include_margins": true
