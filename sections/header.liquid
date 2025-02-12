@@ -106,7 +106,9 @@
   }
 
   .coordinates {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     
   }
 
@@ -286,12 +288,9 @@
     <div class="test">
       {% if section.settings.coordinatesEast or section.settings.coordinatesNorth != blank %}
 
-        <div class="coordinates">
-              <div class="h2">
-                
-                <span>{{ section.settings.coordinatesNorth }}</span>
-                <span>{{ section.settings.coordinatesEast }}</span>
-              </div>
+        <div class="coordinates h2">     
+          <span>{{ section.settings.coordinatesNorth }}</span>
+          <span>{{ section.settings.coordinatesEast }}</span>
         </div>
     {% endif %}
       <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
