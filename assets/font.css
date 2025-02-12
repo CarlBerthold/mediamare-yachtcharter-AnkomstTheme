@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'DINOT';
+    src: url("{{ 'DINOT-Bold.woff2' | asset_url }}") format("woff2"),
+         url("{{ 'DINOT-Bold.woff' | asset_url }}") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DINOT';
+    src: url("{{ 'DINOT-Regular.woff2' | asset_url }}") format("woff2"),
+         url("{{ 'DINOT-Regular.woff' | asset_url }}") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
