@@ -14,7 +14,11 @@
     background-color: #f0ebe0;
     /* background-image: url('{{ section.settings.backgroundImage | img_url: 'large' }}');
     background-size: contain; */
+  }
 
+  .divider {
+    border-top: 1px solid #e5e5e5;
+    background-color: #373A3B;
   }
 
   .section-{{ section.id }}-padding {
@@ -401,6 +405,13 @@
   </div>
   
 </footer>
+<div class="divider">
+  <ul class="divider__list">
+    <li class="divider__item"></li>
+    <li class="divider__item"></li>
+    <li class="divider__item"></li>
+  </ul>
+</div>
 {% comment %} {% endif %} {% endcomment %}
 
 {% schema %}
