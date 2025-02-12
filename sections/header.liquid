@@ -102,12 +102,12 @@
 
   
   .brand-name {
-    grid-area: navigation;
     display: none;
   }
 
   @media screen and (min-width: 750px) {
     .brand-name { 
+      grid-area: navigation;
       display: flex;
     }
   }
@@ -118,6 +118,7 @@
 
   @media screen and (min-width: 750px) {
     .coordinates {
+      grid-area: icons;
       display: flex;
       flex-direction: column;
       align-items: end;
