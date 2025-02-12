@@ -24,11 +24,12 @@
   }
 
   .divider__list {
-   
+    display: flex;
+    justify-content: space-between;
   }
 
   .divider__item {
-  
+    
   }
 
   .section-{{ section.id }}-padding {
@@ -291,12 +292,16 @@
     {% endif %}
   >
     
-     <div class="footer__content-bottom-wrapper page-width">
+     <div class="footer__content-bottom-wrapper">
       <div class="divider">
         <ul class="divider__list">
-          <li class="divider__item"></li>
-          <li class="divider__item"></li>
-          <li class="divider__item"></li>
+          <li class="divider__item">
+            <a href="https://mediamare-yachtcharter.myshopify.com/pages/impressum" class="link link--text">Impressum</a>
+          </li>
+          <li class="divider__item">
+            <a href="https://mediamare-yachtcharter.myshopify.com/pages/contact" class="link link--text">Contact</a>
+          </li>
+          <li class="divider__item"></li> 
         </ul>
       </div>
 
