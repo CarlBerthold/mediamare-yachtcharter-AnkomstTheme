@@ -101,8 +101,15 @@
   }
 
   
-  .logo-name {
-    
+  .brand-name {
+    grid-area: navigation;
+    display: none;
+  }
+
+  @media screen and (min-width: 750px) {
+    .brand-name { 
+      display: flex;
+    }
   }
 
   .coordinates {
