@@ -125,3 +125,12 @@ Image Wave als Clippath
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
+
+
+
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+--mask: radial-gradient(447.21px at 50% calc(100% - 600px), #000 99%, #0000 101%) calc(50% - 400px) 0 / 800px 100%, radial-gradient(447.21px at 50% calc(100% + 400px), #0000 99%, #000 101%) 50% calc(100% - 200px) / 800px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
