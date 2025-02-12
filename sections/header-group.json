@@ -39,7 +39,10 @@
     "header": {
       "type": "header",
       "settings": {
+        "brandName": "MEDIAMARE YACHTCHARTER ANKOMST",
         "backgroundImage": "shopify://shop_images/241223_Carl_Paperwall_web.jpg",
+        "coordinatesNorth": "54°02'48.6\"N",
+        "coordinatesEast": "13°50'52.8\"E",
         "logo_position": "middle-center",
         "menu": "main-menu",
         "menu_type_desktop": "drawer",
