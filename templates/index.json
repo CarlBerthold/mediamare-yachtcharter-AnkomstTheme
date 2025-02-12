@@ -156,15 +156,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "unsere Angebote",
-            "heading_size": "h1"
+            "heading": "Hier findest du das passende Schiff",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
         "heading"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
