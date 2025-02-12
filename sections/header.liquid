@@ -284,10 +284,10 @@
     {%- endif -%}
 
     <div class="test">
-      {% if settings.coordinatesEast || settings.coordinatesNorth != blank %}
+      {% if section.settings.coordinatesEast || section.settings.coordinatesNorth != blank %}
 
         <div class="coordinates">
-              <div class="brandName">
+              <div class="h2">
                 <span>{{ settings.coordinatesNorth }}</span>
                 <span>{{ settings.coordinatesEast }}</span>
               </div>
