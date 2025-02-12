@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'DINOT';
+    font-family: 'DINOT-BOLD';
     src: url("{{ 'DINOT-Bold.woff2' | asset_url }}") format("woff2"),
          url("{{ 'DINOT-Bold.woff' | asset_url }}") format("woff");
     font-weight: bold;
