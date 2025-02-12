@@ -216,6 +216,12 @@
       endif
     -%}
 
+    {% if section.settings.brandName != blank %}
+      <div class="h1 brand-name">
+        <span>{{ section.settings.brandName }}</span>
+      </div>
+    {% endif %}
+
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
        
