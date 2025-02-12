@@ -280,8 +280,16 @@
       data-cascade
     {% endif %}
   >
-    {% comment %}
+    
      <div class="footer__content-bottom-wrapper page-width">
+      <div class="divider">
+        <ul class="divider__list">
+          <li class="divider__item"></li>
+          <li class="divider__item"></li>
+          <li class="divider__item"></li>
+        </ul>
+      </div>
+
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript>
@@ -401,17 +409,11 @@
         {%- endif -%}
       </div>
     </div>
-    {% endcomment %}
+   
   </div>
   
 </footer>
-<div class="divider">
-  <ul class="divider__list">
-    <li class="divider__item"></li>
-    <li class="divider__item"></li>
-    <li class="divider__item"></li>
-  </ul>
-</div>
+
 {% comment %} {% endif %} {% endcomment %}
 
 {% schema %}
