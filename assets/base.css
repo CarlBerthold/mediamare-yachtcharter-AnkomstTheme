@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: 'DINOT';
-  src: url("{{ '[DINOT-Bold.woff]' | asset_url }}") format("[woff2]");
+  src: url("{{ '[DINOT-Bold.woff]' | asset_url }}") format("[woff]");
   font-weight: bold;
   font-style: normal;
 }
