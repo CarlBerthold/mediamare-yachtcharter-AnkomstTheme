@@ -258,22 +258,15 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
-    {%- unless settings.type_body_font.system? -%}
-      {{ 'DINOT-Regular.woff' | asset_url | preload_tag: 'font', crossorigin: 'anonymous' }}
-    {%- endunless -%}
     
-    {%- unless settings.type_header_font.system? -%}
-      {{ 'DINOT-Bold.woff' | asset_url | preload_tag: 'font', crossorigin: 'anonymous' }}
-    {%- endunless -%}
 
-
-    {% comment %} {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ 'DINOT-Regular.woff' | asset_url }}" type="font/woff" crossorigin="anonymous">
+    {%- unless settings.type_body_font.system? -%}
+      {{ 'DINOT-Regular.woff' | asset_url | preload_tag: as: 'font', type: 'font/woff', crossorigin: 'anonymous' }}
     {%- endunless -%}
     
     {%- unless settings.type_header_font.system? -%}
       <link rel="preload" as="font" href="{{ 'DINOT-Bold.woff' | asset_url }}" type="font/woff" crossorigin="anonymous">
-    {%- endunless -%} {% endcomment %}
+    {%- endunless -%}
     
 
     {% comment %} {%- unless settings.type_body_font.system? -%}
