@@ -1,13 +1,15 @@
 @font-face {
      font-family: 'DINOT-BOLD';
-     src: url("{{ 'DINOT-Bold.woff' | asset_url }}") format("woff");
+     src:local("DINOT-Bold"), url("{{ 'DINOT-Bold.woff' | asset_url }}") format("woff");
+     /* src: url("{{ 'DINOT-Bold.woff' | asset_url }}") format("woff"); */
      font-weight: bold;
      font-style: normal;
  }
  
  @font-face {
      font-family: 'DINOT-REGULAR';
-     src: url("{{ 'DINOT-Regular.woff' | asset_url }}") format("woff");
+     src:local("DINOT-Regular"), url("{{ 'DINOT-Regular.woff' | asset_url }}") format("woff");
+     /* src: url("{{ 'DINOT-Regular.woff' | asset_url }}") format("woff"); */
      font-weight: normal;
      font-style: normal;
  }
