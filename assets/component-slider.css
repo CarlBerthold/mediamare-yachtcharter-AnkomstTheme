@@ -156,6 +156,12 @@ slider-component.slider-component-full-width {
   }
 }
 
+@media screen and (min-width: 1680px) {
+  .slider.slider--everywhere .slider__slide {
+    min-height: 1050px;
+  }
+}
+
 @media screen and (min-width: 990px) {
   .slider-component-desktop.page-width {
     max-width: none;
