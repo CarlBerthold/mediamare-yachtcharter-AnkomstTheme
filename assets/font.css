@@ -7,7 +7,7 @@
   }
 
   @font-face {
-    font-family: 'DINOT';
+    font-family: 'DINOT-REGULAR';
     src: url("{{ 'DINOT-Regular.woff2' | asset_url }}") format("woff2"),
          url("{{ 'DINOT-Regular.woff' | asset_url }}") format("woff");
     font-weight: normal;
