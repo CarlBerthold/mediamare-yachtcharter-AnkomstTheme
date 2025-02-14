@@ -261,21 +261,21 @@
 
     
 
-    {%- unless settings.type_body_font.system? -%}
+    {% comment %} {%- unless settings.type_body_font.system? -%}
       {{ 'DINOT-Regular.woff' | asset_url | preload_tag: as: 'font', type: 'font/woff', crossorigin: 'anonymous' }}
     {%- endunless -%}
     
     {%- unless settings.type_header_font.system? -%}
       {{ 'DINOT-Bold.woff' | asset_url | preload_tag: as: 'font', type: 'font/woff', crossorigin: 'anonymous' }}
-    {%- endunless -%}
+    {%- endunless -%} {% endcomment %}
     
 
-    {% comment %} {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+    {%- unless settings.type_body_font.system? -%}
+      <link rel="preload" as="font" href="{{ fonts.css | asset_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-    {%- endunless -%} {% endcomment %}
+    {%- endunless -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
