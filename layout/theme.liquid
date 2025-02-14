@@ -13,7 +13,7 @@
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       {% comment %} <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin> {% endcomment %}
-      <link rel="stylesheet" href="{{ 'font.css' | asset_url }}">
+      {% comment %} <link rel="stylesheet" href="{{ 'font.css' | asset_url }}"> {% endcomment %}
 
     {%- endunless -%}
 
@@ -101,6 +101,7 @@
 
         
         --font-body-family: 'DINOT-REGULAR'; 
+
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
@@ -258,11 +259,11 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ 'DINOT-Regular.woff' | asset_url }}" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" as="font" href="{{ 'DINOT-Regular.woff' | asset_url }}" type="font/woff" crossorigin="anonymous">
     {%- endunless -%}
     
     {%- unless settings.type_header_font.system? -%}
-      <link rel="preload" as="font" href="{{ 'DINOT-Bold.woff' | asset_url }}" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" as="font" href="{{ 'DINOT-Bold.woff' | asset_url }}" type="font/woff" crossorigin="anonymous">
     {%- endunless -%}
     
 
