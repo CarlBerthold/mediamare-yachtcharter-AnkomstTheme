@@ -150,7 +150,7 @@ slider-component.slider-component-full-width {
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .slider.slider--everywhere .slider__slide {
     min-height: 950px;
   }
