@@ -13,8 +13,9 @@
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-      <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DINOT-Regular.woff?v=1738246829">
-    {%- endunless -%}
+      <link rel="preconnect" href="{{ 'font.css' | asset_url }}" crossorigin>
+{% comment %}       <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DINOT-Regular.woff?v=1738246829">
+ {% endcomment %}    {%- endunless -%}
 
 
     <title>
@@ -271,11 +272,11 @@
     
 
     {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ fonts.css | asset_url }}" type="font/woff2" crossorigin>
-    {%- endunless -%}
+{% comment %}       <link rel="preload" as="font" href="{{ fonts.css | asset_url }}" type="font/woff2" crossorigin>
+ {% endcomment %}    {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-    {%- endunless -%}
+{% comment %}       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+ {% endcomment %}    {%- endunless -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
