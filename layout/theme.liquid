@@ -13,8 +13,8 @@
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-      <link rel="preconnect" href="{{ 'font.css' | asset_url }}" crossorigin>
-{% comment %}       <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DINOT-Regular.woff?v=1738246829">
+{% comment %}       <link rel="preconnect" href="{{ 'font.css' | asset_url }}" crossorigin>
+ {% endcomment %}{% comment %}       <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DINOT-Regular.woff?v=1738246829">
  {% endcomment %}    {%- endunless -%}
 
 
@@ -249,6 +249,24 @@
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
+      }
+
+    @font-face {
+     font-family: 'DINOT-BOLD';
+     src:url("https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DINOT-Bold.woff?v=1739564476")format("woff");
+     /* src:local("DINOT-Bold"), url("{{ 'DINOT-Bold.woff' | asset_url }}") format("woff"); */
+     font-weight: bold;
+     font-style: normal;
+    }
+      
+      @font-face {
+          font-family: 'DINOT-REGULAR';
+      /*      src:local("DINOT-Regular"), url("{{ 'DINOT-Regular.woff' | asset_url }}") format("woff");*/
+          src: url("https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DINOT-Regular.woff?v=1738246829")format("woff");
+
+          /* src: url("{{ 'DINOT-Regular.woff' | asset_url }}") format("woff"); */
+          font-weight: normal;
+          font-style: normal;
       }
 
       @media screen and (min-width: 750px) {
