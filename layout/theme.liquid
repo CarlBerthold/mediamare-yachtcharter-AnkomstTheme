@@ -106,7 +106,7 @@
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
         --font-heading-family: 'DINOT-BOLD';
-        
+
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
@@ -265,7 +265,7 @@
     {%- endunless -%}
     
     {%- unless settings.type_header_font.system? -%}
-      <link rel="preload" as="font" href="{{ 'DINOT-Bold.woff' | asset_url }}" type="font/woff" crossorigin="anonymous">
+      {{ 'DINOT-Bold.woff' | asset_url | preload_tag: as: 'font', type: 'font/woff', crossorigin: 'anonymous' }}
     {%- endunless -%}
     
 
