@@ -138,6 +138,24 @@ slider-component.slider-component-full-width {
   scroll-snap-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .slider.slider--everywhere .slider__slide {
+    min-height: 650px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slider.slider--everywhere .slider__slide {
+    min-height: 950px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .slider.slider--everywhere .slider__slide {
+    min-height: 950px;
+  }
+}
+
 @media screen and (min-width: 990px) {
   .slider-component-desktop.page-width {
     max-width: none;
