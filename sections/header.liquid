@@ -237,8 +237,8 @@
     -%}
 
     {% if section.settings.brandName != blank %}
-      <div class="brand-name">
-        <h1>{{ section.settings.brandName }}</h1>
+      <div class="brand-name h2">
+        <span>{{ section.settings.brandName }}</span>
       </div>
     {% endif %}
 
@@ -319,9 +319,9 @@
     <div class="test">
       {% if section.settings.coordinatesEast or section.settings.coordinatesNorth != blank %}
 
-        <div class="coordinates">     
-          <h2>{{ section.settings.coordinatesNorth }}</h2>
-          <h2>{{ section.settings.coordinatesEast }}</h2>
+        <div class="coordinates h2">     
+          <span>{{ section.settings.coordinatesNorth }}</span>
+          <span>{{ section.settings.coordinatesEast }}</span>
         </div>
     {% endif %}
       <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
