@@ -96,8 +96,6 @@
     grid-area: icons;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    
   }
 
   
@@ -226,23 +224,23 @@
                       {% if localization_forms %} header--has-localizations{% endif %}">
   {% endif %}
 
-  
-    
-    {%- liquid
-      if section.settings.menu != blank
-        render 'header-drawer'
-      endif
 
-      if section.settings.logo_position == 'top-center' or section.settings.menu == blank
-        render 'header-search', input_id: 'Search-In-Modal-1'
-      endif
-    -%}
+  {% if section.settings.brandName != blank %}
+    <div class="brand-name h2">
+      <span>{{ section.settings.brandName }}</span>
+    </div>
+  {% endif %}
     
-    {% if section.settings.brandName != blank %}
-      <div class="brand-name h2">
-        <span>{{ section.settings.brandName }}</span>
-      </div>
-    {% endif %}
+
+  {%- liquid
+    if section.settings.menu != blank
+      render 'header-drawer'
+    endif
+
+    if section.settings.logo_position == 'top-center' or section.settings.menu == blank
+      render 'header-search', input_id: 'Search-In-Modal-1'
+    endif
+  -%}
 
     
 
