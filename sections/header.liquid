@@ -92,10 +92,13 @@
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
 
-  .test {
-    grid-area: icons;
+  .flex-column {
     display: flex;
     flex-direction: column;
+  }
+
+  .coordinates-wrapper {
+    grid-area: icons;
   }
 
   
@@ -225,7 +228,7 @@
   {% endif %}
 
 
-  <div class=" left-heading-bulletin">
+  <div class="flex-cloumn">
     {% if section.settings.brandName != blank %}
       <div class="brand-name h2">
         <span>{{ section.settings.brandName }}</span>
@@ -320,7 +323,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    <div class="test">
+    <div class="coordinates-wrapper flex-column">
       {% if section.settings.coordinatesEast or section.settings.coordinatesNorth != blank %}
 
         <div class="coordinates h2">     
