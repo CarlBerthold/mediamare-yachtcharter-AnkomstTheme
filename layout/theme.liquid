@@ -107,7 +107,7 @@
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family: "DINOT-BOLD", {{ settings.type_header_font.family | escape }};
+        --font-heading-family: "DINOT-MEDIUM", {{ settings.type_header_font.family | escape }};
 
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
@@ -262,6 +262,13 @@
         font-family: 'DINOT-BOLD';
         src:url("https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DINOT-Bold.woff?v=1739564476")format("woff");
         font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'DINOT-MEDIUM';
+        src:url("https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DINOT-Medium.woff?v=1739737602")format("woff");
+        font-weight: normal;
         font-style: normal;
       }
       
