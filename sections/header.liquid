@@ -224,13 +224,6 @@
                     {% if social_links %} header--has-social{% endif %}
                      {% if shop.customer_accounts_enabled %} header--has-account{% endif %}
                       {% if localization_forms %} header--has-localizations{% endif %}">
-
-
-                      {% if section.settings.brandName != blank %}
-                        <div class="brand-name h2">
-                          <span>{{ section.settings.brandName }}</span>
-                        </div>
-                      {% endif %}
   {% endif %}
 
   
@@ -244,6 +237,12 @@
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}
+    
+    {% if section.settings.brandName != blank %}
+      <div class="brand-name h2">
+        <span>{{ section.settings.brandName }}</span>
+      </div>
+    {% endif %}
 
     
 
