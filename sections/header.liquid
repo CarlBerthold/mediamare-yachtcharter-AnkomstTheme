@@ -407,9 +407,7 @@
           </a>
         {%- endif -%}
 
-        <div>
-          <span>{{ section.settings.pageTitle }}</span>
-        </div>
+        
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -437,6 +435,9 @@
           {%- endif -%}
         </a>
       </div>
+    </div>
+    <div class="pageTitle ">
+      <span>{{ section.settings.pageTitle }}</span>
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
