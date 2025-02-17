@@ -50,7 +50,7 @@
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "menu_color_scheme": "background-2",
+        "menu_color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
