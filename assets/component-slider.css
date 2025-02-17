@@ -138,7 +138,7 @@ slider-component.slider-component-full-width {
   scroll-snap-align: center;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .slider.slider--everywhere .slider__slide {
     min-height: 650px;
   }
@@ -160,7 +160,7 @@ slider-component.slider-component-full-width {
   .slider.slider--everywhere .slider__slide {
     min-height: 1050px;
   }
-}
+} */
 
 @media screen and (min-width: 990px) {
   .slider-component-desktop.page-width {
