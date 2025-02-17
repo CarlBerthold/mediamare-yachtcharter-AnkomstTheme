@@ -407,6 +407,10 @@
           </a>
         {%- endif -%}
 
+        <div>
+          <span>{{ 'section.settings.pageTitle' }}</span>
+        </div>
+
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when '@app' -%}
@@ -607,17 +611,17 @@
     {
       "type": "image_picker",
       "id": "backgroundImage",
-      "label": "Background image"
+      "label": "Header Hintergurndbild"
     },
     {
       "type": "text",
       "id": "coordinatesNorth",
-      "label": "Heading Coordinates 1",
+      "label": "Koordinaten 1",
     },
     {
       "type": "text",
       "id": "coordinatesEast",
-      "label": "Heading Coordinates 2",
+      "label": "Koordinaten 2",
     },
     {
       "type": "select",
@@ -643,6 +647,11 @@
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label",
       "info": "t:sections.header.settings.logo_help.content"
+    },
+    {
+      "type": "heading",
+      "id": "pageTitle",
+      "label": "Seitentitel",
     },
     {
       "type": "link_list",
