@@ -2430,7 +2430,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
   }
 
   .header--middle-center:not(.drawer-menu) {
-    grid-template-areas: 'navigation heading icons';
+    grid-template-areas: 
+      'navigation heading icons'
+      '. title .';
     grid-template-columns: 1fr auto 1fr;
     column-gap: 2rem;
   }
