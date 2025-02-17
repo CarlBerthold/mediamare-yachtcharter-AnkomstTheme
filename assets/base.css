@@ -2609,6 +2609,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   width: 100%;
   display: block;
   position: absolute;
+  background: white;
+  opacity: 60%;
   /* background: rgba(var(--color-foreground), 0.5); */
 }
 
