@@ -47,7 +47,7 @@
         "logo_position": "middle-center",
         "menu": "main-menu",
         "menu_type_desktop": "drawer",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "none",
         "show_line_separator": false,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "menu_color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
