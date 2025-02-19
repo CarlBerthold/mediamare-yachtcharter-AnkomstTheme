@@ -255,7 +255,7 @@
   </div>
 
     
-
+  <div class="flex flex-column">
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
        
@@ -329,6 +329,7 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
+  </div>
 
     <div class="coordinates-wrapper flex-column">
       {% if section.settings.coordinatesEast or section.settings.coordinatesNorth != blank %}
