@@ -200,6 +200,13 @@
   }
 }
 
+
+@media screen and (min-width: 1200px) {
+  .banner__media:before {
+    height: 63px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .banner__media:before {
     height: 76px;
