@@ -17,7 +17,7 @@ slideshow-component .slideshow.banner {
   gap: 0;
 }
 
-@media screen and (max-width: 1201px) {
+@media screen and (min-width: 1201px) {
   .slideshow.banner {
     height: 1000px;
   }
