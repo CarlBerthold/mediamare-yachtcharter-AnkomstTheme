@@ -17,9 +17,21 @@ slideshow-component .slideshow.banner {
   gap: 0;
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1440px) {
   .slideshow.banner {
-    height: 780px;
+    height: 680px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .slideshow.banner {
+    height: 920px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .slideshow.banner {
+    height: 1200px;
   }
 }
 
