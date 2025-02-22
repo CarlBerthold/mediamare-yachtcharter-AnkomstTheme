@@ -177,13 +177,13 @@
 
 @media screen and (min-width: 1440px) {
   .banner__media:before {
-    height: 101px;
+    height: 76px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .banner__media:before {
-    height: 76px;
+    height: 101px;
   }
 }
 
