@@ -175,6 +175,12 @@
   z-index: 1;
 }
 
+@media screen and (min-width: 1440px) {
+  .banner__media:before {
+    height: 76px;
+  }
+}
+
 .banner__media-half {
   width: 50%;
 }
