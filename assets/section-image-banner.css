@@ -170,7 +170,7 @@
   content: url('https://cdn.shopify.com/s/files/1/0767/5215/9056/files/250131_Welle.svg?v=1740172385');
   position: absolute;
   bottom: 0px;
-  height: 5vh;
+  height: 10vh;
   width: 100%;
   z-index: 1;
 }
@@ -214,22 +214,22 @@
   }
 } */
 
-/* @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1600) {
   .banner__media:before {
-    height: 76px;
+    height: 14vh;
   }
-} */
+}
 
 
 @media screen and (min-width: 1920px) {
   .banner__media:before {
-    height: 8vh;
+    height: 16vh;
   }
 }
 
 @media screen and (min-width: 2560px) {
   .banner__media:before {
-    height: 10vh;
+    height: 20vh;
   }
 }
 
