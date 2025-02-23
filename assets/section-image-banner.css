@@ -214,7 +214,7 @@
   }
 } */
 
-@media screen and (min-width: 1600) {
+@media screen and (min-width: 1600px) {
   .banner__media:before {
     height: 14vh;
   }
