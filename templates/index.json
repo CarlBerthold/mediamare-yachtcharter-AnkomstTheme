@@ -226,6 +226,7 @@
       "block_order": [
         "izyrent_global_calendar_EHqD3P"
       ],
+      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
