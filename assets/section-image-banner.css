@@ -175,11 +175,11 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
   .banner__media:before {
     height: 20px;
   }
-}
+} */
 
 /* 
 @media screen and (min-width: 375px) {
@@ -188,7 +188,7 @@
   }
 } */
 
-@media screen and (min-width: 425px) {
+/* @media screen and (min-width: 425px) {
   .banner__media:before {
     height: 23px;
   }
@@ -224,7 +224,7 @@
   .banner__media:before {
     height: 101px;
   }
-}
+} */
 
 @media screen and (min-width: 2560px) {
   .banner__media:before {
