@@ -197,7 +197,7 @@
 
 @media screen and (max-width: 768px) {
   .banner__media:before {
-    height: 2vh;
+    height: 3vh;
   }
 }
 
