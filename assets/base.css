@@ -2611,7 +2611,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: block;
   position: absolute;
   background: white;
-  opacity: 60%;
+  opacity: 40%;
   /* background: rgba(var(--color-foreground), 0.5); */
 }
 
