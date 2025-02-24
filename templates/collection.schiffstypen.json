@@ -14,7 +14,6 @@
       "blocks": {
         "heading_JXCbUK": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "",
             "heading_size": "h1"
@@ -49,7 +48,7 @@
       "settings": {
         "image": "shopify://shop_images/Athmo_1440x600_3b0b3b93-d60a-4303-8ae1-6fec2f03b035.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -88,7 +87,7 @@
         "featured_collection_pFTe7T"
       ],
       "settings": {
-        "title": "{{ collection.title }}",
+        "title": "Flotte",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
