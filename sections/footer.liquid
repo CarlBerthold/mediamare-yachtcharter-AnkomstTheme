@@ -137,9 +137,9 @@
                             </li>
                           {%- endfor -%}
                         </ul>
-                        {% comment %} {% liquid
+                        {% liquid
                           render 'social-icons', class: 'footer__list-social'
-                      %} {% endcomment %}
+                      %}
                       {%- endif -%}
                   </div>
                   {%- when 'brand_information' -%}
@@ -169,9 +169,9 @@
                       {%- if settings.brand_description != blank -%}
                         <div class="rte">{{ settings.brand_description }}</div>
                       {%- endif -%}
-                      {% comment %} {%- if block.settings.show_social and has_social_icons -%}
+                      {%- if block.settings.show_social and has_social_icons -%}
                         {%- render 'social-icons', class: 'footer__list-social' -%}
-                      {%- endif -%} {% endcomment %}
+                      {%- endif -%}
                     </div>
                   {%- when 'image' -%}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
@@ -281,9 +281,9 @@
           {%- endif -%}
 
           
-          {% comment %} {%- if section.settings.show_social and has_social_icons -%} 
+          {%- if section.settings.show_social and has_social_icons -%} 
             {%- render 'social-icons', class: 'footer__list-social' -%}
-          {%- endif -%} {% endcomment %}
+          {%- endif -%}
          
         </div>
       </div>
