@@ -17,13 +17,14 @@
   }
 
   .divider {
+    display: flex;
     border-top: 1px solid #e5e5e5;
     background-color: #373A3B;
     width: 100%;
   }
 
   .icon {
-    fill: fff;
+    color: fff;
   }
 
   .divider__list {
@@ -314,10 +315,10 @@
           <li class="divider__item">
             <a href="https://mediamare-yachtcharter.myshopify.com/pages/legal" class="dividerLink link link--text">LEGAL</a>
           </li>
-          {%- if section.settings.show_social and has_social_icons -%}
-            {%- render 'social-icons', class: 'footer__list-social' -%}
-          {%- endif -%}
         </ul>
+        {%- if section.settings.show_social and has_social_icons -%}
+          {%- render 'social-icons', class: 'footer__list-social' -%}
+        {%- endif -%}
       </div>
 
       <div class="footer__column footer__localization isolate">
