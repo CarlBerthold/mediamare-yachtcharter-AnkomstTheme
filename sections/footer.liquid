@@ -278,9 +278,9 @@
           {%- endif -%}
 
           
-          {%- if section.settings.show_social and has_social_icons -%} 
+          {% comment %} {%- if section.settings.show_social and has_social_icons -%} 
             {%- render 'social-icons', class: 'footer__list-social' -%}
-          {%- endif -%}
+          {%- endif -%} {% endcomment %}
          
         </div>
       </div>
@@ -310,17 +310,9 @@
           <li class="divider__item">
             <a href="https://mediamare-yachtcharter.myshopify.com/pages/legal" class="dividerLink link link--text">LEGAL</a>
           </li>
-            {%- for block in section.blocks -%}
-            {%- if block.type == 'social_icons' -%}
-              {%- render 'social-icons', class: 'footer__list-social' -%}
-            {%- endif -%}
-            {%- endfor -%}
-         {% comment %}  {% liquid
-            if section.settings.show_social and has_social_icons
-              render 'social-icons', class: 'footer__list-social';
-          %} {% endcomment %}
-
-
+          {%- if section.settings.show_social and has_social_icons -%}
+            {%- render 'social-icons', class: 'footer__list-social' -%}
+          {%- endif -%}
         </ul>
       </div>
 
