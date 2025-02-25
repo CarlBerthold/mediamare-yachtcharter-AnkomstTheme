@@ -1256,7 +1256,8 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgba(var(--color-button), white);
+/*   background-color: rgba(var(--color-button), white);*/  
+  background-color: #7AA8C6;
 }
 
 .button:before,
