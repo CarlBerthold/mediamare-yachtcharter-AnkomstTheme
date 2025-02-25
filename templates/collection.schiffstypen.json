@@ -47,9 +47,9 @@
         "buttons_XxjVLe"
       ],
       "settings": {
-        "image": "shopify://shop_images/BILD-IF-Schweden-scaled-1.jpg",
+        "image": "shopify://shop_images/Athmo_1440x600_3b0b3b93-d60a-4303-8ae1-6fec2f03b035.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -58,6 +58,14 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d"
       }
     },
     "collection_list_WTjCG4": {
@@ -72,13 +80,13 @@
         "featured_collection_fePGDU": {
           "type": "featured_collection",
           "settings": {
-            "collection": "motorboote"
+            "collection": "hochseeyacht"
           }
         },
         "featured_collection_pFTe7T": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hochseeyacht"
+            "collection": "motorboote"
           }
         }
       },
@@ -88,25 +96,16 @@
         "featured_collection_pFTe7T"
       ],
       "settings": {
-        "title": "{{ collection.title }}",
+        "title": "Flotte",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
-        "color_scheme": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "main-collection-banner": {
-      "type": "main-collection-banner",
-      "disabled": true,
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
       }
     },
     "main-collection-product-grid": {
@@ -133,8 +132,8 @@
   },
   "order": [
     "image_banner_7gbHM9",
-    "collection_list_WTjCG4",
     "main-collection-banner",
+    "collection_list_WTjCG4",
     "main-collection-product-grid"
   ]
 }
