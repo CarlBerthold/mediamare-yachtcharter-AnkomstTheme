@@ -103,11 +103,10 @@
     },
     "main-collection-banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
+        "show_collection_image": true,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d"
       }
     },
     "main-collection-product-grid": {
@@ -115,7 +114,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": false,
