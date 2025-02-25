@@ -49,7 +49,7 @@
       "settings": {
         "image": "shopify://shop_images/Hochseeyacht_1440x600_99ed2d37-9f1a-40ab-8824-34a43017d666.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
