@@ -96,7 +96,7 @@
         "featured_collection_pFTe7T"
       ],
       "settings": {
-        "title": "Flotte",
+        "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -111,10 +111,10 @@
     "main-collection-product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 12,
+        "products_per_page": 8,
         "columns_desktop": 5,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "image_ratio": "portrait",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
