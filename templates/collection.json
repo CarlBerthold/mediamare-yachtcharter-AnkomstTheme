@@ -103,9 +103,12 @@
     },
     "main-collection-banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-hero__title {display: none;}"
+      ],
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d"
       }
     },
