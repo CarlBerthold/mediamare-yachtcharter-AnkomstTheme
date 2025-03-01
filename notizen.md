@@ -134,3 +134,26 @@ Image Wave als Clippath
 --mask: radial-gradient(447.21px at 50% calc(100% - 600px), #000 99%, #0000 101%) calc(50% - 400px) 0 / 800px 100%, radial-gradient(447.21px at 50% calc(100% + 400px), #0000 99%, #000 101%) 50% calc(100% - 200px) / 800px 100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
+
+
+
+
+-----------------------METAFELDER------------------------------------------
+
+STINE HANSE 311
+    Nicht nur in Deutschland ist die Ostsee eines der beliebtesten Segelreviere. Auch viele ausländische Segelenthusiasten haben sich in dieses ganz besondere Fleckchen Wasser verliebt und kommen jedes Jahr wieder. Die Ostsee ist ein echtes Juwel und durchaus konkurrenzfähig mit Blick auf andere Segeldestinationen dieser Welt.
+    Gut 2.000 Küstenkilometer und über 2.000 Seen bieten zahlreiche Reviere für Profis, Anfänger oder Mitsegler. Dank der abwechslungsreichen Küstenlandschaft, der frischen, salzig schmeckenden Meeresluft und der guten Windverhältnisse gilt die Ostsee als hervorragendes Revier für erlebnisreiche Segeltörns.
+
+    Die Hanse 311 ist im Vergleich zu unseren anderen Segelyachten etwas älter aber trotzdem in einwandfreiem Zustand. Diese Segelyacht ist für kleine Crews ideal, trotz des Baujahres sehr gepflegt, mit gut gängiger Technik, für erfahrene Segler und Neueinsteiger gleichermaßen. Der Typ Hanse 311 war „Yacht oft the Year 2000“ aufgrund Ihrer guten Segeleigenschaften und Raumauftreilung.
+    Unsere „kleine Feine“ können wir absolut empfehlen, sowohl für Chartertörns Rund Rügen als auch für weitere Segeltörns Richtung Schweden und Dänemark.
+
+    Das Boot verfügt über 2 Kabinen, in denen jeweils zwei Personen schlafen können. Im umbaubaren Salon finden Sie zudem zwei weitere Schlafplätze, wenn die Gruppe etwas anwachsen sollte. Der Außenborder hat eine Leistung von ca. 14 KW, was in etwa 19 PS entspricht. Außerdem vorhanden sind eine mit Backofen, Gasherd und Kühlbox ausgestattete Küche sowie eine Nasszelle mit WC. Für musikalische Untermalung sorgt derweil der ebenfalls verbaute CD-Radio.
+    Kalte Stunden auf einem Segelboot gehören dank der Heizung unter Deck der Vergangenheit an.
+
+
+    TODO
+
+    add Card metafields 
+    Invoice
+    Legal
+    Images
