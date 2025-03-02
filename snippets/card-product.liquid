@@ -156,6 +156,9 @@
             </a>
           </h3>
           <div class="card-information">
+            <div>{{ products.product }}</div>
+          <span> test</span>
+            
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
@@ -360,6 +363,8 @@
       </div>
       <div class="card__content">
         <div class="card__information">
+          <div>{{ products.product }}</div>
+          <span> test</span>
           <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.product_title' | t }}
