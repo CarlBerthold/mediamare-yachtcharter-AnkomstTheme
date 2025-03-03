@@ -161,7 +161,7 @@
 
             {% comment %} {{technische_daten | json}} {% endcomment %}
 
-            <div class="technische-daten">
+            {% comment %} <div class="technische-daten">
               {% if technische_daten %}
                 <ul>
                   {% for key, value in technische_daten %}
@@ -175,7 +175,7 @@
                     </li>
                   {% endfor %}
                 </ul>
-              {% endif %}
+              {% endif %} {% endcomment %}
 
               <p>{{ technische_daten.laenge.label | escape }}</p>
 
