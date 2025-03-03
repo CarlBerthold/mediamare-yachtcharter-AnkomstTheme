@@ -159,6 +159,8 @@
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
             {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
 
+            {{technische_daten | json}}
+
             {% if technische_daten %}
               <ul>
               {% for item in technische_daten %}
