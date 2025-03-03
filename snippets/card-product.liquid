@@ -157,12 +157,15 @@
           </h3>
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
-            {% assign  technische_daten = card_product.metafields.custom.technische_daten.value %}
+            {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
 
-            
-            {%for item in technische_daten %}
-              <li>{{ item.value }}</li>            
-            {% endfor %}
+            {% if technische_daten %}
+              <ul>
+              {% for item in technische_daten %}
+                <li>{{ item | escape }}</li>
+              {% endfor %}
+              </ul>
+            {% endif %}
 
             {% if zusatzoptionen %}
               <div class="location">
