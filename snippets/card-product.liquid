@@ -156,8 +156,8 @@
             </a>
           </h3>
           <div class="card-information">
-            {%liquid
-              assign liegeplatz = product.metafields.zusatzoptionen.liegeplatz;
+            {% liquid
+              assign liegeplatz = product.metafields.zusatzoptionen.liegeplatz
             %}
 
             {%if liegeplatz != blank %}
