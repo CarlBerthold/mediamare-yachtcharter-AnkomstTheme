@@ -156,8 +156,14 @@
             </a>
           </h3>
           <div class="card-information">
-            <div>{{ product.metafields.zusatzoptionen.liegeplatz }}</div>
-          <span> test</span>
+            {%liquid
+              assign liegeplatz = product.metafields.zusatzoptionen.liegeplatz;
+            %}
+
+            {%if liegeplatz != blank %}
+              <span> {{ liegeplatz }} </span>
+            {% endif %}
+          <span>{{product.title}}</span>
             
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
