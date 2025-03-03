@@ -161,7 +161,12 @@
 
             {{technische_daten | json}}
 
-            <span>{{ technische_daten.breite.value }} :{{ technische_daten.breite.unit }} </span>
+            <span>{{ technische_daten.breite.value }}</span>
+
+            {%for data in technische_daten.value %}
+              <span>{{ data }}</span>
+            {% endfor %}
+            
 
             {% if zusatzoptionen %}
               <div class="location">
