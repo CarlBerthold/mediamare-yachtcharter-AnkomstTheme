@@ -159,10 +159,11 @@
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
             {% assign  technische_daten = card_product.metafields.custom.technische_daten.value %}
 
-            {{ technische_daten | json}}
+            
             {%for item in technische_daten %}
-              <li>{{ item }}</li>            
+              <li>{{ item.value }}</li>            
             {% endfor %}
+
             {% if zusatzoptionen %}
               <div class="location">
                 <p>{{ zusatzoptionen.liegeplatz | escape }}</p>
