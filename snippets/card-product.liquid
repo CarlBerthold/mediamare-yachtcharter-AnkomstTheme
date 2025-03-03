@@ -156,14 +156,12 @@
             </a>
           </h3>
           <div class="card-information">
-            {% liquid
-              assign liegeplatz = product.metafields.Zusatzoptionen.liegeplatz
-            %}
+            {% assign zusatzoptionen = product.metafields.custom.zusatzoptionen.value %}
 
-            {%if liegeplatz != blank %}
-              <span> {{ liegeplatz }} </span>
+            {% if zusatzoptionen %}
+              <p>Liegeplatz: {{ zusatzoptionen.liegeplatz }}</p>
+              <p>Verkauf: {{ zusatzoptionen.Verkauf }}</p>
             {% endif %}
-          <span>{{product.title}}</span>
             
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
