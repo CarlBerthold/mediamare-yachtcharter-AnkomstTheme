@@ -158,10 +158,25 @@
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
 
-            {{ metaobjects['technische_daten']['stine'].value }}
+            <ul>
+              {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
+              
+              {% if technische_daten %}
+                <li>Breite: {{ technische_daten.breite.value }} {{ technische_daten.breite.unit }}</li>
+                <li>Kabinen: {{ technische_daten.kabinen.value }}</li>
+                <li>Länge: {{ technische_daten.lange.value }} {{ technische_daten.lange.unit }}</li>
+                <li>Motorisierung: {{ technische_daten.motorisierung }}</li>
+                <li>Name: {{ technische_daten.name }}</li>
+                <li>Schlafplätze: {{ technische_daten.schlafpl_tze }}</li>
+                <li>Tiefgang: {{ technische_daten.tiefgang.value }} {{ technische_daten.tiefgang.unit }}</li>
+                <li>Treibstofftank: {{ technische_daten.treibstofftank }}</li>
+                <li>Wassertank: {{ technische_daten.wassertank }}</li>
+              {% else %}
+                <li>No technische_daten available.</li>
+              {% endif %}
+            </ul>
         
-             {% comment %}  {% for entry in metaobjects.technische_daten.values %}
-                {{ entry.value }}
+              {% comment %} {% for entry in metaobjects.technische_daten.values %}
                 <ul>
                   <li>Breite: {{ entry.breite.value }} {{ entry.breite.unit }}</li>
                   <li>Kabinen: {{ entry.kabinen.value }}</li>
