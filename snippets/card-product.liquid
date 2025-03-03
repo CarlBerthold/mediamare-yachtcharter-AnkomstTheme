@@ -157,14 +157,13 @@
           </h3>
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
-            {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
+            {% assign technische_daten = card_product.metafields.custom.technische_daten.value | parse_json %}
 
-            {{technische_daten | json}}
 
+
+            {% comment %} {{technische_daten | json}} {% endcomment %}
             <ul>
-              {% for key in technische_daten %}
-                {% assign value = technische_daten[key] %}
-            
+              {% for key, value in technische_daten %}
                 <li>
                   {% if value.value and value.unit %}
                     {{ key }}: {{ value.value }} {{ value.unit }}
@@ -172,7 +171,6 @@
                     {{ key }}: {{ value }}
                   {% endif %}
                 </li>
-            
               {% endfor %}
             </ul>
 
