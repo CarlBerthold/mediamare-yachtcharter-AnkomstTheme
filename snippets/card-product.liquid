@@ -157,21 +157,18 @@
           </h3>
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
-            {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
-
-           
-
+          
             <ul>
-              {% for key, value in technische_daten %}
-                <li>
-                  {% if value.value and value.unit %}
-                    {{ key }}: {{ value.value }} {{ value.unit }}
-                  {% else %}
-                    {{ key }}: {{ value }}
-                  {% endif %}
-                </li>
-              {% endfor %}
-            </ul>
+            {% for key, value in card_product.metafields.custom.technische_daten %}
+              <li>
+                {% if value.value and value.unit %}
+                  {{ key }}: {{ value.value }} {{ value.unit }}
+                {% else %}
+                  {{ key }}: {{ value }}
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
 
 {% comment %}             <span>{{ technische_daten.breite.value }}</span>
  {% endcomment %}
