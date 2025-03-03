@@ -162,13 +162,13 @@
             {% if technische_daten %}
               <ul>
               {% for item in technische_daten %}
-                {% for key, value in item %}
-                  {% if value contains 'value' %}
-                  <li>{{ value.value | escape }}</li>
-                  {% else %}
-                  <li>{{ value | escape }}</li>
-                  {% endif %}
-                {% endfor %}
+              {% for key, value in item %}
+                {% if value contains 'value' and value.value != blank %}
+                <li>{{ value.value | escape }}</li>
+                {% elsif value != blank %}
+                <li>{{ value | escape }}</li>
+                {% endif %}
+              {% endfor %}
               {% endfor %}
               </ul>
             {% endif %}
