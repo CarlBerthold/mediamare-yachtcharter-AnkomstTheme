@@ -157,11 +157,11 @@
           </h3>
           <div class="card-information">
 
-            <ul>
+            <ul class="technische_daten">
               {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
               
               {% if technische_daten %}
-                <li>Breite: {{ technische_daten.breite.value }} {{ technische_daten.breite.unit }}</li>
+                <li class="list-menu">Breite: {{ technische_daten.breite.value }} {{ technische_daten.breite.unit }}</li>
                 <li>Kabinen: {{ technische_daten.kabinen.value }}</li>
                 <li>Länge: {{ technische_daten.lange.value }} {{ technische_daten.lange.unit }}</li>
                 <li>Motorisierung: {{ technische_daten.motorisierung }}</li>
@@ -174,26 +174,11 @@
                 <li>No technische_daten available.</li>
               {% endif %}
             </ul>
-        
-              {% comment %} {% for entry in metaobjects.technische_daten.values %}
-                <ul>
-                  <li>Breite: {{ entry.breite.value }} {{ entry.breite.unit }}</li>
-                  <li>Kabinen: {{ entry.kabinen.value }}</li>
-                  <li>Länge: {{ entry.lange.value }} {{ entry.lange.unit }}</li>
-                  <li>Motorisierung: {{ entry.motorisierung.value }}</li>
-                  <li>Name: {{ entry.name.value }}</li>
-                  <li>Schlafplätze: {{ entry.schlafpl_tze.value }}</li>
-                  <li>Tiefgang: {{ entry.tiefgang.value }} {{ entry.tiefgang.unit }}</li>
-                  <li>Treibstofftank: {{ entry.treibstofftank.value }}</li>
-                  <li>Wassertank: {{ entry.wassertank.value }}</li>
-                </ul>
-              {% endfor %} {% endcomment %}
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
 
             {% if zusatzoptionen %}
 
               <div class="location">
-
                 <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}">{{ zusatzoptionen.liegeplatz | escape }}</a>
               </div>
               <div class="verkauf">
