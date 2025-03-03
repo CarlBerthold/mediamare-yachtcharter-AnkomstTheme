@@ -157,8 +157,10 @@
           </h3>
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
+
+            {{ metaobjects['technische_daten']['stine'] }}
         
-              {% for entry in metaobjects.technische_daten.values %}
+             {% comment %}  {% for entry in metaobjects.technische_daten.values %}
                 {{ entry.value }}
                 <ul>
                   <li>Breite: {{ entry.breite.value }} {{ entry.breite.unit }}</li>
@@ -171,7 +173,7 @@
                   <li>Treibstofftank: {{ entry.treibstofftank.value }}</li>
                   <li>Wassertank: {{ entry.wassertank.value }}</li>
                 </ul>
-              {% endfor %}
+              {% endfor %} {% endcomment %}
 
             {% if zusatzoptionen %}
               <div class="location">
