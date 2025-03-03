@@ -159,15 +159,28 @@
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
             {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
 
-            {{technische_daten | json}}
+            {% comment %} {{technische_daten | json}} {% endcomment %}
 
+            <div class="technische-daten">
+              {% if technische_daten %}
+                <ul>
+                  {% for key, value in technische_daten %}
+                    <li>
+                      <strong>{{ key | escape }}:</strong>
+                      {% if value contains 'value' and value.value != blank %}
+                        {{ value.value | escape }} {{ value.unit | escape }}
+                      {% else %}
+                        {{ value | escape }}
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              <p>{{ technische_daten.laenge.label | escape }}</p>
+
+              </div>
             <span>{{ technische_daten.breite.value }}</span>
-
-            {%for data in technische_daten %}
-              {%for value in data  %}
-              <span>{{ value }}</span>
-              {%endfor%}
-            {% endfor %}
 
 
             {% if zusatzoptionen %}
