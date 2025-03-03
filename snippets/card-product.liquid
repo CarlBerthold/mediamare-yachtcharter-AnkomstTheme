@@ -156,6 +156,10 @@
             </a>
           </h3>
           <div class="card-information">
+            {% for metafield in product.metafields %}
+              <p>Namespace: {{ metafield | first }}</p>
+              <p>Value: {{ metafield | last }}</p>
+            {% endfor %}
             <pre>{{ product.metafields | json }}</pre>
           
             {%- if show_vendor -%}
