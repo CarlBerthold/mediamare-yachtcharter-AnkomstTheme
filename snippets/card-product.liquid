@@ -158,7 +158,7 @@
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
             <ul>
-              {% assign technische_daten = card_product.metafields.custom.technische_daten %}
+              {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
               
               {% if technische_daten %}
                 <li>Breite: {{ technische_daten.breite.value }}</li>
