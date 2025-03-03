@@ -159,8 +159,9 @@
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
             {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
 
-
+            <span>pre</span>
             {% if technische_daten %}
+              <span>test</span>
               <ul>
                 {% for key, value in technische_daten %}
                   <li>
