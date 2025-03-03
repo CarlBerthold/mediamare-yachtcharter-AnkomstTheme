@@ -161,7 +161,7 @@
 
             {{technische_daten | json}}
 
-            {% if technische_daten %}
+            {% comment %} {% if technische_daten %}
               <ul>
               {% for item in technische_daten %}
               {% for key, value in item %}
@@ -173,7 +173,7 @@
               {% endfor %}
               {% endfor %}
               </ul>
-            {% endif %}
+            {% endif %} {% endcomment %}
 
             {% if zusatzoptionen %}
               <div class="location">
