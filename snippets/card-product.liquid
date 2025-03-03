@@ -161,6 +161,21 @@
 
             {{technische_daten | json}}
 
+            <ul>
+              {% for key in technische_daten %}
+                {% assign value = technische_daten[key] %}
+            
+                <li>
+                  {% if value.value and value.unit %}
+                    {{ key }}: {{ value.value }} {{ value.unit }}
+                  {% else %}
+                    {{ key }}: {{ value }}
+                  {% endif %}
+                </li>
+            
+              {% endfor %}
+            </ul>
+
             <span>{{ technische_daten.breite.value }}</span>
 
 
