@@ -161,7 +161,7 @@
 
             {{ technische_daten | json}}
             {%for item in technische_daten %}
-              <li><span>{{technische_daten.key}}</span> {{ item }}</li>            
+              <li>{{ item }}</li>            
             {% endfor %}
             {% if zusatzoptionen %}
               <div class="location">
