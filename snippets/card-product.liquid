@@ -160,7 +160,7 @@
             {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
 
 
-            {% comment %} {% if technische_daten %}
+            {% if technische_daten %}
               <ul>
                 {% for key, value in technische_daten %}
                   <li>
@@ -173,7 +173,7 @@
                   </li>
                 {% endfor %}
               </ul>
-            {% endif %} {% endcomment %}
+            {% endif %}
 
             {% if zusatzoptionen %}
               <div class="location">
