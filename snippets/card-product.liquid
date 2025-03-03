@@ -157,7 +157,7 @@
           </h3>
           <div class="card-information">
             {% assign zusatzoptionen = product.metafields.custom.zusatzoptionen.value %}
-
+            {{ zusatzoptionen }}
             {% if zusatzoptionen %}
               <p>Liegeplatz: {{ zusatzoptionen.liegeplatz }}</p>
               <p>Verkauf: {{ zusatzoptionen.Verkauf }}</p>
