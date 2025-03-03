@@ -158,23 +158,21 @@
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
           
-            <ul>
-              {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
+           
               
-              {% if technische_daten %}
-                <li>Breite: {{ technische_daten.breite.value }}</li>
-                <li>Kabinen: {{ technische_daten.kabinen.value }}</li>
-                <li>Länge: {{ technische_daten.lange.value }}</li>
-                <li>Motorisierung: {{ technische_daten.motorisierung }}</li>
-                <li>Name: {{ technische_daten.name }}</li>
-                <li>Schlafplätze: {{ technische_daten.schlafpl_tze }}</li>
-                <li>Tiefgang: {{ technische_daten.tiefgang.value }}</li>
-                <li>Treibstofftank: {{ technische_daten.treibstofftank }}</li>
-                <li>Wassertank: {{ technische_daten.wassertank }}</li>
-              {% else %}
-                <li>No technische_daten available.</li>
-              {% endif %}
-            </ul>
+              {% for entry in metaobjects.technische_daten.values %}
+                <ul>
+                  <li>Breite: {{ entry.breite.value }} {{ entry.breite.unit }}</li>
+                  <li>Kabinen: {{ entry.kabinen.value }}</li>
+                  <li>Länge: {{ entry.lange.value }} {{ entry.lange.unit }}</li>
+                  <li>Motorisierung: {{ entry.motorisierung.value }}</li>
+                  <li>Name: {{ entry.name.value }}</li>
+                  <li>Schlafplätze: {{ entry.schlafpl_tze.value }}</li>
+                  <li>Tiefgang: {{ entry.tiefgang.value }} {{ entry.tiefgang.unit }}</li>
+                  <li>Treibstofftank: {{ entry.treibstofftank.value }}</li>
+                  <li>Wassertank: {{ entry.wassertank.value }}</li>
+                </ul>
+              {% endfor %}
 
             {% if zusatzoptionen %}
               <div class="location">
