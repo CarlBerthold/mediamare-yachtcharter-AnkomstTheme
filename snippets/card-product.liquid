@@ -156,7 +156,7 @@
             </a>
           </h3>
           <div class="card-information">
-            <pre>{{ product.metafields.Zusatzoptionen | json }}</pre>
+            <pre>{{ product.metafields | json }}</pre>
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
             {% comment %} {{ zusatzoptionen }} {% endcomment %}
             {% if Zusatzoptionen %}
