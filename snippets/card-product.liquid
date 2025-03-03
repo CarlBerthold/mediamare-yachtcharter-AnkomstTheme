@@ -157,11 +157,13 @@
           </h3>
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
-            <ul>
+            {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
+
+            {% comment %} <ul>
               {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
               
               {% if technische_daten %}
-                <li>Breite: {{ technische_daten.breite.value }}</li>
+                <li>Breite: {{ technische_daten.breite.value }} {{ technische_daten.breite.unit }}</li>
                 <li>Kabinen: {{ technische_daten.kabinen.value }}</li>
                 <li>Länge: {{ technische_daten.lange.value }} {{ technische_daten.lange.unit }}</li>
                 <li>Motorisierung: {{ technische_daten.motorisierung }}</li>
@@ -173,6 +175,18 @@
               {% else %}
                 <li>No technische_daten available.</li>
               {% endif %}
+            </ul> {% endcomment %}
+
+            <ul>
+              {% for key, value in technische_daten %}
+                <li>
+                  {% if value.value and value.unit %}
+                    {{ key }}: {{ value.value }} {{ value.unit }}
+                  {% else %}
+                    {{ key }}: {{ value }}
+                  {% endif %}
+                </li>
+              {% endfor %}
             </ul>
 
             <span>{{ technische_daten.breite.value }}</span>
