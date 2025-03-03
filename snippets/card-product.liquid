@@ -163,10 +163,12 @@
 
             <span>{{ technische_daten.breite.value }}</span>
 
-            {%for data in technische_daten.value %}
-              <span>{{ data }}</span>
+            {%for data in technische_daten %}
+              {%for value in data  %}
+              <span>{{ value }}</span>
+              {%endfor%}
             {% endfor %}
-            
+
 
             {% if zusatzoptionen %}
               <div class="location">
