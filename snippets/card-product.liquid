@@ -161,6 +161,8 @@
 
             {{technische_daten | json}}
 
+            <span>{{ technische_daten.breite.value }} :{{ technische_daten.breite.unit }} </span>
+
             {% if zusatzoptionen %}
               <div class="location">
                 <p>{{ zusatzoptionen.liegeplatz | escape }}</p>
