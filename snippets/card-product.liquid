@@ -162,7 +162,7 @@
               {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
               
               {% if technische_daten %}
-                <li>{{ technische_daten.breite.value }} {{ technische_daten.breite.unit }}</li>
+                <li>Breite: {{ technische_daten.breite.value }}</li>
                 <li>Kabinen: {{ technische_daten.kabinen.value }}</li>
                 <li>Länge: {{ technische_daten.lange.value }} {{ technische_daten.lange.unit }}</li>
                 <li>Motorisierung: {{ technische_daten.motorisierung }}</li>
