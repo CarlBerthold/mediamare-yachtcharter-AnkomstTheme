@@ -156,7 +156,6 @@
             </a>
           </h3>
           <div class="card-information">
-            {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
 
             <ul>
               {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
@@ -189,12 +188,12 @@
                   <li>Wassertank: {{ entry.wassertank.value }}</li>
                 </ul>
               {% endfor %} {% endcomment %}
+            {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
 
             {% if zusatzoptionen %}
 
-              
-
               <div class="location">
+
                 <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}">{{ zusatzoptionen.liegeplatz | escape }}</a>
               </div>
               <div class="verkauf">
