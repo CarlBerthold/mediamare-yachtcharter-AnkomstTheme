@@ -159,7 +159,7 @@
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
             {% assign technische_daten = card_product.metafields.custom.technische_daten.value | parse_json %}
 
-
+            <pre>{{ technische_daten | json }}</pre> <!-- Debugging line to output the parsed JSON -->
 
             <ul>
               {% for key, value in technische_daten %}
