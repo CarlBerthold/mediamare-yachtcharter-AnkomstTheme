@@ -161,7 +161,7 @@
 
 
 
-            <ul>
+            {% comment %} <ul>
               {% for key, value in technische_daten %}
                 <li>
                   {% if value.value and value.unit %}
@@ -171,7 +171,7 @@
                   {% endif %}
                 </li>
               {% endfor %}
-            </ul>
+            </ul> {% endcomment %}
 
             <span>{{ technische_daten.breite.value }}</span>
 
