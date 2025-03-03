@@ -83,13 +83,32 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_rhbPLd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IF_Hoppas_Origina_800x600_1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_aYdBcn",
         "slide_RxQKDy",
         "slide_EjQpkk",
-        "slide_rgUmGa"
+        "slide_rgUmGa",
+        "slide_rhbPLd"
       ],
       "settings": {
         "layout": "full_bleed",
