@@ -191,8 +191,11 @@
               {% endfor %} {% endcomment %}
 
             {% if zusatzoptionen %}
+
+              
+
               <div class="location">
-                <p>{{ zusatzoptionen.liegeplatz | escape }}</p>
+                <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}">{{ zusatzoptionen.liegeplatz | escape }}</a>
               </div>
               <div class="verkauf">
                 <p>{{ zusatzoptionen.verkauf | escape }}</p>
