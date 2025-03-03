@@ -2438,6 +2438,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
       '. title .';
     grid-template-columns: 1fr auto 1fr;
     column-gap: 2rem;
+    align-items: flex-start;
   }
 
   .header--middle-center a.header__heading-link {
