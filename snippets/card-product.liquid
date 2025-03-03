@@ -160,11 +160,11 @@
             {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
 
 
-            {{metaobject.technische_daten.stine }}
+            {{metaobjects.technische_daten.stine }}
             {% if technische_daten %}
               <ul>
-              {% for item in technische_daten %}
-                <li>{{ item | escape }}</li>
+              {% for item in metaobjects.technische_daten.values %}
+                <li>{{ item.value | escape }}</li>
               {% endfor %}
               </ul>
             {% endif %}
