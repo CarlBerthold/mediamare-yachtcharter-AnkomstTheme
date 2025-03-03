@@ -157,10 +157,9 @@
           </h3>
           <div class="card-information">
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
-          
-           
-              
+        
               {% for entry in metaobjects.technische_daten.values %}
+                {{ entry.value }}
                 <ul>
                   <li>Breite: {{ entry.breite.value }} {{ entry.breite.unit }}</li>
                   <li>Kabinen: {{ entry.kabinen.value }}</li>
