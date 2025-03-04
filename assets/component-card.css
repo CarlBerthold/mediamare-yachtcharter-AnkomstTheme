@@ -300,6 +300,8 @@
     transform: scale(1.03);
   }
 
+ 
+
   /* .underline-links-hover:hover a {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
@@ -370,6 +372,14 @@
   text-decoration: none;
   color: currentColor;
   display: block;
+}
+
+.link-liegeplatz:hover {
+  text-decoration: underline;
+}
+
+a#CardLink-template--23326941544784__main-collection-product-grid-8770540110160:hover {
+  text-decoration: underline;
 }
 
 .card-information {
