@@ -367,6 +367,9 @@
 .link-liegeplatz {
   position: relative;
   z-index: 2;
+  text-decoration: none;
+  color: currentColor;
+  display: block;
 }
 
 .card-information {
