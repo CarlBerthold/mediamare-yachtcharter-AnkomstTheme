@@ -23,6 +23,7 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -179,7 +180,7 @@
             {% if zusatzoptionen %}
 
               <div class="location">
-                <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
+                <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
               </div>
               <div class="verkauf">
                 <p>{{ zusatzoptionen.verkauf | escape }}</p>
