@@ -385,7 +385,6 @@ a#CardLink-template--23326941544784__main-collection-product-grid-8770540110160:
 .technische_daten {
   list-style: none;
   padding:0;
-  color: #373A3B;
 }
 
 .card-information {
@@ -394,7 +393,7 @@ a#CardLink-template--23326941544784__main-collection-product-grid-8770540110160:
 
 .card-information > * {
   line-height: calc(1 + 0.4 / var(--font-body-scale));
-  color: rgb(var(--color-foreground));
+  color: #373A3B;
 }
 
 .card-information > .price {
