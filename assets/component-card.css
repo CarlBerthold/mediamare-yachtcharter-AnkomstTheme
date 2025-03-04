@@ -397,11 +397,15 @@ a#CardLink-template--23326941544784__main-collection-product-grid-8770540110160:
 }
 
 .card-information > .price {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
+  color: #373A3B;
+
 }
 
 .card--horizontal .card-information > .price {
-  color: rgba(var(--color-foreground), 0.75);
+  /* color: rgba(var(--color-foreground), 0.75); */
+  color: #373A3B;
+
 }
 
 .card-information > .rating {
