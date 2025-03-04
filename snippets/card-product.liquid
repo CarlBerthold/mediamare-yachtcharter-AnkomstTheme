@@ -172,13 +172,12 @@
                 <li>Treibstofftank: {{ technische_daten.treibstofftank }}</li>
                 <li>Wassertank: {{ technische_daten.wassertank }}</li>
               {% else %}
-                <li>No technische_daten available.</li>
+                <span style="display: none;"></span>
               {% endif %}
             </ul>
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
 
             {% if zusatzoptionen %}
-
               <div class="location">
                 <h3 class="{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}">
                   <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
