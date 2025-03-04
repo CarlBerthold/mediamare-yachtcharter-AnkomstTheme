@@ -179,7 +179,7 @@
 
             {% if zusatzoptionen %}
 
-              <div class="location">
+              <div class="location {% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}">
                 <h3>
                   <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
                 </h3>
