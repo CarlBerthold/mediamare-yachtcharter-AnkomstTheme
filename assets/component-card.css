@@ -364,6 +364,11 @@
   margin-top: 0.5rem;
 }
 
+.card-information > a.link-liegeplatz {
+  position: relative;
+  z-index: 2;
+}
+
 .card-information {
   width: 100%;
 }
