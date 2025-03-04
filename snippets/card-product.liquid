@@ -141,8 +141,8 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3
-            class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
+          <h5
+            class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h3{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
@@ -155,7 +155,7 @@
             >
               {{ card_product.title | escape }}
             </a>
-          </h3>
+          </h5>
           <div class="card-information">
 
             <ul class="technische_daten">
@@ -179,9 +179,9 @@
 
             {% if zusatzoptionen %}
               <div class="location">
-                <h3 class="{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}">
+                <h5 class="{% if card_product.featured_media or settings.card_style == 'standard' %} h3{% endif %}">
                   <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
-                </h3>
+                </h5>
               </div>
               <div class="verkauf">
                 <p>{{ zusatzoptionen.verkauf | escape }}</p>

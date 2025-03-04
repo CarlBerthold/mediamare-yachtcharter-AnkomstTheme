@@ -382,6 +382,12 @@ a#CardLink-template--23326941544784__main-collection-product-grid-8770540110160:
   text-decoration: underline;
 }
 
+.technische_daten {
+  list-style: none;
+  padding:0;
+  color: #373A3B;
+}
+
 .card-information {
   width: 100%;
 }
