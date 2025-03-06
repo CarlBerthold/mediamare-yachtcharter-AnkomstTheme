@@ -419,7 +419,8 @@ a#CardLink-template--23326941544784__main-collection-product-grid-8770540110160:
 }
 
 .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
-  margin-top: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-information .caption {
