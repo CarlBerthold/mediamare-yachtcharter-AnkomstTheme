@@ -234,13 +234,7 @@
               </div>
             {%- endif -%}
 
-            {% if zusatzoptionen %}
-            <div class="location">
-              <span class="location">
-                <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
-              </span>
-          </div>
-          {% endif %}
+            
         </div>
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
@@ -339,6 +333,14 @@
             {%- endif -%}
           </div>
         {%- endif -%}
+
+        {% if zusatzoptionen %}
+          <div class="location">
+            <span class="location">
+              <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
+            </span>
+        </div>
+        {% endif %}
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span
