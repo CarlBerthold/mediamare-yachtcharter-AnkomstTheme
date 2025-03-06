@@ -173,13 +173,9 @@
             {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
 
             {% if zusatzoptionen %}
-              <div class="location">
-                <span class="location">
-                  <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
-                </span>
-              </div>
               <div class="verkauf">
-                <span class="h5">{{ zusatzoptionen.verkauf | escape }}</span>
+                <p class="verkaufs-text">{{ zusatzoptionen.verkauf | escape }}</p>
+                <span class="verkaufs-preis">{{ zusatzoptionen.verkauf | escape }}</span>
               </div>
             {% endif %}
     
@@ -237,7 +233,14 @@
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
             {%- endif -%}
+
+            {% if zusatzoptionen %}
+            <div class="location">
+              <span class="location">
+                <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
+              </span>
           </div>
+          {% endif %}
         </div>
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
