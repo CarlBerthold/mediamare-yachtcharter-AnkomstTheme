@@ -387,10 +387,9 @@ a#CardLink-template--23326941544784__main-collection-product-grid-8770540110160:
   padding:0;
 }
 
-/* .verkaufs-text {
-  color: #373A3B;
-
-} */
+.verkaufs-text {
+  margin: 0;
+}
 
 .card-information {
   width: 100%;
