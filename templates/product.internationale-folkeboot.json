@@ -36,6 +36,7 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
@@ -43,16 +44,8 @@
         },
         "izyrent_product_calendar_6Jq9de": {
           "type": "shopify://apps/izyrent/blocks/productCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
-          "disabled": true,
           "settings": {
             "product": "{{ product }}"
-          }
-        },
-        "rental_booking_rental_booking_AAGnCP": {
-          "type": "shopify://apps/rental-booking/blocks/rental_booking/13c4ed99-bd4f-4e0b-a4ec-ec19dfe168ea",
-          "settings": {
-            "product": "{{product}}",
-            "colour": "#1d71b8"
           }
         },
         "description": {
@@ -122,7 +115,6 @@
         "price",
         "variant_picker",
         "izyrent_product_calendar_6Jq9de",
-        "rental_booking_rental_booking_AAGnCP",
         "description",
         "quantity_selector",
         "buy_buttons",
@@ -306,18 +298,6 @@
     },
     "1708685992d24cb613": {
       "type": "apps",
-      "blocks": {
-        "rental_booking_rental_booking_gBTcRh": {
-          "type": "shopify://apps/rental-booking/blocks/rental_booking/13c4ed99-bd4f-4e0b-a4ec-ec19dfe168ea",
-          "settings": {
-            "product": "{{product}}",
-            "colour": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "rental_booking_rental_booking_gBTcRh"
-      ],
       "settings": {
         "include_margins": true
       }
