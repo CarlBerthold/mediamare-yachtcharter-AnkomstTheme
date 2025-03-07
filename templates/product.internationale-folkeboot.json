@@ -52,7 +52,7 @@
           "type": "shopify://apps/rental-booking/blocks/rental_booking/13c4ed99-bd4f-4e0b-a4ec-ec19dfe168ea",
           "settings": {
             "product": "{{product}}",
-            "colour": "#000000"
+            "colour": "#1d71b8"
           }
         },
         "description": {
