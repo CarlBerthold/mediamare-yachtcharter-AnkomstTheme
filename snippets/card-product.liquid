@@ -160,10 +160,12 @@
 
             <ul class="technische_daten">
               {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
-              {%assign ausstattung = card_product.metafields.custom.ausstattung.value %}
+              {% assign ausstattung = card_product.metafields.custom.ausstattung.value %}
               
               {% if technische_daten %}
-                <li>Kabinen: {{ ausstattung.kabinen.value }}</li>
+                {% if ausstattung.kabinen.value %}
+                  <li>Kabinen: {{ ausstattung.kabinen.value }}</li>
+                {% endif %}
                 <li>Schlafplätze: {{ ausstattung.schlafplaetze }}</li>
                 <li>Tiefgang: {{ technische_daten.tiefgang.value }} {{ technische_daten.tiefgang.unit }}</li>
                 
