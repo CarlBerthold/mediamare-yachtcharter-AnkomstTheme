@@ -175,7 +175,7 @@
                 <li>Sanitär: {{ ausstattung.sanitaer.value | escape }}</li>
                 {% endif %}
 
-                {% if zusatzoptionen %}
+                {% if zusatzoptionen != blank %}
                 <li>Fahrzone: {{ zusatzoptionen.fahrzone | escape }}</li>
                 <li>Führerschein: {{ zusatzoptionen.fuehrerschein | escape }}</li>
                 <li>Funkschein: {{ zusatzoptionen.funkschein | escape }}</li>
