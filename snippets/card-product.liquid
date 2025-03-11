@@ -162,12 +162,21 @@
               {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
               {% assign ausstattung = card_product.metafields.custom.ausstattung.value %}
               
+              
               {% if technische_daten %}
+                <li>Tiefgang: {{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</li>
+                <li>Motorisierung: {{ technische_daten.motorisierung.value | escape }}</li>
+
                 {% if ausstattung.kabinen.value %}
-                  <li>Kabinen: {{ ausstattung.kabinen.value }}</li>
+                  <li>Kabinen: {{ ausstattung.kabinen.value | escape }}</li>
                 {% endif %}
                 <li>Schlafplätze: {{ ausstattung.schlafplaetze }}</li>
-                <li>Tiefgang: {{ technische_daten.tiefgang.value }} {{ technische_daten.tiefgang.unit }}</li>
+                <li>Sanitär: {{ ausstattung.sanitaer.value | escape }}</li>
+
+                <li>Fahrzone: {{ zusatzoptionen.fahrzone | escape }}</li>
+                <li>Führerschein: {{ zusatzoptionen.fuehrerschein | escape }}</li>
+                <li>Funkschein: {{ zusatzoptionen.funkschein | escape }}</li>
+
                 
               {% else %}
                 <span style="display: none;"></span>
