@@ -175,7 +175,7 @@
                 <li>Sanitär: {{ ausstattung.sanitaer.value | escape }}</li>
                 {% endif %}
 
-                {% if zusatzoptionen != blank %}
+                {% if zusatzoptionen %}
                 <li>Fahrzone: {{ zusatzoptionen.fahrzone | escape }}</li>
                 <li>Führerschein: {{ zusatzoptionen.fuehrerschein | escape }}</li>
                 <li>Funkschein: {{ zusatzoptionen.funkschein | escape }}</li>
@@ -183,6 +183,14 @@
                 
               {% else %}
                 <span style="display: none;"></span>
+              {% endif %}
+              
+              {% if zusatzoptionen %}
+                <div class="location">
+                  <span class="location">
+                    <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
+                  </span>
+              </div>
               {% endif %}
             </ul>
 
@@ -348,13 +356,7 @@
           </div>
         {%- endif -%}
 
-        {% if zusatzoptionen %}
-          <div class="location">
-            <span class="location">
-              <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: {{ zusatzoptionen.liegeplatz | escape }}</a>
-            </span>
-        </div>
-        {% endif %}
+        
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span
