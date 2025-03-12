@@ -31,8 +31,13 @@
             "text_style": "uppercase"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {}
         },
         "variant_picker": {
@@ -102,16 +107,13 @@
             "content": "<p>{{ product.metafields.custom.reinigungshinweis | metafield_tag }}</p>",
             "page": ""
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         }
       },
       "block_order": [
         "text",
         "title",
         "text_Ww6bmx",
+        "description",
         "price",
         "variant_picker",
         "izyrent_product_calendar_6Jq9de",
@@ -121,8 +123,7 @@
         "collapsible_tab_QJyHjf",
         "collapsible_tab_pCXNpX",
         "collapsible_tab_79fgYa",
-        "collapsible_tab_ap6MUd",
-        "description"
+        "collapsible_tab_ap6MUd"
       ],
       "custom_css": [
         "a[title=\"Führerscheinklasse\"] {color: red;}",
