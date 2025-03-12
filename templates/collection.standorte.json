@@ -141,12 +141,20 @@
           "settings": {
             "collection": "karlshamn-se"
           }
+        },
+        "featured_collection_w9iyik": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
         "featured_collection_LLt8yp",
         "featured_collection_qPpzAN",
-        "featured_collection_EXF8dd"
+        "featured_collection_EXF8dd",
+        "featured_collection_w9iyik"
       ],
       "settings": {
         "title": "{{ collection.title }}",
