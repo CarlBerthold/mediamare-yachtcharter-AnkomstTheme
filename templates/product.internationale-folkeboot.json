@@ -12,6 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "custom_liquid_7z4wcQ": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
         "text": {
           "type": "text",
           "disabled": true,
@@ -46,12 +52,6 @@
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
-          }
-        },
-        "izyrent_product_calendar_6Jq9de": {
-          "type": "shopify://apps/izyrent/blocks/productCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
-          "settings": {
-            "product": "{{ product }}"
           }
         },
         "quantity_selector": {
@@ -110,13 +110,13 @@
         }
       },
       "block_order": [
+        "custom_liquid_7z4wcQ",
         "text",
         "title",
         "text_Ww6bmx",
         "description",
         "price",
         "variant_picker",
-        "izyrent_product_calendar_6Jq9de",
         "quantity_selector",
         "buy_buttons",
         "share",
