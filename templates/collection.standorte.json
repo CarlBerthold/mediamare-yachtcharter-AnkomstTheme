@@ -15,7 +15,7 @@
         "slide_mkzwQ4": {
           "type": "slide",
           "settings": {
-            "image": "{{ collection.metafields.custom.herobilder.value.slide_1.value }}",
+            "image": "shopify://shop_images/Standort_Krummin540x400.jpg",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
