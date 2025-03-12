@@ -46,6 +46,7 @@
         "text_agY6nA",
         "buttons_XxjVLe"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Athmo_1440x600_3b0b3b93-d60a-4303-8ae1-6fec2f03b035.jpg",
         "image_overlay_opacity": 0,
@@ -58,6 +59,116 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "slideshow_FXP7V9": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_FpCPDr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Flotte_Stine_4096x2731_c053f516-7387-4432-9bfd-6ef3bdafe484.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_BFzzPg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Flotte_MB_Angelina_4096x2731_f1b3fdbe-a43a-4d11-a577-962e51a76b9b.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_htPjJt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Flotte_Sonic_4096x2731_e6a0bc61-dc6d-45f1-bc45-60cb2f1d0f37.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_GkfcMJ": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_7T9TmK": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FpCPDr",
+        "slide_BFzzPg",
+        "slide_htPjJt",
+        "slide_GkfcMJ",
+        "slide_7T9TmK"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "main-collection-banner": {
@@ -131,6 +242,7 @@
   },
   "order": [
     "image_banner_7gbHM9",
+    "slideshow_FXP7V9",
     "main-collection-banner",
     "collection_list_WTjCG4",
     "main-collection-product-grid"
