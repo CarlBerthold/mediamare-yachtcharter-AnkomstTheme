@@ -71,7 +71,7 @@
         "collapsible_tab_QJyHjf": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Ausstattung der {{ product.metafields.custom.ausstattung.value.hoppas.value }}",
+            "heading": "Ausstattung",
             "icon": "none",
             "content": "<p>Rumpfmaterial/ Aufbau:</p><ul><li>{{ product.metafields.custom.ausstattung.value.aufbau.value }}</li></ul><p>Innenausbau:</p><ul><li>{{ product.metafields.custom.ausstattung.value.innenausstattung | metafield_text }}</li></ul><p></p><p>Sicherheitsausrüstung: </p><ul><li>{{ product.metafields.custom.ausstattung.value.sicherheitsausrustung | metafield_text }}</li></ul><p>Navigation:</p><ul><li>{{ product.metafields.custom.ausstattung.value.navigation | metafield_text }}</li></ul><p>Bordinstrumente:</p><ul><li>{{ product.metafields.custom.ausstattung.value.bordinstrumente | metafield_text }}</li></ul><p>Elektrik: </p><ul><li>{{ product.metafields.custom.ausstattung.value.elektrik | metafield_text }}</li></ul><p>Pantry: </p><ul><li>{{ product.metafields.custom.ausstattung.value.pantry | metafield_text }}</li></ul>",
             "page": ""
@@ -82,7 +82,7 @@
           "settings": {
             "heading": "Technische Daten der {{ product.metafields.custom.ausstattung.value.hoppas.value }}",
             "icon": "ruler",
-            "content": "<ul><li>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</li><li>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</li><li>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</li><li>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</li><li>Segelfläche: {{ product.metafields.custom.technische_daten.value.segelflache.value }}</li></ul>",
+            "content": "<ul><li>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</li><li>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</li><li>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</li><li>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</li><li>Liegeplatz: {{ metaobjects.zusatzoptionen[\"naturhafen-krummin\"].liegeplatz.value }}</li></ul>",
             "page": ""
           }
         },
