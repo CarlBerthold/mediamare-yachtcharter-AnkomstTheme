@@ -82,7 +82,7 @@
           "settings": {
             "heading": "Technische Daten der {{ product.metafields.custom.ausstattung.value.hoppas.value }}",
             "icon": "ruler",
-            "content": "<ul><li>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</li><li>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</li><li>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</li><li>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</li><li>Liegeplatz: {{ metaobjects.zusatzoptionen[\"naturhafen-krummin\"].liegeplatz.value }}</li></ul>",
+            "content": "<ul><li>Liegeplatz: {{ metaobjects.zusatzoptionen[\"naturhafen-krummin\"].liegeplatz.value }}</li><li>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</li><li>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</li><li>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</li><li>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</li><li>Motoriserung: {{ metaobjects.technische_daten.stine.motorisierung.value }}</li></ul>",
             "page": ""
           }
         },
