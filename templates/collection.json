@@ -33,24 +33,44 @@
         "slide_BmF96X": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify://shop_images/Home_IF_Boote_5_4096x2731_8da6777c-7e40-486f-86cd-fb10787e71cd.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_wa6Mq3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Home_IF_Boote_3_4096x2731_728b26ad-ce8a-4cc9-88ad-87d5d8406dd1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
         "slide_DBCebi",
-        "slide_BmF96X"
+        "slide_BmF96X",
+        "slide_wa6Mq3"
       ],
       "settings": {
         "layout": "full_bleed",
