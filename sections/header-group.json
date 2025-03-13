@@ -39,7 +39,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "pageTitle": "ANKOMST",
+        "pageTitle": "{{ metaobjects.seitentitel.ankomst.titel.value }}",
         "brandName": "MEDIAMARE YACHTCHARTER ANKOMST",
         "backgroundImage": "shopify://shop_images/Paperwall_1920x335_2abb35a0-b640-419d-9669-2f951ed08df6.jpg",
         "coordinatesNorth": "54°02'48.6\"N",
