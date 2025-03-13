@@ -221,7 +221,7 @@
             "range": false,
             "maxdates": 5,
             "mindays": 0,
-            "collection": "boote-1",
+            "collection": "flotte",
             "filter-options": true,
             "filter-tags": false,
             "description": false,
