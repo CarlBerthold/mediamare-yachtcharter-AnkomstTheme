@@ -239,7 +239,7 @@
     {% if section.settings.brandName != blank %}
       <div class="brand-name h2">
         <span>{{ section.settings.brandName }}</span>
-      </div>
+      </div> 
     {% endif %}
       
 
@@ -446,9 +446,12 @@
     <div class="pageTitle h1">
       <p>{{ page.url }}</p> 
       <p>{{ page.title }}</p>
-      {{ request.path }}
-      {{ root_url }}
       
+      <p>{{ request.path }}</p>
+      <p>{{ routes.root_url }}</p>
+      <p>{{ routes.collections_url }}</p>
+
+
   
 
       <span>{{ section.settings.pageTitle }}</span>
