@@ -80,7 +80,7 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <span class="price-item price-item--regular">
           <div class="dauer">
-          {{ money_price }} {{ product.metafields.mietdauereinheit.value }}
+          {{ money_price }} {{ product.metafields.custom.mietdauereinheit }}
           </div>
         </span>
       {%- endif -%}
