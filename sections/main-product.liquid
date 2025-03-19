@@ -201,8 +201,6 @@
                   {{- product.selected_or_first_available_variant.sku -}}
                 </p>
               {%- when 'custom_liquid' -%}
-                <span>here with custom liquid</span>
-              {%- when 'custom_liquid' -%}
                 <div class="saisonpreise">
                   {% assign saisonpreise = product.metafields.custom.saisonpreise.value %}
                   <ul>
@@ -220,6 +218,36 @@
                     </li>
                   </ul>
                 </div>
+                <div class="saisonpreise">
+                  {% assign saisonpreise = product.metafields.custom.saisonpreise.value %}
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Saison</th>
+                        <th>Zeitraum</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Vorsaison:</strong></td>
+                        <td>{{ saisonpreise.vorsaison.value | escape }}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Zwischensaison:</strong></td>
+                        <td>{{ saisonpreise.zwischensaison.value | escape }}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hauptsaison:</strong></td>
+                        <td>{{ saisonpreise.hauptsaison.value | escape }}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Nachsaison:</strong></td>
+                        <td>{{ saisonpreise.nachsaison.value | escape }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
