@@ -60,13 +60,6 @@
           "type": "description",
           "settings": {}
         },
-        "text_AV4pNJ": {
-          "type": "text",
-          "settings": {
-            "text": "{{ metaobjects.saisonpreise.stine.vorsaisonspreis.value }}{{ metaobjects.saisonpreise.stine.zwischensaison.value }}{{ metaobjects.saisonpreise.stine.hauptsaison.value }}{{ metaobjects.saisonpreise.stine.zwischensaison.value }}{{ metaobjects.saisonpreise.stine.nachsaison.value }}",
-            "text_style": "body"
-          }
-        },
         "custom_liquid_Ba7HDb": {
           "type": "custom_liquid",
           "settings": {
@@ -165,7 +158,6 @@
         "text_Ww6bmx",
         "text_xrfCDT",
         "description",
-        "text_AV4pNJ",
         "custom_liquid_Ba7HDb",
         "complementary_mGqWXJ",
         "price",
