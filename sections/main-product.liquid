@@ -204,10 +204,11 @@
                 <span>here with custom liquid</span>
               {%- when 'custom_liquid' -%}
                 <div class="saisonpreise">
+                  {% assign saisonpreise = product.metafields.custom.zusatzoptionen.value %}
                   <h3>{{ product.metafields.custom.saisonpreise.anzeigename }}</h3>
                   <ul>
                     <li>
-                      <strong>Vorsaison:</strong> {{ product.metafields.custom.saisonpreise.vorsaison }} - {{ product.metafields.custom.saisonpreise.vorsaisonspreis }}
+                      <strong>Vorsaison:</strong> {{ saisonpreise.vorsaison.value | escape }}
                     </li>
                     <li>
                       <strong>Zwischensaison:</strong> {{ product.metafields.custom.saisonpreise.zwischensaison }}
