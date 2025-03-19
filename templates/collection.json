@@ -173,47 +173,6 @@
         "show_text_below": true
       }
     },
-    "collection_list_WTjCG4": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_KqCcpd": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "if-folkeboote"
-          }
-        },
-        "featured_collection_fePGDU": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "motorboote"
-          }
-        },
-        "featured_collection_pFTe7T": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hochseeyacht"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_KqCcpd",
-        "featured_collection_fePGDU",
-        "featured_collection_pFTe7T"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "{{ collection.title }}",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main-collection-banner": {
       "type": "main-collection-banner",
       "custom_css": [
@@ -244,13 +203,53 @@
         "padding_top": 20,
         "padding_bottom": 68
       }
+    },
+    "collection_list_WTjCG4": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_KqCcpd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "if-folkeboote"
+          }
+        },
+        "featured_collection_fePGDU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "motorboote"
+          }
+        },
+        "featured_collection_pFTe7T": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hochseeyacht"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_KqCcpd",
+        "featured_collection_fePGDU",
+        "featured_collection_pFTe7T"
+      ],
+      "settings": {
+        "title": "Flotte",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "slideshow_R8tN3k",
     "image_banner_7gbHM9",
-    "collection_list_WTjCG4",
     "main-collection-banner",
-    "main-collection-product-grid"
+    "main-collection-product-grid",
+    "collection_list_WTjCG4"
   ]
 }
