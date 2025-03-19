@@ -448,11 +448,11 @@
       {% if request.path == "/" %}
         <span>ANKOMST</span>
       {% elsif path_parts[1] == "collections" %}
-        <span>{{ path_parts[2] | capitalize }}</span>
+        <span>{{ path_parts[2] | replace: '-', ' ' | capitalize }}</span>
       {% elsif path_parts[1] == "products" %}
-        <span>{{ path_parts[2] | capitalize }}</span>
-      {% elsif request.path == "/pages/preisliste-ubersicht-aller-boote" %}
-        <span>Preisliste Übersicht aller Boote</span>
+        <span>{{ path_parts[2] | replace: '-', ' ' | capitalize }}</span>
+      {% elsif path_parts[1] == "pages" %}
+        <span>{{ path_parts[2] | replace: '-', ' ' | capitalize }}</span>
       {% else %}
         {{ request.path }}
       {% endif %}
