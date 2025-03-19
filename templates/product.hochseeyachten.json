@@ -67,6 +67,12 @@
             "text_style": "body"
           }
         },
+        "custom_liquid_Ba7HDb": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
         "complementary_mGqWXJ": {
           "type": "complementary",
           "settings": {
@@ -160,6 +166,7 @@
         "text_xrfCDT",
         "description",
         "text_AV4pNJ",
+        "custom_liquid_Ba7HDb",
         "complementary_mGqWXJ",
         "price",
         "izyrent_product_calendar_HXKJGL",
