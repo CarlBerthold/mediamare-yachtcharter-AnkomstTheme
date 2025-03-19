@@ -444,7 +444,7 @@
       </div>
     </div>
     <div class="pageTitle h1">
-      {% if  request.path = "/" %}
+      {% if request.path == "/" %}
         <span>ANKOMST</span>
       {% else %}
         {{ request.path }}
