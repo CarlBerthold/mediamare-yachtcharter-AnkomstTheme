@@ -202,9 +202,23 @@
                 </p>
               {%- when 'custom_liquid' -%}
                 <span>here with custom liquid</span>
-                <ul>
-                  {{product.metafields.custom.saisonpreise.vorsaisonspreis }}
-                </ul>
+                <div class="saisonpreise">
+                  <h3>{{ product.metafields.custom.saisonpreise.anzeigename }}</h3>
+                  <ul>
+                    <li>
+                      <strong>Vorsaison:</strong> {{ product.metafields.custom.saisonpreise.vorsaison }} - {{ product.metafields.custom.saisonpreise.vorsaisonspreis }}
+                    </li>
+                    <li>
+                      <strong>Zwischensaison:</strong> {{ product.metafields.custom.saisonpreise.zwischensaison }}
+                    </li>
+                    <li>
+                      <strong>Hauptsaison:</strong> {{ product.metafields.custom.saisonpreise.hauptsaison }}
+                    </li>
+                    <li>
+                      <strong>Nachsaison:</strong> {{ product.metafields.custom.saisonpreise.nachsaison }}
+                    </li>
+                  </ul>
+                </div>
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
