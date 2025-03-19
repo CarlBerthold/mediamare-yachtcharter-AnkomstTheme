@@ -203,18 +203,19 @@
               {%- when 'custom_liquid' -%}
                 <div class="saisonpreise">
                   {% assign saisonpreise = product.metafields.custom.saisonpreise.value %}
+                  {% assign mietdauereinheit = product.metafields.custom.mietdauereinheit %}
                   <ul>
                     <li>
-                      <strong>Vorsaison:</strong> {{ saisonpreise.vorsaison.value | escape }}
+                      <strong>Vorsaison:</strong> {{ saisonpreise.vorsaison.value | escape }} {{ mietdauereinheit | escape}}
                     </li>
                     <li>
-                      <strong>Zwischensaison:</strong>  {{ saisonpreise.zwischensaison.value | escape }}
+                      <strong>Zwischensaison:</strong>  {{ saisonpreise.zwischensaison.value | escape }} {{ mietdauereinheit | escape}}
                     </li>
                     <li>
-                      <strong>Hauptsaison:</strong> {{ saisonpreise.hauptsaison.value | escape }}
+                      <strong>Hauptsaison:</strong> {{ saisonpreise.hauptsaison.value | escape }} {{ mietdauereinheit | escape}}
                     </li>
                     <li>
-                      <strong>Nachsaison:</strong> {{ saisonpreise.nachsaison.value | escape }}
+                      <strong>Nachsaison:</strong> {{ saisonpreise.nachsaison.value | escape }} {{ mietdauereinheit | escape}}
                     </li>
                   </ul>
                 </div>
@@ -234,7 +235,7 @@
                       </tr>
                       <tr>
                         <td><strong>Zwischensaison:</strong></td>
-                        <td>{{ saisonpreise.zwischensaison.value | escape }}</td>
+                        <td>{{ saisonpreise.zwischensaison.value | escape }} {{ }}</td>
                       </tr>
                       <tr>
                         <td><strong>Hauptsaison:</strong></td>
@@ -247,7 +248,7 @@
                     </tbody>
                   </table>
                 </div>
-                
+
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>

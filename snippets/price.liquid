@@ -128,5 +128,6 @@
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
-  <span class="mietdauer">{{ mietdauereinheit }}</span>
+  <span class="mietdauer">{{ mietdauereinheit | escape }}</span>
 </div>
+ 
