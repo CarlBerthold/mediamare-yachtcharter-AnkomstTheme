@@ -113,7 +113,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Ausstattung",
-            "icon": "none",
+            "icon": "check_mark",
             "content": "<p></p><ul><li>Rumpfmaterial/ Aufbau: {{ product.metafields.custom.ausstattung.value.aufbau.value }}</li><li>Innenausbau: {{ product.metafields.custom.ausstattung.value.innenausstattung | metafield_text }}</li><li>Sicherheitsausrüstung:  {{ product.metafields.custom.ausstattung.value.sicherheitsausrustung | metafield_text }}</li><li>Navigation: {{ product.metafields.custom.ausstattung.value.navigation | metafield_text }}</li><li>Bordinstrumente: {{ product.metafields.custom.ausstattung.value.bordinstrumente | metafield_text }}</li><li>Elektrik: {{ product.metafields.custom.ausstattung.value.elektrik | metafield_text }}</li><li>Pantry: {{ product.metafields.custom.ausstattung.value.pantry | metafield_text }}</li></ul>",
             "page": ""
           }
@@ -186,6 +186,7 @@
     },
     "featured_collection_cyLczG": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "zusätzliches Equipment",
         "heading_size": "h1",
@@ -214,6 +215,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "Meistverkaufte Artikel wird mit der Zeit besser",
         "heading_size": "h2",
@@ -276,6 +278,7 @@
         "column_zV63py",
         "column_JatWRe"
       ],
+      "disabled": true,
       "settings": {
         "title": "Informationen",
         "heading_size": "h1",
@@ -295,6 +298,7 @@
     },
     "featured_collection_GGL48X": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "<a href=\"/collections/if-folkeboote\" title=\"IF/Folkeboote\">IF & Folkeboote</a>",
         "heading_size": "h2",
@@ -369,6 +373,7 @@
         "featured_collection_aEnCUW",
         "featured_collection_Cfb6WH"
       ],
+      "disabled": true,
       "settings": {
         "title": "unsere Schiffstypen",
         "heading_size": "h1",
