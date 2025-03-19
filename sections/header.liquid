@@ -444,15 +444,11 @@
       </div>
     </div>
     <div class="pageTitle h1">
-      <p>{{ page.url }}</p> 
-      <p>{{ page.title }}</p>
-
-      <p>{{ request.path }}</p>
-     
-
-  
-
-      <span>{{ section.settings.pageTitle }}</span>
+      {% if  request.path = "/" %}
+        <span>ANKOMST</span>
+      {% else %}
+        {{ request.path }}
+      {% endif %}
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
