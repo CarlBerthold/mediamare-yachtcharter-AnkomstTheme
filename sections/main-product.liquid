@@ -201,24 +201,6 @@
                   {{- product.selected_or_first_available_variant.sku -}}
                 </p>
               {%- when 'custom_liquid' -%}
-                {% comment %} <div class="saisonpreise">
-                  {% assign saisonpreise = product.metafields.custom.saisonpreise.value %}
-                  {% assign mietdauereinheit = product.metafields.custom.mietdauereinheit %}
-                  <ul>
-                    <li>
-                      <strong>Vorsaison:</strong> {{ saisonpreise.vorsaison.value | escape }} {{ mietdauereinheit | escape}}
-                    </li>
-                    <li>
-                      <strong>Zwischensaison:</strong>  {{ saisonpreise.zwischensaison.value | escape }} {{ mietdauereinheit | escape}}
-                    </li>
-                    <li>
-                      <strong>Hauptsaison:</strong> {{ saisonpreise.hauptsaison.value | escape }} {{ mietdauereinheit | escape}}
-                    </li>
-                    <li>
-                      <strong>Nachsaison:</strong> {{ saisonpreise.nachsaison.value | escape }} {{ mietdauereinheit | escape}}
-                    </li>
-                  </ul>
-                </div> {% endcomment %}
                 <div class="saisonpreise">
                   {% assign saisonpreise = product.metafields.custom.saisonpreise.value %}
                   {% assign mietdauereinheit = product.metafields.custom.mietdauereinheit %}
