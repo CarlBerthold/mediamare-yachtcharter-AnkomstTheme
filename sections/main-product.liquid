@@ -215,20 +215,26 @@
                     <tbody>
                       <tr>
                         <td><strong>Vorsaison:</strong></td>
-                        <td>{{ saisonpreise.vorsaisonszeit.value | escape }} {{ mietdauereinheit | escape}}</td>
+                        <td>{{ saisonpreise.vorsaison.value | escape }}</td>
                         <td>{{ saisonpreise.vorsaisonspreis.value | escape }} {{ mietdauereinheit | escape}}</td>
                       </tr>
                       <tr>
                         <td><strong>Zwischensaison:</strong></td>
-                        <td>{{ saisonpreise.zwischensaison.value | escape }} {{ mietdauereinheit | escape}}</td>
+                        <td>{{ saisonpreise.zwischensaison.value | escape }}</td>
+                        <td>{{ saisonpreise.zwischensaisonspreis.value | escape }} {{ mietdauereinheit | escape}}</td>
+
                       </tr>
                       <tr>
                         <td><strong>Hauptsaison:</strong></td>
-                        <td>{{ saisonpreise.hauptsaison.value | escape }} {{ mietdauereinheit | escape}}</td>
+                        <td>{{ saisonpreise.hauptsaison.value | escape }}</td>
+                        <td>{{ saisonpreise.hauptsaisonspreis.value | escape }} {{ mietdauereinheit | escape}}</td>
+
                       </tr>
                       <tr>
                         <td><strong>Nachsaison:</strong></td>
-                        <td>{{ saisonpreise.nachsaison.value | escape }} {{ mietdauereinheit | escape}}</td>
+                        <td>{{ saisonpreise.nachsaison.value | escape }}</td>
+                        <td>{{ saisonpreise.nachsaisonspreis.value | escape }} {{ mietdauereinheit | escape}}</td>
+
                       </tr>
                     </tbody>
                   </table>
