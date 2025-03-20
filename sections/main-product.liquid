@@ -204,18 +204,19 @@
                 <div class="saisonpreise">
                   {% assign saisonpreise = product.metafields.custom.saisonpreise.value %}
                   {% assign mietdauereinheit = product.metafields.custom.mietdauereinheit %}
-
                   <table>
                     <thead>
                       <tr>
                         <th>Saison</th>
                         <th>Zeitraum</th>
+                        <th>Preis</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td><strong>Vorsaison:</strong></td>
-                        <td>{{ saisonpreise.vorsaison.value | escape }} {{ mietdauereinheit | escape}}</td>
+                        <td>{{ saisonpreise.vorsaisonszeit.value | escape }} {{ mietdauereinheit | escape}}</td>
+                        <td>{{ saisonpreise.vorsaisonspreis.value | escape }} {{ mietdauereinheit | escape}}</td>
                       </tr>
                       <tr>
                         <td><strong>Zwischensaison:</strong></td>
