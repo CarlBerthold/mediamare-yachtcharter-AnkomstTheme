@@ -163,6 +163,10 @@
     flex-direction: column;
   }
 
+  .subtitle {
+    font-size: x-large;
+  }
+
   .section-header {
     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
@@ -453,7 +457,7 @@
       {% if request.path == "/" %}
         <div class="indexTitle">
         <span>ANKOMST</span>
-        <span>Yachtcharter zwischen Rügen und Usedom</span>
+        <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span>
         </div>
       {% elsif path_parts[1] == "collections" %}
         <span>{{ path_parts[2] | replace: '-', ' ' | capitalize }}</span>
