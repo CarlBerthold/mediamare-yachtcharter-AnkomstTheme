@@ -447,6 +447,7 @@
       {% assign path_parts = request.path | split: '/' %}
       {% if request.path == "/" %}
         <span>ANKOMST</span>
+        <span>Yachtcharter zwischen Rügen und Usedom</span>
       {% elsif path_parts[1] == "collections" %}
         <span>{{ path_parts[2] | replace: '-', ' ' | capitalize }}</span>
       {% elsif path_parts[1] == "products" %}
