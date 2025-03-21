@@ -194,12 +194,12 @@
     "featured_collection_cyLczG": {
       "type": "featured-collection",
       "settings": {
-        "title": "Hochseeyachten",
+        "title": "Folkeboote",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "hochseeyacht",
+        "collection": "if-folkeboote",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": true,
