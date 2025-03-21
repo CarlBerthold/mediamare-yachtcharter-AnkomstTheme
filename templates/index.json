@@ -217,15 +217,15 @@
         "izyrent_global_calendar_EHqD3P": {
           "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
-            "title": "",
+            "title": "Wähle ein Startdatum",
             "range": false,
             "maxdates": 5,
-            "mindays": 0,
+            "mindays": 1,
             "collection": "flotte",
             "filter-options": true,
-            "filter-tags": false,
-            "description": false,
-            "vendor": false,
+            "filter-tags": true,
+            "description": true,
+            "vendor": true,
             "price": true,
             "tab": false,
             "search-tags": ""
