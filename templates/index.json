@@ -166,7 +166,7 @@
           "type": "featured_collection",
           "disabled": true,
           "settings": {
-            "collection": "standorte-deutschland"
+            "collection": "standorte"
           }
         }
       },
