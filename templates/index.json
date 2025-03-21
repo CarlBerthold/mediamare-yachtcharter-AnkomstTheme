@@ -217,7 +217,7 @@
         "izyrent_global_calendar_EHqD3P": {
           "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
-            "title": "Wähle ein Startdatum",
+            "title": "wann soll es losgehen",
             "range": false,
             "maxdates": 5,
             "mindays": 1,
