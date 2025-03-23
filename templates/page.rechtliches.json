@@ -48,10 +48,64 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_qMfkkn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JXjwDc": {
+          "type": "column",
+          "settings": {
+            "title": "Kaution",
+            "text": "<p>Die Kaution is fällig .... </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kUTetK": {
+          "type": "column",
+          "settings": {
+            "title": "AGB's",
+            "text": "<p>Unsere Allgemeinen Geschäftsbedingungen findest du hier! </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_z4gyVX": {
+          "type": "column",
+          "settings": {
+            "title": "Datenschutz",
+            "text": "<p>Datenschutz ist uns wichtig ... </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JXjwDc",
+        "column_kUTetK",
+        "column_z4gyVX"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_cXCiBT",
-    "main"
+    "main",
+    "multicolumn_qMfkkn"
   ]
 }
