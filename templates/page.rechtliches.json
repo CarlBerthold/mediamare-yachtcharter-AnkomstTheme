@@ -58,7 +58,7 @@
           "type": "column",
           "settings": {
             "title": "Kaution",
-            "text": "<p>Die Kaution is fällig .... </p>",
+            "text": "",
             "link_label": "",
             "link": "shopify://pages/ubersicht-kaution"
           }
