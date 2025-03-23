@@ -60,7 +60,7 @@
             "title": "Kaution",
             "text": "<p>Die Kaution is fällig .... </p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://pages/ubersicht-kaution"
           }
         },
         "column_kUTetK": {
@@ -69,7 +69,7 @@
             "title": "AGB's",
             "text": "<p>Unsere Allgemeinen Geschäftsbedingungen findest du hier! </p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://pages/agbs"
           }
         },
         "column_z4gyVX": {
