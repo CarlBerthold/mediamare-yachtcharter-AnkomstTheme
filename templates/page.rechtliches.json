@@ -76,8 +76,8 @@
           "type": "column",
           "settings": {
             "title": "Datenschutz",
-            "text": "<p>Datenschutz ist uns wichtig ... </p>",
-            "link_label": "",
+            "text": "<p>Datenschutz !<br/>was wir brauchen uns was nicht.</p>",
+            "link_label": "Datenschutz",
             "link": "shopify://pages/datenschutz"
           }
         }
