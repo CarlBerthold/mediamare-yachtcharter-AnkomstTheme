@@ -213,6 +213,7 @@
   text-decoration: none;
   font-size: inherit;
   margin-top: 1.5rem;
+  color: rgb(var(--color-foreground));
 }
 
 .multicolumn-card__info .icon-wrap {
