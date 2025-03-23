@@ -58,8 +58,8 @@
           "type": "column",
           "settings": {
             "title": "Kaution",
-            "text": "",
-            "link_label": "",
+            "text": "<p>TEST</p>",
+            "link_label": "TEST",
             "link": "shopify://pages/ubersicht-kaution"
           }
         },
