@@ -58,14 +58,14 @@
         "link_list_PcXMLa": {
           "type": "link_list",
           "settings": {
-            "heading": "",
+            "heading": "Angebote und Aktionen",
             "menu": "flottenfavoriten"
           }
         },
         "link_list_VfNGbX": {
           "type": "link_list",
           "settings": {
-            "heading": "",
+            "heading": "Support & Service",
             "menu": "support-service"
           }
         }
