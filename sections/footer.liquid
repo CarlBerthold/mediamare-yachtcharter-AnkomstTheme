@@ -68,7 +68,7 @@
   }
 {%- endstyle -%}
 
-{% comment %} {% if section.settings.backgroundImage != blank -%} {% endcomment %}
+{% if request.path != '/' %}
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding footer-background">
   {%- liquid
     assign has_social_icons = true
@@ -445,8 +445,8 @@
   </div>
   
 </footer>
+{% endif %}
 
-{% comment %} {% endif %} {% endcomment %}
 
 {% schema %}
 {
