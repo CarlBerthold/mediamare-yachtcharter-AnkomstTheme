@@ -58,8 +58,8 @@
           "type": "column",
           "settings": {
             "title": "Kaution",
-            "text": "<p>TEST</p>",
-            "link_label": "TEST",
+            "text": "<p>Kaution ist fällig am 7 Tage vor Reiseantritt</p>",
+            "link_label": "Übersicht der Kautionen",
             "link": "shopify://pages/ubersicht-kaution"
           }
         },
