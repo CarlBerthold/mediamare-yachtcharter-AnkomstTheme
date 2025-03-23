@@ -67,8 +67,8 @@
           "type": "column",
           "settings": {
             "title": "AGB's",
-            "text": "<p>Unsere Allgemeinen Geschäftsbedingungen findest du hier! </p>",
-            "link_label": "",
+            "text": "<p>Unsere Allgemeinen Geschäftsbedingungen</p>",
+            "link_label": "Zu den AGB's",
             "link": "shopify://pages/agbs"
           }
         },
