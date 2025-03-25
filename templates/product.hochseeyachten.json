@@ -89,6 +89,12 @@
             "product": "{{product}}"
           }
         },
+        "custom_liquid_DpdMzX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "disabled": true,
@@ -162,6 +168,7 @@
         "complementary_mGqWXJ",
         "price",
         "izyrent_product_calendar_HXKJGL",
+        "custom_liquid_DpdMzX",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
