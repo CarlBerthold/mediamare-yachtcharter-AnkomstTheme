@@ -3,7 +3,7 @@ table {
 }
 
 .label_izyrent {
-  width: 100%;
+  max-width: 100%;
 }
 
 .product {
