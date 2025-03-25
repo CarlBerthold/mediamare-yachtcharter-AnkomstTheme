@@ -1,8 +1,16 @@
 .saisontable {
-    table-layout: fixed;
-    border-collapse: collapse;
-    font-size: 1.4rem;
-    border-style: hidden;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  unicode-bidi: isolate;
+  border-spacing: 2px;
+  border-color: gray;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+  border-style: hidden;
+  box-shadow: 0 0 0 .1rem rgba(var(--color-foreground), .2);
     
 }
 
