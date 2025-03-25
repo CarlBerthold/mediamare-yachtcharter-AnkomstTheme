@@ -2,6 +2,10 @@ table {
   width: -webkit-fill-available;
 }
 
+.label_izyrent {
+  width: 100%;
+}
+
 .product {
   margin: 0;
 }
