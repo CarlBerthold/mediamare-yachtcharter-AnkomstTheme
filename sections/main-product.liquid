@@ -240,7 +240,7 @@
                   </table>
                 </div>
 
-                <label for="fuehrerschein">Führerscheine</label>
+                {% comment %} <label for="fuehrerschein">Führerscheine</label>
                 <select id="fuehrerschein" class="izyDate" required>
                   <option value="" disabled selected>Bitte wählen</option>
                   <option value="SKS" class="izyDate">SKS</option>
@@ -248,7 +248,8 @@
                   <option value="SRC" class="izyDate">SRC</option>
                 </select>
                 <div id="error_fuehrerschein" class="errorNote">Bitte wählen Sie eine Option aus.</div>
-
+ {% endcomment %}
+  
               {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
