@@ -240,7 +240,12 @@
                   </table>
                 </div>
 
-                {{ block.settings.custom_liquid }}
+                <div>
+                  <label for="fuehrerschein">Führerschein:</label>
+                  <input type="text" id="fuehrerschein" name="fuehrerschein" required>
+                </div>
+
+              {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
