@@ -1,3 +1,11 @@
+.saisontable {
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+    border-style: hidden;
+    
+}
+
 .product {
   margin: 0;
 }
