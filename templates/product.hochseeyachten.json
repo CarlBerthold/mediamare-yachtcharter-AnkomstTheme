@@ -62,6 +62,7 @@
         },
         "custom_liquid_Ba7HDb": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": ""
           }
