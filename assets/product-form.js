@@ -16,6 +16,7 @@ if (!customElements.get('product-form')) {
         this.hideErrors = this.dataset.hideErrors === 'true';
 
         // Add references to the Führerscheine select input and error message element
+
         this.fuehrerscheinSelect = this.form.querySelector('#fuehrerschein');
         this.errorFuehrerschein = this.form.querySelector('#error_fuehrerschein');
       }
@@ -23,9 +24,9 @@ if (!customElements.get('product-form')) {
       onSubmitHandler(evt) {
         evt.preventDefault();
         if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
-
-        // Validate the Führerscheine select input
-        if (this.fuehrerscheinSelect && this.fuehrerscheinSelect.value === '') {
+        
+         // Validate the Führerscheine select input
+         if (this.fuehrerscheinSelect && this.fuehrerscheinSelect.value === 'Bitte wählen') {
           this.errorFuehrerschein.style.display = 'block';
           return;
         } else {
