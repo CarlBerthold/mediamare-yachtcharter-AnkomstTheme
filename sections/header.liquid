@@ -105,8 +105,10 @@
   .brand-name {
     display: none;
     grid-area:navigation;
-    font-family: 'DINOT-REGULAR';
-    font-size: 38px;
+    /* font-family: 'DINOT-REGULAR'; */
+    font-size: 32px;
+    letter-spacing: 3px;
+    line-height: 1.4;
   }
 
   @media screen and (min-width: 750px) {
@@ -127,8 +129,9 @@
 
   .coordinates {
     display: none;
-    font-family: 'DINOT-REGULAR';
-    font-size: 38px;
+    /* font-family: 'DINOT-REGULAR'; */
+    font-size: 32px;
+    letter-spacing: 3px;
     color: #fff;
   }
 
@@ -138,6 +141,7 @@
       display: flex;
       flex-direction: column;
       align-items: end;
+      gap: 2px;
     }
   }
 
@@ -155,7 +159,9 @@
     grid-area: title;
     text-align: center;
     font-size: 70px;
-    font-family: 'DINOT-REGULAR';
+    /* font-family: 'DINOT-REGULAR'; */
+    letter-spacing: 3px;
+    
   }
 
   .indexTitle {
@@ -460,13 +466,13 @@
         <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span>
         </div>
       {% elsif path_parts[1] == "collections" %}
-        <span>{{ path_parts[2] | replace: '-', ' ' | capitalize }}</span>
+        <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
       {% elsif path_parts[1] == "products" %}
-        <span>{{ path_parts[2] | replace: '-', ' ' | capitalize }}</span>
+        <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
       {% elsif path_parts[1] == "pages" %}
-        <span>{{ path_parts[2] | replace: '-', ' ' | capitalize }}</span>
+        <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
       {% else %}
-        {{ request.path }}
+        {{ request.path | upcase }}
       {% endif %}
     </div>
   </header>
