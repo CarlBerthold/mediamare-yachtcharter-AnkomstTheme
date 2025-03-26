@@ -252,7 +252,7 @@
       },
       "scheme-bcd23c96-668c-4ff7-9961-8902267d6bf4": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#000000",
           "button": "#ffffff",
