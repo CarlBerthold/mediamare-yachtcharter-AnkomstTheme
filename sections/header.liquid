@@ -360,7 +360,7 @@
       {% if request.path == "/" %}
         <div class="indexTitle">
         <span>ANKOMST</span>
-        <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span>
+        {% comment %} <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span> {% endcomment %}
         </div>
       {% elsif path_parts[1] == "collections" %}
         <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
