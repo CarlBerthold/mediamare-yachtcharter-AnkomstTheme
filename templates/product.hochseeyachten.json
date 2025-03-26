@@ -40,6 +40,7 @@
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {}
         },
         "text_Ww6bmx": {
