@@ -21,12 +21,12 @@
             "subheading": "Yachtcharter zwischen Rügen und Usedom",
             "button_label": "Yachtcharter zwischen Rügen und Usedom",
             "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-right",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "right",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+            "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
         },
