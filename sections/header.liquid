@@ -135,6 +135,10 @@
     color: #fff;
   }
 
+  .pl-4 {
+    padding-left: 4px;
+  }
+
   @media screen and (min-width: 750px) {
     .coordinates {
       grid-area: icons;
@@ -340,7 +344,7 @@
 
         <div class="coordinates h2">     
           <span>{{ section.settings.coordinatesNorth }}</span>
-          <span>{{ section.settings.coordinatesEast }}</span>
+          <span class="pl-4">{{ section.settings.coordinatesEast }}</span>
         </div>
       {% endif %}
     </div>
