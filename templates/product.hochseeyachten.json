@@ -185,7 +185,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "media_size": "small",
         "constrain_to_viewport": false,
         "media_fit": "cover",
@@ -195,7 +195,7 @@
         "mobile_thumbnails": "hide",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 36,
+        "padding_top": 44,
         "padding_bottom": 44
       }
     },
