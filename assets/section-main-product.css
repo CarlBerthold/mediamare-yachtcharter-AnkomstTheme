@@ -9,6 +9,11 @@ table {
   width: -webkit-fill-available;
 }
 
+.product__title > *,
+p.product__text.inline-richtext.caption-with-letter-spacing {
+  color: black;
+}
+
 .label_izyrent {
   max-width: 100%;
 }
