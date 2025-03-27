@@ -10,7 +10,8 @@ table {
 }
 
 .product__title > *,
-p.product__text.inline-richtext.caption-with-letter-spacing {
+p.product__text.inline-richtext.caption-with-letter-spacing,
+.product__tax {
   color: black;
 }
 
