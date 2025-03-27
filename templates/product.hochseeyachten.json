@@ -180,8 +180,7 @@
         "collapsible_tab_ap6MUd"
       ],
       "custom_css": [
-        "a[title=\"Führerscheinklasse\"] {color: red;}",
-        "input[type=\"checkbox\"][value=\"\"] {display: none;}"
+        "a[title=\"Führerscheinklasse\"] {color: red;}"
       ],
       "settings": {
         "enable_sticky_info": true,
