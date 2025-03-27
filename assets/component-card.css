@@ -393,6 +393,7 @@
 
 .card-information {
   width: 100%;
+  padding-top: 6px;
 }
 
 .card-information > * {
