@@ -1,3 +1,8 @@
+#MainProduct-template--23749924716880__main > .page-width {
+  max-width: 100%;
+  margin: 0;
+}
+
 table {
   width: -webkit-fill-available;
 }
