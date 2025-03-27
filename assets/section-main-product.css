@@ -1,8 +1,6 @@
-#MainProduct-template--23749924716880__main > .page-width {
-  max-width: 100%;
-  margin: 0;
-}
-#shopify-section-template--23764043202896__main > .page-width {
+#MainProduct-template--23749924716880__main > .page-width,
+#MainProduct-template--23764043202896__main > .page-width,
+#MainProduct-template--23764054475088__main > .page-width {
   max-width: 100%;
   margin: 0;
 }
