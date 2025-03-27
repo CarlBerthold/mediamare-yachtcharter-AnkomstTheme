@@ -84,15 +84,14 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_rhbPLd": {
+        "slide_KQ7nBj": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/IF_Hoppas_Origina_800x600_1.jpg",
-            "heading": "",
+            "heading": "Image slide",
             "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "shopify://pages/kontakt",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
@@ -108,7 +107,7 @@
         "slide_RxQKDy",
         "slide_EjQpkk",
         "slide_rgUmGa",
-        "slide_rhbPLd"
+        "slide_KQ7nBj"
       ],
       "settings": {
         "layout": "full_bleed",
