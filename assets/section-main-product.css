@@ -7,8 +7,15 @@
 
 
 #izyRecap {
-  /* font-size: 2rem; */
   font-weight: normal;
+}
+
+#izyAddons {
+  font-size: 14px;
+}
+
+.addonPrice {
+  font-weight: 300;
 }
 
 table {
