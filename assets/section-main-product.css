@@ -27,6 +27,10 @@ p.product__text.inline-richtext.caption-with-letter-spacing,
   margin: 0;
 }
 
+.product__description {
+  font-size: 14px;
+}
+
 .product.grid {
   gap: 0;
 }
