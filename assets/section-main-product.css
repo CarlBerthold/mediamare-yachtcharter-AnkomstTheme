@@ -5,6 +5,12 @@
   margin: 0;
 }
 
+
+#izyRecap {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
 table {
   width: 100%;
 }
