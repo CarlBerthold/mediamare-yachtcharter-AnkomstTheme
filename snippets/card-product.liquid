@@ -188,7 +188,9 @@
               {% if zusatzoptionen %}
                 <div class="location">
                   <span class="location">
-                    <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">Liegeplatz: <span style="color:#0671b7;">{{ zusatzoptionen.liegeplatz | escape }}</span></a>
+                    <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">
+                      <strong>Liegeplatz:</strong> <span style="color:#0671b7;">{{ zusatzoptionen.liegeplatz | escape }}</span>
+                    </a>
                   </span>
               </div>
               {% endif %}
