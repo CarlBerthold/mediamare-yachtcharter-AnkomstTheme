@@ -196,10 +196,17 @@
             "heading": "Hier findest du das passende Schiff",
             "heading_size": "h2"
           }
+        },
+        "text_LBwtza": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
         }
       },
       "block_order": [
-        "heading"
+        "heading",
+        "text_LBwtza"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -216,14 +223,14 @@
         "izyrent_global_calendar_EHqD3P": {
           "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
-            "title": "wann soll es losgehen",
+            "title": "",
             "range": false,
-            "maxdates": 5,
+            "maxdates": 3,
             "mindays": 1,
             "collection": "flotte",
-            "filter-options": true,
+            "filter-options": false,
             "filter-tags": true,
-            "description": true,
+            "description": false,
             "vendor": true,
             "price": true,
             "tab": false,
@@ -250,7 +257,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "if-folkeboote",
+        "collection": "marina-kroslin",
         "products_to_show": 2,
         "columns_desktop": 4,
         "full_width": false,
@@ -269,6 +276,122 @@
         "padding_top": 0,
         "padding_bottom": 24
       }
+    },
+    "rich_text_xrTq6m": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KVypfY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Neu im Sortiment NF-Getrud",
+            "heading_size": "h1"
+          }
+        },
+        "text_ptkEBH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Schiffsbeschreibung</p>"
+          }
+        },
+        "button_7fKQtk": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KVypfY",
+        "text_ptkEBH",
+        "button_7fKQtk"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_product_fNXYtb": {
+      "type": "featured-product",
+      "blocks": {
+        "text_FAEmwz": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_4CK8JV": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_A4LyXk": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_ywQMEc": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_XtAQiR": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_BxA6gb": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_6TFXnn": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_FAEmwz",
+        "title_4CK8JV",
+        "price_A4LyXk",
+        "variant_picker_ywQMEc",
+        "quantity_selector_XtAQiR",
+        "buy_buttons_BxA6gb",
+        "share_6TFXnn"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "gertrud",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "secondary_background": false,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -277,6 +400,8 @@
     "collection_list_Gj3wnz",
     "rich_text",
     "1738703331a115570f",
-    "featured-collection"
+    "featured-collection",
+    "rich_text_xrTq6m",
+    "featured_product_fNXYtb"
   ]
 }
