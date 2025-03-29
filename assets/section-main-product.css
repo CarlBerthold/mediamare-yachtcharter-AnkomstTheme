@@ -29,6 +29,7 @@ p.product__text.inline-richtext.caption-with-letter-spacing,
 
 .product__description {
   font-size: 14px;
+  color:#0671b7;
 }
 
 .product.grid {
