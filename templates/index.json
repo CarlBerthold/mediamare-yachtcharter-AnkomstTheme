@@ -196,10 +196,17 @@
             "heading": "Hier findest du das passende Schiff",
             "heading_size": "h2"
           }
+        },
+        "text_LBwtza": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
         }
       },
       "block_order": [
-        "heading"
+        "heading",
+        "text_LBwtza"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -216,9 +223,9 @@
         "izyrent_global_calendar_EHqD3P": {
           "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
-            "title": "wann soll es losgehen",
+            "title": "",
             "range": false,
-            "maxdates": 5,
+            "maxdates": 3,
             "mindays": 1,
             "collection": "flotte",
             "filter-options": true,
