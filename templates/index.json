@@ -310,6 +310,7 @@
         "text_ptkEBH",
         "button_7fKQtk"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -376,6 +377,7 @@
         "buy_buttons_BxA6gb",
         "share_6TFXnn"
       ],
+      "disabled": true,
       "settings": {
         "product": "gertrud",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
