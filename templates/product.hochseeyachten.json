@@ -136,7 +136,7 @@
           "settings": {
             "heading": "Technische Daten",
             "icon": "ruler",
-            "content": "<ul><li>Liegeplatz: {{ metaobjects.zusatzoptionen[\"naturhafen-krummin\"].liegeplatz.value }}</li><li>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</li><li>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</li><li>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</li><li>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</li><li>Motoriserung: {{ product.metafields.custom.technische_daten.value.motorisierung.value }}</li></ul>",
+            "content": "<ul><li>Liegeplatz: {{ metaobjects.zusatzoptionen[\"naturhafen-krummin\"].liegeplatz.value }}</li><li>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</li><li>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</li><li>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</li><li>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</li><li>Motoriserung: {{ product.metafields.custom.technische_daten.value.motorisierung.value }}</li><li>Wassertank: {{ product.metafields.custom.technische_daten.value.wassertank.value }}</li><li>Treibstofftank: {{ product.metafields.custom.technische_daten.value.treibstofftank.value }}</li></ul>",
             "page": ""
           }
         },
