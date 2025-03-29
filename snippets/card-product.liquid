@@ -166,19 +166,19 @@
 
               
               {% if technische_daten %}
-                <li>Tiefgang: {{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</li>
-                <li>Motorisierung: {{ technische_daten.motorisierung.value | escape }}</li>
+                <li><strong>Tiefgang:</strong> {{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</li>
+                <li><strong>Motorisierung:</strong> {{ technische_daten.motorisierung.value | escape }}</li>
 
                 {% if ausstattung %}
-                <li>Kabinen: {{ ausstattung.kabinen.value | escape }}</li>
-                <li>Schlafplätze: {{ ausstattung.schlafplaetze }}</li>
-                <li>Sanitär: {{ ausstattung.sanitaer.value | escape }}</li>
+                <li><strong>Kabinen:</strong> {{ ausstattung.kabinen.value | escape }}</li>
+                <li><strong>Schlafplätze:</strong> {{ ausstattung.schlafplaetze }}</li>
+                <li><strong>Sanitär:</strong> {{ ausstattung.sanitaer.value | escape }}</li>
                 {% endif %}
 
                 {% if zusatzoptionen %}
-                <li>Fahrzone: {{ zusatzoptionen.fahrzone | escape }}</li>
-                <li>Führerschein: {{ zusatzoptionen.fuehrerschein | escape }}</li>
-                <li>Funkschein: {{ zusatzoptionen.funkschein | escape }}</li>
+                <li><strong>Fahrzone:</strong> {{ zusatzoptionen.fahrzone | escape }}</li>
+                <li><strong>Führerschein:</strong>{{ zusatzoptionen.fuehrerschein | escape }}</li>
+                <li><strong>Funkschein:</strong> {{ zusatzoptionen.funkschein | escape }}</li>
                 {% endif %}
                 
               {% else %}
@@ -255,8 +255,6 @@
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
             {%- endif -%}
-            {% comment %} {{ product.metafields.custom.mietdauereinheit }} {% endcomment %}
-
             
         </div>
         {%- if show_quick_add -%}
