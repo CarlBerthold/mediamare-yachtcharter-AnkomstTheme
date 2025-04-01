@@ -2547,6 +2547,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   .header--middle-center .header__heading {
     justify-self: center;
     text-align: center;
+    padding-top: 0px;
   }
 
   .header--top-center .header__heading-link,
