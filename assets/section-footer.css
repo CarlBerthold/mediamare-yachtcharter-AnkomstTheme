@@ -238,7 +238,8 @@
 
   .footer__list-social.list-social,
   .footer__follow-on-shop,
-  .footer-block__newsletter {
+  .footer-block__newsletter,
+  .divider__list {
     display: flex;
     justify-content: center;
   }
