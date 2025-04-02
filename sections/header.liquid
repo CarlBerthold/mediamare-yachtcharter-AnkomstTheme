@@ -113,8 +113,6 @@
     grid-area: coordinates;
   }
 
-  
-  
 
   .coordinates {
     /* font-family: 'DINOT-REGULAR'; */
@@ -208,6 +206,12 @@
     flex-direction: column;
   }
 
+  @media screen and (max-width: 750px) {
+    .pageTitle {
+      font-size: 32px;
+    }
+  }
+
   @media screen and (min-width: 750px) {
     .pageTitle {
       font-size: 40px;
@@ -218,8 +222,6 @@
       font-size: 70px;
     }
   }
-
-
 
   .section-header {
     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
