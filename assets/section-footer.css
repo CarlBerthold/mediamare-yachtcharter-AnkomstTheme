@@ -223,6 +223,15 @@
   }
 }
 
+.divider {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  background-color: #373A3B;
+  width: 100%;
+  padding: 0 3rem;
+}
+
 .divider__list {
   list-style: none;
   display: flex;
