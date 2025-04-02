@@ -241,6 +241,7 @@
 @media screen and (min-width: 1024px) {
   .divider {
     padding: 0 6rem;
+    justify-content: space-evenly;
   }
 }
 
