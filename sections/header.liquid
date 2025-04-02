@@ -134,24 +134,31 @@
   }
 
   .coordinates {
-    display: none;
     /* font-family: 'DINOT-REGULAR'; */
     font-size: 32px;
     letter-spacing: 3px;
     color: #fff;
+    grid-area: icons;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 2px;
+
   }
 
   .pr-4 {
     padding-right: 4px;
   }
 
+  @media screen and (max-width: 750px) {
+    .coordinates {
+      display: none;
+    }
+  }
+
   @media screen and (min-width: 750px) {
     .coordinates {
-      grid-area: icons;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      gap: 2px;
+      font-size: 24px;
     }
   }
 
