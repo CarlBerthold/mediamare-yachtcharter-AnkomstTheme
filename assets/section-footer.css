@@ -262,7 +262,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 860px) {
   /*
     On a small screen we want all the items to be centered
     because they will be stacked.
