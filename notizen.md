@@ -2,6 +2,11 @@ Blau
 #0671b7
 rgb(6, 113, 183)
 
+error
+#f37674
+
+success
+#8ce897
 
 Grau (eventuell wird der Ton noch verändert)
 #f6f6f6
@@ -175,3 +180,9 @@ STINE HANSE 311
                 <li>No technische_daten available.</li>
               {% endif %}
             </ul> {% endcomment %}
+
+
+
+            Lustiger und schneller Segler aus schwedischer Werft, mit gemütlichem Salon und geräumigem Cockpit.
+
+            Mit einer gemütlichen U-Couch im Salon und einer Längsküche hat dieser Albin Delta ein modernes Layout, obwohl sie schon etwas älter ist. Es gibt auch eine Vorder- und Achterkabine. Unter anderem dank der Wendefock ist diese Lady leicht allein zu segeln. Die Albin ist eine schnelle und hoch am Wind segelnde Yacht
