@@ -94,13 +94,19 @@
 
   @media screen and (max-width: 750px) {
     .header {
-      padding: {{ section.settings.padding_top }}px 2rem {{ section.settings.padding_bottom }}px 2rem;
+      padding: {{ section.settings.padding_top }}px 1rem {{ section.settings.padding_bottom }}px 1rem;
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 751px) {
     .header {
       padding: {{ section.settings.padding_top }}px 3rem {{ section.settings.padding_bottom }}px 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .header {
+      padding: {{ section.settings.padding_top }}px 6rem {{ section.settings.padding_bottom }}px 6rem;
     }
   }
 
