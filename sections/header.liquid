@@ -92,6 +92,12 @@
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 6rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 6rem;
   }
 
+  @media screen and (max-width: 750px) {
+    .header {
+      padding: {{ section.settings.padding_top }}px 2rem {{ section.settings.padding_bottom }}px 2rem;
+    }
+  }
+
   .flex-column {
     display: flex;
     flex-direction: column;
@@ -173,8 +179,10 @@
     flex-direction: column;
   }
 
-  .subtitle {
-    font-size: x-large;
+  @media screen and (max-width: 750px) {
+    .pageTitle {
+      font-size: 50px;
+    }
   }
 
   .section-header {
