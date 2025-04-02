@@ -108,30 +108,7 @@
   }
 
   
-  .brand-name {
-    display: none;
-    grid-area:navigation;
-    /* font-family: 'DINOT-REGULAR'; */
-    font-size: 32px;
-    letter-spacing: 3px;
-    line-height: 1.3;
-  }
-
-  @media screen and (min-width: 750px) {
-    .brand-name { 
-      grid-area: brand;
-      display: flex;
-      word-break: break-word;
-      max-width: 320px;
-    }
-  }
-
-  @media screen and (min-width: 990px) {
-    .brand-name { 
-      grid-area: navigation;
-      
-    }
-  }
+  
 
   .coordinates {
     /* font-family: 'DINOT-REGULAR'; */
@@ -150,15 +127,39 @@
     padding-right: 4px;
   }
 
+  .brand-name {
+    grid-area: navigation;
+    font-size: 32px;
+    letter-spacing: 3px;
+    line-height: 1.3;
+  }
+
+  
+
   @media screen and (max-width: 750px) {
     .coordinates {
+      display: none;
+    }
+    .brand-name { 
       display: none;
     }
   }
 
   @media screen and (min-width: 750px) {
     .coordinates {
-      font-size: 24px;
+      font-size: 19px;
+    }
+  }
+
+  @media screen and (min-width: 912px) {
+    .coordinates {
+      font-size: 26px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .coordinates {
+      font-size: 32px;
     }
   }
 
