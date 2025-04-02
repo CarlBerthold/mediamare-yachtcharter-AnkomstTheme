@@ -98,6 +98,12 @@
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    .header {
+      padding: {{ section.settings.padding_top }}px 3rem {{ section.settings.padding_bottom }}px 3rem;
+    }
+  }
+
   .flex-column {
     display: flex;
     flex-direction: column;
@@ -146,6 +152,9 @@
     .coordinates,
     .brand-name {
       font-size: 19px;
+    }
+    .brand-name {
+      max-width: 60%;
     }
   }
 
