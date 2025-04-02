@@ -2403,8 +2403,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header {
   display: grid;
-  grid-template-areas: 'left-icons heading icons'
-  'title navigation brand';
+  grid-template-areas: 
+  'brand heading icons'
+  'title navigation ';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
 }
