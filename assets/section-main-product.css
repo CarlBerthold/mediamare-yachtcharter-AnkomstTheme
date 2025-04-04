@@ -10,6 +10,11 @@
   font-weight: normal;
 }
 
+span.recap {
+  font-size: 24px;
+  color: #0671b7;
+}
+
 #izyAddons {
   font-size: 14px;
 }
