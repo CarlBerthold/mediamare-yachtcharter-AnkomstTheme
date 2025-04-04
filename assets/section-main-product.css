@@ -20,10 +20,11 @@
   color:#0671b7;
   margin: 10px 0px 5px 0px;
   font-size: 20px;
-  max-width: 100%;
-
 }
 
+.izynNote > select {
+  max-width: 100%;
+}
 
 .addonPrice {
   font-weight: 300;
