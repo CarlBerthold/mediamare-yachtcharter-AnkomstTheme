@@ -255,12 +255,12 @@
         "button_4XFX9d"
       ],
       "settings": {
-        "desktop_content_position": "center",
+        "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "main-collection-product-grid": {
