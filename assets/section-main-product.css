@@ -14,6 +14,13 @@
   font-size: 14px;
 }
 
+/* #izynote, #izyNotes,  */
+
+.izyNote {
+  color:#0671b7;
+}
+
+
 .addonPrice {
   font-weight: 300;
 }
