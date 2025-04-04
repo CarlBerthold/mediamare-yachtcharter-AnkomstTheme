@@ -221,6 +221,48 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_fLDwab": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_K4eiLT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unsere Flotte im Überblick",
+            "heading_size": "h1"
+          }
+        },
+        "text_DA3khY": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_4XFX9d": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_K4eiLT",
+        "text_DA3khY",
+        "button_4XFX9d"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main-collection-product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -247,6 +289,7 @@
     "slideshow_FXP7V9",
     "main-collection-banner",
     "collection_list_WTjCG4",
+    "rich_text_fLDwab",
     "main-collection-product-grid"
   ]
 }
