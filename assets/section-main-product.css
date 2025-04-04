@@ -22,7 +22,7 @@
   font-size: 20px;
 }
 
-.izynNote > select {
+select.izySelect {
   max-width: 100%;
 }
 
