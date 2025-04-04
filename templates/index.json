@@ -231,7 +231,7 @@
             "filter-options": false,
             "filter-tags": true,
             "description": false,
-            "vendor": true,
+            "vendor": false,
             "price": true,
             "tab": false,
             "search-tags": ""
