@@ -1,0 +1,255 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_R8tN3k": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_DBCebi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Home_IF_Boote_4_4096x2731_d146a782-454b-4e4e-b2e9-cad46874787f.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_BmF96X": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Home_IF_Boote_5_4096x2731_8da6777c-7e40-486f-86cd-fb10787e71cd.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_wa6Mq3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Home_IF_Boote_3_4096x2731_728b26ad-ce8a-4cc9-88ad-87d5d8406dd1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_xFUK4Y": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Home_IF_Boote_2_4096x2731_59d2e3dd-9784-4f32-bbf7-f180168a1dde.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_fKnJaW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Home_IF_Boote_1_4096x2731_6f2604da-416a-45d2-bd15-732983ad7503.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_DBCebi",
+        "slide_BmF96X",
+        "slide_wa6Mq3",
+        "slide_xFUK4Y",
+        "slide_fKnJaW"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_banner_7gbHM9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_JXCbUK": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_agY6nA": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons_XxjVLe": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JXCbUK",
+        "text_agY6nA",
+        "buttons_XxjVLe"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Hochseeyacht_1440x600_99ed2d37-9f1a-40ab-8824-34a43017d666.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-hero__title {display: none;}"
+      ],
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d"
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 8,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-bcd23c96-668c-4ff7-9961-8902267d6bf4",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "1",
+        "padding_top": 20,
+        "padding_bottom": 68
+      }
+    },
+    "collection_list_WTjCG4": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_KqCcpd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "folkeboote"
+          }
+        },
+        "featured_collection_fePGDU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "motorboote"
+          }
+        },
+        "featured_collection_pFTe7T": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hochseeyacht"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_KqCcpd",
+        "featured_collection_fePGDU",
+        "featured_collection_pFTe7T"
+      ],
+      "settings": {
+        "title": "Andere Boote",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_R8tN3k",
+    "image_banner_7gbHM9",
+    "main-collection-banner",
+    "main-collection-product-grid",
+    "collection_list_WTjCG4"
+  ]
+}
