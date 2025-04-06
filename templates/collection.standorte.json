@@ -33,6 +33,24 @@
         "slide_ztP4aD": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Hafen_KARLSHAMN_4096x2731_4ef5fd5f-c652-4a00-ac8a-b9158760eafa.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_RQBAAU": {
+          "type": "slide",
+          "settings": {
             "image": "shopify://shop_images/Hafen_Kroeslin_4096x2731_eb7d58ae-c4f2-4c84-a280-d6ff1ef2b082.jpg",
             "heading": "",
             "heading_size": "h1",
@@ -48,10 +66,10 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_LtzzmA": {
+        "slide_3p6WD7": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Hafen_KARLSHAMN_4096x2731_4ef5fd5f-c652-4a00-ac8a-b9158760eafa.jpg",
+            "image": "shopify://shop_images/Hafen_Krummin_4096x2731_5bec686e-dcf9-400e-a1c1-2fcc56757a5f.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -83,32 +101,14 @@
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_4KP6V3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Hafen_Logo_4096x2731_2961fd9c-515c-4e5c-b836-e140a0c8de7a.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
         "slide_mkzwQ4",
         "slide_ztP4aD",
-        "slide_LtzzmA",
-        "slide_6cKK83",
-        "slide_4KP6V3"
+        "slide_RQBAAU",
+        "slide_3p6WD7",
+        "slide_6cKK83"
       ],
       "settings": {
         "layout": "full_bleed",
