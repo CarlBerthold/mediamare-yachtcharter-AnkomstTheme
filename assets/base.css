@@ -2601,7 +2601,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header__icon .icon {
   height: 2rem;
   width: 2rem;
-  fill: none;
+  fill: #0671b7;
   vertical-align: middle;
 }
 
