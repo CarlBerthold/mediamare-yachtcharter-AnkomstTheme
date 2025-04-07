@@ -2601,8 +2601,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header__icon .icon {
   height: 2rem;
   width: 2rem;
-  fill: #0671b7;
+  fill: none;
   vertical-align: middle;
+  color: #0671b7;
 }
 
 .header__icon,
