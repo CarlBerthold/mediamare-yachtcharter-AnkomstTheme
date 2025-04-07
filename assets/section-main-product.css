@@ -33,6 +33,10 @@ select.izySelect {
   max-width: 100%;
 }
 
+.flatpickr-days {
+  gap:20px;
+}
+
 .addonPrice {
   font-weight: 300;
 }
