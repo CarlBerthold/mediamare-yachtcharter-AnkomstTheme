@@ -1,6 +1,5 @@
 .header__icon--menu {
   position: initial;
-  color: var(--color-foreground);
 }
 
 .js menu-drawer > details > summary::before,
