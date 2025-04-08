@@ -115,6 +115,18 @@
             "share_label": "Teile dieses Produkt"
           }
         },
+        "icon_with_text_ezxfqb": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "map_pin",
+            "heading_1": "Download datenblatt",
+            "icon_2": "return",
+            "heading_2": "",
+            "icon_3": "truck",
+            "heading_3": ""
+          }
+        },
         "collapsible_tab_QJyHjf": {
           "type": "collapsible_tab",
           "settings": {
@@ -166,6 +178,7 @@
         "quantity_selector",
         "buy_buttons",
         "share",
+        "icon_with_text_ezxfqb",
         "collapsible_tab_QJyHjf",
         "collapsible_tab_pCXNpX",
         "collapsible_tab_79fgYa",
