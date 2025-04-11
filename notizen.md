@@ -8,6 +8,9 @@ error
 success
 #8ce897
 
+warning
+#f8dc3a
+
 Grau (eventuell wird der Ton noch verändert)
 #f6f6f6
 rgb(0, 0, 96)
@@ -186,3 +189,15 @@ STINE HANSE 311
             Lustiger und schneller Segler aus schwedischer Werft, mit gemütlichem Salon und geräumigem Cockpit.
 
             Mit einer gemütlichen U-Couch im Salon und einer Längsküche hat dieser Albin Delta ein modernes Layout, obwohl sie schon etwas älter ist. Es gibt auch eine Vorder- und Achterkabine. Unter anderem dank der Wendefock ist diese Lady leicht allein zu segeln. Die Albin ist eine schnelle und hoch am Wind segelnde Yacht
+
+
+
+
+
+
+{{amount_with_comma_separator}}
+
+
+
+Naturhafen Krummin 
+Ausgezeichnete Qualität: Usedoms erste 4-Sterne-Marina
