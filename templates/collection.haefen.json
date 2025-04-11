@@ -11,26 +11,6 @@
   "sections": {
     "image_banner_N4CARe": {
       "type": "image-banner",
-      "blocks": {
-        "heading_dQkUCW": {
-          "type": "heading",
-          "settings": {
-            "heading": "HafenName",
-            "heading_size": "h1"
-          }
-        },
-        "text_Px4NWY": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dQkUCW",
-        "text_Px4NWY"
-      ],
       "settings": {
         "image": "shopify://shop_images/PHOTO-2023-08-20-12-15-12_23.jpg",
         "image_overlay_opacity": 0,
@@ -85,6 +65,7 @@
         "text_9G647R",
         "caption_fer3qA"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/PHOTO-2023-08-20-12-15-12_23.jpg",
         "height": "small",
@@ -93,12 +74,54 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_n38k3c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HnewTg": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_TmDJHW": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}"
+          }
+        },
+        "button_htpFwT": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HnewTg",
+        "text_TmDJHW",
+        "button_htpFwT"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "multicolumn_NAknjJ": {
@@ -137,6 +160,7 @@
         "column_rKeiWn",
         "column_wUgRDL"
       ],
+      "disabled": true,
       "settings": {
         "title": "Was der Hafen bietet",
         "heading_size": "h1",
@@ -179,6 +203,7 @@
     "image_banner_N4CARe",
     "main-collection-banner",
     "image_with_text_kHWFPW",
+    "rich_text_n38k3c",
     "multicolumn_NAknjJ",
     "main-collection-product-grid"
   ]
