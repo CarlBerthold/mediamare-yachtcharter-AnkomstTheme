@@ -214,6 +214,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   position: relative;
 }
 
+.menu-drawer__utility-links > .list.list-social.list-unstyled {
+  background-color: red;
+}
+
 .header--has-social .menu-drawer__utility-links {
   padding: 2rem 3rem;
 }
