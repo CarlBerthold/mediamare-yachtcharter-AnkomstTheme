@@ -214,8 +214,8 @@ details[open].menu-opening > .menu-drawer__submenu {
   position: relative;
 }
 
-.menu-drawer__utility-links > .list.list-social.list-unstyled {
-  background-color: red;
+.menu-drawer__utility-links > .icon-facebook, .icon-instagram, .icon-youtube, .icon-tiktok, .icon-twitter, .icon-pinterest{
+  color: #0671b7;
 }
 
 .header--has-social .menu-drawer__utility-links {
