@@ -15,9 +15,105 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_BanDhM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xqAK6b": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_3rrXq3": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p>{{ page.content }}",
+            "text_style": "body"
+          }
+        },
+        "button_6X33t8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xqAK6b",
+        "text_3rrXq3",
+        "button_6X33t8"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_Yi7itg": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_jMMUyC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_kCK3qE": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_9rbWR6": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Folkeboote",
+            "button_link_1": "shopify://collections/folkeboote",
+            "button_style_secondary_1": false,
+            "button_label_2": "Standorte",
+            "button_link_2": "shopify://collections/naturhafen-krummin",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jMMUyC",
+        "text_kCK3qE",
+        "buttons_9rbWR6"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_BanDhM",
+    "image_banner_Yi7itg"
   ]
 }
