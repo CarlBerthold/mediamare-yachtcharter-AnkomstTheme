@@ -15,7 +15,7 @@
         "slide_fKnJaW": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_1_4096x2731_6f2604da-416a-45d2-bd15-732983ad7503.jpg",
+            "image": "shopify://shop_images/Slider_HS_Flotte_Stine_4096x2731_1bd23d6d-9841-47da-a426-babceed0c1ab.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -33,7 +33,7 @@
         "slide_DBCebi": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_4_4096x2731_d146a782-454b-4e4e-b2e9-cad46874787f.jpg",
+            "image": "shopify://shop_images/Slider_HS_Flotte_Sonic_4096x2731_b11d0803-446e-4e50-8983-686c65755704.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -51,7 +51,7 @@
         "slide_BmF96X": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_5_4096x2731_8da6777c-7e40-486f-86cd-fb10787e71cd.jpg",
+            "image": "shopify://shop_images/Slider_HS_Flotte_HeinMuck_4096x2731_b52c5db5-467a-493d-9b5f-8d99d107b964.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -69,7 +69,7 @@
         "slide_wa6Mq3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_3_4096x2731_728b26ad-ce8a-4cc9-88ad-87d5d8406dd1.jpg",
+            "image": "shopify://shop_images/Slider_HS_Flotte_Elke_4096x2731_afa9b993-0de0-4023-942c-6289076b1a14.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -77,7 +77,7 @@
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
@@ -87,7 +87,7 @@
         "slide_xFUK4Y": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_2_4096x2731_59d2e3dd-9784-4f32-bbf7-f180168a1dde.jpg",
+            "image": "shopify://shop_images/Slider_HS_Flotte_Segel_4096x2731_abcd4c8a-a744-4cb8-934f-69294cdd7e93.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
