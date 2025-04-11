@@ -36,8 +36,8 @@
         "button_6X33t8": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Ankommen und segeln",
+            "button_link": "shopify://collections/flotte",
             "button_style_secondary": false
           }
         }
