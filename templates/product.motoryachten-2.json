@@ -115,6 +115,18 @@
             "share_label": "Teile dieses Produkt"
           }
         },
+        "icon_with_text_ezxfqb": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "map_pin",
+            "heading_1": "Download datenblatt",
+            "icon_2": "return",
+            "heading_2": "",
+            "icon_3": "truck",
+            "heading_3": ""
+          }
+        },
         "collapsible_tab_QJyHjf": {
           "type": "collapsible_tab",
           "settings": {
@@ -129,7 +141,7 @@
           "settings": {
             "heading": "Technische Daten",
             "icon": "ruler",
-            "content": "<ul><li>Liegeplatz: {{ metaobjects.zusatzoptionen[\"naturhafen-krummin\"].liegeplatz.value }}</li><li>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</li><li>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</li><li>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</li><li>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</li><li>Motoriserung: {{ metaobjects.technische_daten.stine.motorisierung.value }}</li><li>Wassertank: {{ metaobjects.technische_daten.stine.wassertank.value }}</li><li>Treibstofftank: {{ metaobjects.technische_daten.stine.treibstofftank.value }}</li></ul>",
+            "content": "<ul><li>Liegeplatz: {{ product.metafields.custom.zusatzoptionen.value.liegeplatz.value }}</li><li>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</li><li>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</li><li>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</li><li>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</li><li>Motoriserung: {{ product.metafields.custom.technische_daten.value.motorisierung.value }}</li><li>Wassertank: {{ product.metafields.custom.technische_daten.value.wassertank.value }}</li><li>Treibstofftank: {{ product.metafields.custom.technische_daten.value.treibstofftank.value }}</li></ul>",
             "page": ""
           }
         },
@@ -166,6 +178,7 @@
         "quantity_selector",
         "buy_buttons",
         "share",
+        "icon_with_text_ezxfqb",
         "collapsible_tab_QJyHjf",
         "collapsible_tab_pCXNpX",
         "collapsible_tab_79fgYa",
