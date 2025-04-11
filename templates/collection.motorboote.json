@@ -15,7 +15,7 @@
         "slide_DBCebi": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_4_4096x2731_d146a782-454b-4e4e-b2e9-cad46874787f.jpg",
+            "image": "shopify://shop_images/Slider_MY_Angelina_9_4096x2731_c894f13b-4ba2-43cc-95b6-93a489216e97.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -33,7 +33,7 @@
         "slide_BmF96X": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_5_4096x2731_8da6777c-7e40-486f-86cd-fb10787e71cd.jpg",
+            "image": "shopify://shop_images/Slider_MY_Angelina_11_4096x2731_ebdb3abd-6d49-45d6-8316-2b1b9afff007.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -51,7 +51,7 @@
         "slide_wa6Mq3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_3_4096x2731_728b26ad-ce8a-4cc9-88ad-87d5d8406dd1.jpg",
+            "image": "shopify://shop_images/Slider_MY_Angelina_8_4096x2731_c05cdcef-1fa8-4c3e-9f76-a8aa04829493.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -59,7 +59,7 @@
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
@@ -69,7 +69,7 @@
         "slide_xFUK4Y": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_2_4096x2731_59d2e3dd-9784-4f32-bbf7-f180168a1dde.jpg",
+            "image": "shopify://shop_images/Slider_MY_Angelina_7_4096x2731_e7c4ce1a-6b39-465b-be9e-0d9af27a34dc.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -87,7 +87,7 @@
         "slide_fKnJaW": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_IF_Boote_1_4096x2731_6f2604da-416a-45d2-bd15-732983ad7503.jpg",
+            "image": "shopify://shop_images/Slider_MY_Angelina_12_4096x2731_1e287865-9b21-4493-8e42-7948ad5c4b7a.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
