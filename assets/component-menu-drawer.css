@@ -206,11 +206,11 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__close-button .icon-arrow {
   transform: rotate(180deg);
   margin-right: 1rem;
-}
+} 
 
 .menu-drawer__utility-links {
-  padding: 0;
-  background-color: rgba(var(--color-foreground), 0.03);
+  padding: 3rem;
+  background-color: rgba(var(--color-foreground), 0.09);
   position: relative;
 }
 
