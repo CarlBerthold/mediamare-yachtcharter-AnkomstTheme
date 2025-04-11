@@ -29,7 +29,7 @@
         "text_3rrXq3": {
           "type": "text",
           "settings": {
-            "text": "<p></p>{{ page.content }}",
+            "text": "{{ page.content }}",
             "text_style": "body"
           }
         },
