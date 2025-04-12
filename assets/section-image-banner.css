@@ -449,11 +449,10 @@
 .banner__media::after {
   content: url(/cdn/shop/files/phone-flip-svgrepo-com.svg?v=1744446652);
   position: absolute;
-  top: -40%;
-  left: 48%;
+  top: -50%;
+  left: 74%;
   z-index: 1;
-  width: 100%;
-  height: 100%;
+
   color: #0671b7;
   scale: 0.08;
 }
