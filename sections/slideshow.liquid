@@ -113,11 +113,11 @@
     data-speed="{{ section.settings.change_slides_speed }}"
   >
     {%- for block in section.blocks -%}
-      <style>
+      {% comment %} <style>
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
-      </style>
+      </style> {% endcomment %}
       <div
         class="slideshow__slide grid__item grid--1-col slider__slide"
         id="Slide-{{ section.id }}-{{ forloop.index }}"
