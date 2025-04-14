@@ -41,8 +41,7 @@
 }
 
 .tag-icon {
-  scale: 1.25;
-  background-color: rgba(var(--color-background), 0.5);
+  background-color: rgba(var(--color-background));
 }
 
 .card--card,
@@ -175,7 +174,7 @@
 .card__badge {
   align-self: flex-end;
   grid-row-start: 3;
-  justify-self: flex-start;
+  justify-self: flex-end;
 }
 
 .card__badge.top {
