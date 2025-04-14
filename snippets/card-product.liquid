@@ -358,10 +358,12 @@
 
         
         <div class="card__badge {{ settings.badge_position }}">
+          {{product.tags | json}}
           {%- if product.tags == 'HSY' %}
+         
             <span>Hochseeyacht</span>
           {%-  endif -%}
-          
+
           {%- if card_product.available == false -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
