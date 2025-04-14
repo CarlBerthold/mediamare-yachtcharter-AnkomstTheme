@@ -257,8 +257,7 @@
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
             {%- endif -%}
-            
-        </div>
+          </div>
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
@@ -359,6 +358,10 @@
 
         
         <div class="card__badge {{ settings.badge_position }}">
+          {%- if product.tags == 'HSY' %}
+            <span>Hochseeyacht</span>
+          {%-  endif -%}
+          
           {%- if card_product.available == false -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
