@@ -40,6 +40,11 @@
   height: 100%;
 }
 
+.tag-icon {
+  max-height: 45px;
+  max-width: 45px;
+}
+
 .card--card,
 .card--standard .card__inner {
   position: relative;
