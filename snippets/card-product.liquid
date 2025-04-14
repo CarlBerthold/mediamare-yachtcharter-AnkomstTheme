@@ -122,11 +122,11 @@
           </div>
           <div class="card__badge {{ settings.badge_position }} center">
           {%- if card_product.tags contains 'MY' -%}
-            <div class="tag-icon">
+            <div class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">
               <img src="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/250409_Boote_Icons-08.svg?v=1744632209" alt="Motoryacht Icon" width="75" height="v" class="tag-icon">
             </div>
           {%- elsif card_product.tags contains 'HSY' -%}
-            <div class="tag-icon">
+            <div class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">
               <img src="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/250409_Boote_Icons-07.svg?v=1744632208" alt="Hochseeyacht Icon" width="75" height="75" class="tag-icon">
             </div>
           {%- elsif card_product.tags contains 'IF' -%}
@@ -135,7 +135,7 @@
               <img src="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/250409_Boote_Icons-09.svg?v=1744632209" alt="IF-Folkeboot Icon" width="75" height="75" class="tag-icon">
             </div>
           {%- elsif card_product.tags contains 'NF' -%}
-            <div class="tag-icon">
+            <div class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">
               <img src="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/250409_Boote_Icons-09.svg?v=1744632209" alt="NF-Folkeboot Icon" width="75" height="75" class="tag-icon">
             </div>
           {%- else -%}
