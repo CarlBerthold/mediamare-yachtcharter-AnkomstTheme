@@ -41,8 +41,8 @@
 }
 
 .tag-icon {
-  max-height: 45px;
-  max-width: 45px;
+  scale: 1.25;
+  background-color: rgba(white, 0.5);
 }
 
 .card--card,
