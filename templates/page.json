@@ -17,6 +17,49 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_EJXTHj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P7zYfC": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_HgJLQh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.content }}"
+          }
+        },
+        "button_PWHTjz": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_P7zYfC",
+        "text_HgJLQh",
+        "button_PWHTjz"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_BanDhM": {
       "type": "image-with-text",
       "blocks": {
@@ -48,6 +91,7 @@
         "text_3rrXq3",
         "button_6X33t8"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Folke_2365836_XXL.jpg",
         "height": "medium",
@@ -115,6 +159,7 @@
   },
   "order": [
     "main",
+    "rich_text_EJXTHj",
     "image_with_text_BanDhM",
     "image_banner_Yi7itg"
   ]
