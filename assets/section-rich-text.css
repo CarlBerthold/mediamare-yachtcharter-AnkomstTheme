@@ -56,6 +56,9 @@
 
 .rich-text__blocks > * + a {
   margin-top: 3rem;
+}
+
+.rich-text__text .rte > p > a {
   color: #0671b7;
 }
 
