@@ -58,10 +58,6 @@
   margin-top: 3rem;
 }
 
-.rich-text__text .rte > p > a {
-  color: #0671b7;
-}
-
 .rich-text__buttons {
   display: inline-flex;
   justify-content: center;
