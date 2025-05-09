@@ -267,7 +267,7 @@
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 8,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "color_scheme": "scheme-bcd23c96-668c-4ff7-9961-8902267d6bf4",
         "image_ratio": "square",
         "image_shape": "default",
