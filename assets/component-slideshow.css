@@ -106,6 +106,8 @@ slideshow-component .slideshow.banner {
   .slideshow__text.slideshow__text--left {
     align-items: flex-start;
     text-align: left;
+    top: -65px;
+    left: 90px;
   }
 
   .slideshow__text.slideshow__text--right {
