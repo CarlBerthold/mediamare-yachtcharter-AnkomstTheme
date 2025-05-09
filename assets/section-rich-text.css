@@ -56,6 +56,7 @@
 
 .rich-text__blocks > * + a {
   margin-top: 3rem;
+  color: #0671b7;
 }
 
 .rich-text__buttons {
