@@ -2570,7 +2570,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 11.8rem;
+  padding-right: 8.8rem;
   scale: 1.2;
 }
 
