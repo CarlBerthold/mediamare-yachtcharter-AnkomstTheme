@@ -24,7 +24,7 @@
             "button_style_secondary": false,
             "box_align": "top-center",
             "show_text_box": false,
-            "text_alignment": "left",
+            "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
             "text_alignment_mobile": "center"
