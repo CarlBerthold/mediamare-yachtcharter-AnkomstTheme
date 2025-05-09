@@ -2452,7 +2452,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
     grid-template-areas: 
       'brand heading coordinates'
       'navigation title icons';
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     column-gap: 0rem;
     align-items: flex-start;
   }
@@ -2570,7 +2570,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
+  padding-right: 11.8rem;
+  scale: 1.2;
 }
 
 .header__icons .shopify-app-block {
