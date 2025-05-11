@@ -200,6 +200,7 @@
         "featured_collection_8Uc8cg",
         "featured_collection_XWwCyR"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "",
@@ -213,6 +214,63 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_AjnkMW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dNRejk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mannschaft_Naldo.jpg",
+            "title": "Naldo Gruden",
+            "text": "<p>Übergabe und <br/>Rücknahme</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pamGwc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mannschaft_Anne.jpg",
+            "title": "Anne Heinrich",
+            "text": "<p>Reservierung <br/>Hotline Support</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qG3DBU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mannschaft_Tobias.jpg",
+            "title": "Tobias Morgenstern",
+            "text": "<p>Inhaber <br/>Übergabe und Rücknahme</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_dNRejk",
+        "column_pamGwc",
+        "column_qG3DBU"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -220,6 +278,7 @@
     "slideshow_YcBgbT",
     "rich_text_EJXTHj",
     "multirow_TqC8MJ",
-    "collection_list_tVeJPF"
+    "collection_list_tVeJPF",
+    "multicolumn_AjnkMW"
   ]
 }
