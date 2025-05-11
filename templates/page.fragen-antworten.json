@@ -23,6 +23,7 @@
         "slide_knDbBx": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Home_Segel_4096x2731_1d28252c-ba30-4090-8980-956eee8986da.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -115,100 +116,102 @@
         "padding_bottom": 52
       }
     },
-    "image_with_text_BanDhM": {
-      "type": "image-with-text",
+    "multirow_TqC8MJ": {
+      "type": "multirow",
       "blocks": {
-        "heading_xqAK6b": {
-          "type": "heading",
+        "row_AdYWAD": {
+          "type": "row",
           "settings": {
-            "heading": "{{ page.title }}",
-            "heading_size": "h1"
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         },
-        "text_3rrXq3": {
-          "type": "text",
+        "row_ydtrHF": {
+          "type": "row",
           "settings": {
-            "text": "{{ page.content }}",
-            "text_style": "body"
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         },
-        "button_6X33t8": {
-          "type": "button",
+        "row_qWccYH": {
+          "type": "row",
           "settings": {
-            "button_label": "Ankommen und segeln",
-            "button_link": "shopify://collections/flotte",
-            "button_style_secondary": false
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_xqAK6b",
-        "text_3rrXq3",
-        "button_6X33t8"
+        "row_AdYWAD",
+        "row_ydtrHF",
+        "row_qWccYH"
       ],
       "disabled": true,
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Folke_2365836_XXL.jpg",
-        "height": "medium",
+        "image_height": "medium",
         "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "image_behavior": "none",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "image_banner_Yi7itg": {
-      "type": "image-banner",
+    "collection_list_tVeJPF": {
+      "type": "collection-list",
       "blocks": {
-        "heading_jMMUyC": {
-          "type": "heading",
+        "featured_collection_ht6BGW": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
+            "collection": ""
           }
         },
-        "text_kCK3qE": {
-          "type": "text",
+        "featured_collection_8Uc8cg": {
+          "type": "featured_collection",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "collection": ""
           }
         },
-        "buttons_9rbWR6": {
-          "type": "buttons",
+        "featured_collection_XWwCyR": {
+          "type": "featured_collection",
           "settings": {
-            "button_label_1": "Folkeboote",
-            "button_link_1": "shopify://collections/folkeboote",
-            "button_style_secondary_1": false,
-            "button_label_2": "Standorte",
-            "button_link_2": "shopify://collections/krummin",
-            "button_style_secondary_2": false
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "heading_jMMUyC",
-        "text_kCK3qE",
-        "buttons_9rbWR6"
+        "featured_collection_ht6BGW",
+        "featured_collection_8Uc8cg",
+        "featured_collection_XWwCyR"
       ],
-      "disabled": true,
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -216,7 +219,7 @@
     "main",
     "slideshow_YcBgbT",
     "rich_text_EJXTHj",
-    "image_with_text_BanDhM",
-    "image_banner_Yi7itg"
+    "multirow_TqC8MJ",
+    "collection_list_tVeJPF"
   ]
 }
