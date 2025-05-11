@@ -178,7 +178,7 @@
       "name": "t:sections.contact-form.presets.name",
       "settings": {
         "heading": "Ihre Fragen",
-        "heading_size": "h0",
+        "heading_size": "h1",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "padding_top": 36,
         "padding_bottom": 36
