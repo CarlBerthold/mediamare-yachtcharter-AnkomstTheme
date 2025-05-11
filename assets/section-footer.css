@@ -28,9 +28,8 @@
   }
 
   .footer__content-top {
-/*     padding-bottom: 3rem;
-    padding-right: calc(4rem / var(--font-body-scale)); */
-    padding: 0;
+    padding-bottom: 3rem;
+    padding-right: calc(4rem / var(--font-body-scale));
   }
 }
 
