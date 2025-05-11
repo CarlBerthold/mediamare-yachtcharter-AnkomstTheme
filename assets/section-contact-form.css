@@ -37,3 +37,6 @@
     grid-column-gap: 2rem;
   }
 }
+form#contact-form {
+  padding: 0 20rem;
+}
