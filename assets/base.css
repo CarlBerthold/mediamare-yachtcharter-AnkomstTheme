@@ -2570,8 +2570,32 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 8.8rem;
+  /* padding-right: 8.8rem; */
   scale: 1.2;
+}
+
+@media screen and (min-width: 750px) {
+  .header__icons {
+    padding-right: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  .header__icons {
+    padding-right: 10.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__icons {
+    padding-right: 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__icons {
+    padding-right: 9rem;
+  }
 }
 
 .header__icons .shopify-app-block {
