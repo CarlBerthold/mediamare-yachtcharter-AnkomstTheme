@@ -67,6 +67,7 @@ slideshow-component .slideshow.banner {
 .slideshow__text > * {
   max-width: 100%;
   color:white;
+  font-size: 80px;
 }
 
 @media screen and (max-width: 749px) {
@@ -110,7 +111,7 @@ slideshow-component .slideshow.banner {
 
   .slideshow__text.slideshow__text--center {
     text-align: center;
-    
+
   }
 
   .slideshow__text.slideshow__text--right {
