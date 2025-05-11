@@ -175,6 +175,9 @@
     },
     "contact_form_pR4LTd": {
       "type": "contact-form",
+      "custom_css": [
+        "form {padding: 0 20rem;}"
+      ],
       "name": "t:sections.contact-form.presets.name",
       "settings": {
         "heading": "Ihre Fragen",
