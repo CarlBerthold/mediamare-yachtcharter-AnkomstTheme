@@ -87,7 +87,7 @@
 }
 
 .multicolumn-card__info > :nth-child(2) {
-  margin-top: 1rem;
+  line-height: normal;
 }
 
 .multicolumn-list__item.center .media--adapt,
