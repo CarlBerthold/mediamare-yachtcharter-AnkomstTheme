@@ -445,7 +445,7 @@
   }
 }
 
-.banner::after,
+/* .banner::after,
 .banner__media::after {
   content: url(/cdn/shop/files/phone-flip-svgrepo-com.svg?v=1744446652);
   position: absolute;
@@ -455,7 +455,7 @@
 
   color: #0671b7;
   scale: 0.08;
-}
+} */
 
 .banner__box > * + .banner__text {
   margin-top: 1.5rem;
