@@ -9,6 +9,7 @@
 .footer__content-top {
   /*padding-bottom: 5rem;*/
   display: block;
+  padding: 0 10rem;
 }
 
 @media screen and (max-width: 749px) {
@@ -29,7 +30,7 @@
   .footer__content-top {
 /*     padding-bottom: 3rem;
     padding-right: calc(4rem / var(--font-body-scale)); */
-    padding: 0 10rem;
+    padding: 0;
   }
 }
 
