@@ -20,10 +20,28 @@
     "slideshow_YcBgbT": {
       "type": "slideshow",
       "blocks": {
+        "slide_hQMN4J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Slider_History_2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_knDbBx": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Final_Reviere_04.jpg",
+            "image": "shopify://shop_images/Slider_History_4.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -41,7 +59,7 @@
         "slide_BQUyeN": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Final_Reviere_02.jpg",
+            "image": "shopify://shop_images/Slider_History_3.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -55,68 +73,12 @@
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_hQMN4J": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Final_Reviere_03.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_Xcmwaq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Final_Reviere_05.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_aBzwEq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Final_Reviere06.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
-        "slide_knDbBx",
-        "slide_BQUyeN",
         "slide_hQMN4J",
-        "slide_Xcmwaq",
-        "slide_aBzwEq"
+        "slide_knDbBx",
+        "slide_BQUyeN"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -180,9 +142,9 @@
         "column_9Af9mG": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Segelreviere_ruegen_525x525_9664fb44-a5da-4f58-808c-395877d8ff66.jpg",
-            "title": "Insel Rügen",
-            "text": "",
+            "image": "shopify://shop_images/History_525x525_1.jpg",
+            "title": "Das IF-Boot ist einfach zu segeln",
+            "text": "<p>Die Segeleigenschaften des IF-Bootes sind erstklassig – besonders am Wind überzeugt es mit ruhigem Lauf, trockener Fahrt und einfacher Handhabung bei jedem Wind. </p>",
             "link_label": "",
             "link": ""
           }
