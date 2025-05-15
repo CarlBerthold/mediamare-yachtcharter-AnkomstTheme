@@ -1,0 +1,341 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_YcBgbT": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_knDbBx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Final_Reviere_04.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_BQUyeN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Final_Reviere_02.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_hQMN4J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Final_Reviere_03.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Xcmwaq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Final_Reviere_05.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_aBzwEq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Final_Reviere06.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_knDbBx",
+        "slide_BQUyeN",
+        "slide_hQMN4J",
+        "slide_Xcmwaq",
+        "slide_aBzwEq"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_EJXTHj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P7zYfC": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_HgJLQh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.content }}"
+          }
+        },
+        "button_PWHTjz": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_P7zYfC",
+        "text_HgJLQh",
+        "button_PWHTjz"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_gRKr9C": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9Af9mG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Segelreviere_ruegen_525x525_9664fb44-a5da-4f58-808c-395877d8ff66.jpg",
+            "title": "Insel Rügen",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Q4gg4R": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Segelreviere_Usedom_525x525_9fe10cd5-cee5-422d-a4ad-8c7fa36d7e51.jpg",
+            "title": "Insel Usedom",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tDeDRD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Segelreviere_daenemark_525x525_28cff90a-2b3b-4ce7-b984-f261f038c0e8.jpg",
+            "title": "Dänische Südsee",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9Af9mG",
+        "column_Q4gg4R",
+        "column_tDeDRD"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_fEMFHn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NBBxUh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Segelreviere_bornholm_525x525_e743a98f-cd5f-4081-b36b-c4fa30c7804b.jpg",
+            "title": "Insel Bornholm",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mynr4w": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Segelreviere_stettinerhaff_525x525_d58a0dc4-9f6b-48ad-913c-55c6fb22d6da.jpg",
+            "title": "Stettiner Haff",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rDc3y9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Segelreviere_polen_525x525_e76183ad-4036-40dd-bb2a-005c2216e62d.jpg",
+            "title": "Polnische Ostseeküste",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NBBxUh",
+        "column_mynr4w",
+        "column_rDc3y9"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_TDy6h4": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_ihfmqg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "krummin"
+          }
+        },
+        "featured_collection_Jaeq8Q": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "marina-kroslin"
+          }
+        },
+        "featured_collection_8mHbmW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "karlshamn-se"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_ihfmqg",
+        "featured_collection_Jaeq8Q",
+        "featured_collection_8mHbmW"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "STANDORTE IM ÜBERBLICK",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_YcBgbT",
+    "rich_text_EJXTHj",
+    "multicolumn_gRKr9C",
+    "multicolumn_fEMFHn",
+    "collection_list_TDy6h4"
+  ]
+}
