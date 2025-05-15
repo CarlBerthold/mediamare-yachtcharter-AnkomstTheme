@@ -23,6 +23,7 @@
         "slide_knDbBx": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Final_Reviere_04.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -40,24 +41,82 @@
         "slide_BQUyeN": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify://shop_images/Final_Reviere_02.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_hQMN4J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Final_Reviere_03.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Xcmwaq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Final_Reviere_05.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_aBzwEq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Final_Reviere06.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
         "slide_knDbBx",
-        "slide_BQUyeN"
+        "slide_BQUyeN",
+        "slide_hQMN4J",
+        "slide_Xcmwaq",
+        "slide_aBzwEq"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -115,100 +174,147 @@
         "padding_bottom": 52
       }
     },
-    "image_with_text_BanDhM": {
-      "type": "image-with-text",
+    "multicolumn_gRKr9C": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_xqAK6b": {
-          "type": "heading",
+        "column_9Af9mG": {
+          "type": "column",
           "settings": {
-            "heading": "{{ page.title }}",
-            "heading_size": "h1"
+            "image": "shopify://shop_images/Segelreviere_ruegen_525x525_9664fb44-a5da-4f58-808c-395877d8ff66.jpg",
+            "title": "Insel Rügen",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text_3rrXq3": {
-          "type": "text",
+        "column_Q4gg4R": {
+          "type": "column",
           "settings": {
-            "text": "{{ page.content }}",
-            "text_style": "body"
+            "image": "shopify://shop_images/Segelreviere_Usedom_525x525_9fe10cd5-cee5-422d-a4ad-8c7fa36d7e51.jpg",
+            "title": "Insel Usedom",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
-        "button_6X33t8": {
-          "type": "button",
+        "column_tDeDRD": {
+          "type": "column",
           "settings": {
-            "button_label": "Ankommen und segeln",
-            "button_link": "shopify://collections/flotte",
-            "button_style_secondary": false
+            "image": "shopify://shop_images/Segelreviere_daenemark_525x525_28cff90a-2b3b-4ce7-b984-f261f038c0e8.jpg",
+            "title": "Dänische Südsee",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading_xqAK6b",
-        "text_3rrXq3",
-        "button_6X33t8"
+        "column_9Af9mG",
+        "column_Q4gg4R",
+        "column_tDeDRD"
       ],
-      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Folke_2365836_XXL.jpg",
-        "height": "medium",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "image_banner_Yi7itg": {
-      "type": "image-banner",
+    "multicolumn_fEMFHn": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_jMMUyC": {
-          "type": "heading",
+        "column_NBBxUh": {
+          "type": "column",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
+            "image": "shopify://shop_images/Segelreviere_bornholm_525x525_e743a98f-cd5f-4081-b36b-c4fa30c7804b.jpg",
+            "title": "Insel Bornholm",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text_kCK3qE": {
-          "type": "text",
+        "column_mynr4w": {
+          "type": "column",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "image": "shopify://shop_images/Segelreviere_stettinerhaff_525x525_d58a0dc4-9f6b-48ad-913c-55c6fb22d6da.jpg",
+            "title": "Stettiner Haff",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
-        "buttons_9rbWR6": {
-          "type": "buttons",
+        "column_rDc3y9": {
+          "type": "column",
           "settings": {
-            "button_label_1": "Folkeboote",
-            "button_link_1": "shopify://collections/folkeboote",
-            "button_style_secondary_1": false,
-            "button_label_2": "Standorte",
-            "button_link_2": "shopify://collections/krummin",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/Segelreviere_polen_525x525_e76183ad-4036-40dd-bb2a-005c2216e62d.jpg",
+            "title": "Polnische Ostseeküste",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading_jMMUyC",
-        "text_kCK3qE",
-        "buttons_9rbWR6"
+        "column_NBBxUh",
+        "column_mynr4w",
+        "column_rDc3y9"
       ],
-      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_azy4nX": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "standorte",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -216,7 +322,8 @@
     "main",
     "slideshow_YcBgbT",
     "rich_text_EJXTHj",
-    "image_with_text_BanDhM",
-    "image_banner_Yi7itg"
+    "multicolumn_gRKr9C",
+    "multicolumn_fEMFHn",
+    "featured_collection_azy4nX"
   ]
 }
