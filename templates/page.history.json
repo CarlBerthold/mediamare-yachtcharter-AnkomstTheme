@@ -199,9 +199,9 @@
         "column_NBBxUh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Segelreviere_bornholm_525x525_e743a98f-cd5f-4081-b36b-c4fa30c7804b.jpg",
-            "title": "Insel Bornholm",
-            "text": "",
+            "image": "shopify://shop_images/History_525x525_4.jpg",
+            "title": "Pantry",
+            "text": "<p><br/>Praktische Pantry mit klappbarem Spirituskocher, Stauraum für Geschirr und einem multifunktionalen, verstaubaren Arbeitstisch – für eine stets aufgeräumte Kajüte.</p>",
             "link_label": "",
             "link": ""
           }
@@ -209,9 +209,9 @@
         "column_mynr4w": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Segelreviere_stettinerhaff_525x525_d58a0dc4-9f6b-48ad-913c-55c6fb22d6da.jpg",
-            "title": "Stettiner Haff",
-            "text": "",
+            "image": "shopify://shop_images/History_525x525_5.jpg",
+            "title": "Robust und hochseetauglich",
+            "text": "<p><br/>Rumpf und Deck werden im Handauflegeverfahren gefertigt – für starke Laminatstruktur und Langlebigkeit. Der hohe Ballastanteil sorgt für sicheres, komfortables Segeln auch bei viel Wind.</p>",
             "link_label": "",
             "link": ""
           }
