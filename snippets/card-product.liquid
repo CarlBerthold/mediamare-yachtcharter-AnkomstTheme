@@ -221,10 +221,12 @@
               {% endif %}
             </ul>
 
-            {% if zusatzoptionen %}
+            {% if zusatzoptionen and zusatzoptionen.verkauf != blank %}
               <div class="verkauf">
                 <p class="verkaufs-text">{{ zusatzoptionen.verkauf | escape }}</p>
-                <span class="verkaufs-preis">{{ zusatzoptionen.verkaufs_preis | escape }}</span>
+                {% if zusatzoptionen.verkaufs_preis != blank %}
+                  <span class="verkaufs-preis">{{ zusatzoptionen.verkaufs_preis | escape }}</span>
+                {% endif %}
               </div>
             {% endif %}
     
