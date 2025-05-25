@@ -236,7 +236,7 @@
   }
 }
 
-.section-template--24250306167120__main-collection-product-grid-padding > div > #ProductGridContainer > div #product-grid {
+.section-template--24250306167120__main-collection-product-grid-padding > div > #ProductGridContainer > div #product-grid > li > div .card__content{
   background-color: red;
 
 }
