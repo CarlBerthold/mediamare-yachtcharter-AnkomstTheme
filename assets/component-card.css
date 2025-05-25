@@ -237,16 +237,16 @@
 }
 
 
-#Slider-template--24445644603728__collection_list_TDy6h4 > li > div > 
+/* #Slider-template--24445644603728__collection_list_TDy6h4 > li > div > 
 .card--card.card--media > .card__content {
   background-color: #F4F5F6;
 
-}
+} */
 
 .card--card.card--media > .card__content {
   margin-top: calc(0rem - var(--image-padding));
   /* backgroundcolor card-content */
-    background-color: #fff;
+    background-color: #F4F5F6;
 
 }
 
