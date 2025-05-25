@@ -191,19 +191,19 @@
 
               
               {% if technische_daten %}
-                <li><strong>Tiefgang:</strong> {{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</li>
-                <li><strong>Motorisierung:</strong> {{ technische_daten.motorisierung.value | escape }}</li>
+                <li>Tiefgang: {{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</li>
+                <li>Motorisierung: {{ technische_daten.motorisierung.value | escape }}</li>
 
                 {% if ausstattung %}
-                <li><strong>Kabinen:</strong> {{ ausstattung.kabinen.value | escape }}</li>
-                <li><strong>Schlafplätze:</strong> {{ ausstattung.schlafplaetze }}</li>
-                <li><strong>Sanitär:</strong> {{ ausstattung.sanitaer.value | escape }}</li>
+                <li>Kabinen: {{ ausstattung.kabinen.value | escape }}</li>
+                <li>Schlafplätze: {{ ausstattung.schlafplaetze }}</li>
+                <li>Sanitär: {{ ausstattung.sanitaer.value | escape }}</li>
                 {% endif %}
 
                 {% if zusatzoptionen %}
-                <li><strong>Fahrzone:</strong> {{ zusatzoptionen.fahrzone | escape }}</li>
-                <li><strong>Führerschein:</strong>{{ zusatzoptionen.fuehrerschein | escape }}</li>
-                <li><strong>Funkschein:</strong> {{ zusatzoptionen.funkschein | escape }}</li>
+                <li>Fahrzone: {{ zusatzoptionen.fahrzone | escape }}</li>
+                <li>Führerschein: {{ zusatzoptionen.fuehrerschein | escape }}</li>
+                <li>Funkschein: {{ zusatzoptionen.funkschein | escape }}</li>
                 {% endif %}
                 
               {% else %}
@@ -214,7 +214,7 @@
                 <div class="location">
                   <span class="location">
                     <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">
-                      <strong>Liegeplatz:</strong> <span style="color:#0671b7;">{{ zusatzoptionen.liegeplatz | escape }}</span>
+                      Liegeplatz: <span style="color:#0671b7;">{{ zusatzoptionen.liegeplatz | escape }}</span>
                     </a>
                   </span>
               </div>
