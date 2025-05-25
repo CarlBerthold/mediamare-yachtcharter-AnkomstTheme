@@ -442,6 +442,7 @@
   .banner--mobile-bottom::after,
   .banner--mobile-bottom .banner__media::after {
     display: none;
+    
   }
 }
 

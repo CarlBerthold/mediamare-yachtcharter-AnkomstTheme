@@ -201,3 +201,12 @@ STINE HANSE 311
 
 Naturhafen Krummin 
 Ausgezeichnete Qualität: Usedoms erste 4-Sterne-Marina
+
+
+
+
+
+Ihr perfekter Startpunkt für traumhafte Törns
+
+Die Marina Kröslin und der idyllische Naturhafen Krummin bieten Ihnen den idealen Ausgangspunkt für unvergessliche Tagestörns und mehrtägige Segelabenteuer. Direkt am geschützten Peenestrom gelegen, gelangen Sie ohne Brücken oder Wartezeiten schnell und unkompliziert auf die offene Ostsee.
+Ob Achterwasser, Greifswalder Bodden oder die reizvolle Umrundung von Rügen und Usedom – die Möglichkeiten sind vielfältig und faszinierend. Für längere Törns lockt die dänische Insel Bornholm, nur 75 Seemeilen entfernt, ebenso wie die nahe schwedische Küste – beide zählen zu den beliebtesten Zielen erfahrener Skipper.
