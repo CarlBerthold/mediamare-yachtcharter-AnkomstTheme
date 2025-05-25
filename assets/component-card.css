@@ -236,12 +236,17 @@
   }
 }
 
-
-#Slider-template--24445644603728__collection_list_TDy6h4 > li > div > 
-.card--card.card--media > .card__content {
+.section-template--24250306167120__main-collection-product-grid-padding > div > #ProductGridContainer > div > #product-grid > ul > li > div > .card--card.card--media > .card__content {
   background-color: #F4F5F6;
 
 }
+
+
+/* #Slider-template--24445644603728__collection_list_TDy6h4 > li > div > 
+.card--card.card--media > .card__content {
+  background-color: #F4F5F6;
+
+} */
 
 .card--card.card--media > .card__content {
   margin-top: calc(0rem - var(--image-padding));
