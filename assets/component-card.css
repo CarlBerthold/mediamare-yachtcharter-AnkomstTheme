@@ -433,7 +433,7 @@
 }
 
 .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
