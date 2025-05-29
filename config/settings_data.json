@@ -123,10 +123,10 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
     "currency_code_enabled": true,
-    "cart_type": "drawer",
-    "show_vendor": false,
+    "cart_type": "notification",
+    "show_vendor": true,
     "show_cart_note": true,
-    "cart_drawer_collection": "folkeboote",
+    "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
     "header-background": "shopify://shop_images/Folke_2365836_XXL_f92bb882-8683-46da-b9fa-c7ff046179dc.jpg",
     "sections": {
