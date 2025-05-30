@@ -211,7 +211,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_5.jpg",
             "title": "Robust und hochseetauglich",
-            "text": "<p><br/>Rumpf und Deck werden im Handauflegeverfahren gefertigt – für starke Laminatstruktur und Langlebigkeit. Der hohe Ballastanteil sorgt für sicheres, komfortables Segeln auch bei viel Wind.</p>",
+            "text": "<h4><br/>Rumpf und Deck werden im Handauflegeverfahren gefertigt – für starke Laminatstruktur und Langlebigkeit. Der hohe Ballastanteil sorgt für sicheres, komfortables Segeln auch bei viel Wind.</h4>",
             "link_label": "",
             "link": ""
           }
@@ -221,7 +221,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_6.jpg",
             "title": "Stabiler Kiel",
-            "text": "<p><br/>Der Ballast besteht aus Gusseisen und ist im Kiel mit Polyester massiv eingegossen.<br/>Damit ist das Risiko bei einer Grundberührung des Bootes auf ein Minimum reduziert. Der lange Kiel schützt das Ruder.</p>",
+            "text": "<h4><br/>Der Ballast besteht aus Gusseisen und ist im Kiel mit Polyester massiv eingegossen.<br/>Damit ist das Risiko bei einer Grundberührung des Bootes auf ein Minimum reduziert. Der lange Kiel schützt das Ruder.</h4>",
             "link_label": "",
             "link": ""
           }
@@ -300,7 +300,7 @@
         "heading_size": "h1",
         "description": "",
         "show_description": false,
-        "description_style": "body",
+        "description_style": "uppercase",
         "collection": "folkeboote",
         "products_to_show": 4,
         "columns_desktop": 3,
@@ -309,7 +309,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
