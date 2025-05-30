@@ -380,7 +380,8 @@
 }
 
 .card .icon-wrap {
-  margin-left: 0.8rem;
+  position: absolute;
+  right: 40px;
   white-space: nowrap;
   transition: transform var(--duration-short) ease;
   overflow: hidden;
