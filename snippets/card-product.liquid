@@ -182,6 +182,12 @@
             </a>
           </h5>
           <div class="card-information">
+            <style>
+              .test {
+              display: flex;
+              justify-content: space-around;
+            }
+              </style>
 
             <ul class="technische_daten">
               {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
@@ -191,21 +197,21 @@
 
               
               {% if technische_daten %}
-                <li>Tiefgang: {{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</li>
-                <li>Motorisierung: {{ technische_daten.motorisierung.value | escape }}</li>
+                <li class="test"><strong>Tiefgang:</strong> {{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</li>
+                <li class="test"><strong>Motorisierung:</strong> {{ technische_daten.motorisierung.value | escape }}</li>
 
                 {% if ausstattung %}
-                <li><strong>Kabinen:</strong> {{ ausstattung.kabinen.value | escape }}</li>
-                <li>Schlafplätze: {{ ausstattung.schlafplaetze }}</li>
-                <li>Sanitär: {{ ausstattung.sanitaer.value | escape }}</li>
+                <li class="test"><strong>Kabinen:</strong> {{ ausstattung.kabinen.value | escape }}</li>
+                <li class="test"><strong>Schlafplätze:</strong> {{ ausstattung.schlafplaetze }}</li>
+                <li class="test"><strong>Sanitär:</strong> {{ ausstattung.sanitaer.value | escape }}</li>
                 {% endif %}
 
                 {% if zusatzoptionen %}
-                <li>Fahrzone: {{ zusatzoptionen.fahrzone | escape }}</li>
-                <li>Führerschein: {{ zusatzoptionen.fuehrerschein | escape }}</li>
-                <li>Funkschein: {{ zusatzoptionen.funkschein | escape }}</li>
+                <li class="test"><strong>Fahrzone:</strong> {{ zusatzoptionen.fahrzone | escape }}</li>
+                <li class="test"><strong>Führerschein:</strong> {{ zusatzoptionen.fuehrerschein | escape }}</li>
+                <li class="test"><strong>Funkschein:</strong> {{ zusatzoptionen.funkschein | escape }}</li>
                 {% endif %}
-                
+
               {% else %}
                 <span style="display: none;"></span>
               {% endif %}
