@@ -184,56 +184,53 @@
           <div class="card-information">
 
             <table class="technische_daten">
-  <tbody>
-    {% if technische_daten %}
-      <tr>
-        <td><strong>Tiefgang:</strong></td>
-        <td>{{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</td>
-      </tr>
-      <tr>
-        <td><strong>Motorisierung:</strong></td>
-        <td>{{ technische_daten.motorisierung.value | escape }}</td>
-      </tr>
-      {% if ausstattung %}
-        <tr>
-          <td><strong>Kabinen:</strong></td>
-          <td>{{ ausstattung.kabinen.value | escape }}</td>
-        </tr>
-        <tr>
-          <td><strong>Schlafplätze:</strong></td>
-          <td>{{ ausstattung.schlafplaetze }}</td>
-        </tr>
-        <tr>
-          <td><strong>Sanitär:</strong></td>
-          <td>{{ ausstattung.sanitaer.value | escape }}</td>
-        </tr>
-      {% endif %}
-      {% if zusatzoptionen %}
-        <tr>
-          <td><strong>Fahrzone:</strong></td>
-          <td>{{ zusatzoptionen.fahrzone | escape }}</td>
-        </tr>
-        <tr>
-          <td><strong>Führerschein:</strong></td>
-          <td>{{ zusatzoptionen.fuehrerschein | escape }}</td>
-        </tr>
-        <tr>
-          <td><strong>Funkschein:</strong></td>
-          <td>{{ zusatzoptionen.funkschein | escape }}</td>
-        </tr>
-      {% endif %}
-    {% endif %}
-    {% if zusatzoptionen %}
-                <div class="location">
-                  <span class="location">
-                    <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">
-                      Liegeplatz: <span style="color:#0671b7;">{{ zusatzoptionen.liegeplatz | escape }}</span>
-                    </a>
-                  </span>
-              </div>
-              {% endif %}
-  </tbody>
-</table>
+              <tbody>
+                {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
+                {% assign ausstattung = card_product.metafields.custom.ausstattung.value %}
+                {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
+
+
+                
+                {% if technische_daten %}
+                  <tr>
+                    <td><strong>Tiefgang:</strong></td>
+                    <td>{{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Motorisierung:</strong></td>
+                    <td>{{ technische_daten.motorisierung.value | escape }}</td>
+                  </tr>
+                  {% if ausstattung %}
+                    <tr>
+                      <td><strong>Kabinen:</strong></td>
+                      <td>{{ ausstattung.kabinen.value | escape }}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Schlafplätze:</strong></td>
+                      <td>{{ ausstattung.schlafplaetze }}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Sanitär:</strong></td>
+                      <td>{{ ausstattung.sanitaer.value | escape }}</td>
+                    </tr>
+                  {% endif %}
+                  {% if zusatzoptionen %}
+                    <tr>
+                      <td><strong>Fahrzone:</strong></td>
+                      <td>{{ zusatzoptionen.fahrzone | escape }}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Führerschein:</strong></td>
+                      <td>{{ zusatzoptionen.fuehrerschein | escape }}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Funkschein:</strong></td>
+                      <td>{{ zusatzoptionen.funkschein | escape }}</td>
+                    </tr>
+                  {% endif %}
+                {% endif %}
+              </tbody>
+            </table>
 
             {% if zusatzoptionen and zusatzoptionen.verkauf != blank %}
               <div class="verkauf">
