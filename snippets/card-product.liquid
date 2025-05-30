@@ -183,34 +183,47 @@
           </h5>
           <div class="card-information">
 
-            <ul class="technische_daten">
-              {% assign technische_daten = card_product.metafields.custom.technische_daten.value %}
-              {% assign ausstattung = card_product.metafields.custom.ausstattung.value %}
-              {% assign zusatzoptionen = card_product.metafields.custom.zusatzoptionen.value %}
-
-
-              
-              {% if technische_daten %}
-                <li><strong>Tiefgang:</strong> {{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</li>
-                <li><strong>Motorisierung:</strong> {{ technische_daten.motorisierung.value | escape }}</li>
-
-                {% if ausstattung %}
-                <li><strong>Kabinen:</strong> {{ ausstattung.kabinen.value | escape }}</li>
-                <li><strong>Schlafplätze:</strong> {{ ausstattung.schlafplaetze }}</li>
-                <li><strong>Sanitär:</strong> {{ ausstattung.sanitaer.value | escape }}</li>
-                {% endif %}
-
-                {% if zusatzoptionen %}
-                <li><strong>Fahrzone:</strong> {{ zusatzoptionen.fahrzone | escape }}</li>
-                <li><strong>Führerschein:</strong> {{ zusatzoptionen.fuehrerschein | escape }}</li>
-                <li><strong>Funkschein:</strong> {{ zusatzoptionen.funkschein | escape }}</li>
-                {% endif %}
-
-              {% else %}
-                <span style="display: none;"></span>
-              {% endif %}
-
-              {% if zusatzoptionen %}
+            <table class="technische_daten">
+  <tbody>
+    {% if technische_daten %}
+      <tr>
+        <td><strong>Tiefgang:</strong></td>
+        <td>{{ technische_daten.tiefgang.value | escape }} {{ technische_daten.tiefgang.unit | escape }}</td>
+      </tr>
+      <tr>
+        <td><strong>Motorisierung:</strong></td>
+        <td>{{ technische_daten.motorisierung.value | escape }}</td>
+      </tr>
+      {% if ausstattung %}
+        <tr>
+          <td><strong>Kabinen:</strong></td>
+          <td>{{ ausstattung.kabinen.value | escape }}</td>
+        </tr>
+        <tr>
+          <td><strong>Schlafplätze:</strong></td>
+          <td>{{ ausstattung.schlafplaetze }}</td>
+        </tr>
+        <tr>
+          <td><strong>Sanitär:</strong></td>
+          <td>{{ ausstattung.sanitaer.value | escape }}</td>
+        </tr>
+      {% endif %}
+      {% if zusatzoptionen %}
+        <tr>
+          <td><strong>Fahrzone:</strong></td>
+          <td>{{ zusatzoptionen.fahrzone | escape }}</td>
+        </tr>
+        <tr>
+          <td><strong>Führerschein:</strong></td>
+          <td>{{ zusatzoptionen.fuehrerschein | escape }}</td>
+        </tr>
+        <tr>
+          <td><strong>Funkschein:</strong></td>
+          <td>{{ zusatzoptionen.funkschein | escape }}</td>
+        </tr>
+      {% endif %}
+    {% endif %}
+    {% if zusatzoptionen %}
                 <div class="location">
                   <span class="location">
                     <a href="https://mediamare-yachtcharter.myshopify.com/collections/{{ zusatzoptionen.liegeplatz | handleize }}" class="link-liegeplatz">
@@ -219,7 +232,8 @@
                   </span>
               </div>
               {% endif %}
-            </ul>
+  </tbody>
+</table>
 
             {% if zusatzoptionen and zusatzoptionen.verkauf != blank %}
               <div class="verkauf">
