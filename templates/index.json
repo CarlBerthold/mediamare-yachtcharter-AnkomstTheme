@@ -249,10 +249,45 @@
         "include_margins": true
       }
     },
+    "rich_text_xrTq6m": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KVypfY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unsere Folkeboote",
+            "heading_size": "h1"
+          }
+        },
+        "button_7fKQtk": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KVypfY",
+        "button_7fKQtk"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Unsere Folkeboote",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -275,49 +310,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 24
-      }
-    },
-    "rich_text_xrTq6m": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_KVypfY": {
-          "type": "heading",
-          "settings": {
-            "heading": "Neu im Sortiment NF-Getrud",
-            "heading_size": "h1"
-          }
-        },
-        "text_ptkEBH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Schiffsbeschreibung</p>"
-          }
-        },
-        "button_7fKQtk": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_KVypfY",
-        "text_ptkEBH",
-        "button_7fKQtk"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "featured_product_fNXYtb": {
@@ -400,8 +392,8 @@
     "collection_list_Gj3wnz",
     "rich_text",
     "1738703331a115570f",
-    "featured-collection",
     "rich_text_xrTq6m",
+    "featured-collection",
     "featured_product_fNXYtb"
   ]
 }
