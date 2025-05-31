@@ -218,37 +218,6 @@
         "padding_bottom": 28
       }
     },
-    "1738703331a115570f": {
-      "type": "apps",
-      "blocks": {
-        "izyrent_global_calendar_EHqD3P": {
-          "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
-          "settings": {
-            "title": "",
-            "range": false,
-            "maxdates": 3,
-            "mindays": 1,
-            "collection": "flotte",
-            "filter-options": false,
-            "filter-tags": true,
-            "description": false,
-            "vendor": false,
-            "price": true,
-            "tab": false,
-            "search-tags": ""
-          }
-        }
-      },
-      "block_order": [
-        "izyrent_global_calendar_EHqD3P"
-      ],
-      "custom_css": [
-        "div {background-color: white;}"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "rich_text_xrTq6m": {
       "type": "rich-text",
       "blocks": {
@@ -310,6 +279,37 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 24
+      }
+    },
+    "1738703331a115570f": {
+      "type": "apps",
+      "blocks": {
+        "izyrent_global_calendar_EHqD3P": {
+          "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
+          "settings": {
+            "title": "",
+            "range": false,
+            "maxdates": 3,
+            "mindays": 1,
+            "collection": "flotte",
+            "filter-options": false,
+            "filter-tags": true,
+            "description": false,
+            "vendor": false,
+            "price": true,
+            "tab": false,
+            "search-tags": ""
+          }
+        }
+      },
+      "block_order": [
+        "izyrent_global_calendar_EHqD3P"
+      ],
+      "custom_css": [
+        "div {background-color: white;}"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "featured_product_fNXYtb": {
@@ -390,10 +390,10 @@
     "slideshow_cemdgG",
     "collage-0",
     "collection_list_Gj3wnz",
-    "rich_text",
-    "1738703331a115570f",
     "rich_text_xrTq6m",
     "featured-collection",
+    "rich_text",
+    "1738703331a115570f",
     "featured_product_fNXYtb"
   ]
 }
