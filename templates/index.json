@@ -218,6 +218,69 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_xrTq6m": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KVypfY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unsere Folkeboote",
+            "heading_size": "h1"
+          }
+        },
+        "button_7fKQtk": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KVypfY",
+        "button_7fKQtk"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "folkeboote",
+        "products_to_show": 2,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-bcd23c96-668c-4ff7-9961-8902267d6bf4",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
     "1738703331a115570f": {
       "type": "apps",
       "blocks": {
@@ -247,77 +310,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Unsere Folkeboote",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "subtitle",
-        "collection": "folkeboote",
-        "products_to_show": 2,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-bcd23c96-668c-4ff7-9961-8902267d6bf4",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 24
-      }
-    },
-    "rich_text_xrTq6m": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_KVypfY": {
-          "type": "heading",
-          "settings": {
-            "heading": "Neu im Sortiment NF-Getrud",
-            "heading_size": "h1"
-          }
-        },
-        "text_ptkEBH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Schiffsbeschreibung</p>"
-          }
-        },
-        "button_7fKQtk": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_KVypfY",
-        "text_ptkEBH",
-        "button_7fKQtk"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "featured_product_fNXYtb": {
@@ -398,10 +390,10 @@
     "slideshow_cemdgG",
     "collage-0",
     "collection_list_Gj3wnz",
+    "rich_text_xrTq6m",
+    "featured-collection",
     "rich_text",
     "1738703331a115570f",
-    "featured-collection",
-    "rich_text_xrTq6m",
     "featured_product_fNXYtb"
   ]
 }
