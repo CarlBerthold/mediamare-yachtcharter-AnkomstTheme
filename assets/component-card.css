@@ -427,9 +427,12 @@
   color: #373A3B;
   font-size: 20px;
 }
+.technische_daten > tbody {
+  background-color: grey;
+}
 
 .technische_daten > tbody > tr > td {
-  border: 1px solid lightgrey;
+  /* border: 1px solid lightgrey; */
   padding-left: 2px;
 }
 
