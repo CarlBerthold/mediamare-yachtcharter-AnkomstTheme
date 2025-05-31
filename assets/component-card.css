@@ -428,7 +428,7 @@
   font-size: 20px;
 }
 .technische_daten > tbody {
-  background-color: grey;
+  background-color: #dfdfdf;
 }
 
 .technische_daten > tbody > tr > td {
