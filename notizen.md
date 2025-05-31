@@ -11,6 +11,13 @@ success
 warning
 #f8dc3a
 
+
+
+Grau
+#F4F5F6; --hintergrund Produktgrid
+#dfdfdf; --hintergrund card attribute table
+
+
 Grau (eventuell wird der Ton noch verändert)
 #f6f6f6
 rgb(0, 0, 96)
