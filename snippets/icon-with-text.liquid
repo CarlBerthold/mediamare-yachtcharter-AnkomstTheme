@@ -60,13 +60,17 @@
       {%- endif -%}
       <span class="h4 inline-richtext">
         
-        {%  assign datenblatt = product.metafields.custom.datenblatt.url %}
-       
-        <span>{{ datenblatt | json }}</span>
-        <p>{{ product.metafields.custom.datenblatt }}</p>
 
-        {{ product | json}}
-        <a href="{{ 'DB_Angelina.pdf' | file_url }}">{{- block.settings.heading_1 -}}</a>
+        {% if product.handle == 'angelina' %}
+          {% assign datenblatt = 'DB_Angelina.pdf' %}
+        {% endif %}
+
+        {% comment %} {{- block.settings.heading_1 -}}
+        {{- block.settings.heading_1 | json -}}
+        {{- product.metafields.custom.datenblatt | json -}}
+        {{- product.metafields.custom.datenblatt -}}
+        {{ product.handle == 'angelina' | json }} {% endcomment %}
+    
         <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
 
         {% comment %} <a href="{{ product.metafields.custom.datenblatt }}" download>Download Datenblatt</a> {% endcomment %}
