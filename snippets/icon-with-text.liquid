@@ -65,8 +65,7 @@
   {{ block.settings.heading_1 }} -- {{ product.metafields.custom.datenblatt.url }}</a> {% endcomment %}
 
   {% if product.metafields.custom.datenblatt %}
-    <span></span>{{ product.metafields.custom.datenblatt }}</span>
-  <a href="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/DB_Angelina_f81d1294-7ba9-45c3-b3f2-3ca6160a5baf.pdf?v=1748765440" download target="_blank">
+  <a href="{{ product.metafields.custom.datenblatt.file_url }}" download target="_blank">
     📄 PDF herunterladen
   </a>
 {% endif %}
