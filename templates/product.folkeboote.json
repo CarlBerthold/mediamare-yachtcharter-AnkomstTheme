@@ -115,6 +115,18 @@
             "share_label": "Teile dieses Produkt"
           }
         },
+        "icon_with_text_x7fRhE": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "map_pin",
+            "heading_1": "Datenblatt",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
         "collapsible_tab_QJyHjf": {
           "type": "collapsible_tab",
           "settings": {
@@ -166,6 +178,7 @@
         "quantity_selector",
         "buy_buttons",
         "share",
+        "icon_with_text_x7fRhE",
         "collapsible_tab_QJyHjf",
         "collapsible_tab_pCXNpX",
         "collapsible_tab_79fgYa",
