@@ -42,7 +42,7 @@
 >
   {%- unless heading_1_empty -%}
     <li class="icon-with-text__item">
-      
+       
       {%- if block.settings.image_1 == null -%}
         {%- render 'icon-accordion', icon: block.settings.icon_1 -%}
       {%- else -%}
@@ -60,7 +60,11 @@
       {%- endif -%}
       <span class="h4 inline-richtext">
         
-        <a href="{{ product.metafields.custom.datenblatt }}" download>Download Datenblatt</a>
+        {%  assign datenblatt = product.metafields.custom.datenblatt %}
+
+        {{ datenblatt }}
+
+        {% comment %} <a href="{{ product.metafields.custom.datenblatt }}" download>Download Datenblatt</a> {% endcomment %}
 
         {{- block.settings.heading_1 -}}
 
