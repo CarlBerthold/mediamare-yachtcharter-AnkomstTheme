@@ -65,6 +65,7 @@
         <span>{{ datenblatt | json }}</span>
         <p>{{ product.metafields.custom.datenblatt }}</p>
 
+        {{ product | json}}
         <a href="{{ 'DB_Angelina.pdf' | file_url }}">{{- block.settings.heading_1 -}}</a>
         <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
 
