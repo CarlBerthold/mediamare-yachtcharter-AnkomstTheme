@@ -62,11 +62,11 @@
         
         {%  assign datenblatt = product.metafields.custom.datenblatt %}
 
-        {{ datenblatt }}
+        <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
 
         {% comment %} <a href="{{ product.metafields.custom.datenblatt }}" download>Download Datenblatt</a> {% endcomment %}
 
-        {{- block.settings.heading_1 -}}
+        
 
 
       </span>
