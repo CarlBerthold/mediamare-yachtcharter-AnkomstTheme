@@ -60,15 +60,9 @@
       {%- endif -%}
       <span class="h4 inline-richtext">
         
-        {% comment %} {{ product.metafields.custom.datenblatt }} 
-        <a href="{{ product.metafields.custom.datenblatt.url }}" download target="_blank">
-  {{ block.settings.heading_1 }} -- {{ product.metafields.custom.datenblatt.url }}</a> {% endcomment %}
+        {{ product.metafields.custom.datenblatt | link_to: 'Download Datenblatt' }}
 
-  {% if product.metafields.custom.datenblatt %}
-  <a href="{{ product.metafields.custom.datenblatt.file_url }}" download target="_blank">
-    📄 PDF herunterladen
-  </a>
-{% endif %}
+        {{- block.settings.heading_1 -}}
 
 
       </span>
