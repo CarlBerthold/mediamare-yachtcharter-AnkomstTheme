@@ -65,7 +65,7 @@
         <span>{{ datenblatt }}</span>
         <p>{{ product.metafields.custom.datenblatt }}</p>
 
-        <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
+        <a href="{{ 'datenblatt.pdf' | file_url }}">{{- block.settings.heading_1 -}}</a>
 
         {% comment %} <a href="{{ product.metafields.custom.datenblatt }}" download>Download Datenblatt</a> {% endcomment %}
 
