@@ -61,6 +61,8 @@
       <span class="h4 inline-richtext">
         
         {%  assign datenblatt = product.metafields.custom.datenblatt %}
+        <span>{{ datenblatt }}</span>
+        <p>{{ product.metafields.custom.datenblatt }}</p>
 
         <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
 
