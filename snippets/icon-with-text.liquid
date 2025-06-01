@@ -58,8 +58,14 @@
           loading="lazy"
         >
       {%- endif -%}
+      
       <span class="h4 inline-richtext">
-        
+        {% case product.handle %}
+          {% when 'angelina' %}
+            {% assign datenblatt = 'DB_Angelina.pdf' %}
+          {% when 'carl' %}
+            {% assign datenblatt = 'DB_Carl.pdf' %}
+        {% endcase %}
 
         {% if product.handle == 'angelina' %}
           {% assign datenblatt = 'DB_Angelina.pdf' %}
