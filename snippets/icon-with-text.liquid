@@ -62,7 +62,7 @@
         
         {%  assign datenblatt = product.metafields.custom.datenblatt.name %}
        
-        <span>{{ datenblatt }}</span>
+        <span>{{ datenblatt | json }}</span>
         <p>{{ product.metafields.custom.datenblatt }}</p>
 
         <a href="{{ 'DB_Angelina.pdf' | file_url }}">{{- block.settings.heading_1 -}}</a>
