@@ -60,7 +60,7 @@
       {%- endif -%}
       <span class="h4 inline-richtext">
         
-        {%  assign datenblatt = product.metafields.custom.datenblatt.name %}
+        {%  assign datenblatt = product.metafields.custom %}
        
         <span>{{ datenblatt | json }}</span>
         <p>{{ product.metafields.custom.datenblatt }}</p>
