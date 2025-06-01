@@ -60,7 +60,9 @@
       {%- endif -%}
       <span class="h4 inline-richtext">
         
-        <a href="{{ product.metafields.custom.datenblatt }}">{{- block.settings.heading_1 -}}</a>
+        <a href="{{ product.metafields.custom.datenblatt.url }}" target="_blank">
+  {{ block.settings.heading_1 }}
+</a>
 
 
       </span>
