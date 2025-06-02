@@ -88,7 +88,7 @@
             {% assign datenblatt = 'Elke_DB.pdf' %}
             <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
             {% break %}
-          {%  when 'hein_muck' %}
+          {%  when 'hein-muck' %}
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
             <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
         {% endcase %}
