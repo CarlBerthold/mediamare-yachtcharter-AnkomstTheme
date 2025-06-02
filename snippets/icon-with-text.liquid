@@ -62,9 +62,19 @@
       <span class="h4 inline-richtext">
         {% case product.handle %}
           {% when 'angelina' %}
-            {% assign datenblatt = 'DB_Angelina.pdf' %}
+            {% assign datenblatt = 'Angelina_DB.pdf' %}
           {% when 'carl' %}
-            {% assign datenblatt = 'DB_Carl.pdf' %}
+            {% assign datenblatt = 'Carl_DB.pdf' %}
+          {% when 'hoppas' %}
+            {% assign datenblatt = 'Hoppas_DB.pdf' %}
+          {% when 'ankomst' %}
+            {% assign datenblatt = 'Ankomst_DB.pdf' %}
+          {%  when 'sonic' %}
+            {% assign datenblatt = 'Sonic_DB.pdf' %}
+          {% when 'elke' %}
+            {% assign datenblatt = 'Elke_DB.pdf' %}
+          {%  when 'hein_muck' %}
+            {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
         {% endcase %}
 
         {% if product.handle == 'angelina' %}
