@@ -59,8 +59,9 @@
         >
       {%- endif -%}
 
-      <div>{{ product | json }}</div>
-      
+      {%- comment -%}
+      Assign the DB_File based on the product handle. it need to be added for any new product.
+      {%- endcomment -%}      
       <div class="h4 inline-richtext">
         {% case product.handle %}
           {% when 'angelina' %}
@@ -91,24 +92,6 @@
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
             <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
         {% endcase %}
-
-        {% comment %} {% if product.handle == 'angelina' %}
-          {% assign datenblatt = 'DB_Angelina.pdf' %}
-        {% endif %} {% endcomment %}
-
-        {% comment %} {{- block.settings.heading_1 -}}
-        {{- block.settings.heading_1 | json -}}
-        {{- product.metafields.custom.datenblatt | json -}}
-        {{- product.metafields.custom.datenblatt -}}
-        {{ product.handle == 'angelina' | json }} {% endcomment %}
-    
-        
-
-        {% comment %} <a href="{{ product.metafields.custom.datenblatt }}" download>Download Datenblatt</a> {% endcomment %}
-
-        
-
-
       </div>
     </li>
   {%- endunless -%}
