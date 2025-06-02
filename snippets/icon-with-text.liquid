@@ -69,21 +69,27 @@
             {% break %}
           {% when 'carl' %}
             {% assign datenblatt = 'Carl_DB.pdf' %}
+            <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
             {% break %}
           {% when 'hoppas' %}
             {% assign datenblatt = 'Hoppas_DB.pdf' %}
+            <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
             {% break %}
           {% when 'ankomst' %}
             {% assign datenblatt = 'Ankomst_DB.pdf' %}
+            <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
             {% break %}
           {%  when 'sonic' %}
             {% assign datenblatt = 'Sonic_DB.pdf' %}
+            <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
             {% break %}
           {% when 'elke' %}
             {% assign datenblatt = 'Elke_DB.pdf' %}
+            <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
             {% break %}
           {%  when 'hein_muck' %}
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
+            <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
         {% endcase %}
 
         {% comment %} {% if product.handle == 'angelina' %}
