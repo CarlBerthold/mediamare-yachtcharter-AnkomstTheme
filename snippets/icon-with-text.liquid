@@ -63,23 +63,29 @@
         {% case product.handle %}
           {% when 'angelina' %}
             {% assign datenblatt = 'Angelina_DB.pdf' %}
+            {% break %}
           {% when 'carl' %}
             {% assign datenblatt = 'Carl_DB.pdf' %}
+            {% break %}
           {% when 'hoppas' %}
             {% assign datenblatt = 'Hoppas_DB.pdf' %}
+            {% break %}
           {% when 'ankomst' %}
             {% assign datenblatt = 'Ankomst_DB.pdf' %}
+            {% break %}
           {%  when 'sonic' %}
             {% assign datenblatt = 'Sonic_DB.pdf' %}
+            {% break %}
           {% when 'elke' %}
             {% assign datenblatt = 'Elke_DB.pdf' %}
+            {% break %}
           {%  when 'hein_muck' %}
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
         {% endcase %}
 
-        {% if product.handle == 'angelina' %}
+        {% comment %} {% if product.handle == 'angelina' %}
           {% assign datenblatt = 'DB_Angelina.pdf' %}
-        {% endif %}
+        {% endif %} {% endcomment %}
 
         {% comment %} {{- block.settings.heading_1 -}}
         {{- block.settings.heading_1 | json -}}
