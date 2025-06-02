@@ -58,6 +58,8 @@
           loading="lazy"
         >
       {%- endif -%}
+
+      {{ product | json }}
       
       <div class="h4 inline-richtext">
         {% case product.handle %}
