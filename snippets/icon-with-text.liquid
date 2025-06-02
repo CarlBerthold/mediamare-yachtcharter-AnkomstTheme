@@ -59,7 +59,7 @@
         >
       {%- endif -%}
       
-      <span class="h4 inline-richtext">
+      <div class="h4 inline-richtext">
         {% case product.handle %}
           {% when 'angelina' %}
             {% assign datenblatt = 'Angelina_DB.pdf' %}
@@ -83,9 +83,9 @@
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
         {% endcase %}
 
-        {% if product.handle == 'angelina' %}
+        {% comment %} {% if product.handle == 'angelina' %}
           {% assign datenblatt = 'DB_Angelina.pdf' %}
-        {% endif %}
+        {% endif %} {% endcomment %}
 
         {% comment %} {{- block.settings.heading_1 -}}
         {{- block.settings.heading_1 | json -}}
@@ -100,7 +100,7 @@
         
 
 
-      </span>
+      </div>
     </li>
   {%- endunless -%}
   {%- unless heading_2_empty -%}
