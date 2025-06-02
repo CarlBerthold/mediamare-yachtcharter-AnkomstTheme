@@ -83,9 +83,9 @@
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
         {% endcase %}
 
-        {% comment %} {% if product.handle == 'angelina' %}
+        {% if product.handle == 'angelina' %}
           {% assign datenblatt = 'DB_Angelina.pdf' %}
-        {% endif %} {% endcomment %}
+        {% endif %}
 
         {% comment %} {{- block.settings.heading_1 -}}
         {{- block.settings.heading_1 | json -}}
