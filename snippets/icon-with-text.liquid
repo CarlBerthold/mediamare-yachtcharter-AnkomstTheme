@@ -62,7 +62,7 @@
       <div>{{ product | json }}</div>
       
       <div class="h4 inline-richtext">
-       {% comment %}  {% case product.handle %}
+        {% case product.handle %}
           {% when 'angelina' %}
             {% assign datenblatt = 'Angelina_DB.pdf' %}
             {% break %}
@@ -83,7 +83,7 @@
             {% break %}
           {%  when 'hein_muck' %}
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
-        {% endcase %} {% endcomment %}
+        {% endcase %}
 
         {% comment %} {% if product.handle == 'angelina' %}
           {% assign datenblatt = 'DB_Angelina.pdf' %}
