@@ -65,6 +65,7 @@
         {% case product.handle %}
           {% when 'angelina' %}
             {% assign datenblatt = 'Angelina_DB.pdf' %}
+            <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
             {% break %}
           {% when 'carl' %}
             {% assign datenblatt = 'Carl_DB.pdf' %}
@@ -95,7 +96,7 @@
         {{- product.metafields.custom.datenblatt -}}
         {{ product.handle == 'angelina' | json }} {% endcomment %}
     
-        <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
+        
 
         {% comment %} <a href="{{ product.metafields.custom.datenblatt }}" download>Download Datenblatt</a> {% endcomment %}
 
