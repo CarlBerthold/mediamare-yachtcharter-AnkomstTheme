@@ -62,7 +62,7 @@
       {%- comment -%}
       Assign the DB_File based on the product handle. it need to be added for any new product.
       {%- endcomment -%}      
-      <div class="h4 inline-richtext">
+      <span class="h4 inline-richtext">
         {% case product.handle %}
           {% when 'angelina' %}
             {% assign datenblatt = 'Angelina_DB.pdf' %}
@@ -92,7 +92,7 @@
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
             <a href="{{ datenblatt | file_url }}">{{- block.settings.heading_1 -}}</a>
         {% endcase %}
-      </div>
+      </span>
     </li>
   {%- endunless -%}
   {%- unless heading_2_empty -%}
