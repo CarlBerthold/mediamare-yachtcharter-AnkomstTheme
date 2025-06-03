@@ -130,9 +130,9 @@
                         or item.selling_plan_allocation != null
                       -%}
                         <dl>
-                          <span>{{ item.properties | json }}</span>
-                          <span>{{ item.options_with_values | json }}</span>
-                          
+                          {% comment %} <span>{{ item.properties | json }}</span>
+                          <span>{{ item.options_with_values | json }}</span> {% endcomment %}
+
                           {%- assign price_now = 0 -%}
                           {%- assign price_later = 0 -%}
                           {%- assign total_price = 0 -%}
@@ -140,7 +140,7 @@
                             {%- assign name = option[0] -%}
                             {%- assign value = option[1] -%}
                             {%- if value contains '€' -%}
-                              {%- assign numeric_value = value | remove: '€' | remove: '.' | replace: ',', '.' | plus: 0 -%}
+                              {%- assign numeric_value = value | remove: '€' | remove: ' ' | replace: '.', '' | replace: ',', '.' | plus: 0 -%}
                               {%- if name == 'später bezahlen' -%}
                                 {%- assign price_later = price_later | plus: numeric_value -%}
                               {%- else -%}
