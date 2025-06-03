@@ -149,7 +149,8 @@
                               {%- assign total_price = total_price | plus: numeric_value -%}
                             {%- endif -%}
                           {%- endfor -%}
-
+                          
+                          <span>DEBUG: {{ value }} → {{ numeric_value }}</span>
                           <span>Jetzt zahlen: {{ price_now | money }}</span><br>
                           <span>Später zahlen: {{ price_later | money }}</span><br>
                           <span>Gesamt: {{ total_price | money }}</span>
