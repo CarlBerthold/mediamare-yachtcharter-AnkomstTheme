@@ -140,6 +140,44 @@
                                 <dd>{{ option.value }}</dd>
                               </div>
                             {%- endfor -%}
+
+                            {%- assign price_now = 0 -%}
+{%- assign price_later = 0 -%}
+{%- assign price_options = '' -%}
+{%- assign other_options = '' -%}
+
+{%- for option in item.options_with_values -%}
+  {%- assign name = option[0] -%}
+  {%- assign value = option[1] -%}
+  {%- if value contains '€' -%}
+    {%- assign numeric_value = value | remove: '€' | remove: ' ' | replace: '.', '' | replace: ',', '.' | plus: 0 -%}
+    {%- if name == 'später bezahlen' -%}
+      {%- assign price_later = price_later | plus: numeric_value -%}
+    {%- else -%}
+      {%- assign price_now = price_now | plus: numeric_value -%}
+      {%- assign price_options = price_options | append: '<div>' | append: name | append: ': ' | append: value | append: '</div>' -%}
+    {%- endif -%}
+  {%- elsif name != 'Date' and name != '__addonsId' and name != '__izyrentValidation' -%}
+    {%- assign other_options = other_options | append: '<div>' | append: name | append: ': ' | append: value | append: '</div>' -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<!-- Show price options (now) -->
+<div>
+  <strong>Jetzt zahlen:</strong> {{ price_now | money }}
+  {{ price_options }}
+</div>
+
+<!-- Show price for later -->
+<div>
+  <strong>Später zahlen:</strong> {{ price_later | money }}
+</div>
+
+<!-- Show other options -->
+<div>
+  <strong>Weitere Optionen:</strong>
+  {{ other_options }}
+</div>
                           {%- endif -%}
 
                           {%- for property in item.properties -%}
