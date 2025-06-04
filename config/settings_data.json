@@ -124,7 +124,7 @@
     "predictive_search_show_price": true,
     "currency_code_enabled": true,
     "cart_type": "notification",
-    "show_vendor": true,
+    "show_vendor": false,
     "show_cart_note": true,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
