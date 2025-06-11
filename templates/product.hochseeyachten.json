@@ -65,6 +65,13 @@
           "type": "price",
           "settings": {}
         },
+        "text_UWgGC7": {
+          "type": "text",
+          "settings": {
+            "text": "Minimale Mietdauer für die {{ product.title }} 1 Woche",
+            "text_style": "uppercase"
+          }
+        },
         "izyrent_product_calendar_HXKJGL": {
           "type": "shopify://apps/izyrent/blocks/productCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
@@ -155,6 +162,7 @@
         "custom_liquid_DpdMzX",
         "complementary_mGqWXJ",
         "price",
+        "text_UWgGC7",
         "izyrent_product_calendar_HXKJGL",
         "variant_picker",
         "quantity_selector",
