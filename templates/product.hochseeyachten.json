@@ -141,7 +141,7 @@
           "settings": {
             "heading": "Reinigung",
             "icon": "washing",
-            "content": "<p>Die {{ block.settings.page.title }} wird stets vor Vermietung professionell gereinigt. </p>",
+            "content": "<p>Die {{ product.title }} wird stets vor Vermietung professionell gereinigt. </p>",
             "page": ""
           }
         }
