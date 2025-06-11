@@ -160,7 +160,7 @@
           "settings": {
             "heading": "Reinigung",
             "icon": "washing",
-            "content": "<p>Wir bitten Sie {{ product.title }} in einem aufgeräumten und sauberem Zustand zu hinterlassen. Nehmen Sie alle Restbestände an Lebensmitteln von Bord.</p>",
+            "content": "<p>Wir bitten Sie IF-{{ product.title }} in einem aufgeräumten und sauberem Zustand zu hinterlassen. Nehmen Sie alle Restbestände an Lebensmitteln von Bord.</p>",
             "page": ""
           }
         }
