@@ -12,14 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -77,19 +69,6 @@
           "settings": {
             "product": "{{product}}"
           }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -154,7 +133,6 @@
         }
       },
       "block_order": [
-        "text",
         "title",
         "text_Ww6bmx",
         "text_xrfCDT",
@@ -164,8 +142,6 @@
         "price",
         "text_UWgGC7",
         "izyrent_product_calendar_HXKJGL",
-        "variant_picker",
-        "quantity_selector",
         "buy_buttons",
         "share",
         "icon_with_text_HAwJXj",

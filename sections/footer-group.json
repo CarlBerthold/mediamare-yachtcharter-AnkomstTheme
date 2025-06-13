@@ -11,40 +11,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Anmeldung zum Newsletter",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Erhalte Informationen über unsere Produkte und Angebote</p>"
-          }
-        },
-        "email_form": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "email_form"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "full_width": true,
-        "padding_top": 36,
-        "padding_bottom": 44
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -92,7 +58,6 @@
     }
   },
   "order": [
-    "newsletter",
     "footer"
   ]
 }
