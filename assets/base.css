@@ -580,7 +580,7 @@ hr {
   fill: rgba(var(--color-foreground), 0.55);
 }
 
-details > * {
+details > div {
   box-sizing: border-box;
   color: black;
 }
@@ -674,6 +674,7 @@ summary .icon-caret {
 summary::-webkit-details-marker {
   display: none;
 }
+
 
 .disclosure-has-popup {
   position: relative;
