@@ -90,6 +90,13 @@
             "product": "{{product}}"
           }
         },
+        "text_Uaiayx": {
+          "type": "text",
+          "settings": {
+            "text": "Minimale Mietdauer für die {{ product.title }} sind  3 Tage",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "disabled": true,
@@ -175,6 +182,7 @@
         "complementary_mGqWXJ",
         "price",
         "izyrent_product_calendar_HXKJGL",
+        "text_Uaiayx",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
