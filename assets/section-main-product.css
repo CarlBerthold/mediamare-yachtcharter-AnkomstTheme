@@ -310,7 +310,7 @@ p.product__text.inline-richtext.caption-with-letter-spacing,
 }
 
 .product__text {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 a.product__text {
@@ -399,6 +399,7 @@ a.product__text {
 
 .product__tax {
   margin-top: -1.4rem;
+  margin-bottom: 0;
 }
 
 .product--no-media noscript .product-form__input,
