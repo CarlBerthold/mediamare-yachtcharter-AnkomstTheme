@@ -582,6 +582,7 @@ hr {
 
 details > * {
   box-sizing: border-box;
+  color: black;
 }
 
 .break {
