@@ -76,7 +76,6 @@
                   </th>
                 </tr>
               </thead>
-
               <tbody>
                 {%- for item in cart.items -%}
                   <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
@@ -436,6 +435,21 @@
                   </tr>
                 {%- endfor -%}
               </tbody>
+              <tfoot>
+                <tr class="cart-items">
+                  <td colspan="2" class="cart-items__subtotal">
+                    <span class="caption-with-letter-spacing">
+                      bitte beachten Sie dass Alle zusätzlichen Produkte, wie Ipad oder Extra Fock auf die 30% anzahlung berechnet werden.
+                    </span>
+                  </td>
+                  <td class="medium-hide large-up-hide"></td>
+                  <td class="cart-items__quantity small-hide">
+                    <span class="caption-with-letter-spacing">
+                      Die 70% sind bis spätestens 2 Tage vor Reise Antritt bezahlt werden. 
+                    </span>
+                  </td>
+                </tr>
+              </tfoot>
             </table>
           {%- endif -%}
         </div>
