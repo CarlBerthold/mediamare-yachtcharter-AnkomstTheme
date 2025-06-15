@@ -52,6 +52,10 @@ cart-items .title-wrapper-with-link {
   line-height: calc(1 + 0.4 / var(--font-body-scale));
 }
 
+.cart-item__details > div {
+  display: none;
+}
+
 .cart-item__details > * {
   margin: 0;
   max-width:70%;
