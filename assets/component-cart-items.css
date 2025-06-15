@@ -93,6 +93,11 @@ cart-items .title-wrapper-with-link {
   padding: 0;
 }
 
+dd {
+  max-width: 35%;
+  text-align: right;
+}
+
 .cart-item__discounted-prices dd {
   margin: 0;
 }
