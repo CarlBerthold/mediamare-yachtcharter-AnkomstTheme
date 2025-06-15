@@ -92,6 +92,7 @@
         },
         "text_Uaiayx": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Minimale Mietdauer für die {{ product.title }} sind  3 Tage",
             "text_style": "subtitle"
@@ -167,7 +168,7 @@
           "settings": {
             "heading": "Reinigung",
             "icon": "washing",
-            "content": "<p>Wir bitten Sie IF-{{ product.title }} in einem aufgeräumten und sauberem Zustand zu hinterlassen. Nehmen Sie alle Restbestände an Lebensmitteln von Bord.</p>",
+            "content": "<p>Wir bitten Sie {{ product.title }} in einem aufgeräumten und sauberem Zustand zu hinterlassen. Nehmen Sie alle Restbestände an Lebensmitteln von Bord.</p>",
             "page": ""
           }
         }
