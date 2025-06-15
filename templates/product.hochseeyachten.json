@@ -19,7 +19,7 @@
         "text_Ww6bmx": {
           "type": "text",
           "settings": {
-            "text": "Führerscheinklasse <a href=\"/pages/fuhrerscheinklasse\" target=\"_blank\" title=\"Führerscheinklassen\">{{ product.metafields.custom.fuehrerscheine | metafield_text }}</a>erforderlich !",
+            "text": "Führerscheinklasse <a href=\"/pages/fuhrerscheinklasse\" target=\"_blank\" title=\"Führerscheinklassen\">{{ product.metafields.custom.fuehrerscheine | metafield_text }} </a>erforderlich !",
             "text_style": "uppercase"
           }
         },
@@ -59,6 +59,7 @@
         },
         "text_UWgGC7": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Minimale Mietdauer für die {{ product.title }} 1 Woche",
             "text_style": "subtitle"
