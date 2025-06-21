@@ -74,7 +74,7 @@
           "settings": {
             "heading": "Bestätigung & Anreise",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Sie erhalten 2 Tage vor Anreise eine erinnerungsmail mit allen angaben und einer Anreisebeschreibung</p>",
             "page": ""
           }
         }
