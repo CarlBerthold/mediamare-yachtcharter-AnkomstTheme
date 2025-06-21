@@ -56,7 +56,7 @@
           "settings": {
             "heading": "Bestellung einsehen & verfolgen",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Ihre Bestellung und deren Status ist jederzeit über ihr Kundenkonto einsehbar.<br/>ein Link ist in jeder unserer Emails enthalten.</p>",
             "page": ""
           }
         },
