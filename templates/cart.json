@@ -47,7 +47,7 @@
           "settings": {
             "heading": "Bestellung und Anzahlung",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Sie erhalten während des Bestellprozesses 4 Emails.<br/><br/>mit dem Checkout über unseren Shop zahlen Sie 30% der Miete, sowie alle Zusatzprodukte ihrer Buchung. Sie erhalten eine Bestellbestätigung und ein Kalendereintrag für ihre Reise.</p>",
             "page": ""
           }
         },
