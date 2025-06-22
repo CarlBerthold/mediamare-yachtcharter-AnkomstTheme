@@ -42,7 +42,7 @@
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
-            <{%- when 'subtotal' -%}
+            {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
@@ -75,9 +75,6 @@
                   {%- endif -%}
                 </small>
               </div>
-                <div class="collapsible-row__content">
-                  {{ block.settings.row_content | escape | newline_to_br }}
-                </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
@@ -165,41 +162,22 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 40
-    },
+    }
   ],
   "blocks": [
     {
       "type": "subtotal",
-      "name": "Subtotal",
+      "name": "t:sections.main-cart-footer.blocks.subtotal.name",
       "limit": 1
     },
     {
       "type": "buttons",
-      "name": "Buttons",
+      "name": "t:sections.main-cart-footer.blocks.buttons.name",
       "limit": 1
     },
-     {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading"
-    },
     {
-      "type": "collapsible_row",
-      "name": "Collapsible Row",
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "row_content",
-          "label": "Row content",
-          "default": "<p>Additional information can be added here.</p>"
-        }
-      ]
-    },
-    {
-      "type": "@app",
-      "name": "App Block"
+      "type": "@app"
     }
   ]
 }
 {% endschema %}
-
