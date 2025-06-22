@@ -27,85 +27,29 @@
         "buttons": {
           "type": "buttons",
           "settings": {}
+        },
+        "collapsible_row_TzfmT8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Test",
+            "content": "BODY TEST"
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "collapsible_row_TzfmT8"
       ],
       "settings": {
         "color_scheme": "background-1",
         "padding_top": 20,
         "padding_bottom": 40
-      },
-      "collapsible_content_qtAeqU": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_6Br74i": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Bestellung und Anzahlung",
-            "icon": "check_mark",
-            "row_content": "<p>Sie erhalten während des Bestellprozesses 4 Emails.<br/><br/>mit dem Checkout über unseren Shop zahlen Sie 30% der Miete, sowie alle Zusatzprodukte ihrer Buchung. Sie erhalten eine Bestellbestätigung und ein Kalendereintrag für ihre Reise.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_BFq6Un": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Bestellung einsehen & verfolgen",
-            "icon": "check_mark",
-            "row_content": "<p>Ihre Bestellung und deren Status ist jederzeit über ihr Kundenkonto einsehbar.<br/>ein Link ist in jeder unserer Emails enthalten.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_EdbVd6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Zahlung der 2.Rate & Kaution",
-            "icon": "check_mark",
-            "row_content": "<p>Sie erhalten nach der Bestellbestätigung auch eine 2. Bestellung und eine Rechung für die noch ausstehenden 70% der Miete.<br/>Das Zahlungsziel sind 24h vor Reiseantritt.<br/><br/>Bitte beachten sie das auch die Kaution<br/><br/>Folkeboote 1000€<br/>Hochseeyachten 1500€<br/><br/>24h vor Reiseantritt auf folgendem Konto gutgeschrieben sein soll. </p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_7yaj7W": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Bestätigung & Anreise",
-            "icon": "check_mark",
-            "row_content": "<p>Sie erhalten 2 Tage vor Anreise eine erinnerungsmail mit allen angaben und einer Anreisebeschreibung</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_6Br74i",
-        "collapsible_row_BFq6Un",
-        "collapsible_row_EdbVd6",
-        "collapsible_row_7yaj7W"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "",
-        "heading": "Wie die Bestellung verläuft",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
-    },
-    
   },
   "order": [
     "main-cart-items",
-    "main-cart-footer",
-    /* "collapsible_content_qtAeqU" */
+    "main-cart-footer"
   ]
 }
