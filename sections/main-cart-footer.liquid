@@ -75,11 +75,16 @@
                   {%- endif -%}
                 </small>
               </div>
-              {% when 'collapsible_row' %}
-              <details class="collapsible-row">
-                <summary>{{ block.settings.heading }}</summary>
-                <div>{{ block.settings.row_content | newline_to_br }}</div>
-              </details>
+              {%- when 'collapsible_row' -%}
+              <div class="collapsible-row">
+                <button class="collapsible-header" type="button" aria-expanded="false" aria-controls="content-{{ block.id }}">
+                  {{ block.settings.heading }}
+                  <span class="icon-chevron"></span>
+                </button>
+                <div id="content-{{ block.id }}" class="collapsible-content" hidden>
+                  {{ block.settings.row_content | escape | newline_to_br }}
+                </div>
+              </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
