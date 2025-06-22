@@ -34,12 +34,20 @@
             "heading": "Test",
             "content": "BODY TEST"
           }
+        },
+        "collapsible_row_QnyWMq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "TEST2",
+            "content": ""
+          }
         }
       },
       "block_order": [
         "subtotal",
         "buttons",
-        "collapsible_row_TzfmT8"
+        "collapsible_row_TzfmT8",
+        "collapsible_row_QnyWMq"
       ],
       "settings": {
         "color_scheme": "background-1",
