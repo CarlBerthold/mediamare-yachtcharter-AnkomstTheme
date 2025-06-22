@@ -139,7 +139,6 @@
 {
   "name": "t:sections.main-cart-footer.name",
   "class": "cart__footer-wrapper",
-  "max_blocks": 10,
   "settings": [
     {
       "type": "color_scheme",
@@ -167,12 +166,6 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 40
     },
-    {
-      "type": "text",
-      "id": "collapsible_heading",
-      "label": "Collapsible Content Heading",
-      "default": "Wie die Bestellung verläuft"
-    }
   ],
   "blocks": [
     {
@@ -185,80 +178,26 @@
       "name": "Buttons",
       "limit": 1
     },
-    {
-      "type": "collapsible_row",
-      "name": "Collapsible Row",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "Bestellung und Anzahlung"
-        },
-        {
-          "type": "textarea",
-          "id": "row_content",
-          "label": "Content",
-          "default": "Sie erhalten während des Bestellprozesses 4 Emails..."
-        }
-      ]
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
     },
     {
       "type": "collapsible_row",
       "name": "Collapsible Row",
       "settings": [
         {
-          "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "Bestellung einsehen & verfolgen"
-        },
-        {
-          "type": "textarea",
+          "type": "richtext",
           "id": "row_content",
-          "label": "Content",
-          "default": "Ihre Bestellung und deren Status ist jederzeit..."
+          "label": "Row content",
+          "default": "<p>Additional information can be added here.</p>"
         }
       ]
     },
     {
-      "type": "collapsible_row",
-      "name": "Collapsible Row",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "Zahlung der 2.Rate & Kaution"
-        },
-        {
-          "type": "textarea",
-          "id": "row_content",
-          "label": "Content",
-          "default": "Sie erhalten nach der Bestellbestätigung auch eine zweite Bestellung..."
-        }
-      ]
-    },
-    {
-      "type": "collapsible_row",
-      "name": "Collapsible Row",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "Bestätigung & Anreise"
-        },
-        {
-          "type": "textarea",
-          "id": "row_content",
-          "label": "Content",
-          "default": "Sie erhalten 2 Tage vor Anreise eine Erinnerungsmail..."
-        }
-      ]
-    },
-    {
-      "type": "@app"
+      "type": "@app",
+      "name": "App Block"
     }
   ]
 }
