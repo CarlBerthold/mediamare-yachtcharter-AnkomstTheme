@@ -75,31 +75,9 @@
                   {%- endif -%}
                 </small>
               </div>
-                 {% assign collapsible_blocks = section.blocks | where: "type", "collapsible_row" %}
-                  {% if collapsible_blocks.size > 0 %}
-                    <div class="collapsible-content-wrapper">
-                      <h2 class="collapsible-content-heading">{{ section.settings.collapsible_heading }}</h2>
-                      <div class="collapsible-content">
-                        {% for block in collapsible_blocks %}
-                          <details class="collapsible-row" {% if forloop.first %} open {% endif %}>
-                            <summary class="collapsible-row__summary">
-                              {% if block.settings.icon == 'check_mark' %}
-                                {% render 'icon-checkmark' %}
-                              {% elsif block.settings.icon == 'plus' %}
-                                +
-                              {% elsif block.settings.icon == 'chevron' %}
-                                &rsaquo;
-                              {% endif %}
-                              {{ block.settings.heading }}
-                            </summary>
-                            <div class="collapsible-row__content">
-                              {{ block.settings.row_content }}
-                            </div>
-                          </details>
-                        {% endfor %}
-                      </div>
-                    </div>
-                  {% endif %}
+                <div class="collapsible-row__content">
+                  {{ block.settings.row_content | escape | newline_to_br }}
+                </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
@@ -195,84 +173,93 @@
       "default": "Wie die Bestellung verläuft"
     }
   ],
- "blocks": [
-  {
-    "type": "subtotal",
-    "name": "Subtotal",
-    "limit": 1
-  },
-  {
-    "type": "buttons",
-    "name": "Buttons",
-    "limit": 1
-  },
-  {
-    "type": "collapsible_content",
-    "name": "Collapsible Content",
-    "limit": 1
-  },
-  {
-    "type": "collapsible_row",
-    "name": "Collapsible Row",
-    "settings": [
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "Bestellung und Anzahlung"
-      },
-      {
-        "type": "select",
-        "id": "icon",
-        "label": "Icon",
-        "options": [
-          { "value": "check_mark", "label": "Check Mark" },
-          { "value": "plus", "label": "Plus" },
-          { "value": "chevron", "label": "Chevron" }
-        ],
-        "default": "check_mark"
-      },
-      {
-        "type": "richtext",
-        "id": "row_content",
-        "label": "Content",
-        "default": "<p>Sie erhalten während des Bestellprozesses 4 Emails...</p>"
-      }
-    ]
-  },
-  {
-    "type": "collapsible_row",
-    "name": "Collapsible Row",
-    "settings": [
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "Bestellung einsehen & verfolgen"
-      },
-      {
-        "type": "select",
-        "id": "icon",
-        "label": "Icon",
-        "options": [
-          { "value": "check_mark", "label": "Check Mark" },
-          { "value": "plus", "label": "Plus" },
-          { "value": "chevron", "label": "Chevron" }
-        ],
-        "default": "check_mark"
-      },
-      {
-        "type": "richtext",
-        "id": "row_content",
-        "label": "Content",
-        "default": "<p>Ihre Bestellung und deren Status ist jederzeit...</p>"
-      }
-    ]
-  },
-  {
-    "type": "@app"
-  }
-  ],
+  "blocks": [
+    {
+      "type": "subtotal",
+      "name": "Subtotal",
+      "limit": 1
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1
+    },
+    {
+      "type": "collapsible_row",
+      "name": "Collapsible Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Bestellung und Anzahlung"
+        },
+        {
+          "type": "textarea",
+          "id": "row_content",
+          "label": "Content",
+          "default": "Sie erhalten während des Bestellprozesses 4 Emails..."
+        }
+      ]
+    },
+    {
+      "type": "collapsible_row",
+      "name": "Collapsible Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Bestellung einsehen & verfolgen"
+        },
+        {
+          "type": "textarea",
+          "id": "row_content",
+          "label": "Content",
+          "default": "Ihre Bestellung und deren Status ist jederzeit..."
+        }
+      ]
+    },
+    {
+      "type": "collapsible_row",
+      "name": "Collapsible Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Zahlung der 2.Rate & Kaution"
+        },
+        {
+          "type": "textarea",
+          "id": "row_content",
+          "label": "Content",
+          "default": "Sie erhalten nach der Bestellbestätigung auch eine zweite Bestellung..."
+        }
+      ]
+    },
+    {
+      "type": "collapsible_row",
+      "name": "Collapsible Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Bestätigung & Anreise"
+        },
+        {
+          "type": "textarea",
+          "id": "row_content",
+          "label": "Content",
+          "default": "Sie erhalten 2 Tage vor Anreise eine Erinnerungsmail..."
+        }
+      ]
+    },
+    {
+      "type": "@app"
+    }
+  ]
 }
 {% endschema %}
 
