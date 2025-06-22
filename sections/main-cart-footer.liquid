@@ -75,6 +75,17 @@
                   {%- endif -%}
                 </small>
               </div>
+                {%- when 'collapsible_row' -%}
+                <div class="collapsible-block" {{ block.shopify_attributes }}>
+                  <details class="collapsible">
+                    <summary class="collapsible__header">
+                      {{ block.settings.heading }}
+                    </summary>
+                    <div class="collapsible__content rte">
+                      {{ block.settings.content }}
+                    </div>
+                  </details>
+                </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
