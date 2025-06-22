@@ -27,11 +27,19 @@
         "buttons": {
           "type": "buttons",
           "settings": {}
+        },
+        "collapsible_row_qGM8dz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Bestellung und Anzahlung",
+            "row_content": "Sie erhalten während des Bestellprozesses 4 Emails..."
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "collapsible_row_qGM8dz"
       ],
       "settings": {
         "color_scheme": "background-1",
