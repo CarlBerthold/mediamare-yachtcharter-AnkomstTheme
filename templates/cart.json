@@ -54,18 +54,18 @@
         "collapsible_row_tb7y4j": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Bestellung & Anzahlung",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>mit dem Checkout über unseren Shop zahlen sie 30% der Miete + zusatzprodukte (Ipad, extra Fock) und erhalten eine Bestellbestätigung.Sie können jederzeit den Status ihrer Bestellung in der Bestellüebrsicht nachverfolgen. Einen Link zur Überischt schicken wir in jeder Email.<br/><br/></p>",
             "page": ""
           }
         },
         "collapsible_row_UVaejT": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "2.Rate & Kaution",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Sie erhalten eine 2.Bestellung und eine Rechnung über die 70% der Miete mit dem zahlungsziel 24h vor Reiseantritt. Bitte beachten Sie auch das die Kaution bis 24h vor Antritt auf folgendes Konto gutgeschrieben sein muss.<br/><br/></p>",
             "page": ""
           }
         },
