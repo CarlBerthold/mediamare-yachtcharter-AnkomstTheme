@@ -135,102 +135,100 @@
 
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
 
-                      {%- if item.original_price != item.final_price -%}
-                        <div class="cart-item__discounted-prices">
-                          <span class="visually-hidden">
-                            {{ 'products.product.price.regular_price' | t }}
-                          </span>
-                          <s class="cart-item__old-price product-option">
-                            {{- item.original_price | money -}}
-                          </s>
-                          <span class="visually-hidden">
-                            {{ 'products.product.price.sale_price' | t }}
-                          </span>
-                          <strong class="cart-item__final-price product-option">
-                            {{ item.final_price | money }}
-                          </strong>
-                        </div>
-                      {%- else -%}
-                        <div class="product-option">
-                         {{ item.original_price | money }}
-                        </div>
-                      {%- endif -%}
+                      <!-- Desktop options - hidden on mobile -->
+                      <div class="cart-item__options-desktop">
+                        {%- if item.original_price != item.final_price -%}
+                          <div class="cart-item__discounted-prices">
+                            <span class="visually-hidden">
+                              {{ 'products.product.price.regular_price' | t }}
+                            </span>
+                            <s class="cart-item__old-price product-option">
+                              {{- item.original_price | money -}}
+                            </s>
+                            <span class="visually-hidden">
+                              {{ 'products.product.price.sale_price' | t }}
+                            </span>
+                            <strong class="cart-item__final-price product-option">
+                              {{ item.final_price | money }}
+                            </strong>
+                          </div>
+                        {%- else -%}
+                          <div class="product-option">
+                           {{ item.original_price | money }}
+                          </div>
+                        {%- endif -%}
 
-                      {%- if item.product.has_only_default_variant == false
-                        or item.properties.size != 0
-                        or item.selling_plan_allocation != null
-                      -%}
-                        <dl>
-                          {%- if item.product.has_only_default_variant == false -%}
-                            {%- for option in item.options_with_values -%}
-             
-                          
-
-                              <div class="product-option">
-                                <dt><strong>{{ option.name }}:</strong></dt>
-                                <dd>{{ option.value }}</dd>
-                              </div>
-                            {%- endfor -%}
-
-                            
-                          {%- endif -%}
-
-                          {%- for property in item.properties -%}
-                            {%- assign property_first_char = property.first | slice: 0 -%}
-                            {%- if property.last != blank and property_first_char != '_' -%}
-                              <div class="product-option">
-                                <dt>
-                                  {%- assign property_key = property.first | downcase -%}
-                                  {%- if property_key == 'date' -%}
-                                    Datum
-                                  {%- else -%}
-                                    {{ property.first }}
-                                  {%- endif -%}:
-                                </dt>
-                                <dd>
-                                  {%- if property.last contains '/uploads/' -%}
-                                    <a href="{{ property.last }}" class="link" target="_blank">
-                                      {{ property.last | split: '/' | last }}
-                                    </a>
-                                  {%- elsif property_key == 'date' -%}
-                                    <div class="cart-item__date-range">
-                                      {%- assign date_parts = property.last | split: ' bis ' -%}
-                                      {%- if date_parts.size == 1 -%}
-                                        {%- assign date_parts = property.last | split: 'bis' -%}
-                                      {%- endif -%}
-                                      {%- if date_parts.size == 2 -%}
-                                        <div class="date-start">
-                                          <strong>Abfahrt:</strong>
-                                          <span class="date-value">{{ date_parts[0] | strip }}</span>
-                                        </div>
-                                        <div class="date-end">
-                                          <strong>Rückkehr:</strong>
-                                          <span class="date-value">{{ date_parts[1] | strip }}</span>
-                                        </div>
-                                      {%- else -%}
-                                        {{ property.last }}
-                                      {%- endif -%}
-                                    </div>
-                                  {%- else -%}
-                                   {{ property.last }}
-                                  {%- endif -%}
-                                </dd>
-                              </div>
+                        {%- if item.product.has_only_default_variant == false
+                          or item.properties.size != 0
+                          or item.selling_plan_allocation != null
+                        -%}
+                          <dl>
+                            {%- if item.product.has_only_default_variant == false -%}
+                              {%- for option in item.options_with_values -%}
+                                <div class="product-option">
+                                  <dt><strong>{{ option.name }}:</strong></dt>
+                                  <dd>{{ option.value }}</dd>
+                                </div>
+                              {%- endfor -%}
                             {%- endif -%}
+
+                            {%- for property in item.properties -%}
+                              {%- assign property_first_char = property.first | slice: 0 -%}
+                              {%- if property.last != blank and property_first_char != '_' -%}
+                                <div class="product-option">
+                                  <dt>
+                                    {%- assign property_key = property.first | downcase -%}
+                                    {%- if property_key == 'date' -%}
+                                      Datum
+                                    {%- else -%}
+                                      {{ property.first }}
+                                    {%- endif -%}:
+                                  </dt>
+                                  <dd>
+                                    {%- if property.last contains '/uploads/' -%}
+                                      <a href="{{ property.last }}" class="link" target="_blank">
+                                        {{ property.last | split: '/' | last }}
+                                      </a>
+                                    {%- elsif property_key == 'date' -%}
+                                      <div class="cart-item__date-range">
+                                        {%- assign date_parts = property.last | split: ' bis ' -%}
+                                        {%- if date_parts.size == 1 -%}
+                                          {%- assign date_parts = property.last | split: 'bis' -%}
+                                        {%- endif -%}
+                                        {%- if date_parts.size == 2 -%}
+                                          <div class="date-start">
+                                            <strong>Abfahrt:</strong>
+                                            <span class="date-value">{{ date_parts[0] | strip }}</span>
+                                          </div>
+                                          <div class="date-end">
+                                            <strong>Rückkehr:</strong>
+                                            <span class="date-value">{{ date_parts[1] | strip }}</span>
+                                          </div>
+                                        {%- else -%}
+                                          {{ property.last }}
+                                        {%- endif -%}
+                                      </div>
+                                    {%- else -%}
+                                     {{ property.last }}
+                                    {%- endif -%}
+                                  </dd>
+                                </div>
+                              {%- endif -%}
+                            {%- endfor -%}
+                          </dl>
+
+                          <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+                        {%- endif -%}
+
+                        <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                          {%- for discount in item.line_level_discount_allocations -%}
+                            <li class="discounts__discount">
+                              {%- render 'icon-discount' -%}
+                              {{ discount.discount_application.title }}
+                            </li>
                           {%- endfor -%}
-                        </dl>
-
-                        <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
-                      {%- endif -%}
-
-                      <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
-                        {%- for discount in item.line_level_discount_allocations -%}
-                          <li class="discounts__discount">
-                            {%- render 'icon-discount' -%}
-                            {{ discount.discount_application.title }}
-                          </li>
-                        {%- endfor -%}
-                      </ul>
+                        </ul>
+                      </div>
                     </td>
 
                     <td class="cart-item__totals right medium-hide large-up-hide">
@@ -489,6 +487,103 @@
                           </div>
                         {%- endif -%}
                       </div>
+                    </td>
+                  </tr>
+                  
+                  <!-- Mobile options - only visible on mobile -->
+                  <tr class="cart-item__options-mobile-row">
+                    <td colspan="5" class="cart-item__options-mobile">
+                      {%- if item.original_price != item.final_price -%}
+                        <div class="cart-item__discounted-prices">
+                          <span class="visually-hidden">
+                            {{ 'products.product.price.regular_price' | t }}
+                          </span>
+                          <s class="cart-item__old-price product-option">
+                            {{- item.original_price | money -}}
+                          </s>
+                          <span class="visually-hidden">
+                            {{ 'products.product.price.sale_price' | t }}
+                          </span>
+                          <strong class="cart-item__final-price product-option">
+                            {{ item.final_price | money }}
+                          </strong>
+                        </div>
+                      {%- else -%}
+                        <div class="product-option">
+                         {{ item.original_price | money }}
+                        </div>
+                      {%- endif -%}
+
+                      {%- if item.product.has_only_default_variant == false
+                        or item.properties.size != 0
+                        or item.selling_plan_allocation != null
+                      -%}
+                        <dl>
+                          {%- if item.product.has_only_default_variant == false -%}
+                            {%- for option in item.options_with_values -%}
+                              <div class="product-option">
+                                <dt><strong>{{ option.name }}:</strong></dt>
+                                <dd>{{ option.value }}</dd>
+                              </div>
+                            {%- endfor -%}
+                          {%- endif -%}
+
+                          {%- for property in item.properties -%}
+                            {%- assign property_first_char = property.first | slice: 0 -%}
+                            {%- if property.last != blank and property_first_char != '_' -%}
+                              <div class="product-option">
+                                <dt>
+                                  {%- assign property_key = property.first | downcase -%}
+                                  {%- if property_key == 'date' -%}
+                                    Datum
+                                  {%- else -%}
+                                    {{ property.first }}
+                                  {%- endif -%}:
+                                </dt>
+                                <dd>
+                                  {%- if property.last contains '/uploads/' -%}
+                                    <a href="{{ property.last }}" class="link" target="_blank">
+                                      {{ property.last | split: '/' | last }}
+                                    </a>
+                                  {%- elsif property_key == 'date' -%}
+                                    <div class="cart-item__date-range">
+                                      {%- assign date_parts = property.last | split: ' bis ' -%}
+                                      {%- if date_parts.size == 1 -%}
+                                        {%- assign date_parts = property.last | split: 'bis' -%}
+                                      {%- endif -%}
+                                      {%- if date_parts.size == 2 -%}
+                                        <div class="date-start">
+                                          <strong>Abfahrt:</strong>
+                                          <span class="date-value">{{ date_parts[0] | strip }}</span>
+                                        </div>
+                                        <div class="date-end">
+                                          <strong>Rückkehr:</strong>
+                                          <span class="date-value">{{ date_parts[1] | strip }}</span>
+                                        </div>
+                                      {%- else -%}
+                                        {{ property.last }}
+                                      {%- endif -%}
+                                    </div>
+                                  {%- else -%}
+                                   {{ property.last }}
+                                  {%- endif -%}
+                                </dd>
+                              </div>
+                            {%- endif -%}
+                          {%- endfor -%}
+                        </dl>
+
+                        <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+                      {%- endif -%}
+
+                      <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                        {%- for discount in item.line_level_discount_allocations -%}
+                          <li class="discounts__discount">
+                            {%- render 'icon-discount' -%}
+                            {{ discount.discount_application.title }}
+                          </li>
+                        {%- endfor -%}
+                      </ul>
                     </td>
                   </tr>
                 {%- endfor -%}
