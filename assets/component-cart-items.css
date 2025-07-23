@@ -429,16 +429,10 @@ cart-remove-button .icon-remove {
   }
   
   .product-option dt {
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: rgb(var(--color-foreground));
     margin-bottom: 0.2rem;
   }
   
   .product-option dd {
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.4;
     margin: 0;
     text-align: left;
     width: 100%;
@@ -458,7 +452,7 @@ cart-remove-button .icon-remove {
   }
   
   .cart-item__details {
-    grid-column: 2 / 5;
+    grid-column: 2 / 4;
     grid-row: 1;
   }
   
@@ -472,9 +466,9 @@ cart-remove-button .icon-remove {
   
   .cart-item__quantity {
     grid-column: 4;
-    grid-row: 2;
+    grid-row: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
   }
 }
