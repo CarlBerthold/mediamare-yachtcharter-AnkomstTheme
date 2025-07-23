@@ -147,8 +147,7 @@
                             {%- assign property_first_char = property.first | slice: 0 -%}
                             {%- if property.last != blank and property_first_char != '_' -%}
                               <div class="product-option">
-                                {% comment %} <dt>{{ property.first }}:</dt> {% endcomment %}
-                                <dt>Datum</dt>
+                                <dt>{{ property.first }}:</dt>
                                 <dd>
                                   {%- if property.last contains '/uploads/' -%}
                                     <a href="{{ property.last }}" class="link" target="_blank">
