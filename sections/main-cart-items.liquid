@@ -191,9 +191,11 @@
                                       {%- if date_parts.size == 2 -%}
                                         <div class="date-start">
                                           <strong>Abfahrt:</strong> {{ date_parts[0] | strip }}
+                                          <span>Uhr</span>
                                         </div>
                                         <div class="date-end">
                                           <strong>Rückkehr:</strong> {{ date_parts[1] | strip }}
+                                          <span>Uhr</span>
                                         </div>
                                       {%- else -%}
                                         {{ property.last }}
