@@ -24,6 +24,20 @@
     color: rgb(var(--color-foreground));
     word-break: break-word;
   }
+  
+  .cart-item__date-range .date-start,
+  .cart-item__date-range .date-end {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cart-item__date-range .date-end {
+    margin-bottom: 0;
+  }
+  
+  .cart-item__date-range strong {
+    color: rgb(var(--color-foreground));
+    font-weight: 600;
+  }
 {%- endstyle -%}
 
 {%- unless settings.cart_type == 'drawer' -%}
@@ -169,7 +183,17 @@
                                     </a>
                                   {%- elsif property_key == 'date' -%}
                                     <div class="cart-item__date-range">
-                                      {{ property.last }}
+                                      {%- assign date_parts = property.last | split: ' bis ' -%}
+                                      {%- if date_parts.size == 2 -%}
+                                        <div class="date-start">
+                                          <strong>Abfahrt:</strong> {{ date_parts[0] }}
+                                        </div>
+                                        <div class="date-end">
+                                          <strong>Rückkehr:</strong> {{ date_parts[1] }}
+                                        </div>
+                                      {%- else -%}
+                                        {{ property.last }}
+                                      {%- endif -%}
                                     </div>
                                   {%- else -%}
                                    {{ property.last }}
