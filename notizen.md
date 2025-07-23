@@ -217,3 +217,47 @@ Ihr perfekter Startpunkt für traumhafte Törns
 
 Die Marina Kröslin und der idyllische Naturhafen Krummin bieten Ihnen den idealen Ausgangspunkt für unvergessliche Tagestörns und mehrtägige Segelabenteuer. Direkt am geschützten Peenestrom gelegen, gelangen Sie ohne Brücken oder Wartezeiten schnell und unkompliziert auf die offene Ostsee.
 Ob Achterwasser, Greifswalder Bodden oder die reizvolle Umrundung von Rügen und Usedom – die Möglichkeiten sind vielfältig und faszinierend. Für längere Törns lockt die dänische Insel Bornholm, nur 75 Seemeilen entfernt, ebenso wie die nahe schwedische Küste – beide zählen zu den beliebtesten Zielen erfahrener Skipper.
+
+
+
+
+Sie erhalten während des Bestellprozesses von uns 4 Emails
+Bestellbestätigung, Buchungszeitraum als kalendereintrag, 2. Bestellung, Rechnung
+
+
+
+
+Bestellung & Anzahlung
+mit dem Checkout über unseren Shop zahlen sie 30% der Miete + zusatzprodukte (Ipad, extra Fock) und erhalten eine Bestellbestätigung.
+Sie können jederzeit den Status ihrer Bestellung in der Bestellüebrsicht nachverfolgen. Einen Link zur Überischt schicken wir in jeder Email.
+
+
+2.Rate & Kaution
+Sie erhalten eine 2.Bestellung und eine Rechnung über die 70% der Miete mit dem zahlungsziel 24h vor Reiseantritt. 
+Bitte beachten Sie auch das die Kaution bis 24h vor Antritt auf folgendes Konto gutgeschrieben sein muss.
+
+
+
+
+
+
+
+
+
+Booking start
+
+Hallo <strong>{{customer.firstName}}</strong>,
+
+Übermorgen ist es soweit. Wir freuen uns dich auf der {{product.name}} empfangen zu dürfen.
+
+Bitte beachte das auch die Kaution bis zum {{start}} auf folgendes Konto mit der {{order.name}} und dem Namen des Mieters als Betreff eingegangen ist.
+
+BANKVERBINDUNG
+mediamare yachtcharter-ankomst 
+IBAN: DE92 4306 0967 1303 5421 01
+GENODEM1GLS
+
+
+Deine Bestellung kannst du jederzeit in deinem Kundenkonto in der Bestellbestätigung einsehen.
+
+Mediamare-yachtacharter

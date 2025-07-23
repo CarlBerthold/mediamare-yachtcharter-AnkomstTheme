@@ -490,6 +490,11 @@ cart-remove-button .icon-remove {
     display: none;
   }
 
+  /* Hide desktop total price column on mobile */
+  .cart-item__totals.right.small-hide {
+    display: none !important;
+  }
+
   /* Show mobile options as full width */
   .cart-item__options-mobile-row {
     display: table-row;
@@ -499,5 +504,12 @@ cart-remove-button .icon-remove {
     display: block;
     width: 100%;
     padding: 1rem 0;
+  }
+
+  /* Hide duplicate price display in mobile options */
+  .cart-item__options-mobile > div:first-child,
+  .cart-item__options-mobile > .cart-item__discounted-prices,
+  .cart-item__options-mobile > .product-option:first-child {
+    display: none;
   }
 }
