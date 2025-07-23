@@ -17,6 +17,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .cart-item__date-range {
+    font-weight: 500;
+    line-height: 1.4;
+    color: rgb(var(--color-foreground));
+    word-break: break-word;
+  }
 {%- endstyle -%}
 
 {%- unless settings.cart_type == 'drawer' -%}
@@ -160,6 +167,10 @@
                                     <a href="{{ property.last }}" class="link" target="_blank">
                                       {{ property.last | split: '/' | last }}
                                     </a>
+                                  {%- elsif property_key == 'date' -%}
+                                    <div class="cart-item__date-range">
+                                      {{ property.last }}
+                                    </div>
                                   {%- else -%}
                                    {{ property.last }}
                                   {%- endif -%}
