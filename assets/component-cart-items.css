@@ -52,9 +52,9 @@ cart-items .title-wrapper-with-link {
   line-height: calc(1 + 0.4 / var(--font-body-scale));
 }
 
-.cart-item__details > div {
+/* .cart-item__details > div {
   display: none;
-}
+} */
 
 .cart-item__details > * {
   margin: 0;
@@ -352,9 +352,9 @@ cart-remove-button .icon-remove {
   }
 
   /* Keep Gesamtsumme visible on desktop too */
-  .cart-item__totals.small-hide {
+  /* .cart-item__totals.small-hide {
     display: flex !important;
-  }
+  } */
 }
 
 @media screen and (min-width: 990px) {
