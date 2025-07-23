@@ -22,14 +22,12 @@
     display: flex;
     flex-direction: column;
     line-height: 1.4;
-    color: rgb(var(--color-foreground));
     word-break: break-word;
   }
   
   .cart-item__date-range .date-start,
   .cart-item__date-range .date-end {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 0.5rem;
   }
   
@@ -192,12 +190,10 @@
                                       {%- endif -%}
                                       {%- if date_parts.size == 2 -%}
                                         <div class="date-start">
-                                          <strong>Abfahrt:</strong> {{ date_parts[0] | strip }}
-                                          <span>Uhr</span>
+                                          <span><strong>Abfahrt:</strong> {{ date_parts[0] | strip }} Uhr</span>
                                         </div>
                                         <div class="date-end">
-                                          <strong>Rückkehr:</strong> {{ date_parts[1] | strip }}
-                                          <span>Uhr</span>
+                                          <span><strong>Rückkehr:</strong> {{ date_parts[1] | strip }} Uhr</span>
                                         </div>
                                       {%- else -%}
                                         {{ property.last }}
