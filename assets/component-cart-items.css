@@ -240,6 +240,11 @@ cart-remove-button .icon-remove {
     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
     margin-bottom: 4rem;
   }
+  
+  /* Hide the total price column header on mobile */
+  .cart-items thead th.medium-hide.large-up-hide {
+    display: none;
+  }
 
   .cart-item {
     display: grid;
@@ -258,15 +263,15 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__details {
-    grid-column: 2 / 5;
+    grid-column: 2 / 4;
     grid-row: 1;
   }
 
   .cart-item__quantity {
     grid-column: 4;
-    grid-row: 2;
+    grid-row: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
   }
 
@@ -274,12 +279,21 @@ cart-remove-button .icon-remove {
     flex-wrap: wrap;
   }
 
+  /* Hide the mobile total price column */
+  .cart-item__totals.medium-hide.large-up-hide {
+    display: none;
+  }
+  
+  /* Position total price at bottom center */
   .cart-item__totals {
     grid-column: 2 / 4;
-    grid-row: 2;
+    grid-row: 3;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(var(--color-foreground), 0.1);
+    margin-top: 1rem;
   }
 }
 
