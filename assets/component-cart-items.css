@@ -350,6 +350,11 @@ cart-remove-button .icon-remove {
   .cart-item__options-mobile-row {
     display: none;
   }
+
+  /* Keep Gesamtsumme visible on desktop too */
+  .cart-item__totals.small-hide {
+    display: flex !important;
+  }
 }
 
 @media screen and (min-width: 990px) {
