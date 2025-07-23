@@ -184,12 +184,15 @@
                                   {%- elsif property_key == 'date' -%}
                                     <div class="cart-item__date-range">
                                       {%- assign date_parts = property.last | split: ' bis ' -%}
+                                      {%- if date_parts.size == 1 -%}
+                                        {%- assign date_parts = property.last | split: 'bis' -%}
+                                      {%- endif -%}
                                       {%- if date_parts.size == 2 -%}
                                         <div class="date-start">
-                                          <strong>Abfahrt:</strong> {{ date_parts[0] }}
+                                          <strong>Abfahrt:</strong> {{ date_parts[0] | strip }}
                                         </div>
                                         <div class="date-end">
-                                          <strong>Rückkehr:</strong> {{ date_parts[1] }}
+                                          <strong>Rückkehr:</strong> {{ date_parts[1] | strip }}
                                         </div>
                                       {%- else -%}
                                         {{ property.last }}
