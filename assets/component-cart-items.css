@@ -443,53 +443,10 @@ cart-remove-button .icon-remove {
     width: 100%;
   }
   
-  /* Adjust mobile cart layout for better price/trash positioning */
   .cart-item {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(4, 1fr);
     gap: 1.5rem;
     margin-bottom: 3.5rem;
-  }
-  
-  /* First row: Image + Title + Trash */
-  .cart-item__header {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-  
-  .cart-item__media {
-    flex-shrink: 0;
-    width: 100px;
-  }
-  
-  .cart-item__title-section {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .cart-item__details {
-    flex: 1;
-  }
-  
-  .cart-item__quantity {
-    flex-shrink: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
-  
-  /* Second row: Options spanning full width */
-  .cart-item__options {
-    width: 100%;
-    margin-top: 1rem;
-  }
-  
-  /* Move product options to span full width */
-  .cart-item__details dl,
-  .cart-item__details .product-option:not(.cart-item__name) {
-    width: 100%;
   }
 }
