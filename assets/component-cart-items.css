@@ -345,16 +345,131 @@ cart-remove-button .icon-remove {
   /* Show desktop options and hide mobile options */
   .cart-item__options-desktop {
     display: block;
+    margin-top: 1.5rem;
   }
 
   .cart-item__options-mobile-row {
     display: none;
   }
 
-  /* Keep Gesamtsumme visible on desktop too */
-  /* .cart-item__totals.small-hide {
-    display: flex !important;
-  } */
+  /* Desktop product option styling */
+  .cart-item__options-desktop .product-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    background: rgba(var(--color-base-accent-1), 0.02);
+    border-left: 2px solid rgba(var(--color-base-accent-1), 0.3);
+    border-radius: 0 0.4rem 0.4rem 0;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    transition: all 0.2s ease;
+  }
+
+  .cart-item__options-desktop .product-option:hover {
+    background: rgba(var(--color-base-accent-1), 0.05);
+    border-left-color: rgb(var(--color-base-accent-1));
+  }
+
+  .cart-item__options-desktop .product-option:last-child {
+    margin-bottom: 0;
+  }
+
+  .cart-item__options-desktop .product-option dt {
+    font-weight: 600;
+    color: rgb(var(--color-foreground));
+    margin: 0;
+    flex: 0 0 auto;
+    max-width: 40%;
+  }
+
+  .cart-item__options-desktop .product-option dd {
+    margin: 0;
+    text-align: right;
+    color: rgba(var(--color-foreground), 0.8);
+    font-weight: 400;
+    flex: 1;
+    word-break: break-word;
+  }
+
+  /* Desktop date range styling */
+  .cart-item__options-desktop .cart-item__date-range {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .cart-item__options-desktop .cart-item__date-range .date-start,
+  .cart-item__options-desktop .cart-item__date-range .date-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    background: rgba(var(--color-base-accent-1), 0.08);
+    border-radius: 0.3rem;
+    border: 1px solid rgba(var(--color-base-accent-1), 0.2);
+    margin: 0;
+  }
+
+  .cart-item__options-desktop .cart-item__date-range strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(var(--color-base-accent-1));
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+
+  .cart-item__options-desktop .cart-item__date-range .date-value {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(var(--color-foreground));
+    line-height: 1.3;
+  }
+
+  /* Special styling for date property container on desktop */
+  .cart-item__options-desktop .product-option:has(.cart-item__date-range) {
+    flex-direction: column;
+    align-items: flex-start;
+    background: transparent;
+    border: none;
+    padding: 0.8rem 0;
+  }
+
+  .cart-item__options-desktop .product-option:has(.cart-item__date-range) dt {
+    margin-bottom: 0.8rem;
+    max-width: 100%;
+    font-size: 1.5rem;
+    color: rgb(var(--color-base-accent-1));
+  }
+
+  .cart-item__options-desktop .product-option:has(.cart-item__date-range) dd {
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Desktop discounts styling */
+  .cart-item__options-desktop .discounts {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(var(--color-foreground), 0.1);
+  }
+
+  .cart-item__options-desktop .discounts__discount {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    color: rgb(var(--color-base-accent-2));
+  }
+
+  .cart-item__options-desktop .discounts__discount svg {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -369,6 +484,35 @@ cart-remove-button .icon-remove {
 
   .cart-items thead th:first-child {
     width: 60%;
+  }
+
+  /* Enhanced desktop product options for larger screens */
+  .cart-item__options-desktop .product-option {
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem;
+  }
+
+  .cart-item__options-desktop .product-option dt {
+    font-size: 1.5rem;
+  }
+
+  .cart-item__options-desktop .product-option dd {
+    font-size: 1.5rem;
+  }
+
+  /* Enhanced date styling for larger screens */
+  .cart-item__options-desktop .cart-item__date-range .date-start,
+  .cart-item__options-desktop .cart-item__date-range .date-end {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .cart-item__options-desktop .cart-item__date-range strong {
+    font-size: 1.3rem;
+  }
+
+  .cart-item__options-desktop .cart-item__date-range .date-value {
+    font-size: 1.5rem;
   }
 }
 
