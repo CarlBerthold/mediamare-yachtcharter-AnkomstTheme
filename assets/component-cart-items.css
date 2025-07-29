@@ -119,11 +119,11 @@ dd {
 }
 
 .product-option {
-  display: flex;
-    justify-content: space-between;
+/*   display: flex;
+  justify-content: space-between;
   font-size: 1.4rem;
   word-break: break-word;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
+  line-height: calc(1 + 0.5 / var(--font-body-scale)); */
 }
 
 .cart-item cart-remove-button {
