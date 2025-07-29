@@ -40,6 +40,10 @@
   font-size: 2rem;
 }
 
+#izzyClose {
+  background-color: #0671b7;
+}
+
 select.izySelect {
   max-width: 100%;
 }
