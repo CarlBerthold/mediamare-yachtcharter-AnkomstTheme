@@ -44,6 +44,14 @@
   background-color: #0671b7;
 }
 
+#izyClose > i.gg-close {
+  color: white;
+}
+
+#izyClose > i.gg-close::before {
+  height: 2px;
+} 
+
 select.izySelect {
   max-width: 100%;
 }
