@@ -48,10 +48,6 @@
   color: white;
 }
 
-#izyClose > i.gg-close::before {
-  height: 2px;
-} 
-
 select.izySelect {
   max-width: 100%;
 }
