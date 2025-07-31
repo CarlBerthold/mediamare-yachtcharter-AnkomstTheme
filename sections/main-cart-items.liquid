@@ -89,67 +89,7 @@
 
                         <!-- Product options -->
                         <div class="cart-item__options">
-                          <!-- Price option -->
-                          {%- if item.original_price != item.final_price -%}
-                            <div class="cart-option-item cart-option-price">
-                              <span class="cart-option-label">30% der Mietdauer zzgl. extra produkten:</span>
-                              <span class="cart-option-value">
-                                <s class="cart-item__old-price">{{ item.original_price | money }}</s>
-                                <strong class="cart-item__final-price">{{ item.final_price | money }}</strong>
-                              </span>
-                            </div>
-                          {%- else -%}
                           
-                          {%- assign base_rental_price = null -%}
-                          {%- assign later_payment = null -%}
-                          
-                          <!-- Check if we can calculate base rental price from "später bezahlen" (70% remaining) -->
-                          {%- for property in item.properties -%}
-                            {%- if property.first == 'später bezahlen' -%}
-                              {%- assign later_payment_string = property.last | replace: '€', '' | replace: ',', '.' -%}
-                              {%- assign later_payment_cents = later_payment_string | times: 100 -%}
-                              {%- assign base_rental_price = later_payment_cents | divided_by: 0.7 | round -%}
-                              {%- assign later_payment = later_payment_cents -%}
-                              {%- break -%}
-                            {%- endif -%}
-                          {%- endfor -%}
-
-                          {%- if base_rental_price -%}
-                            <!-- Show breakdown if we have base rental price -->
-                            {%- assign addon_total = item.original_price | minus: base_rental_price -%}
-                            {%- if addon_total > 0 -%}
-                              <div class="cart-option-item cart-option-addons-total">
-                                <span class="cart-option-label">Zusatzprodukte (gesamt):</span>
-                                <span class="cart-option-value">{{ addon_total | money }}</span>
-                              </div>
-                            {%- endif -%}
-                            
-                            <div class="cart-option-item cart-option-base-price">
-                              <span class="cart-option-label">Mietpreis (ohne Extras):</span>
-                              <span class="cart-option-value">{{ base_rental_price | money }}</span>
-                            </div>
-                            
-                            <div class="cart-option-item cart-option-deposit">
-                              <span class="cart-option-label">Anzahlung (30%):</span>
-                              <span class="cart-option-value">{{ base_rental_price | times: 0.3 | round | money }}</span>
-                            </div>
-                            
-                            <div class="cart-option-item cart-option-price">
-                              <span class="cart-option-label">Zu zahlen jetzt (30% + Extras):
-                                <span class="cart-option-price__disclaimer">Gesamtsumme</span>
-                              </span>
-                              <span class="cart-option-value">{{ item.original_price | money }}</span>
-                            </div>
-                          {%- else -%}
-                            <!-- Fallback if we can't calculate base rental price -->
-                            <div class="cart-option-item cart-option-price">
-                              <span class="cart-option-label">Anzahlung (30%):
-                                <span class="cart-option-price__disclaimer">inkl. der ausgewählten Zusatzprodukte</span>
-                              </span>
-                              <span class="cart-option-value">{{ item.original_price | money }}</span>
-                            </div>
-                          {%- endif -%}
-                          {%- endif -%}
                     
 
                           <!-- Product variants -->
@@ -237,6 +177,67 @@
                                 <s class="cart-item__old-price">{{ item.original_line_price | money }}</s>
                                 <strong class="cart-item__final-price">{{ item.final_line_price | money }}</strong>
                               {%- else -%}
+                                <!-- Price option -->
+                          {%- if item.original_price != item.final_price -%}
+                            <div class="cart-option-item cart-option-price">
+                              <span class="cart-option-label">30% der Mietdauer zzgl. extra produkten:</span>
+                              <span class="cart-option-value">
+                                <s class="cart-item__old-price">{{ item.original_price | money }}</s>
+                                <strong class="cart-item__final-price">{{ item.final_price | money }}</strong>
+                              </span>
+                            </div>
+                          {%- else -%}
+                          
+                          {%- assign base_rental_price = null -%}
+                          {%- assign later_payment = null -%}
+                          
+                          <!-- Check if we can calculate base rental price from "später bezahlen" (70% remaining) -->
+                          {%- for property in item.properties -%}
+                            {%- if property.first == 'später bezahlen' -%}
+                              {%- assign later_payment_string = property.last | replace: '€', '' | replace: ',', '.' -%}
+                              {%- assign later_payment_cents = later_payment_string | times: 100 -%}
+                              {%- assign base_rental_price = later_payment_cents | divided_by: 0.7 | round -%}
+                              {%- assign later_payment = later_payment_cents -%}
+                              {%- break -%}
+                            {%- endif -%}
+                          {%- endfor -%}
+
+                          {%- if base_rental_price -%}
+                            <!-- Show breakdown if we have base rental price -->
+                            {%- assign addon_total = item.original_price | minus: base_rental_price -%}
+                            {%- if addon_total > 0 -%}
+                              <div class="cart-option-item cart-option-addons-total">
+                                <span class="cart-option-label">Zusatzprodukte (gesamt):</span>
+                                <span class="cart-option-value">{{ addon_total | money }}</span>
+                              </div>
+                            {%- endif -%}
+                            
+                            <div class="cart-option-item cart-option-base-price">
+                              <span class="cart-option-label">Mietpreis (ohne Extras):</span>
+                              <span class="cart-option-value">{{ base_rental_price | money }}</span>
+                            </div>
+                            
+                            <div class="cart-option-item cart-option-deposit">
+                              <span class="cart-option-label">Anzahlung (30%):</span>
+                              <span class="cart-option-value">{{ base_rental_price | times: 0.3 | round | money }}</span>
+                            </div>
+                            
+                            <div class="cart-option-item cart-option-price">
+                              <span class="cart-option-label">Zu zahlen jetzt (30% + Extras):
+                                <span class="cart-option-price__disclaimer">Gesamtsumme</span>
+                              </span>
+                              <span class="cart-option-value">{{ item.original_price | money }}</span>
+                            </div>
+                          {%- else -%}
+                            <!-- Fallback if we can't calculate base rental price -->
+                            <div class="cart-option-item cart-option-price">
+                              <span class="cart-option-label">Anzahlung (30%):
+                                <span class="cart-option-price__disclaimer">inkl. der ausgewählten Zusatzprodukte</span>
+                              </span>
+                              <span class="cart-option-value">{{ item.original_price | money }}</span>
+                            </div>
+                          {%- endif -%}
+                          {%- endif -%}
                                 {{ item.original_line_price | money }}
                               {%- endif -%}
                             </span>
