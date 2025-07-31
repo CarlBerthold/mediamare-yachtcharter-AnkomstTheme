@@ -7,7 +7,12 @@
 .cart-item__media-and-details {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.cart-item__actions {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .cart__empty-text,
