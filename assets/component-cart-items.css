@@ -413,6 +413,10 @@ cart-remove-button .icon-remove {
   .cart-option-item:last-child {
     border-bottom: none;
   }
+.cart-option-price__disclaimer {
+  display: flex;
+  flex-direction: column;
+}
 
   .cart-option-label {
     font-weight: 300;
