@@ -423,7 +423,6 @@ cart-remove-button .icon-remove {
   .cart-option-label {
     font-weight: 300;
     color: rgba(var(--color-foreground), 1);
-    flex: 0 0 70%;
     margin-right: 1rem;
   }
 
