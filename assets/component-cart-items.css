@@ -461,6 +461,7 @@ cart-remove-button .icon-remove {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    align-items: baseline;
     width: 100%;
   }
 
