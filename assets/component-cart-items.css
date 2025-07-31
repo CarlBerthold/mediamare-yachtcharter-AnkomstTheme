@@ -309,7 +309,8 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__date-range .date-end {
-    justify-content: flex-end;
+    align-items: self-end;
+    
   }
 
   .cart-item__date-range .date-start,
