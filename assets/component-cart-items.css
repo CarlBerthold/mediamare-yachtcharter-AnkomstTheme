@@ -420,6 +420,10 @@ cart-remove-button .icon-remove {
     color: black;
   }
 
+  .cart-option-item.cart-option-total {
+    margin: 10px 0 10px 0;
+  }
+
   .cart-option-label {
     font-weight: 300;
     color: rgba(var(--color-foreground), 1);
