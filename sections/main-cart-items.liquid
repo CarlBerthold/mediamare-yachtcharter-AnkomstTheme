@@ -84,208 +84,158 @@
       <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
         <div class="js-contents">
           {%- if cart != empty -%}
-            <table class="cart-items">
-              <caption class="visually-hidden">
-                {{ 'sections.cart.title' | t }}
-              </caption>
-              <thead>
-                <tr>
-                  <th class="caption-with-letter-spacing" colspan="2" scope="col">
-                    {{ 'sections.cart.headings.product' | t }}
-                  </th>
-                  <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">
-                    {{ 'sections.cart.headings.total' | t }}
-                  </th>
-                  <th
-                    class="cart-items__heading--wide cart-items__heading--quantity small-hide caption-with-letter-spacing"
-                    colspan="1"
-                    scope="col"
-                  >
-                    {{ 'sections.cart.headings.quantity' | t }}
-                  </th>
-                  <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">
-                    {{ 'sections.cart.headings.total' | t }}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {%- for item in cart.items -%}
-                  <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
-                    <td class="cart-item__media">
-                      {% if item.image %}
-                        {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
-                        <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
-                        <div class="cart-item__image-container gradient global-media-settings">
-                          <img
-                            src="{{ item.image | image_url: width: 300 }}"
-                            class="cart-item__image"
-                            alt="{{ item.image.alt | escape }}"
-                            loading="lazy"
-                            width="150"
-                            height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
-                          >
-                        </div>
-                      {% endif %}
-                    </td>
-
-                    <td class="cart-item__details">
-                      {%- if settings.show_vendor -%}
-                        <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
-                      {%- endif -%}
-
-                      <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
-
-                      <!-- Desktop options - hidden on mobile -->
-                      <div class="cart-item__options-desktop">
-                        <!-- Price option -->
-                        {%- if item.original_price != item.final_price -%}
-                          <div class="cart-option-item cart-option-price">
-                            <span class="cart-option-label">Preis:</span>
-                            <span class="cart-option-value">
-                              <s class="cart-item__old-price">{{ item.original_price | money }}</s>
-                              <strong class="cart-item__final-price">{{ item.final_price | money }}</strong>
-                            </span>
+            <div class="cart-items">
+              {%- for item in cart.items -%}
+                <div class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
+                  <div class="cart-item__content">
+                    <div class="cart-item__media-and-details">
+                      <div class="cart-item__media">
+                        {% if item.image %}
+                          {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
+                          <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
+                          <div class="cart-item__image-container gradient global-media-settings">
+                            <img
+                              src="{{ item.image | image_url: width: 300 }}"
+                              class="cart-item__image"
+                              alt="{{ item.image.alt | escape }}"
+                              loading="lazy"
+                              width="150"
+                              height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
+                            >
                           </div>
-                        {%- else -%}
-                          <div class="cart-option-item cart-option-price">
-                            <span class="cart-option-label">Preis:</span>
-                            <span class="cart-option-value">{{ item.original_price | money }}</span>
-                          </div>
+                        {% endif %}
+                      </div>
+
+                      <div class="cart-item__details">
+                        {%- if settings.show_vendor -%}
+                          <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                         {%- endif -%}
 
-                        <!-- Product variants -->
-                        {%- if item.product.has_only_default_variant == false -%}
-                          {%- for option in item.options_with_values -%}
-                            <div class="cart-option-item">
-                              <span class="cart-option-label">{{ option.name }}:</span>
-                              <span class="cart-option-value">{{ option.value }}</span>
+                        <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
+
+                        <!-- Product options -->
+                        <div class="cart-item__options">
+                          <!-- Price option -->
+                          {%- if item.original_price != item.final_price -%}
+                            <div class="cart-option-item cart-option-price">
+                              <span class="cart-option-label">Preis:</span>
+                              <span class="cart-option-value">
+                                <s class="cart-item__old-price">{{ item.original_price | money }}</s>
+                                <strong class="cart-item__final-price">{{ item.final_price | money }}</strong>
+                              </span>
                             </div>
-                          {%- endfor -%}
-                        {%- endif -%}
+                          {%- else -%}
+                            <div class="cart-option-item cart-option-price">
+                              <span class="cart-option-label">Preis:</span>
+                              <span class="cart-option-value">{{ item.original_price | money }}</span>
+                            </div>
+                          {%- endif -%}
 
-                        <!-- Product properties -->
-                        {%- for property in item.properties -%}
-                          {%- assign property_first_char = property.first | slice: 0 -%}
-                          {%- if property.last != blank and property_first_char != '_' -%}
-                            {%- assign property_key = property.first | downcase -%}
-                            {%- if property_key == 'date' -%}
-                              <!-- Special date styling -->
-                              <div class="cart-option-item cart-option-date">
-                                <span class="cart-option-label">Datum:</span>
-                                <div class="cart-option-value">
-                                  <div class="cart-item__date-range">
-                                    {%- assign date_parts = property.last | split: ' bis ' -%}
-                                    {%- if date_parts.size == 1 -%}
-                                      {%- assign date_parts = property.last | split: 'bis' -%}
-                                    {%- endif -%}
-                                    {%- if date_parts.size == 2 -%}
-                                      <div class="date-start">
-                                        <strong>Abfahrt:</strong>
-                                        <span class="date-value">{{ date_parts[0] | strip }}</span>
-                                      </div>
-                                      <div class="date-end">
-                                        <strong>Rückkehr:</strong>
-                                        <span class="date-value">{{ date_parts[1] | strip }}</span>
-                                      </div>
+                          <!-- Product variants -->
+                          {%- if item.product.has_only_default_variant == false -%}
+                            {%- for option in item.options_with_values -%}
+                              <div class="cart-option-item">
+                                <span class="cart-option-label">{{ option.name }}:</span>
+                                <span class="cart-option-value">{{ option.value }}</span>
+                              </div>
+                            {%- endfor -%}
+                          {%- endif -%}
+
+                          <!-- Product properties -->
+                          {%- for property in item.properties -%}
+                            {%- assign property_first_char = property.first | slice: 0 -%}
+                            {%- if property.last != blank and property_first_char != '_' -%}
+                              {%- assign property_key = property.first | downcase -%}
+                              {%- if property_key == 'date' -%}
+                                <!-- Special date styling -->
+                                <div class="cart-option-item cart-option-date">
+                                  <span class="cart-option-label">Datum:</span>
+                                  <div class="cart-option-value">
+                                    <div class="cart-item__date-range">
+                                      {%- assign date_parts = property.last | split: ' bis ' -%}
+                                      {%- if date_parts.size == 1 -%}
+                                        {%- assign date_parts = property.last | split: 'bis' -%}
+                                      {%- endif -%}
+                                      {%- if date_parts.size == 2 -%}
+                                        <div class="date-start">
+                                          <strong>Abfahrt:</strong>
+                                          <span class="date-value">{{ date_parts[0] | strip }}</span>
+                                        </div>
+                                        <div class="date-end">
+                                          <strong>Rückkehr:</strong>
+                                          <span class="date-value">{{ date_parts[1] | strip }}</span>
+                                        </div>
+                                      {%- else -%}
+                                        {{ property.last }}
+                                      {%- endif -%}
+                                    </div>
+                                  </div>
+                                </div>
+                              {%- else -%}
+                                <div class="cart-option-item">
+                                  <span class="cart-option-label">{{ property.first }}:</span>
+                                  <span class="cart-option-value">
+                                    {%- if property.last contains '/uploads/' -%}
+                                      <a href="{{ property.last }}" class="link" target="_blank">
+                                        {{ property.last | split: '/' | last }}
+                                      </a>
                                     {%- else -%}
                                       {{ property.last }}
                                     {%- endif -%}
-                                  </div>
+                                  </span>
                                 </div>
-                              </div>
-                            {%- else -%}
-                              <div class="cart-option-item">
-                                <span class="cart-option-label">{{ property.first }}:</span>
-                                <span class="cart-option-value">
-                                  {%- if property.last contains '/uploads/' -%}
-                                    <a href="{{ property.last }}" class="link" target="_blank">
-                                      {{ property.last | split: '/' | last }}
-                                    </a>
-                                  {%- else -%}
-                                    {{ property.last }}
-                                  {%- endif -%}
-                                </span>
-                              </div>
+                              {%- endif -%}
                             {%- endif -%}
+                          {%- endfor -%}
+
+                          <!-- Selling plan -->
+                          {%- if item.selling_plan_allocation.selling_plan.name -%}
+                            <div class="cart-option-item">
+                              <span class="cart-option-label">Plan:</span>
+                              <span class="cart-option-value">{{ item.selling_plan_allocation.selling_plan.name }}</span>
+                            </div>
                           {%- endif -%}
-                        {%- endfor -%}
 
-                        <!-- Selling plan -->
-                        {%- if item.selling_plan_allocation.selling_plan.name -%}
-                          <div class="cart-option-item">
-                            <span class="cart-option-label">Plan:</span>
-                            <span class="cart-option-value">{{ item.selling_plan_allocation.selling_plan.name }}</span>
-                          </div>
-                        {%- endif -%}
+                          <!-- Discounts -->
+                          {%- if item.line_level_discount_allocations.size > 0 -%}
+                            <div class="cart-option-discounts">
+                              {%- for discount in item.line_level_discount_allocations -%}
+                                <div class="cart-option-item cart-option-discount">
+                                  <span class="cart-option-label">Rabatt:</span>
+                                  <span class="cart-option-value">{{ discount.discount_application.title }}</span>
+                                </div>
+                              {%- endfor -%}
+                            </div>
+                          {%- endif -%}
 
-                        <!-- Discounts -->
-                        {%- if item.line_level_discount_allocations.size > 0 -%}
-                          <div class="cart-option-discounts">
-                            {%- for discount in item.line_level_discount_allocations -%}
-                              <div class="cart-option-item cart-option-discount">
-                                <span class="cart-option-label">Rabatt:</span>
-                                <span class="cart-option-value">{{ discount.discount_application.title }}</span>
-                              </div>
-                            {%- endfor -%}
-                          </div>
-                        {%- endif -%}
-                      </div>
-                    </td>
-
-                    <td class="cart-item__totals right medium-hide large-up-hide">
-                      {%- render 'loading-spinner' -%}
-                      <div class="cart-item__price-wrapper">
-                        {%- if item.original_line_price != item.final_line_price -%}
-                          <dl class="cart-item__discounted-prices">
-                            <dt class="visually-hidden">
-                              {{ 'products.product.price.regular_price' | t }}
-                            </dt>
-                            <dd>
-                              <s class="cart-item__old-price price price--end">
+                          <!-- Total price -->
+                          <div class="cart-option-item cart-option-total">
+                            <span class="cart-option-label">Gesamtsumme:</span>
+                            <span class="cart-option-value">
+                              {%- if item.original_line_price != item.final_line_price -%}
+                                <s class="cart-item__old-price">{{ item.original_line_price | money }}</s>
+                                <strong class="cart-item__final-price">{{ item.final_line_price | money }}</strong>
+                              {%- else -%}
                                 {{ item.original_line_price | money }}
-                              </s>
-                            </dd>
-                            <dt class="visually-hidden">
-                              {{ 'products.product.price.sale_price' | t }}
-                            </dt>
-                            <dd class="price price--end">
-                              {{ item.final_line_price | money }}
-                            </dd>
-                          </dl>
-                        {%- else -%}
-                          <span class="price price--end">
-                            {{ item.original_line_price | money }}
-                          </span>
-                        {%- endif -%}
-
-                        {%- if item.variant.available and item.unit_price_measurement -%}
-                          <div class="unit-price caption">
-                            <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
-                            {{ item.unit_price | money }}
-                            <span aria-hidden="true">/</span>
-                            <span class="visually-hidden"
-                              >&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span
-                            >
-                            {%- if item.unit_price_measurement.reference_value != 1 -%}
-                              {{- item.unit_price_measurement.reference_value -}}
-                            {%- endif -%}
-                            {{ item.unit_price_measurement.reference_unit }}
+                              {%- endif -%}
+                            </span>
                           </div>
-                        {%- endif -%}
+                        </div>
                       </div>
-                    </td>
-                    {%- liquid
-                      assign has_qty_rules = false
-                      if item.variant.quantity_rule.increment > 1 or item.variant.quantity_rule.min > 1 or item.variant.quantity_rule.max != null
-                        assign has_qty_rules = true
-                      endif
+                    </div>
 
-                      assign has_vol_pricing = false
-                      if item.variant.quantity_price_breaks.size > 0
-                        assign has_vol_pricing = true
-                      endif
-                    -%}
-                    <td class="cart-item__quantity{% if has_qty_rules or has_vol_pricing %} cart-item__quantity--info{% endif %}">
+                    <div class="cart-item__actions">
+                      {%- liquid
+                        assign has_qty_rules = false
+                        if item.variant.quantity_rule.increment > 1 or item.variant.quantity_rule.min > 1 or item.variant.quantity_rule.max != null
+                          assign has_qty_rules = true
+                        endif
+
+                        assign has_vol_pricing = false
+                        if item.variant.quantity_price_breaks.size > 0
+                          assign has_vol_pricing = true
+                        endif
+                      -%}
                       <quantity-popover>
                         <div class="cart-item__quantity-wrapper quantity-popover-wrapper">
                           <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
@@ -314,14 +264,12 @@
                                 type="number"
                                 name="updates[]"
                                 value="{{ item.quantity }}"
-                                {% # theme-check-disable %}
                                 data-cart-quantity="{{ cart | item_count_for_variant: item.variant.id }}"
                                 min="{{ item.variant.quantity_rule.min }}"
                                 {% if item.variant.quantity_rule.max != null %}
                                   max="{{ item.variant.quantity_rule.max }}"
                                 {% endif %}
                                 step="{{ item.variant.quantity_rule.increment }}"
-                                {% # theme-check-enable %}
                                 aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                                 id="Quantity-{{ item.index | plus: 1 }}"
                                 data-index="{{ item.index | plus: 1 }}"
@@ -347,6 +295,7 @@
                             </a>
                           </cart-remove-button>
                         </div>
+                        
                         {%- if has_qty_rules or has_vol_pricing -%}
                           <button
                             type="button"
@@ -445,27 +394,78 @@
                           </svg>
                         </div>
                       </quantity-popover>
-                    </td>
+                    </div>
+                  </div>
+                </div>
+              {%- endfor -%}
+              
+              <div class="cart-items__footer">
+                <div class="cart-items__payment-info">
+                  <span class="caption-with-letter-spacing">
+                    Die 70% sind bis spätestens 2 Tage vor Reise Antritt bezahlt werden.
+                  </span>
+                  <span class="caption-with-letter-spacing">
+                    bitte beachten Sie dass Alle zusätzlichen Produkte, wie Ipad oder Extra Fock auf die 30% anzahlung berechnet werden.
+                  </span>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
 
-                    <td class="cart-item__totals right small-hide">
-                      {%- render 'loading-spinner' -%}
-                      <div class="cart-item__price-wrapper">
-                        {%- if item.original_line_price != item.final_line_price -%}
-                          <dl class="cart-item__discounted-prices">
-                            <dt class="visually-hidden">
-                              {{ 'products.product.price.regular_price' | t }}
-                            </dt>
-                            <dd>
-                              <s class="cart-item__old-price price price--end">
-                                {{ item.original_line_price | money }}
-                              </s>
-                            </dd>
-                            <dt class="visually-hidden">
-                              {{ 'products.product.price.sale_price' | t }}
-                            </dt>
-                            <dd class="price price--end">
-                              {{ item.final_line_price | money }}
-                            </dd>
+      <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
+      <p
+        class="visually-hidden"
+        id="shopping-cart-line-item-status"
+        aria-live="polite"
+        aria-hidden="true"
+        role="status"
+      >
+        {{ 'accessibility.loading' | t }}
+      </p>
+    </form>
+  </div>
+</cart-items>
+
+{% schema %}
+{
+  "name": "t:sections.main-cart-items.name",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}
+{% comment %}                             </dd>
                           </dl>
                         {%- else -%}
                           <span class="price price--end">
@@ -651,4 +651,4 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %} {% endcomment %}
