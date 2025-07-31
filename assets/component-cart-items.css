@@ -310,13 +310,13 @@ cart-remove-button .icon-remove {
 
   
 
-  .cart-item__date-range .date-start,
+ /*  .cart-item__date-range .date-start,
   .cart-item__date-range  {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.75rem;
     align-items: flex-start;
-  }
+  } */
 
   .cart-item__date-range .date-end {
     align-items: self-end;
@@ -465,15 +465,15 @@ cart-remove-button .icon-remove {
     width: 100%;
   }
 
-  .cart-option-date .date-start,
+  /* .cart-option-date .date-start,
   .cart-option-date .date-end {
     background: rgba(var(--color-base-accent-1), 0.05);
     border: 1px solid rgba(var(--color-base-accent-1), 0.15);
     border-radius: 0.5rem;
     text-align: center;
-  }
+  } */
 
-  .cart-option-date .date-start strong,
+  /* .cart-option-date .date-start strong,
   .cart-option-date .date-end strong {
     display: block;
     font-size: 1.1rem;
@@ -482,15 +482,15 @@ cart-remove-button .icon-remove {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 0.5rem;
-  }
+  } */
 
-  .cart-option-date .date-value {
+  /* .cart-option-date .date-value {
     display: block;
     font-size: 1.3rem;
     font-weight: 500;
     color: rgb(var(--color-foreground));
     line-height: 1.2;
-  }
+  } */
 
   /* Discount styling */
   .cart-option-discounts {
