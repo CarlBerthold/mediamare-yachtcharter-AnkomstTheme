@@ -3,6 +3,13 @@
   display: block;
 }
 
+
+.cart-item__media-and-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .cart__empty-text,
 .is-empty .cart__contents,
 cart-items.is-empty .title-wrapper-with-link,
