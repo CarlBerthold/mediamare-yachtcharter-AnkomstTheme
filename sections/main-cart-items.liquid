@@ -116,6 +116,14 @@
 
                           {%- if base_rental_price -%}
                             <!-- Show breakdown if we have base rental price -->
+                            {%- assign addon_total = item.original_price | minus: base_rental_price -%}
+                            {%- if addon_total > 0 -%}
+                              <div class="cart-option-item cart-option-addons-total">
+                                <span class="cart-option-label">Zusatzprodukte (gesamt):</span>
+                                <span class="cart-option-value">{{ addon_total | money }}</span>
+                              </div>
+                            {%- endif -%}
+                            
                             <div class="cart-option-item cart-option-base-price">
                               <span class="cart-option-label">Mietpreis (ohne Extras):</span>
                               <span class="cart-option-value">{{ base_rental_price | money }}</span>
@@ -125,14 +133,6 @@
                               <span class="cart-option-label">Anzahlung (30%):</span>
                               <span class="cart-option-value">{{ base_rental_price | times: 0.3 | round | money }}</span>
                             </div>
-                            
-                            {%- assign addon_total = item.original_price | minus: base_rental_price -%}
-                            {%- if addon_total > 0 -%}
-                              <div class="cart-option-item cart-option-addons-total">
-                                <span class="cart-option-label">Zusatzprodukte (gesamt):</span>
-                                <span class="cart-option-value">{{ addon_total | money }}</span>
-                              </div>
-                            {%- endif -%}
                             
                             <div class="cart-option-item cart-option-price">
                               <span class="cart-option-label">Zu zahlen jetzt (30% + Extras):
