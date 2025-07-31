@@ -88,7 +88,7 @@
               {%- for item in cart.items -%}
                 <div class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <div class="cart-item__content">
-                    <div class="cart-item__media-and-details">
+                    <div class="cart-item__media-and-details flex flex-row justify-between">
                       <div class="cart-item__media">
                         {% if item.image %}
                           {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
@@ -106,7 +106,7 @@
                         {% endif %}
                       </div>
 
-                      <div class="cart-item__details flex flex-row justify-between">
+                      <div class="cart-item__details">
                         {%- if settings.show_vendor -%}
                           <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                         {%- endif -%}
