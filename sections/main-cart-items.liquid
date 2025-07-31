@@ -193,17 +193,18 @@
                               <!-- Check if we can calculate base rental price from "später bezahlen" (70% remaining) -->
                               {%- for property in item.properties -%}
                                 {%- if property.first == 'später bezahlen' -%}
-                                  {%- assign later_payment_string = property.last | replace: '€', '' | replace: ',', '.' -%}
-                                  {%- assign later_payment_cents = later_payment_string | times: 100 -%}
-                                  {%- assign base_rental_price = later_payment_cents | divided_by: 0.7 | round -%}
-                                  {%- assign later_payment = later_payment_cents -%}
+                                  {%- assign later_payment_string = property.last | replace: '€', '' | replace: '.', '' | replace: ',', '.' -%}
+                                  {%- assign later_payment_number = later_payment_string | times: 1 -%}
+                                  {%- assign later_payment = later_payment_number | times: 100 -%}
+                                  {%- assign base_rental_price = later_payment | divided_by: 70 | times: 100 | round -%}
                                   {%- break -%}
                                 {%- endif -%}
                               {%- endfor -%}
 
                               {%- if base_rental_price -%}
                                 <!-- Show breakdown if we have base rental price -->
-                                {%- assign addon_total = item.original_price | minus: base_rental_price -%}
+                                {%- assign deposit_amount = base_rental_price | times: 30 | divided_by: 100 -%}
+                                {%- assign addon_total = item.original_price | minus: deposit_amount -%}
                                 {%- if addon_total > 0 -%}
                                   <div class="cart-option-item cart-option-addons-total">
                                     <span class="cart-option-label">Zusatzprodukte (gesamt):</span>
