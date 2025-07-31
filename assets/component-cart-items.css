@@ -426,7 +426,6 @@ cart-remove-button .icon-remove {
 
   .cart-option-date .date-start,
   .cart-option-date .date-end {
-    padding: 1rem;
     background: rgba(var(--color-base-accent-1), 0.05);
     border: 1px solid rgba(var(--color-base-accent-1), 0.15);
     border-radius: 0.5rem;
