@@ -327,7 +327,7 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__media {
-    width: 10rem;
+    width: auto;
   }
 
   .cart-item cart-remove-button {
