@@ -103,9 +103,10 @@
                               <div class="cart-option-price__disclaimer">
                                 <span class="cart-option-label">30% der Mietdauer zzgl. extra produkten:</span>
                                 <span class="cart-option-value">{{ item.original_price | money }}</span>
-                              <div>
+                              </div>
                             </div>
                           {%- endif -%}
+                    
 
                           <!-- Product variants -->
                           {%- if item.product.has_only_default_variant == false -%}
