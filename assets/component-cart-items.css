@@ -448,6 +448,7 @@ cart-remove-button .icon-remove {
   .cart-option-date {
     flex-direction: column;
     align-items: flex-start;
+    margin: 10px 0 10px;
   }
 
   .cart-option-date .cart-option-label {
