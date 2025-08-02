@@ -378,19 +378,6 @@ cart-remove-button .icon-remove {
   line-height: 1.4;
 }
 
-@media screen and (max-width: 749px) {
-  ..cart-option-item {
-    padding: 0.4rem 0;
-  }
-}
-
-@media screen and (min-width: 1950px) {
-  .cart-option-item {
-    padding: 0.8rem 0;
-  }
-  
-}
-
 .cart-option-item:last-child {
   border-bottom: none;
 }
