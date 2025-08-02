@@ -234,6 +234,11 @@ cart-remove-button .icon-remove {
   text-transform: uppercase;
 }
 
+.cart-item__details,
+.cart-item__media {
+    width: 100%;
+  }
+
 @media screen and (max-width: 749px) {
   .cart-items,
   .cart-items thead,
@@ -337,12 +342,9 @@ cart-remove-button .icon-remove {
     line-height: 1.3;
   }
 
-  .cart-item__details {
-    width: 50%;
-  }
-
+  .cart-item__details,
   .cart-item__media {
-    width:50%;
+    width: 50%;
   }
 
   .cart-item cart-remove-button {
