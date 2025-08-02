@@ -344,33 +344,8 @@ cart-remove-button .icon-remove {
     line-height: 1.3;
   }
 
-  .cart-items th {
-    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  }
-
-  .cart-items thead th:first-child {
-    width: 50%;
-  }
-
-  .cart-items th + th {
-    padding-left: 4rem;
-  }
-
-  .cart-items td {
-    vertical-align: top;
-    padding-top: 4rem;
-  }
-
-  .cart-item {
-    display: table-row;
-  }
-
-  .cart-item > td + td {
-    padding-left: 4rem;
-  }
-
   .cart-item__details {
-    width: 35rem;
+    width: 50%;
   }
 
   .cart-item__media {
