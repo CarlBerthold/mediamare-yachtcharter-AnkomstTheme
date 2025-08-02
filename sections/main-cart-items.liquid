@@ -61,9 +61,9 @@
                     <div class="cart-item__media-and-details">
                       <div class="cart-item__media">
                         {% if item.image %}
-                          {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
-                          <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                           <div class="cart-item__image-container gradient global-media-settings">
+                            {% comment %} Move the link inside image container to only cover image {% endcomment %}
+                            <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                             <img
                               src="{{ item.image | image_url: width: 1400 }}"
                               class="cart-item__image"
@@ -74,14 +74,14 @@
                             >
                           </div>
                         {% endif %}
-                          <div>
-                        <span class="caption-with-letter-spacing">
-                          Die 70% sind bis spätestens 2 Tage vor Reise Antritt bezahlt werden.
-                        </span>
-                        <span class="caption-with-letter-spacing">
-                          bitte beachten Sie dass Alle zusätzlichen Produkte, wie Ipad oder Extra Fock auf die 30% anzahlung berechnet werden.
-                        </span>
-                      </div>
+                        <div>
+                          <span class="caption-with-letter-spacing">
+                            Die 70% sind bis spätestens 2 Tage vor Reise Antritt bezahlt werden.
+                          </span>
+                          <span class="caption-with-letter-spacing">
+                            bitte beachten Sie dass Alle zusätzlichen Produkte, wie Ipad oder Extra Fock auf die 30% anzahlung berechnet werden.
+                          </span>
+                        </div>
                       </div>
                     
 
