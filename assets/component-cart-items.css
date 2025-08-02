@@ -508,13 +508,8 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__details {
-    width: 50rem;
+    width: 50%;
   }
-
-  .cart-items thead th:first-child {
-    width: 60%;
-  }
-
   /* Enhanced desktop product options for larger screens */
   .cart-item__options-desktop .product-option {
     padding: 1rem 1.5rem;
