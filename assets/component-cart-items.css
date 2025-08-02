@@ -234,10 +234,7 @@ cart-remove-button .icon-remove {
   text-transform: uppercase;
 }
 
-.cart-item__details,
-.cart-item__media {
-    width: 100%;
-  }
+
 
 @media screen and (max-width: 749px) {
   .cart-items,
@@ -344,7 +341,7 @@ cart-remove-button .icon-remove {
 
   .cart-item__details,
   .cart-item__media {
-    width: 50%;
+    width: 100%;
   }
 
   .cart-item cart-remove-button {
