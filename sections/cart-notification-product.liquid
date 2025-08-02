@@ -6,8 +6,8 @@
           <img
             src="{{ item.image | image_url: width: 750 }}"
             alt="{{ item.image.alt | escape }}"
-            width="200"
-            height="{{ 200 | divided_by: item.image.aspect_ratio | ceil }}"
+            width="250"
+            height="{{ 250 | divided_by: item.image.aspect_ratio | ceil }}"
             loading="lazy"
           >
         </div>
