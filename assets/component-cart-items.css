@@ -441,11 +441,8 @@ cart-remove-button .icon-remove {
   width: 100%;
 }
 
-.cart-option-date .date-start,
+.cart-option-date ,
 .cart-option-date .date-end {
-  background: rgba(var(--color-base-accent-1), 0.05);
-  border: 1px solid rgba(var(--color-base-accent-1), 0.15);
-  border-radius: 0.5rem;
   text-align: right;
 }
 
@@ -557,9 +554,7 @@ cart-remove-button .icon-remove {
     align-items: flex-start;
     margin-bottom: 0;
     
-    background: rgba(var(--color-base-accent-1), 0.05);
-    border-radius: 0.4rem;
-    border-left: 3px solid rgb(var(--color-base-accent-1));
+    
   }
 
   .cart-item__date-range .date-end {
@@ -568,9 +563,7 @@ cart-remove-button .icon-remove {
     align-items: flex-end;
     margin-bottom: 0;
     
-    background: rgba(var(--color-base-accent-1), 0.05);
-    border-radius: 0.4rem;
-    border-left: 3px solid rgb(var(--color-base-accent-1));
+    
   }
 
   .cart-item__date-range strong {
