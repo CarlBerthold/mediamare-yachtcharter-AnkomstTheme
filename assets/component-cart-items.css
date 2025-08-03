@@ -321,7 +321,6 @@ cart-remove-button .icon-remove {
 }
 
 .cart-item__date-range .date-end {
-  align-items: self-end;
   margin-bottom: 0;
 }
 
@@ -557,7 +556,7 @@ cart-remove-button .icon-remove {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0;
-    padding: 0.8rem;
+    
     background: rgba(var(--color-base-accent-1), 0.05);
     border-radius: 0.4rem;
     border-left: 3px solid rgb(var(--color-base-accent-1));
@@ -568,7 +567,7 @@ cart-remove-button .icon-remove {
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: 0;
-    padding: 0.8rem;
+    
     background: rgba(var(--color-base-accent-1), 0.05);
     border-radius: 0.4rem;
     border-left: 3px solid rgb(var(--color-base-accent-1));
