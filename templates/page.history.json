@@ -297,7 +297,7 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "FOLKEBOOTE IM ÜBERBLICK",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "uppercase",
