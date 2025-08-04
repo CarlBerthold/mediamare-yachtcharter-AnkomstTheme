@@ -424,7 +424,10 @@
 
 .technische_daten {
   list-style: none;
-  padding:0;
+  padding: 0;
+  border-collapse: separate;
+  border-spacing: 0 0.6rem; /* Add vertical spacing between rows */
+  width: 100%;
 }
 
 .verkaufs-text {
@@ -447,7 +450,18 @@
 }
 
 .technische_daten > tbody > tr > td {
-  padding-left: 2px;
+  padding: 0.4rem 0.8rem 0.4rem 2px; /* Enhanced padding: top right bottom left */
+  vertical-align: top;
+}
+
+/* Add spacing between label and value columns */
+.technische_daten > tbody > tr > td:first-child {
+  padding-right: 1.2rem; /* More space after the label */
+  min-width: 120px; /* Ensure consistent label column width */
+}
+
+.technische_daten > tbody > tr > td:last-child {
+  padding-right: 0.4rem; /* Consistent right padding */
 }
 
 .card-information > .price,
