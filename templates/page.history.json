@@ -144,7 +144,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_1.jpg",
             "title": "Das IF-Boot ist einfach zu segeln",
-            "text": "<h4><br/>Die Segeleigenschaften des IF-Bootes sind erstklassig – besonders am Wind überzeugt es mit ruhigem Lauf, trockener Fahrt und einfacher Handhabung bei jedem Wind. </h4>",
+            "text": "<p><br/>Die Segeleigenschaften des IF-Bootes sind erstklassig – besonders am Wind überzeugt es mit ruhigem Lauf, trockener Fahrt und einfacher Handhabung bei jedem Wind. </p>",
             "link_label": "",
             "link": ""
           }
@@ -154,7 +154,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_2.jpg",
             "title": "Hochseetüchtig und gut im Trimm",
-            "text": "<h4><br/>Das IF-Boot segelt auf Kurs, selbst wenn man die Pinne loslässt. Dank durchdachtem<br/>Deckaufbau behält der Rudergänger stets beste Sicht. Auch Einhandsegeln ist<br/>problemlos möglich.</h4>",
+            "text": "<p><br/>Das IF-Boot segelt auf Kurs, selbst wenn man die Pinne loslässt. Dank durchdachtem<br/>Deckaufbau behält der Rudergänger stets beste Sicht. Auch Einhandsegeln ist<br/>problemlos möglich.</p>",
             "link_label": "",
             "link": ""
           }
@@ -164,7 +164,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_3.jpg",
             "title": "Das IF-Boot ist geräumig",
-            "text": "<h4><br/>Das IF-Boot ist ein Familienboot mit viel Platz an Bord. Unter Deck gibt es vier Kojen, zwei Garderoben und Stauraum genug für Hochseetörns mit der ganzen Familie.</h4>",
+            "text": "<p><br/>Das IF-Boot ist ein Familienboot mit viel Platz an Bord. Unter Deck gibt es vier Kojen, zwei Garderoben und Stauraum genug für Hochseetörns mit der ganzen Familie.</p>",
             "link_label": "",
             "link": ""
           }
@@ -201,7 +201,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_4.jpg",
             "title": "Pantry",
-            "text": "<h4><br/>Praktische Pantry mit klappbarem Spirituskocher, Stauraum für Geschirr und einem multifunktionalen, verstaubaren Arbeitstisch – für eine stets aufgeräumte Kajüte.</h4>",
+            "text": "<p><br/>Praktische Pantry mit klappbarem Spirituskocher, Stauraum für Geschirr und einem multifunktionalen, verstaubaren Arbeitstisch – für eine stets aufgeräumte Kajüte.</p>",
             "link_label": "",
             "link": ""
           }
@@ -211,7 +211,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_5.jpg",
             "title": "Robust und hochseetauglich",
-            "text": "<h4><br/>Rumpf und Deck werden im Handauflegeverfahren gefertigt – für starke Laminatstruktur und Langlebigkeit. Der hohe Ballastanteil sorgt für sicheres, komfortables Segeln auch bei viel Wind.</h4>",
+            "text": "<p><br/>Rumpf und Deck werden im Handauflegeverfahren gefertigt – für starke Laminatstruktur und Langlebigkeit. Der hohe Ballastanteil sorgt für sicheres, komfortables Segeln auch bei viel Wind.</p>",
             "link_label": "",
             "link": ""
           }
@@ -221,7 +221,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_6.jpg",
             "title": "Stabiler Kiel",
-            "text": "<h4><br/>Der Ballast besteht aus Gusseisen und ist im Kiel mit Polyester massiv eingegossen.<br/>Damit ist das Risiko bei einer Grundberührung des Bootes auf ein Minimum reduziert. Der lange Kiel schützt das Ruder.</h4>",
+            "text": "<p><br/>Der Ballast besteht aus Gusseisen und ist im Kiel mit Polyester massiv eingegossen.<br/>Damit ist das Risiko bei einer Grundberührung des Bootes auf ein Minimum reduziert. Der lange Kiel schützt das Ruder.</p>",
             "link_label": "",
             "link": ""
           }
