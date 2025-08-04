@@ -164,7 +164,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_3.jpg",
             "title": "Das IF-Boot ist geräumig",
-            "text": "<h4><br/>Das IF-Boot ist ein Familienboot mit viel Platz an Bord. Unter Deck gibt es vier Kojen, zwei Garderoben und Stauraum genug für Hochseetörns mit der ganzen Familie.</h4>",
+            "text": "<p><br/>Das IF-Boot ist ein Familienboot mit viel Platz an Bord. Unter Deck gibt es vier Kojen, zwei Garderoben und Stauraum genug für Hochseetörns mit der ganzen Familie.</p>",
             "link_label": "",
             "link": ""
           }
@@ -201,7 +201,7 @@
           "settings": {
             "image": "shopify://shop_images/History_525x525_4.jpg",
             "title": "Pantry",
-            "text": "<h4><br/>Praktische Pantry mit klappbarem Spirituskocher, Stauraum für Geschirr und einem multifunktionalen, verstaubaren Arbeitstisch – für eine stets aufgeräumte Kajüte.</h4>",
+            "text": "<p><br/>Praktische Pantry mit klappbarem Spirituskocher, Stauraum für Geschirr und einem multifunktionalen, verstaubaren Arbeitstisch – für eine stets aufgeräumte Kajüte.</p>",
             "link_label": "",
             "link": ""
           }
