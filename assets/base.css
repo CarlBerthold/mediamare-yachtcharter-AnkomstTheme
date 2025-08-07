@@ -2599,7 +2599,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header__icon {
   /* color: rgb(var(--color-foreground)); */
   color:black;
-  scale: 1.7;
+  scale: 1.5;
 }
 
 .header__icon span {
