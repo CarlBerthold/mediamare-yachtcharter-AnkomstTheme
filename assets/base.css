@@ -2615,8 +2615,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .header__icon .icon {
-  height: 5rem;
-  width: 5rem;
+  height: 2rem;
+  width: 2rem;
   fill: none;
   vertical-align: middle;
   color: #0671b7;
@@ -2624,8 +2624,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 5rem;
-  width: 5rem;
+  height: 5.4rem;
+  width: 5.4rem;
   padding: 0;
 }
 
