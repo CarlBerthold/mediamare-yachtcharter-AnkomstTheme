@@ -70,7 +70,7 @@ table {
 p.product__text.inline-richtext.caption-with-letter-spacing,
 .product__tax,
 .product__info-container>*+* {
-  color: rgba(var(--color-foreground));
+  color: #373a3b;
 }
 
 .label_izyrent {
