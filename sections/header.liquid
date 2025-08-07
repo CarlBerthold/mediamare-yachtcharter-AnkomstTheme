@@ -208,21 +208,19 @@
     background-size: cover;
   }
 
-  .pageTitle {
+  /* .pageTitle {
     grid-area: title;
     text-align: center;
     font-size: 70px;
-    /* font-family: 'DINOT-REGULAR'; */
     letter-spacing: 3px;
-
-  }
+  } */
 
   .indexTitle {
     display: flex;
     flex-direction: column;
   }
 
-  @media screen and (max-width: 750px) {
+ /*  @media screen and (max-width: 750px) {
     .pageTitle {
       font-size: 28px;
     }
@@ -246,7 +244,7 @@
       font-size: 70px;
       max-width: 100%;
     }
-  }
+  } */
 
   .section-header {
     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
@@ -430,7 +428,7 @@
       endif
     -%}
 
-    <div class="pageTitle h1">
+    <div class="pageTitle h1{% if path_parts[1] == 'pages' %} pageTitle h2{% endif %}">
       {% assign path_parts = request.path | split: '/' %}
       {% if request.path == "/" %}
         <div class="indexTitle">
