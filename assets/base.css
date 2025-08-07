@@ -2462,7 +2462,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
       'brand heading coordinates'
       'navigation title icons';
     grid-template-columns: 1fr 1.5fr 1fr;
-    column-gap: 0rem;
+    row-gap: 1rem;
     align-items: flex-start;
   }
 
