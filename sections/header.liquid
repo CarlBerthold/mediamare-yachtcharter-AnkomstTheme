@@ -428,24 +428,27 @@
       endif
     -%}
 
-    <div class="h0{% if path_parts[1] == 'pages' %}h2{% endif %}">
+    <div class="pageTitle">
       {% assign path_parts = request.path | split: '/' %}
-      {% if request.path == "/" %}
-        <div class="indexTitle">
-        <span>ANKOMST</span>
-        {% comment %} <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span> {% endcomment %}
-        </div>
-      {% elsif path_parts[1] == "collections" %}
-        <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
-      {% elsif path_parts[1] == "products" %}
-        <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
-      {% elsif path_parts[1] == "pages" %}
-        <span> {{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
-      {% elsif path_parts[1] == "cart" %}
-        <span>Warenkorb</span>
-      {% else %}
-        {{ request.path | upcase }}
-      {% endif %}
+      <div class="h0{% if path_parts[1] == 'pages' %}h2{% endif %}">
+        
+        {% if request.path == "/" %}
+          <div class="indexTitle">
+          <span>ANKOMST</span>
+          {% comment %} <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span> {% endcomment %}
+          </div>
+        {% elsif path_parts[1] == "collections" %}
+          <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
+        {% elsif path_parts[1] == "products" %}
+          <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
+        {% elsif path_parts[1] == "pages" %}
+          <span> {{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
+        {% elsif path_parts[1] == "cart" %}
+          <span>Warenkorb</span>
+        {% else %}
+          {{ request.path | upcase }}
+        {% endif %}
+      </div>
     </div>
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
