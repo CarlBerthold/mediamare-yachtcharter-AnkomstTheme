@@ -7,6 +7,11 @@
   color: black;
 }
 
+/* .dauer is completly wrong as its the price itself, however using pseudo element to appent /tag */
+.dauer::after {
+  content: "/Tag";
+}
+
 .price .mietdauer {
   font-size: 1.6rem;
 }
