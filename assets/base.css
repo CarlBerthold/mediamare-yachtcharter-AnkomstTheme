@@ -2624,6 +2624,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__icon,
 .header__icon--cart .icon {
+  fill: none;
+  vertical-align: middle;
+  color: #0671b7;
   height: 4.4rem;
   width: 4.4rem;
   padding: 0;
