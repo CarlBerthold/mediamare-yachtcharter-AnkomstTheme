@@ -2627,8 +2627,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   fill: none;
   vertical-align: middle;
   color: #0671b7;
-  height: 4.4rem;
-  width: 4.4rem;
+  height: 2rem;
+  width: 2rem;
   padding: 0;
 }
 
