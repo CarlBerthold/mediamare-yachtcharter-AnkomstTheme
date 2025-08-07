@@ -428,7 +428,7 @@
       endif
     -%}
 
-    <div class="pageTitle h1{% if path_parts[1] == 'pages' %} pageTitle h2{% endif %}">
+    <div class="pageTitle h0{% if path_parts[1] == 'pages' %} pageTitle h2{% endif %}">
       {% assign path_parts = request.path | split: '/' %}
       {% if request.path == "/" %}
         <div class="indexTitle">
