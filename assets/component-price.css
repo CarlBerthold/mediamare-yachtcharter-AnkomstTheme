@@ -4,7 +4,7 @@
   font-size: 2rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
-  color: black;
+  color: rgba(var(--color-foreground));
 }
 
 /* .dauer is completly wrong as its the price itself, however using pseudo element to appent /tag */
