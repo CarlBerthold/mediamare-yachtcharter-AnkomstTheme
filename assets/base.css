@@ -2614,18 +2614,18 @@ product-info .loading__spinner:not(.hidden) ~ *,
   transform: scale(1.07);
 } */
 
-.header__icon .icon {
+/* .header__icon .icon {
   height: 2rem;
   width: 2rem;
   fill: none;
   vertical-align: middle;
   color: #0671b7;
-}
+} */
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 5.4rem;
-  width: 5.4rem;
+  height: 4.4rem;
+  width: 4.4rem;
   padding: 0;
 }
 
