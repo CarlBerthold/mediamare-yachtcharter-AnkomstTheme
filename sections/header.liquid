@@ -208,12 +208,22 @@
     background-size: cover;
   }
 
-  /* .pageTitle {
+  .pageTitle {
     grid-area: title;
     text-align: center;
     font-size: 70px;
     letter-spacing: 3px;
-  } */
+    z-index: 10; /* Ensure title appears above other elements */
+  }
+
+  /* Make pageTitle span across all columns when needed */
+  @media screen and (min-width: 750px) {
+    .pageTitle {
+      grid-column: 1 / -1; /* Span from first to last column */
+      width: 100%;
+      max-width: none;
+    }
+  }
 
   .indexTitle {
     display: flex;
