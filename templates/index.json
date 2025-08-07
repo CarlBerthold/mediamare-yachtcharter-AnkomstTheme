@@ -264,7 +264,7 @@
         "text_LBwtza": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": ""
           }
         }
       },
@@ -291,6 +291,7 @@
             "range": false,
             "maxdates": 3,
             "mindays": 1,
+            "sort_by": "UPDATED_AT",
             "collection": "flotte",
             "filter-options": false,
             "filter-tags": true,
