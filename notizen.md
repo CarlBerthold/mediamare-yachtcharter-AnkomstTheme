@@ -11,6 +11,9 @@ success
 warning
 #f8dc3a
 
+Text 
+#373a3b
+
 
 
 Grau

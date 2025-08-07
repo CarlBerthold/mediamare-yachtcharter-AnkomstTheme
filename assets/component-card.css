@@ -450,11 +450,10 @@
   padding-left: 2px;
 }
 
-.card-information > .price,
+.card-information,
 .card-information > .verkaufs-text {
   /* color: rgb(var(--color-foreground)); */
   color: #373A3B;
-
 }
 
 .card--horizontal .card-information > .price {
