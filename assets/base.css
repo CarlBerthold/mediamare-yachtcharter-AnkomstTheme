@@ -2460,8 +2460,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   .header--middle-center:not(.drawer-menu) {
     grid-template-areas: 
       'brand heading coordinates'
-      'navigation . icons'
-      'title title title';
+      'navigation title icons';
     grid-template-columns: 1fr 1.5fr 1fr;
     column-gap: 0rem;
     align-items: flex-start;
