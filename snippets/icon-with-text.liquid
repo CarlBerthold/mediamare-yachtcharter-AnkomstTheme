@@ -69,7 +69,7 @@
       <span class="h4 inline-richtext">
         {%  if product.metafields.custom.datenblatt != blank %}
           {% for datenblatt in product.metafields.custom.datenblatt %}
-            <span>{{ product.metafields | json }}</span>
+            <span>{{ product | json }}</span>
             <a href="{{ datenblatt | file_url }}" target="_blank">{{- block.settings.heading_1 -}}</a>
           {% endfor %}
         {% endif %}
