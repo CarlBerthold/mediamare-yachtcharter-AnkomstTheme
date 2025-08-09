@@ -67,12 +67,14 @@
 
       {%- endcomment -%}
       <span class="h4 inline-richtext">
-        {%  if product.metafields.custom.datenblatt != blank %}
-          {% for datenblatt in product.metafields.custom.datenblatt %}
-            <span>{{ product | json }}</span>
-            <a href="{{ datenblatt | file_url }}" target="_blank">{{- block.settings.heading_1 -}}</a>
-          {% endfor %}
-        {% endif %}
+        {%- if product and product.metafields.custom.datenblatt.value != blank -%}
+          <a href="{{ product.metafields.custom.datenblatt.value }}" target="_blank" rel="noopener">
+            {{- block.settings.heading_1 -}}
+          </a>
+        {%- else -%}
+          {{- block.settings.heading_1 -}}
+        {%- endif -%}
+      </span>
         {% comment %}  {% case product.handle %}
           {% when 'angelina' %}
             {% assign datenblatt = 'Angelina_DB.pdf' %}
@@ -102,7 +104,7 @@
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
             <a href="{{ datenblatt | file_url }}" target="_blank">{{- block.settings.heading_1 -}}</a>
         {% endcase %} {% endcomment %}
-      </span>
+      
     </li>
   {%- endunless -%}
   {%- unless heading_2_empty -%}
