@@ -259,8 +259,8 @@
         "content_alignment": "left",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 8
+        "padding_top": 40,
+        "padding_bottom": 24
       }
     },
     "main-collection-product-grid": {
