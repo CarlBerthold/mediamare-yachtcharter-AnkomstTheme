@@ -61,9 +61,18 @@
 
       {%- comment -%}
       Assign the DB_File based on the product handle. it need to be added for any new product.
-      {%- endcomment -%}      
+
+      custom.datenblatt
+      zb. metafield datenblatt:250627_DB_IFCarl_Final.pdf
+
+      {%- endcomment -%}
       <span class="h4 inline-richtext">
-        {% case product.handle %}
+        {%  if product.metafields.custom.datenblatt != blank %}
+          {% for datenblatt in product.metafields.custom.datenblatt %}
+            <a href="{{ datenblatt | file_url }}" target="_blank">{{- block.settings.heading_1 -}}</a>
+          {% endfor %}
+        {% endif %}
+        {% comment %}  {% case product.handle %}
           {% when 'angelina' %}
             {% assign datenblatt = 'Angelina_DB.pdf' %}
             <a href="{{ datenblatt | file_url }}" target="_blank">{{- block.settings.heading_1 -}}</a>
@@ -91,7 +100,7 @@
           {%  when 'hein-muck' %}
             {% assign datenblatt = 'Hein_Muck_DB.pdf' %}
             <a href="{{ datenblatt | file_url }}" target="_blank">{{- block.settings.heading_1 -}}</a>
-        {% endcase %}
+        {% endcase %} {% endcomment %}
       </span>
     </li>
   {%- endunless -%}
