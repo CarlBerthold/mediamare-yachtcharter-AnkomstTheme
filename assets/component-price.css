@@ -20,6 +20,7 @@
 .price > * {
   display: inline-block;
   vertical-align: top;
+  color: rgba(var(--color-foreground));
 }
 
 .price.price--unavailable {
