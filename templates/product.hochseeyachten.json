@@ -183,7 +183,7 @@
         "text_VhPUBU": {
           "type": "text",
           "settings": {
-            "text": "{{ product.description }}"
+            "text": "{{ product.metafields.custom.beschreibungstext | metafield_tag }}"
           }
         },
         "button_M4mMmd": {
