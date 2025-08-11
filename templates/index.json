@@ -251,36 +251,6 @@
         "padding_bottom": 24
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Hier findest du das passende Schiff",
-            "heading_size": "h2"
-          }
-        },
-        "text_LBwtza": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text_LBwtza"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "1738703331a115570f": {
       "type": "apps",
       "blocks": {
@@ -306,6 +276,7 @@
       "block_order": [
         "izyrent_global_calendar_EHqD3P"
       ],
+      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
@@ -393,7 +364,6 @@
     "collection_list_Gj3wnz",
     "rich_text_xrTq6m",
     "featured-collection",
-    "rich_text",
     "1738703331a115570f",
     "featured_product_fNXYtb"
   ]
