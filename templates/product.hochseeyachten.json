@@ -32,7 +32,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         },
         "custom_liquid_DpdMzX": {
