@@ -214,6 +214,50 @@
         "padding_bottom": 44
       }
     },
+    "rich_text_76UcBJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Cganh3": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_CcjGVh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.beschreibungstext | metafield_tag }}"
+          }
+        },
+        "button_F7Byn3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Cganh3",
+        "text_CcjGVh",
+        "button_F7Byn3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection_cyLczG": {
       "type": "featured-collection",
       "settings": {
@@ -260,57 +304,13 @@
         "padding_top": 36,
         "padding_bottom": 68
       }
-    },
-    "rich_text_76UcBJ": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Cganh3": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.title }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_CcjGVh": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.beschreibungstext | metafield_tag }}"
-          }
-        },
-        "button_F7Byn3": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Cganh3",
-        "text_CcjGVh",
-        "button_F7Byn3"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "1708685992d24cb613",
     "main",
+    "rich_text_76UcBJ",
     "featured_collection_cyLczG",
-    "related-products",
-    "rich_text_76UcBJ"
+    "related-products"
   ]
 }
