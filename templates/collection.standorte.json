@@ -150,7 +150,7 @@
       ],
       "settings": {
         "title": "{{ collection.title }}",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "image_ratio": "square",
         "columns_desktop": 3,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
