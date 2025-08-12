@@ -88,30 +88,11 @@
           "settings": {
             "text": "{{ page.content }}"
           }
-        },
-        "text_wji7t3": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"http://naturhafen.de/kleine-hafenkonzerte/\" target=\"_blank\" title=\"Naturhafen Krummin Konzerte\"><strong>Naturhafen Krummin</strong></a></p>"
-          }
-        },
-        "button_PWHTjz": {
-          "type": "button",
-          "settings": {
-            "button_label": "Naturhafen Krummin",
-            "button_link": "shopify://collections/krummin",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_P7zYfC",
-        "text_HgJLQh",
-        "text_wji7t3",
-        "button_PWHTjz"
+        "text_HgJLQh"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
