@@ -119,7 +119,7 @@
           "settings": {
             "image": "shopify://shop_images/250409_Boote_Icons-06.svg",
             "title": "Segelschule Rückenwind - Wolgast/Krummin",
-            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen, <br/>fragen Sie gern bei der Segelschule Rückenwind an. </p>",
+            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen?</p>",
             "link_label": "Segelschule Rückenwind",
             "link": "https://www.segelschule-rueckenwind.de/"
           }
