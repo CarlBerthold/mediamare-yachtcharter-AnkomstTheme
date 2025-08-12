@@ -23,7 +23,7 @@
         "slide_knDbBx": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_Segel_4096x2731_1d28252c-ba30-4090-8980-956eee8986da.jpg",
+            "image": "shopify://shop_images/Hafenfeste.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -89,22 +89,17 @@
             "text": "{{ page.content }}"
           }
         },
-        "button_PWHTjz": {
-          "type": "button",
+        "text_wji7t3": {
+          "type": "text",
           "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": ""
           }
         }
       },
       "block_order": [
         "heading_P7zYfC",
         "text_HgJLQh",
-        "button_PWHTjz"
+        "text_wji7t3"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -116,50 +111,50 @@
         "padding_bottom": 52
       }
     },
-    "multicolumn_AjnkMW": {
+    "multicolumn_QiVQAf": {
       "type": "multicolumn",
       "blocks": {
-        "column_dNRejk": {
+        "column_cUNVBq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mannschaft_Naldo.jpg",
-            "title": "Naldo Gruden",
-            "text": "<p>Übergabe und <br/>Rücknahme</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/250409_Boote_Icons-06.svg",
+            "title": "Segelschule Rückenwind - Wolgast/Krummin",
+            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen, <br/>fragen Sie gern bei der Segelschule Rückenwind an. </p>",
+            "link_label": "Segelschule Rückenwind",
+            "link": "https://www.segelschule-rueckenwind.de/"
           }
         },
-        "column_pamGwc": {
+        "column_6dDaDt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mannschaft_Anne.jpg",
-            "title": "Anne Heinrich",
-            "text": "<p>Reservierung <br/>Hotline Support</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/Spinnaker.png",
+            "title": "Segelmacher Burkhard - Streuber/Kröslin",
+            "text": "<p>alle Arbeiten rund um Segel, Sprayhood und Persenning</p>",
+            "link_label": "Segelmacher Burkhard",
+            "link": "https://streuber-segel.com/"
           }
         },
-        "column_qG3DBU": {
+        "column_GgixEJ": {
           "type": "column",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Mannschaft_Tobias.jpg",
-            "title": "Tobias Morgenstern",
-            "text": "<p>Inhaber <br/>Übergabe und Rücknahme</p>",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_dNRejk",
-        "column_pamGwc",
-        "column_qG3DBU"
+        "column_cUNVBq",
+        "column_6dDaDt",
+        "column_GgixEJ"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "left",
@@ -172,27 +167,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "contact_form_pR4LTd": {
-      "type": "contact-form",
-      "custom_css": [
-        "form {padding: 0 20rem;}"
-      ],
-      "name": "t:sections.contact-form.presets.name",
-      "settings": {
-        "heading": "Ihre Fragen",
-        "heading_size": "h1",
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "slideshow_YcBgbT",
     "rich_text_EJXTHj",
-    "multicolumn_AjnkMW",
-    "contact_form_pR4LTd"
+    "multicolumn_QiVQAf"
   ]
 }
