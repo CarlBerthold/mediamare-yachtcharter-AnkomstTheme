@@ -41,6 +41,10 @@
   margin-top: 1.5rem;
 }
 
+.multicolumn-card__info > div.rte {
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 750px) {
   .multicolumn .button {
     margin-top: 4rem;
@@ -226,3 +230,4 @@
     display: list-item;
   }
 }
+
