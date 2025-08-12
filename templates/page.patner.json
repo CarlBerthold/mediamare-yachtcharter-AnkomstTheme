@@ -92,26 +92,14 @@
         "text_wji7t3": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"http://naturhafen.de/kleine-hafenkonzerte/\" target=\"_blank\" title=\"Naturhafen Krummin Konzerte\"><strong>Naturhafen Krummin</strong></a></p>"
-          }
-        },
-        "button_PWHTjz": {
-          "type": "button",
-          "settings": {
-            "button_label": "Naturhafen Krummin",
-            "button_link": "shopify://collections/krummin",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": ""
           }
         }
       },
       "block_order": [
         "heading_P7zYfC",
         "text_HgJLQh",
-        "text_wji7t3",
-        "button_PWHTjz"
+        "text_wji7t3"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -122,11 +110,67 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "multicolumn_QiVQAf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cUNVBq": {
+          "type": "column",
+          "settings": {
+            "title": "Segelschule Rückenwind - Wolgast/Krummin",
+            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen, <br/>fragen Sie gern bei der Segelschule Rückenwind an. </p>",
+            "link_label": "Segelschule Rückenwind",
+            "link": "https://www.segelschule-rueckenwind.de/"
+          }
+        },
+        "column_6dDaDt": {
+          "type": "column",
+          "settings": {
+            "title": "Segelmacher Burkhard - Streuber/Kröslin",
+            "text": "<p>alle Arbeiten rund um Segel, Sprayhood und Persenning</p>",
+            "link_label": "Segelmacher Burkhard",
+            "link": "https://streuber-segel.com/"
+          }
+        },
+        "column_GgixEJ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cUNVBq",
+        "column_6dDaDt",
+        "column_GgixEJ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "slideshow_YcBgbT",
-    "rich_text_EJXTHj"
+    "rich_text_EJXTHj",
+    "multicolumn_QiVQAf"
   ]
 }
