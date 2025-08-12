@@ -117,6 +117,7 @@
         "column_cUNVBq": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/250409_Boote_Icons-06.svg",
             "title": "Segelschule Rückenwind - Wolgast/Krummin",
             "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen, <br/>fragen Sie gern bei der Segelschule Rückenwind an. </p>",
             "link_label": "Segelschule Rückenwind",
@@ -126,6 +127,7 @@
         "column_6dDaDt": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Spinnaker.png",
             "title": "Segelmacher Burkhard - Streuber/Kröslin",
             "text": "<p>alle Arbeiten rund um Segel, Sprayhood und Persenning</p>",
             "link_label": "Segelmacher Burkhard",
@@ -152,10 +154,10 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image_width": "third",
+        "image_ratio": "square",
         "columns_desktop": 2,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
