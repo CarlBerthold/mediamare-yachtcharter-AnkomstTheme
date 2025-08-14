@@ -181,7 +181,7 @@
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
