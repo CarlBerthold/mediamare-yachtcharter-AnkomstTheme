@@ -430,7 +430,6 @@ cart-remove-button .icon-remove {
 }
 
 .cart-option-date .cart-option-label {
-  margin-bottom: 1rem;
   flex: none;
   font-size: 1.5rem;
 }
@@ -461,7 +460,6 @@ cart-remove-button .icon-remove {
   color: rgb(var(--color-base-accent-1));
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
 }
 
 .cart-option-date .date-value {
@@ -693,7 +691,7 @@ cart-remove-button .icon-remove {
     align-items: flex-start;
   }
 
-  .cart-item__options-mobile .cart-option-date .cart-option-label {
+  .cart-option-date .cart-option-label {
     margin-bottom: 1rem;
     flex: none;
     font-size: 1.4rem;
