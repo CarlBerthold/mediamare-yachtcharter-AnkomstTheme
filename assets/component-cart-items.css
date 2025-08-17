@@ -410,6 +410,7 @@ cart-remove-button .icon-remove {
 .cart-option-price .cart-option-value {
   font-weight: 600;
   color: rgb(var(--color-base-accent-1));
+  margin: 0.5rem 0;
 }
 
 .cart-option-price .cart-item__old-price {
