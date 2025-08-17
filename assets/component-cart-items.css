@@ -55,7 +55,7 @@ cart-items .title-wrapper-with-link {
 }
 
 .cart-item__details {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: calc(1 + 0.4 / var(--font-body-scale));
 }
 
@@ -426,7 +426,7 @@ cart-remove-button .icon-remove {
 .cart-option-date {
   flex-direction: column;
   align-items: flex-start;
-  margin: 10px 0 10px;
+  margin: 2rem 0;
 }
 
 .cart-option-date .cart-option-label {
