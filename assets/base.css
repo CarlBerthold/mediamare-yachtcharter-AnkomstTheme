@@ -2551,7 +2551,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 @media screen and (min-width: 990px) {
   .header__heading-logo {
-    height: 100px;
+    height: auto;
   }
 
 
