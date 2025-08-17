@@ -386,7 +386,7 @@ cart-remove-button .icon-remove {
 }
 
 .cart-option-item:last-child {
-  margin: 0.5rem 0;
+  border-bottom: none;
 }
 
 .cart-option-item.cart-option-total {
