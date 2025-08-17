@@ -2526,7 +2526,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   max-width: 100%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 750px) {
   .header__heading-logo {
     height: auto;
   }
