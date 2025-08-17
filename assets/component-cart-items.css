@@ -385,7 +385,7 @@ cart-remove-button .icon-remove {
   line-height: 1.4;
 }
 
-.cart-option-item.cart-option-total:last-child {
+.cart-option-item:last-child {
   margin: 0.5rem 0;
 }
 
