@@ -2526,6 +2526,12 @@ product-info .loading__spinner:not(.hidden) ~ *,
   max-width: 100%;
 }
 
+@media screen and (max-width: 750px) {
+  .header__heading-logo {
+    height: auto;
+  }
+}
+
 .header__heading-logo-wrapper {
   width: 100%;
   display: inline-block;
@@ -2550,11 +2556,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 @media screen and (min-width: 990px) {
-  .header__heading-logo {
-    height: auto;
-  }
-
-
   .header--middle-left .header__heading-link,
   .header--top-left .header__heading-link {
     margin-left: -0.75rem;
