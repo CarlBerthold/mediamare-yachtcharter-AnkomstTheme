@@ -430,9 +430,14 @@ cart-remove-button .icon-remove {
 }
 
 .cart-option-date .cart-option-label {
-  margin-bottom: 1rem;
   flex: none;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+    .cart-option-date .cart-option-label {
+    margin-bottom: 1rem;
+  }
 }
 
 .cart-option-date .cart-option-value {
