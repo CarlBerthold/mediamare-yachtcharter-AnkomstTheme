@@ -39,6 +39,10 @@
   font-size: 1.6rem;
 }
 
+#izyTerms {
+  gap: 0 5px;
+}
+
 #izyClose {
   background-color: #0671b7;
 }
