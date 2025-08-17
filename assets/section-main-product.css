@@ -1355,10 +1355,10 @@ a.product__text {
   padding-top: 0;
 }
 
-/* .icon-with-text__item {
+.icon-with-text__item {
   display: flex;
   align-items: center;
-} */
+}
 
 .icon-with-text--horizontal .icon-with-text__item {
   flex-direction: column;
