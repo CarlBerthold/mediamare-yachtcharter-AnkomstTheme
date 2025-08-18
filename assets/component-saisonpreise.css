@@ -1,15 +1,22 @@
 /* Saisonpreise Grid */
 .saisonpreise-grid {
   display: grid;
+  border: 1px solid rgba(var(--color-foreground), 0.2);
 }
 
 .saisonpreise-header {
   display: none;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.2);
 }
 
 .saisonpreise-row {
   display: grid;
   grid-template-columns: 1fr;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+}
+
+.saisonpreise-row:last-child {
+  border-bottom: none;
 }
 
 .grid-col {
@@ -48,6 +55,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid rgba(var(--color-foreground), 0.1);
+  }
+  
+  .grid-col:last-child {
+    border-right: none;
   }
   
   .mobile-label {
