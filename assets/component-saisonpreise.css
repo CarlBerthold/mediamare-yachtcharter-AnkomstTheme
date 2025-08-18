@@ -41,7 +41,7 @@
 }
 
 /* Tablet and up */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1024px) {
   .saisonpreise-header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
