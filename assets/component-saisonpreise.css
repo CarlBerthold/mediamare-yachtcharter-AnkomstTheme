@@ -45,10 +45,14 @@
   .saisonpreise-header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    padding: 0.5rem;
+
   }
   
   .saisonpreise-row {
     grid-template-columns: 1fr 2fr 1fr;
+    padding: 0.5rem;
+
   }
   
   .grid-col {
