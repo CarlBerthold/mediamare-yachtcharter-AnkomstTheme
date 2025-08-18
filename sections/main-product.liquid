@@ -9,6 +9,7 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'component-saisonpreise.css' | asset_url | stylesheet_tag }}
   {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
@@ -198,40 +199,95 @@
                 <div class="saisonpreise">
                   {% assign saisonpreise = product.metafields.custom.saisonpreise.value %}
                   
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Saison</th>
-                        <th>Zeitraum</th>
-                        <th>Preis</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><strong>Vor:</strong></td>
-                        <td>{{ saisonpreise.vorsaison.value | escape }}</td>
-                        <td>{{ saisonpreise.vorsaisonspreis.value | escape }}</td>
-                      </tr>
-                      <tr>
-                        <td><strong>Zwischen:</strong></td>
-                        <td>{{ saisonpreise.zwischensaison.value | escape }}</td>
-                        <td>{{ saisonpreise.zwischensaisonspreis.value | escape }}</td>
-
-                      </tr>
-                      <tr>
-                        <td><strong>Haupt:</strong></td>
-                        <td>{{ saisonpreise.hauptsaison.value | escape }}</td>
-                        <td>{{ saisonpreise.hauptsaisonspreis.value | escape }}</td>
-
-                      </tr>
-                      <tr>
-                        <td><strong>Nach:</strong></td>
-                        <td>{{ saisonpreise.nachsaison.value | escape }}</td>
-                        <td>{{ saisonpreise.nachsaisonspreis.value | escape }}</td>
-
-                      </tr>
-                    </tbody>
-                  </table>
+                  <!-- Responsive Grid Layout -->
+                  <div class="saisonpreise-grid">
+                    <!-- Grid Header (visible on larger screens) -->
+                    <div class="saisonpreise-header">
+                      <div class="grid-col grid-col--saison">Saison</div>
+                      <div class="grid-col grid-col--zeitraum">Zeitraum</div>
+                      <div class="grid-col grid-col--preis">Preis</div>
+                    </div>
+                    
+                    <!-- Vorsaison -->
+                    <div class="saisonpreise-row">
+                      <div class="grid-col grid-col--saison">
+                        <span class="mobile-label">Saison:</span>
+                        <strong>Vor</strong>
+                      </div>
+                      <div class="grid-col grid-col--zeitraum">
+                        <span class="mobile-label">Zeitraum:</span>
+                        {{ saisonpreise.vorsaison.value | escape }}
+                      </div>
+                      <div class="grid-col grid-col--preis">
+                        <span class="mobile-label">Preis:</span>
+                        {{ saisonpreise.vorsaisonspreis.value | escape }}
+                      </div>
+                    </div>
+                    
+                    <!-- Zwischensaison (1st) -->
+                    <div class="saisonpreise-row">
+                      <div class="grid-col grid-col--saison">
+                        <span class="mobile-label">Saison:</span>
+                        <strong>Zwischen</strong>
+                      </div>
+                      <div class="grid-col grid-col--zeitraum">
+                        <span class="mobile-label">Zeitraum:</span>
+                        {{ saisonpreise.zwischensaison.value | escape }}
+                      </div>
+                      <div class="grid-col grid-col--preis">
+                        <span class="mobile-label">Preis:</span>
+                        {{ saisonpreise.zwischensaisonspreis.value | escape }}
+                      </div>
+                    </div>
+                    
+                    <!-- Hauptsaison -->
+                    <div class="saisonpreise-row">
+                      <div class="grid-col grid-col--saison">
+                        <span class="mobile-label">Saison:</span>
+                        <strong>Haupt</strong>
+                      </div>
+                      <div class="grid-col grid-col--zeitraum">
+                        <span class="mobile-label">Zeitraum:</span>
+                        {{ saisonpreise.hauptsaison.value | escape }}
+                      </div>
+                      <div class="grid-col grid-col--preis">
+                        <span class="mobile-label">Preis:</span>
+                        {{ saisonpreise.hauptsaisonspreis.value | escape }}
+                      </div>
+                    </div>
+                    
+                    <!-- Zwischensaison (2nd) -->
+                    <div class="saisonpreise-row">
+                      <div class="grid-col grid-col--saison">
+                        <span class="mobile-label">Saison:</span>
+                        <strong>Zwischen</strong>
+                      </div>
+                      <div class="grid-col grid-col--zeitraum">
+                        <span class="mobile-label">Zeitraum:</span>
+                        {{ saisonpreise.zwischensaison.value | escape }}
+                      </div>
+                      <div class="grid-col grid-col--preis">
+                        <span class="mobile-label">Preis:</span>
+                        {{ saisonpreise.zwischensaisonspreis.value | escape }}
+                      </div>
+                    </div>
+                    
+                    <!-- Nachsaison -->
+                    <div class="saisonpreise-row">
+                      <div class="grid-col grid-col--saison">
+                        <span class="mobile-label">Saison:</span>
+                        <strong>Nach</strong>
+                      </div>
+                      <div class="grid-col grid-col--zeitraum">
+                        <span class="mobile-label">Zeitraum:</span>
+                        {{ saisonpreise.nachsaison.value | escape }}
+                      </div>
+                      <div class="grid-col grid-col--preis">
+                        <span class="mobile-label">Preis:</span>
+                        {{ saisonpreise.nachsaisonspreis.value | escape }}
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 {% comment %} <label for="fuehrerschein">Führerscheine</label>
