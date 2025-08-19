@@ -396,21 +396,26 @@ cart-remove-button .icon-remove {
 
 .cart-option-label {
   font-weight: 300;
-  color: rgba(var(--color-foreground), 1);
+  color: #373a3b;
   margin-right: 1rem;
 }
 
 .cart-option-value {
   flex: 1;
   text-align: right;
-  color: rgb(var(--color-foreground));
+  color: #373a3b;
   word-break: break-word;
 }
 
 /* Special styling for price */
 .cart-option-price .cart-option-value {
   font-weight: 600;
-  color: rgb(var(--color-base-accent-1));
+  color: #0671b7;
+}
+
+.cart-option-price .cart-option-labekl {
+  font-weight: 600;
+  color: #0671b7;
 }
 
 .cart-option-price .cart-item__old-price {
