@@ -66,9 +66,9 @@
         "column_kUTetK": {
           "type": "column",
           "settings": {
-            "title": "AGB's",
+            "title": "AGB",
             "text": "<p>Unsere Allgemeinen Geschäftsbedingungen</p>",
-            "link_label": "Zu den AGB's",
+            "link_label": "Zu den AGB",
             "link": "shopify://pages/agb"
           }
         },
