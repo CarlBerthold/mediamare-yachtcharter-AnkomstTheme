@@ -137,6 +137,7 @@
         "column_tLinbr": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Spinnaker.png",
             "title": "Tuchwerkstatt - Greifswald",
             "text": "<p>In der Saisonpause lagern wir unsere Polster und Segel in der Tuchwerkstatt, dort werden über den Winter die Polster gereinigt und    <br/>gegebenenfalls erneuert.</p>",
             "link_label": "",
@@ -146,6 +147,7 @@
         "column_GgixEJ": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Spinnaker.png",
             "title": "Julius Woinke",
             "text": "<p>In der Saisonpause lagern wir unsere Polster und Segel in der Tuchwerkstatt, dort werden über den Winter die Polster gereinigt und    <br/>gegebenenfalls erneuert.</p>",
             "link_label": "",
