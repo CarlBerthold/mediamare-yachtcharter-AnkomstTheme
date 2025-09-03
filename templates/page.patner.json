@@ -134,12 +134,20 @@
             "link": "https://streuber-segel.com/"
           }
         },
+        "column_tLinbr": {
+          "type": "column",
+          "settings": {
+            "title": "Tuchwerkstatt - Greifswald",
+            "text": "<p>In der Saisonpause lagern wir unsere Polster und Segel in der Tuchwerkstatt, dort werden über den Winter die Polster gereinigt und    <br/>gegebenenfalls erneuert.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_GgixEJ": {
           "type": "column",
-          "disabled": true,
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Julius Woinke",
+            "text": "<p>In der Saisonpause lagern wir unsere Polster und Segel in der Tuchwerkstatt, dort werden über den Winter die Polster gereinigt und    <br/>gegebenenfalls erneuert.</p>",
             "link_label": "",
             "link": ""
           }
@@ -148,6 +156,7 @@
       "block_order": [
         "column_cUNVBq",
         "column_6dDaDt",
+        "column_tLinbr",
         "column_GgixEJ"
       ],
       "name": "t:sections.multicolumn.presets.name",
