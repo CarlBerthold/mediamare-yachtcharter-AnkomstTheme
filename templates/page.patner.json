@@ -119,7 +119,7 @@
           "settings": {
             "image": "shopify://shop_images/250409_Boote_Icons-06.svg",
             "title": "Segelschule Rückenwind - Wolgast/Krummin",
-            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen?</p>",
+            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen, <br/>fragen Sie gern bei der Segelschule Rückenwind an. <br/>Mit dem bei uns gecharterten IF-Boot können sie ein Skippertraining oder <br/>Törnbegleitungen mit den Betreibern der Segelschule selbst nach ihren Wünschen aushandeln.<br/></p>",
             "link_label": "Segelschule Rückenwind",
             "link": "https://www.segelschule-rueckenwind.de/"
           }
@@ -129,7 +129,7 @@
           "settings": {
             "image": "shopify://shop_images/Spinnaker.png",
             "title": "Segelmacher Burkhard - Streuber/Kröslin",
-            "text": "<p>alle Arbeiten rund um Segel, Sprayhood und Persenning</p>",
+            "text": "<p>seit vielen Jahren werden sämtliche Arbeiten rund um Segel, Sprayhood und Persenning vom Segelmacher Burkhard Streuber Kröslin <br/>betreut. <br/></p>",
             "link_label": "Segelmacher Burkhard",
             "link": "https://streuber-segel.com/"
           }
