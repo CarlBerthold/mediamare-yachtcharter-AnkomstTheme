@@ -2,7 +2,7 @@
   {%- for item in cart.items -%}
     <div id="cart-notification-product-{{ item.key }}" class="cart-item">
       {%- if item.image -%}
-        <div class="cart-notification-product__image global-media-settings">
+        {% comment %} <div class="cart-notification-product__image global-media-settings">
           <img
             src="{{ item.image | image_url: width: 750 }}"
             alt="{{ item.image.alt | escape }}"
@@ -10,7 +10,7 @@
             height="{{ 300 | divided_by: item.image.aspect_ratio | ceil }}"
             loading="lazy"
           >
-        </div>
+        </div> {% endcomment %}
       {%- endif -%}
       <div class="cart-notification-product__info">
         {%- if settings.show_vendor -%}
