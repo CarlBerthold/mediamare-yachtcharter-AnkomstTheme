@@ -398,6 +398,8 @@ cart-remove-button .icon-remove {
   font-weight: 300;
   color: #373a3b;
   margin-right: 1rem;
+  word-break: break-word;
+  max-width: 70%;
 }
 
 .cart-option-value {
@@ -405,6 +407,7 @@ cart-remove-button .icon-remove {
   text-align: right;
   color: #373a3b;
   word-break: break-word;
+  align-self: flex-end;
 }
 
 /* Special styling for price */
