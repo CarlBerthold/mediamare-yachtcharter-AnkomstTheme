@@ -18,6 +18,10 @@
   max-width: 100%;
 }
 
+#izyrent {
+  font-weight: 'DINOT-REGULAR';
+}
+
 #izydeposit {
   font-weight: 300;
 }
@@ -29,6 +33,8 @@
   margin: 10px 0px 5px 0px;
   font-size: 2rem;
 }
+
+
 
 
 
