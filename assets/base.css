@@ -1616,7 +1616,7 @@ details[open] > .share-button__fallback {
 .customer select {
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgb(var(--color-background));
+  background-color: white;
   color: rgb(29, 113, 184);
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
@@ -1631,6 +1631,7 @@ details[open] > .share-button__fallback {
   min-width: calc(7rem + (var(--inputs-border-width) * 2));
   position: relative;
   border: 0;
+  border-color:#1d71b8;
 }
 
 .field:before,
