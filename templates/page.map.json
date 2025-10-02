@@ -103,11 +103,58 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "multicolumn_h8QgAQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_LpBrgt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Lage_Mediamare-Deutschland.jpg",
+            "title": "Mediamare Yachtcharter",
+            "text": "<p>Kröslin & Krummin, in Mecklenburg-Vorpommern</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wJ3pme": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Lage_Mediamare_detail.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_LpBrgt",
+        "column_wJ3pme"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Wo sie uns finden",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "slideshow_YcBgbT",
-    "rich_text_EJXTHj"
+    "rich_text_EJXTHj",
+    "multicolumn_h8QgAQ"
   ]
 }
