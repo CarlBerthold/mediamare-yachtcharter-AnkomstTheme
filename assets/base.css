@@ -1617,7 +1617,7 @@ details[open] > .share-button__fallback {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgb(var(--color-background));
-  color: rgb(var(--color-foreground));
+  color: rgb(29, 113, 184);
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
