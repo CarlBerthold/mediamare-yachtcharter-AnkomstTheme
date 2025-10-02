@@ -19,7 +19,7 @@
 }
 
 #izyrent {
-  font-family: 'DINOT-REGULAR';
+  font-family: var(--font-body-family);
 }
 
 #izydeposit {
