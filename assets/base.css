@@ -1665,7 +1665,7 @@ details[open] > .share-button__fallback {
   left: var(--inputs-border-width);
   border: 0.1rem solid #1d71b8;
   border-radius: var(--inputs-radius);
-  box-shadow: 0 0 0 var(--inputs-border-width) rgba(#1d71b8, var(--inputs-border-opacity));
+  box-shadow: 0 0 0 var(--inputs-border-width) rgba(29, 113, 184, var(--inputs-border-opacity));
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
 }
@@ -1777,7 +1777,7 @@ details[open] > .share-button__fallback {
   pointer-events: none;
   position: absolute;
   transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
-  color: rgba(#1d71b8, 0.75);
+  color: rgba(29, 113, 184, 0.75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
 }
