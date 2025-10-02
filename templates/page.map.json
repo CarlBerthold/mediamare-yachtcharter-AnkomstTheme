@@ -88,18 +88,11 @@
           "settings": {
             "text": "{{ page.content }}"
           }
-        },
-        "text_wji7t3": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
         }
       },
       "block_order": [
         "heading_P7zYfC",
-        "text_HgJLQh",
-        "text_wji7t3"
+        "text_HgJLQh"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -111,97 +104,46 @@
         "padding_bottom": 52
       }
     },
-    "multicolumn_QiVQAf": {
+    "multicolumn_h8QgAQ": {
       "type": "multicolumn",
       "blocks": {
-        "column_cUNVBq": {
+        "column_LpBrgt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/250409_Boote_Icons-06.svg",
-            "title": "Segelschule Rückenwind - Wolgast/Krummin",
-            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen, <br/>fragen Sie gern bei der Segelschule Rückenwind an. <br/>Mit dem bei uns gecharterten IF-Boot können sie ein Skippertraining oder <br/>Törnbegleitungen mit den Betreibern der Segelschule selbst nach ihren Wünschen aushandeln.<br/></p>",
-            "link_label": "Segelschule Rückenwind",
-            "link": "https://www.segelschule-rueckenwind.de/"
+            "image": "shopify://shop_images/Lage_Mediamare-Deutschland.jpg",
+            "title": "Mediamare Yachtcharter",
+            "text": "<p>Kröslin & Krummin, in Mecklenburg-Vorpommern</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "column_6dDaDt": {
+        "column_wJ3pme": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Spinnaker.png",
-            "title": "Segelmacher Burkhard - Streuber/Kröslin",
-            "text": "<p>seit vielen Jahren werden sämtliche Arbeiten rund um Segel, Sprayhood und Persenning vom Segelmacher Burkhard Streuber Kröslin <br/>betreut. <br/></p>",
-            "link_label": "Segelmacher Burkhard",
-            "link": "https://streuber-segel.com/"
-          }
-        },
-        "column_tLinbr": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Spinnaker.png",
-            "title": "Tuchwerkstatt - Greifswald",
-            "text": "<p>In der Saisonpause lagern wir unsere Polster und Segel in der Tuchwerkstatt, dort werden über den Winter die Polster gereinigt und    <br/>gegebenenfalls erneuert.</p>",
-            "link_label": "Tuchwerkstatt",
-            "link": "https://tuchwerkstatt.de/"
-          }
-        },
-        "column_GgixEJ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Spinnaker.png",
-            "title": "Julius Woinke",
-            "text": "<p>In der Saisonpause lagern wir unsere Polster und Segel in der Tuchwerkstatt, dort werden über den Winter die Polster gereinigt und    <br/>gegebenenfalls erneuert.</p>",
+            "image": "shopify://shop_images/Lage_Mediamare_detail.jpg",
+            "title": "Kröslin & Krumin",
+            "text": "<p>Kröslin und Krummin befinden sich am Peenestrom zwischen Peenemünde und Lütow</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_cUNVBq",
-        "column_6dDaDt",
-        "column_tLinbr",
-        "column_GgixEJ"
+        "column_LpBrgt",
+        "column_wJ3pme"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "",
+        "title": "Wo sie uns finden",
         "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "square",
-        "columns_desktop": 3,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "",
+        "button_label": "Button label",
         "button_link": "",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_collection_AFbbNa": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "title": "Unsere Folkeboote",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "folkeboote",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-98d02f6d-936d-4496-8532-b4633887a6ff",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -213,7 +155,6 @@
     "main",
     "slideshow_YcBgbT",
     "rich_text_EJXTHj",
-    "multicolumn_QiVQAf",
-    "featured_collection_AFbbNa"
+    "multicolumn_h8QgAQ"
   ]
 }
