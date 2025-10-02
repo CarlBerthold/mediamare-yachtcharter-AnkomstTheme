@@ -44,6 +44,7 @@
         },
         "text_Ww6bmx": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Führerscheinklasse <a href=\"/pages/fuhrerscheinklasse\" title=\"Führerscheinklasse\">{{ product.metafields.custom.fuehrerscheine | metafield_text }}</a> erforderlich !",
             "text_style": "uppercase"
@@ -120,7 +121,7 @@
           "settings": {
             "layout": "vertical",
             "icon_1": "map_pin",
-            "heading_1": "Download datenblatt",
+            "heading_1": "Datenblatt",
             "icon_2": "return",
             "heading_2": "",
             "icon_3": "truck",
@@ -148,7 +149,7 @@
         "collapsible_tab_79fgYa": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Führerescheine & Vorraussetzungen",
+            "heading": "Führerescheine & Voraussetzungen",
             "icon": "clipboard",
             "content": "<p>Für die Miete der {{ product.title }} benötigen sie folgende Dokumente und Segelerfahrung.</p><p><a href=\"/pages/fuhrerscheinklasse\" title=\"Führerscheinklasse\">{{ product.metafields.custom.fuehrerscheine | metafield_text }}</a></p>",
             "page": ""
