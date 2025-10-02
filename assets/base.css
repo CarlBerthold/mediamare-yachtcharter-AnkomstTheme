@@ -2644,7 +2644,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   content: '';
   top: 100%;
   left: 0;
-  height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
+/*   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));*/ 
   width: 100%;
   display: block;
   position: absolute;
