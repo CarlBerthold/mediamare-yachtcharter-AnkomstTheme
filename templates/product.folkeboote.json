@@ -44,6 +44,7 @@
         },
         "text_Ww6bmx": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Führerscheinklasse <a href=\"/pages/fuhrerscheinklasse\" title=\"Führerscheinklasse\">{{ product.metafields.custom.fuehrerscheine | metafield_text }}</a> erforderlich !",
             "text_style": "uppercase"
