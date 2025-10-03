@@ -18,9 +18,11 @@
   max-width: 100%;
 }
 
-#izyrent {
-  font-family: var(--font-body-family);
+#izyrent,
+.izyDate {
+  font-family: var(--font-body-family) !important;
 }
+
 
 #izydeposit {
   font-weight: 300;
