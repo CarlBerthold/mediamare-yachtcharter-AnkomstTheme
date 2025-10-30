@@ -134,7 +134,7 @@
           "settings": {
             "image": "shopify://shop_images/Mannschaft_Anne.jpg",
             "title": "Anne Heinrich",
-            "text": "<p>Reservierung <br/>Hotline Support</p>",
+            "text": "<p>Reservierung <br/>Hotline Support</p><p>0049 17645961829</p>",
             "link_label": "",
             "link": ""
           }
