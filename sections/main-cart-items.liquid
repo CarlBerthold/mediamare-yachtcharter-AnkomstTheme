@@ -217,17 +217,17 @@
                                 
                                 
                                 <div class="cart-option-item cart-option-base-price">
-                                  <span class="cart-option-label">Mietpreis (ohne Extras):</span>
+                                  <span class="cart-option-label">Mietpreis (ohne Zusatzprodukte):</span>
                                   <span class="cart-option-value">{{ base_rental_price | money }}</span>
                                 </div>
                                 
                                 <div class="cart-option-item cart-option-later-payment">
-                                  <span class="cart-option-label">Später bezahlen (70%):</span>
+                                  <span class="cart-option-label">Mietpreis später zahlen (70%):</span>
                                   <span class="cart-option-value">{{ later_payment | money }}</span>
                                 </div>
 
                                   <div class="cart-option-item cart-option-deposit">
-                                  <span class="cart-option-label">Anzahlung (30%):</span>
+                                  <span class="cart-option-label">Mietpreis Anzahlung (30%):</span>
                                   <span class="cart-option-value">{{ base_rental_price | times: 0.3 | round | money }}</span>
                                 </div>
 
@@ -239,7 +239,7 @@
                                 {%- endif -%}
                                 
                                 <div class="cart-option-item cart-option-price">
-                                  <span class="cart-option-label">Zu zahlen jetzt (30% + Extras):</span>
+                                  <span class="cart-option-label">Zu zahlen jetzt (Mietpreis Anzahlung und Zusatzprodukte):</span>
                                   <span class="cart-option-value">{{ item.original_price | money }}</span>
                                 </div>
                               {%- else -%}
