@@ -161,9 +161,9 @@ cart-items {
     padding-top: 0;
   }
 
-  .cart__footer > * {
+  /* .cart__footer > * {
     width: 35rem;
-  }
+  } */
 
   .cart__footer > * + * {
     margin-left: 4rem;
