@@ -123,3 +123,7 @@
   margin-bottom: 0.5rem;
   margin-top: 0;
 }
+
+.cart-option-item.cart-option-base-price {
+  text-align: left;
+}
