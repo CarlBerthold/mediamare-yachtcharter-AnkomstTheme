@@ -400,6 +400,7 @@ cart-remove-button .icon-remove {
   margin-right: 1rem;
   word-break: break-word;
   max-width: 70%;
+  text-align: left;
 }
 
 .cart-option-value {
