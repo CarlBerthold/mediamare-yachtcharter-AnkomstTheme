@@ -184,6 +184,22 @@
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d"
       }
     },
+    "video_GMCtxb": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Internationales Folkeboot",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=BN44xYOckTE&list=RDBN44xYOckTE&start_radio=1",
+        "cover_image": "shopify://shop_images/Mediamare_Yachtcharter_Standbild_Teaser_Film.png",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main-collection-product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -249,6 +265,7 @@
     "slideshow_R8tN3k",
     "image_banner_7gbHM9",
     "main-collection-banner",
+    "video_GMCtxb",
     "main-collection-product-grid",
     "collection_list_WTjCG4"
   ]
