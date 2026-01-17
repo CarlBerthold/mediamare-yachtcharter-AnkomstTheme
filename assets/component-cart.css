@@ -244,3 +244,7 @@ cart-items {
     gap: 1rem;
   }
 }
+
+.cart-option-item.cart-option-price {
+    text-align: left;
+}
