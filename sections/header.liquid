@@ -417,10 +417,10 @@
           {% comment %} <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span> {% endcomment %}
           </div>
         {% elsif path_parts[1] == "collections" %}
-            {% if path_parts[2] == 'standorte' or path_parts[2] == 'flotte'%}
-            <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
+            {% if path_parts[2] == 'marina-kroslin' %}
+            <span>{{ path_parts[2] | replace: '-', ' ' | upcase | replace: 'O', 'Ö' }}</span>
             {% else %}
-          <span>{{ path_parts[2] | replace: '-', ' ' | upcase | replace: 'O', 'Ö'}}</span>
+          <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
             {% endif %}
 
         {% elsif path_parts[1] == "products" %}
