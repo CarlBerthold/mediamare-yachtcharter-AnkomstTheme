@@ -417,7 +417,7 @@
           {% comment %} <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span> {% endcomment %}
           </div>
         {% elsif path_parts[1] == "collections" %}
-          <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
+          <span>{{ path_parts[2] | replace: '-', ' ' | upcase | replace: 'O', 'Ö' }}</span>
         {% elsif path_parts[1] == "products" %}
           <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
         {% elsif path_parts[1] == "pages" %}
