@@ -206,6 +206,7 @@
     grid-area: title;
     text-align: center;
     letter-spacing: 3px;
+    
   }
 
   /* Make pageTitle span across all columns when needed */
@@ -420,7 +421,7 @@
         {% elsif path_parts[1] == "products" %}
           <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
         {% elsif path_parts[1] == "pages" %}
-          <span> {{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
+          <span> {{ path_parts[2] | replace: '-', ' ' | upcase | replace: 'o', 'ö' |upcase }}</span>        
         {% elsif path_parts[1] == "cart" %}
           <span>Warenkorb</span>
         {% else %}
