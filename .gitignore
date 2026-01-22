@@ -1,1 +1,34 @@
-/notizen.md
+# Personal notes and documentation
+notizen.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Invoice/billing related
+invoice/
+invoices/
+*.invoice
+
+# Config files with sensitive data
+config.yml
+.env
