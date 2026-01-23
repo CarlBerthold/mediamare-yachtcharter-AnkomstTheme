@@ -93,17 +93,11 @@
                               {%- endfor -%}
 
                               {%- if base_rental_price -%}
-                                 
-                                  <span>{{ base_rental_price | money }}</span>
-                                  <span>{{ item.final_price | money }}</span>
-                                  <span>{{ item.original_price | money }}</span>
-
-                                  
-                                
                                 <!-- Show breakdown if we have base rental price -->
+                                {% assign discount = item.original_price | minus: item.final_price %}
                                 {%- assign deposit_amount = base_rental_price | times: 30 | divided_by: 100 -%}
                                 {%- assign addon_total = item.original_price | minus: deposit_amount | minus: discount -%}
-                                {% assign discount = item.original_price | minus: item.final_price %}
+                                
                                 {%- if addon_total > 0 -%}
                                   <div class="cart-option-item cart-option-addons-total">
                                     <span class="cart-option-label">Zusatzprodukte (gesamt):</span>
