@@ -391,6 +391,7 @@ cart-remove-button .icon-remove {
 
 .cart-option-item.cart-option-total {
   margin: 2rem 0;
+  flex-direction: column;
 }
 
 .cart-option-label {
