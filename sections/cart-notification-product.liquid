@@ -93,6 +93,13 @@
                               {%- endfor -%}
 
                               {%- if base_rental_price -%}
+                                 {%- if base_rental_price == item.final_line_price %}
+                                  {{ base_rental_price | money }}
+                                  {{ item.final_price | money }}
+                                  {{ item.original_price | money }}
+                                  
+                                  
+                                 {% endif %}
                                 <!-- Show breakdown if we have base rental price -->
                                 {%- assign deposit_amount = base_rental_price | times: 30 | divided_by: 100 -%}
                                 {%- assign addon_total = item.original_price | minus: deposit_amount | minus: discount -%}
