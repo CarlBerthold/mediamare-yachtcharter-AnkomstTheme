@@ -228,7 +228,7 @@
                     <div class="saisonpreise-row">
                       <div class="grid-col grid-col--saison">
                         <span class="mobile-label">Saison:</span>
-                        <span>Zwischensaison</span>
+                        <span>Nebensaison</span>
                       </div>
                       <div class="grid-col grid-col--zeitraum">
                         <span class="mobile-label">Zeitraum:</span>
@@ -256,11 +256,11 @@
                       </div>
                     </div>
                     
-                    <!-- Zwischensaison (2nd) -->
+                    <!-- Nebensaison -->
                     <div class="saisonpreise-row">
                       <div class="grid-col grid-col--saison">
                         <span class="mobile-label">Saison:</span>
-                        <span>Zwischensaison</span>
+                        <span>Nebensaison</span>
                       </div>
                       <div class="grid-col grid-col--zeitraum">
                         <span class="mobile-label">Zeitraum:</span>
@@ -273,7 +273,7 @@
                     </div>
                     
                     <!-- Nachsaison -->
-                    <div class="saisonpreise-row">
+                    {% comment %} <div class="saisonpreise-row">
                       <div class="grid-col grid-col--saison">
                         <span class="mobile-label">Saison:</span>
                         <span>Nachsaison</span>
@@ -286,7 +286,7 @@
                         <span class="mobile-label">Preis:</span>
                         {{ saisonpreise.nachsaisonspreis.value | escape }}
                       </div>
-                    </div>
+                    </div> {% endcomment %}
                   </div>
                 </div>
 
