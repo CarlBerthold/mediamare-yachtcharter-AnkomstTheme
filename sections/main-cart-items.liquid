@@ -167,7 +167,7 @@
                           {%- endif -%}
 
                           <!-- Discounts -->
-                          {%- if item.line_level_discount_allocations.size > 0 -%}
+                          {% comment %} {%- if item.line_level_discount_allocations.size > 0 -%}
                             <div class="cart-option-discounts">
                               {%- for discount in item.line_level_discount_allocations -%}
                                 <div class="cart-option-item cart-option-discount">
@@ -176,7 +176,7 @@
                                 </div>
                               {%- endfor -%}
                             </div>
-                          {%- endif -%}
+                          {%- endif -%} {% endcomment %}
 
                           <!-- Total price -->
                           <div class="cart-option-item cart-option-total">
