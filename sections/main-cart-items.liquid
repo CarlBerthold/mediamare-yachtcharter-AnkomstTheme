@@ -172,7 +172,7 @@
                               {%- for discount in item.line_level_discount_allocations -%}
                                 <div class="cart-option-item cart-option-discount">
                                   <span class="cart-option-label">Rabatt:</span>
-                                  <span class="cart-option-value">{{ item.original_price }}</span>
+                                  <span class="cart-option-value">{{ item.original_line_price | minus: item.final_line_price | money }}</span>
                                 </div>
                               {%- endfor -%}
                             </div>
