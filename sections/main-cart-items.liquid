@@ -238,7 +238,7 @@
                               
                               <div class="cart-option-item cart-option-price">
                                 <span class="cart-option-label">Zu zahlen jetzt (Mietpreis Anzahlung und Zusatzprodukte):</span>
-                                <span class="cart-option-value">{{ item.original_price | money }}</span>
+                                <span class="cart-option-value">{{ item.final_price | money }}</span>
                               </div>
                             {%- else -%}
                               <!-- Fallback if we can't calculate base rental price -->
@@ -246,7 +246,7 @@
                                 <span class="cart-option-label">Anzahlung (30%):
                                   <span class="cart-option-price__disclaimer">inkl. der ausgewählten Zusatzprodukte</span>
                                 </span>
-                                <span class="cart-option-value">{{ item.original_price | money }}</span>
+                                <span class="cart-option-value">{{ item.final_price | money }}</span>
                               </div>
                             {%- endif -%}
                           </div>
