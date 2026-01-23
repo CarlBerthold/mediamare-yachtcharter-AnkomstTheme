@@ -94,10 +94,10 @@
 
                               {%- if base_rental_price -%}
                                  {%- if base_rental_price == item.final_line_price %}
-                                  {{ base_rental_price | money }}
-                                  {{ item.final_price | money }}
-                                  {{ item.original_price | money }}
-                                  
+                                  <span>{{ base_rental_price | money }}</span>
+                                  <span>{{ item.final_price | money }}</span>
+                                  <span>{{ item.original_price | money }}</span>
+
                                   
                                  {% endif %}
                                 <!-- Show breakdown if we have base rental price -->
