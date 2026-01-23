@@ -209,8 +209,9 @@
 
                             {%- if base_rental_price -%}
                               <!-- Show breakdown if we have base rental price -->
+                              {% assign discount = item.original_price | minus: item.final_price %}
                               {%- assign deposit_amount = base_rental_price | times: 30 | divided_by: 100 -%}
-                              {%- assign addon_total = item.original_price | minus: deposit_amount -%}
+                              {%- assign addon_total = item.original_price | minus: deposit_amount | minus: discount-%}
                               
                               
                               <div class="cart-option-item cart-option-base-price">
