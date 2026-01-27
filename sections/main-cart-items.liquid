@@ -180,7 +180,7 @@
 
                           <!-- Total price -->
                           <div class="cart-option-item cart-option-total">
-                            {%- if item.original_line_price != item.final_line_price -%}
+                           {% comment %}  {%- if item.original_line_price != item.final_line_price -%}
                               <div class="cart-option-item cart-option-price">
                                 <span class="cart-option-label">30% der Mietdauer zzgl. Zusatzprodukten:</span>
                                 <span class="cart-option-value">
@@ -188,7 +188,7 @@
                                   <strong class="cart-item__final-price">{{ item.final_price | money }}</strong>
                                 </span>
                               </div>
-                            {%- endif -%}
+                            {%- endif -%} {% endcomment %}
                           
                           
                             
