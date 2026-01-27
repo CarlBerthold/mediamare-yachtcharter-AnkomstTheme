@@ -213,8 +213,8 @@
                               {%- assign deposit_amount = base_rental_price | times: 30 | divided_by: 100 -%}
                               {%- assign addon_total = item.original_price | minus: deposit_amount | minus: discount-%}
                               
-                              
-                              <div class="cart-option-item cart-option-base-price">
+                              <details class="cart-option-breakdown-details">
+                                <div class="cart-option-item cart-option-base-price">
                                 <span class="cart-option-label">Mietpreis (ohne Zusatzprodukte):</span>
                                 <span class="cart-option-value">{{ base_rental_price | money }}</span>
                               </div>
@@ -235,6 +235,13 @@
                                   <span class="cart-option-value">{{ addon_total | money }}</span>
                                 </div>
                               {%- endif -%}
+                                <summary class="cart-option-breakdown-summary">
+                                  <span>Preisaufschlüsselung anzeigen</span>
+                                  {% render 'icon-chevron-down' %}
+                                </summary>
+                              </details>
+
+                              
                               
                               <div class="cart-option-item cart-option-price">
                                 <span class="cart-option-label">Zu zahlen jetzt (Mietpreis Anzahlung und Zusatzprodukte):</span>
