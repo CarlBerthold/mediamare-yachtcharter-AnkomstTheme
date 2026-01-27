@@ -37,6 +37,10 @@ cart-items .title-wrapper-with-link {
   content: none;
 }
 
+.cart-item.izyHidden {
+  margin-bottom: 1rem;
+}
+
 .cart-item__image {
   height: auto;
   max-width: calc(35rem / var(--font-body-scale));
