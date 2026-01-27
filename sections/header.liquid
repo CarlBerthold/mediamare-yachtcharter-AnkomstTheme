@@ -426,7 +426,12 @@
         {% elsif path_parts[1] == "products" %}
           <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
         {% elsif path_parts[1] == "pages" %}
-          <span> {{ path_parts[2] | replace: '-', ' ' | upcase | replace: 'O', 'Ö' }}</span>        
+          {% if path_parts[2] == 'torns-und-reviere' %}
+          <span> {{ path_parts[2] | replace: '-', ' ' | upcase | replace: 'O', 'Ö' }}</span>
+          {% else %}
+          <span>{{ path_parts[2] | replace: '-', ' ' | upcase }}</span>
+          {% endif %}
+                 
         {% elsif path_parts[1] == "cart" %}
           <span>Warenkorb</span>
         {% else %}
