@@ -777,3 +777,8 @@ cart-remove-button .icon-remove {
     display: none;
   }
 }
+
+/* Cart option breakdown details caret rotation */
+.cart-option-breakdown-details[open] > summary .icon-caret {
+  transform: rotate(180deg);
+}
