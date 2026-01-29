@@ -194,8 +194,14 @@
         "heading_KVypfY": {
           "type": "heading",
           "settings": {
-            "heading": "Unsere Folkeboote",
+            "heading": "Willkommen auf unserer neuen Mediamare Yachtcher Website mit onlinehshopfunktion",
             "heading_size": "h1"
+          }
+        },
+        "text_A6HgHP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_7fKQtk": {
@@ -212,9 +218,9 @@
       },
       "block_order": [
         "heading_KVypfY",
+        "text_A6HgHP",
         "button_7fKQtk"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",

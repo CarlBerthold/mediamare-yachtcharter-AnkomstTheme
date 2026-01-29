@@ -20,10 +20,10 @@
     "slideshow_YcBgbT": {
       "type": "slideshow",
       "blocks": {
-        "slide_knDbBx": {
+        "slide_BQUyeN": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Home_Segel_4096x2731_1d28252c-ba30-4090-8980-956eee8986da.jpg",
+            "image": "shopify://shop_images/IF_Boote_4096x2731_Motiv_14.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -38,17 +38,18 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_BQUyeN": {
+        "slide_knDbBx": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify://shop_images/IF_Boote_4096x2731_Motiv_08.jpg",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
@@ -57,8 +58,8 @@
         }
       },
       "block_order": [
-        "slide_knDbBx",
-        "slide_BQUyeN"
+        "slide_BQUyeN",
+        "slide_knDbBx"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -134,7 +135,7 @@
           "settings": {
             "image": "shopify://shop_images/Mannschaft_Anne.jpg",
             "title": "Anne Heinrich",
-            "text": "<p>Reservierung <br/>Hotline Support</p><p>0049 17645961829</p>",
+            "text": "<p>Reservierung <br/>Hotline Support</p><p>0049 17645961829<br/>anneheinrich-charter-krummin@posteo.de</p>",
             "link_label": "",
             "link": ""
           }
@@ -144,7 +145,7 @@
           "settings": {
             "image": "shopify://shop_images/Mo_in_Kroeslin.jpg",
             "title": "Tobias Morgenstern",
-            "text": "<p>Inhaber <br/>Übergabe und Rücknahme</p><p>0049 1723012587</p>",
+            "text": "<p>Geschäftsführung<br/>Übergabe und Rücknahme</p><p>0049 1723012587</p><p>morgenstern-charter-krummin@posteo.de</p>",
             "link_label": "",
             "link": ""
           }
