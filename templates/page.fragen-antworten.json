@@ -134,7 +134,7 @@
           "settings": {
             "image": "shopify://shop_images/Mannschaft_Anne.jpg",
             "title": "Anne Heinrich",
-            "text": "<p>Reservierung <br/>Hotline Support</p><p>0049 17645961829</p>",
+            "text": "<p>Reservierung <br/>Hotline Support</p><p>0049 17645961829<br/>anneheinrich-charter-krummin@posteo.de</p>",
             "link_label": "",
             "link": ""
           }
@@ -144,7 +144,7 @@
           "settings": {
             "image": "shopify://shop_images/Mo_in_Kroeslin.jpg",
             "title": "Tobias Morgenstern",
-            "text": "<p>Inhaber <br/>Übergabe und Rücknahme</p><p>0049 1723012587</p>",
+            "text": "<p>Inhaber <br/>Übergabe und Rücknahme</p><p>0049 1723012587</p><p>morgenstern-charter-krummin@posteo.de</p>",
             "link_label": "",
             "link": ""
           }
