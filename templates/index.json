@@ -194,14 +194,14 @@
         "heading_KVypfY": {
           "type": "heading",
           "settings": {
-            "heading": "Willkommen auf unserer neuen Mediamare Yachtcher Website mit onlinehshopfunktion",
+            "heading": "Herzlich Willkommen auf unserer neuen mediamare yachtcharter WebSite.",
             "heading_size": "h1"
           }
         },
         "text_A6HgHP": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>hier können sie mit wenigen Klicks ihren Charterzeitraum und dazu das passende Schiff, sowie Extras buchen. Für Fragen steht Ihnen unser support zur Verfügung.</p>"
           }
         },
         "button_7fKQtk": {
@@ -222,8 +222,8 @@
         "button_7fKQtk"
       ],
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "full_width": true,
         "padding_top": 40,
