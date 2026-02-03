@@ -105,7 +105,7 @@
   },
   "order": [
     "main-cart-items",
-    "main-cart-footer",
-    "collapsible_content_RVTtPW"
+    "collapsible_content_RVTtPW",
+    "main-cart-footer"
   ]
 }
