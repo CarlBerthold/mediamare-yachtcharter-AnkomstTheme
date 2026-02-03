@@ -35,6 +35,10 @@
   font-size: 2rem;
 }
 
+#izyAddons {
+  gap: 0;
+}
+
 .izyCheckbox {
   color: black;
   font-size: 1.4rem;
