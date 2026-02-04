@@ -1,0 +1,200 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_YcBgbT": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_knDbBx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/rope-4666424_1920.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_knDbBx"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_EJXTHj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P7zYfC": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_HgJLQh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.content }}"
+          }
+        },
+        "text_wji7t3": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_P7zYfC",
+        "text_HgJLQh",
+        "text_wji7t3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_QiVQAf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cUNVBq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/250409_Boote_Icons-06.svg",
+            "title": "Segelschule Rückenwind - Wolgast/Krummin",
+            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen, <br/>fragen Sie gern bei der Segelschule Rückenwind an. <br/>Mit dem bei uns gecharterten IF-Boot können sie ein Skippertraining oder <br/>Törnbegleitungen mit den Betreibern der Segelschule selbst nach ihren Wünschen aushandeln.<br/></p>",
+            "link_label": "Segelschule Rückenwind",
+            "link": "https://www.segelschule-rueckenwind.de/"
+          }
+        },
+        "column_6dDaDt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Spinnaker.png",
+            "title": "Segelmacher Burkhard - Streuber/Kröslin",
+            "text": "<p>seit vielen Jahren werden sämtliche Arbeiten rund um Segel, Sprayhood und Persenning vom Segelmacher Burkhard Streuber Kröslin <br/>betreut. <br/></p>",
+            "link_label": "Segelmacher Burkhard",
+            "link": "https://streuber-segel.com/"
+          }
+        },
+        "column_tLinbr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Spinnaker.png",
+            "title": "Tuchwerkstatt - Greifswald",
+            "text": "<p>In der Saisonpause lagern wir unsere Polster und Segel in der Tuchwerkstatt, dort werden über den Winter die Polster gereinigt und    <br/>gegebenenfalls erneuert.</p>",
+            "link_label": "Tuchwerkstatt",
+            "link": "https://tuchwerkstatt.de/"
+          }
+        },
+        "column_GgixEJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Spinnaker.png",
+            "title": "Julius Woinke",
+            "text": "<p>Die gesamte technische Betreuung der Schiffstechnik wie Motor, Sanitär, Elektrik u. v.m. wird von Julius Woinke abgesichert. Er steht auch für Anfragen und Hilfe für Schiffe zur Verfügung , die unterwegs sind.  </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cUNVBq",
+        "column_6dDaDt",
+        "column_tLinbr",
+        "column_GgixEJ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_AFbbNa": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Unsere Folkeboote",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "folkeboote",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-98d02f6d-936d-4496-8532-b4633887a6ff",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_YcBgbT",
+    "rich_text_EJXTHj",
+    "multicolumn_QiVQAf",
+    "featured_collection_AFbbNa"
+  ]
+}
