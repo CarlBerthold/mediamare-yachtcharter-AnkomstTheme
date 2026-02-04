@@ -17,55 +17,33 @@
         "padding_bottom": 0
       }
     },
-    "main-cart-footer": {
-      "type": "main-cart-footer",
-      "blocks": {
-        "subtotal": {
-          "type": "subtotal",
-          "settings": {}
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "subtotal",
-        "buttons"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
     "collapsible_content_RVTtPW": {
       "type": "collapsible-content",
       "blocks": {
         "collapsible_row_hkpFqU": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Sie erhalten während des Bestellprozesses von uns 4 Emails",
+            "heading": "Checkout & Anzahlung",
             "icon": "check_mark",
-            "row_content": "<p>Bestellbestätigung, Buchungszeitraum als Kalendereintrag, 2. Bestellung, Rechnung</p>",
+            "row_content": "<p>mit dem Checkout über unseren Shop zahlen Sie 30% der Miete und die von Ihnen ausgewählten Zusatzprodukte (Ipad, extra Fock, Bettwäsche etc.)<br/>Sie erhalten eine Bestellbestätigung.</p>",
             "page": ""
           }
         },
         "collapsible_row_tb7y4j": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Bestellung & Anzahlung",
+            "heading": "Rechnung & 2.Rate",
             "icon": "check_mark",
-            "row_content": "<p>mit dem Checkout über unseren Shop zahlen sie 30% der Miete + zusatzprodukte (Ipad, extra Fock) und erhalten eine Bestellbestätigung.Sie können jederzeit den Status ihrer Bestellung in der Bestellüebrsicht nachverfolgen. Einen Link zur Überischt schicken wir in jeder Email.<br/><br/></p>",
+            "row_content": "<p>Eine zusätzliche Bestellung wird Automatisch erstellt, diese Enthält die 70% der Miete. Sie Bekommen erneut eine Bestellbestätigung und eine   Rechnungsemail um die ausstehenden 70% der Miete bis zum Zahlungsziel (24h vor Reiseantritt) zu begleichen.<br/>Sie erhalten eine Bestätigung sobald diese Zahlung eingegangen ist.</p>",
             "page": ""
           }
         },
         "collapsible_row_UVaejT": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "2.Rate & Kaution",
+            "heading": "Kaution",
             "icon": "check_mark",
-            "row_content": "<p>Sie erhalten eine 2.Bestellung und eine Rechnung über die 70% der Miete mit dem zahlungsziel 24h vor Reiseantritt. Bitte beachten Sie auch das die Kaution bis 24h vor Antritt auf folgendes Konto gutgeschrieben sein muss.<br/><br/>Kautionskonto:<br/>mediamare yachtcharter-ankomst <br/>IBAN: DE92 4306 0967 1303 5421 01<br/>GENODEM1GLS<br/></p>",
+            "row_content": "<p>Die Kaution muss bis 24h vor Reiseantritt auf folgendes Konto mit dem Betreff des Mieters und der Bestellnummer eingegangen sein.<br/>- Maria Mustermann - #1921 -</p><p></p><p>GLS Gemeinschaftsbank<br/>Mediamare yachtcharter-ankomst<br/>IBAN: DE92 4306 0967 1303 5421 01<br/>GENODEM1GLS<br/></p>",
             "page": ""
           }
         },
@@ -100,6 +78,28 @@
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "main-cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 40
       }
     }
   },
