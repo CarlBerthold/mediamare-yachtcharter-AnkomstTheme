@@ -82,10 +82,11 @@
         "text_HgJLQh",
         "text_wji7t3"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
+        "desktop_content_position": "left",
+        "content_alignment": "center",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "full_width": true,
         "padding_top": 40,
@@ -98,49 +99,35 @@
         "column_cUNVBq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/250409_Boote_Icons-06.svg",
-            "title": "Segelschule Rückenwind - Wolgast/Krummin",
-            "text": "<p>Brauchen Sie Hilfe oder möchten sie ihr Segelkönnen auffrischen, <br/>fragen Sie gern bei der Segelschule Rückenwind an. <br/>Mit dem bei uns gecharterten IF-Boot können sie ein Skippertraining oder <br/>Törnbegleitungen mit den Betreibern der Segelschule selbst nach ihren Wünschen aushandeln.<br/></p>",
-            "link_label": "Segelschule Rückenwind",
+            "title": "Mediamare Yachtcharter – Ankomst UG",
+            "text": "<p><br/>Mediamare Yachtcharter – Ankomst UG<br/>Naturhafen Krummin <br/>Dorfstraße 24 <br/>17440 Krummin · Insel Usedom<br/>Deutschland <br/>Handelsregistereintrag: HRB 22917 Stralsund <br/>USt-IdNr. DE 199465922<br/>info@mediamare-yachtcharter.de<br/><br/></p>",
+            "link_label": "",
             "link": "https://www.segelschule-rueckenwind.de/"
           }
         },
         "column_6dDaDt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Spinnaker.png",
-            "title": "Segelmacher Burkhard - Streuber/Kröslin",
-            "text": "<p>seit vielen Jahren werden sämtliche Arbeiten rund um Segel, Sprayhood und Persenning vom Segelmacher Burkhard Streuber Kröslin <br/>betreut. <br/></p>",
-            "link_label": "Segelmacher Burkhard",
+            "title": "Geschäftsführer: Tobias Morgenstern",
+            "text": "<p>Geschäftsführer: Tobias Morgenstern <br/>Tel.: 0049 01723012587 <br/>E-Mail: morgenstern-charter-krummin@posteo.net <br/>FA Strausberg · St. Nr 064250/03477 <br/>Handelsregistereintrag HRB 20010 FF<br/><br/></p>",
+            "link_label": "",
             "link": "https://streuber-segel.com/"
           }
         },
         "column_tLinbr": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Spinnaker.png",
-            "title": "Tuchwerkstatt - Greifswald",
-            "text": "<p>In der Saisonpause lagern wir unsere Polster und Segel in der Tuchwerkstatt, dort werden über den Winter die Polster gereinigt und    <br/>gegebenenfalls erneuert.</p>",
-            "link_label": "Tuchwerkstatt",
-            "link": "https://tuchwerkstatt.de/"
-          }
-        },
-        "column_GgixEJ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Spinnaker.png",
-            "title": "Julius Woinke",
-            "text": "<p>Die gesamte technische Betreuung der Schiffstechnik wie Motor, Sanitär, Elektrik u. v.m. wird von Julius Woinke abgesichert. Er steht auch für Anfragen und Hilfe für Schiffe zur Verfügung , die unterwegs sind.  </p>",
+            "title": "Bankverbindungen",
+            "text": "<p>Buchungskonto <br/>GLS Gemeinschaftsbank <br/>Mediamare yachtcharter-ankomst <br/>IBAN: DE22 430 60967 1303 542100 <br/>BIC: GENODEM1GLS</p><p><br/>Kautionskonto <br/>GLS Gemeinschaftsbank <br/>Mediamare yachtcharter-ankomst <br/>IBAN: DE92 4306 0967 1303 5421 01 GENODEM1GLS<br/><br/></p>",
             "link_label": "",
-            "link": ""
+            "link": "https://tuchwerkstatt.de/"
           }
         }
       },
       "block_order": [
         "column_cUNVBq",
         "column_6dDaDt",
-        "column_tLinbr",
-        "column_GgixEJ"
+        "column_tLinbr"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -162,6 +149,7 @@
     },
     "featured_collection_AFbbNa": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "Unsere Folkeboote",
