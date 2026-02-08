@@ -47,6 +47,31 @@
   {% endif %}
 {% endcapture %}
 
+{% comment %} Calculate total of all line-level discounts {% endcomment %}
+{% assign total_line_discounts = 0 %}
+{% for line in line_items %}
+  {% assign total_line_discounts = total_line_discounts | plus: line.line_level_total_discount %}
+{% endfor %}
+
+{% comment %} Calculate sum of original line prices EXCEPT items with date properties {% endcomment %}
+{% assign non_date_items_total = 0 %}
+{% for line in line_items %}
+  {% comment %} Check if this line has date properties {% endcomment %}
+  {% assign has_date_in_this_line = false %}
+  {% for property in line.properties %}
+    {% assign prop_name = property[0] | downcase %}
+    {% if prop_name contains 'date' or prop_name contains 'datum' %}
+      {% assign has_date_in_this_line = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  
+  {% comment %} If no date property, add to total {% endcomment %}
+  {% unless has_date_in_this_line %}
+    {% assign non_date_items_total = non_date_items_total | plus: line.original_line_price %}
+  {% endunless %}
+{% endfor %}
+
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -214,6 +239,36 @@
                           <p><strong>Total Line Items Count:</strong> {{ line_items.size }}</p>
                           <p><strong>Line Items Available:</strong> {% if line_items %}Yes{% else %}No{% endif %}</p>
                           
+                          {% comment %} Calculate total of all line-level discounts {% endcomment %}
+                          {% assign total_line_discounts = 0 %}
+                          {% for line in line_items %}
+                            {% assign total_line_discounts = total_line_discounts | plus: line.line_level_total_discount %}
+                          {% endfor %}
+                          <p style="background-color: #fff3cd; padding: 10px; border: 1px solid #ffeaa7;"><strong>🔢 TOTAL LINE DISCOUNTS SUM:</strong> {{ total_line_discounts | money }}</p>
+                          
+                          
+                          {% comment %} Calculate sum of original line prices EXCEPT items with date properties {% endcomment %}
+                          {% assign non_date_items_total = 0 %}
+                          {% for line in line_items %}
+                            {% comment %} Check if this line has date properties {% endcomment %}
+                            {% assign has_date_in_this_line = false %}
+                            {% for property in line.properties %}
+                              {% assign prop_name = property[0] | downcase %}
+                              {% if prop_name contains 'date' or prop_name contains 'datum' %}
+                                {% assign has_date_in_this_line = true %}
+                                {% break %}
+                              {% endif %}
+                            {% endfor %}
+                            
+                            {% comment %} If no date property, add to total {% endcomment %}
+                            {% unless has_date_in_this_line %}
+                              {% assign non_date_items_total = non_date_items_total | plus: line.original_line_price %}
+                            {% endunless %}
+                          {% endfor %}
+                          <p style="background-color: #e1f5fe; padding: 10px; border: 1px solid #81d4fa;"><strong>💰 NON-DATE ITEMS TOTAL:</strong> {{ non_date_items_total | money }}</p>
+
+
+                          
                           {% for line in line_items %}
                             <div style="border: 1px solid #999; margin: 5px 0; padding: 5px;">
                               <p><strong>Line Item #{{ forloop.index }}:</strong></p>
@@ -222,11 +277,43 @@
                               <p>Product Title: {{ line.product.title }}</p>
                               <p>Quantity: {{ line.quantity }}</p>
                               <p>Variant Title: {{ line.variant.title }}</p>
-                              <p>Price: {{ line.final_line_price | money }}</p>
+                              <p><strong>PRICES:</strong></p>
+                              <p>- Original Line Price: {{ line.original_line_price | money }}</p>
+                              <p>- Final Line Price: {{ line.final_line_price | money }}</p>
+                              <p>- Original Unit Price: {{ line.original_price | money }}</p>
+                              <p>- Final Unit Price: {{ line.final_price | money }}</p>
+                              <p>- Base Unit Price: {{ line.price | money }}</p>
+                              <p>- Line Level Total Discount: {{ line.line_level_total_discount | money }}</p>
                               <p><strong>Properties Count:</strong> {{ line.properties.size }}</p>
-                              <p><strong>Properties Available:</strong> {% if line.properties %}Yes{% else %}No{% endif %}</p>
+                              <p><strong>Properties Available:</strong> {% if line.properties.size > 0 %}Yes{% else %}No{% endif %}</p>
+                              {% comment %} Check specifically for date properties {% endcomment %}
+                              {% assign has_date_property = false %}
+                              {% assign date_property_name = "" %}
+                              {% for property in line.properties %}
+                                {% assign prop_name = property[0] | downcase %}
+                                {% if prop_name contains 'date' or prop_name contains 'datum' %}
+                                  {% assign has_date_property = true %}
+                                  {% assign date_property_name = property[0] %}
+                                  {% break %}
+                                {% endif %}
+                              {% endfor %}
+                              <p><strong>Property Date is available:</strong> {% if has_date_property %}Yes (Found: {{ date_property_name }}){% else %}No{% endif %}</p>
+                              <p><strong>DEBUG - Properties size check:</strong> {{ line.properties.size }} > 0 = {% if line.properties.size > 0 %}TRUE{% else %}FALSE{% endif %}</p>
                               
-                              {% if line.properties.size > 0 %}
+                              {% comment %} Show discount calculation for items with date properties {% endcomment %}
+                              {% if has_date_property %}
+                                {% assign adjusted_price = line.original_line_price | minus: total_line_discounts %}
+                                <p style="background-color: #d4edda; padding: 10px; border: 1px solid #c3e6cb;">
+                                  <strong>🎯 YACHT CHARTER DISCOUNT CALCULATION:</strong><br>
+                                  - Original Line Price: {{ line.original_line_price | money }}<br>
+                                  - Total Discounts to Subtract: {{ total_line_discounts | money }}<br>
+                                  - <strong>Adjusted Price: {{ adjusted_price | money }}</strong>
+                                </p>
+                              {% endif %}
+                              
+                              {% comment %} Properties display - using explicit size check {% endcomment %}
+                              {% assign current_properties_count = line.properties.size %}
+                              {% if current_properties_count > 0 %}
                                 <p><strong>All Properties (including internal):</strong></p>
                                 <ul>
                                   {% for property in line.properties %}
@@ -244,7 +331,7 @@
                                   {% endfor %}
                                 </ul>
                               {% else %}
-                                <p style="color: red;">No properties found for this line item</p>
+                                <p style="color: red;">LOGIC ERROR: Date property found ({{ date_property_name }}) but properties count is {{ current_properties_count }}!</p>
                               {% endif %}
                               
                               <p><strong>Nested Lines:</strong> {{ line.nested_lines.size }}</p>
@@ -318,7 +405,56 @@
                                     
                                     <td class="order-list__price-cell">
                                       <p class="order-list__item-price">
-                                        {{ line.final_line_price | money }}
+                                        {% comment %} Check if this line has date properties {% endcomment %}
+                                        {% assign has_date_property = false %}
+                                        {% for property in line.properties %}
+                                          {% assign prop_name = property[0] | downcase %}
+                                          {% if prop_name contains 'date' or prop_name contains 'datum' %}
+                                            {% assign has_date_property = true %}
+                                            {% break %}
+                                          {% endif %}
+                                        {% endfor %}
+                                        
+                                        {% if has_date_property %}
+                                          {% comment %} This is a yacht charter item - show adjusted price {% endcomment %}
+                                          {% assign adjusted_price = line.original_line_price | minus: total_line_discounts %}
+                                          {{ adjusted_price | money }}
+                                        {% else %}
+                                          {% comment %} This is an add-on item - show original price {% endcomment %}
+                                          {{ line.original_line_price | money }}
+                                        {% endif %}
+                                        
+
+                                        <!-- DEBUG: Discount Allocations Array -->
+                                        {% comment %} <div style="background-color: #ffe6e6; padding: 5px; margin: 5px 0; border: 1px solid #ff9999; font-size: 12px;">
+                                          <strong>Discount Allocations Debug:</strong><br/>
+                                          <strong>Array Size:</strong> {{ line.line_level_discount_allocations.size }}<br/>
+                                          
+                                          {% if line.line_level_discount_allocations.size > 0 %}
+                                            <strong>Array Contents:</strong>
+                                            <ol>
+                                              {% for allocation in line.line_level_discount_allocations %}
+                                                <li style="margin: 5px 0;">
+                                                  <strong>Allocation #{{ forloop.index }}:</strong><br/>
+                                                  - Amount: {{ allocation.amount | money }}<br/>
+                                                  - Target Type: {{ allocation.target_type }}<br/>
+                                                  {% if allocation.discount_application %}
+                                                    - Title: {{ allocation.discount_application.title }}<br/>
+                                                    - Type: {{ allocation.discount_application.type }}<br/>
+                                                    - Value: {{ allocation.discount_application.value }}<br/>
+                                                    - Value Type: {{ allocation.discount_application.value_type }}<br/>
+                                                  {% else %}
+                                                    - <em>No discount_application data</em><br/>
+                                                  {% endif %}
+                                                </li>
+                                              {% endfor %}
+                                            </ol>
+                                          {% else %}
+                                            <em>Array is empty</em>
+                                          {% endif %}
+                                        </div> {% endcomment %}
+
+                                        {% comment %} {{ line.line_level_total_discount }} {% endcomment %}
                                       </p>
                                     </td>
                                   </tr>
@@ -488,32 +624,23 @@
                         {% endfor %} {% endcomment %}
                         
                         <!-- Order Totals -->
-                        {% comment %} Get base price from first line item (main yacht charter) {% endcomment %}
-                        {% assign base_price = line_items.first.final_line_price %}
-                        
-                        {% comment %} Calculate addon products sum from line item properties {% endcomment %}
-                        {% assign zusatzprodukte_sum = 0 %}
+                        {% comment %} Calculate yacht charter subtotal (first item with date properties minus discounts) {% endcomment %}
+                        {% assign yacht_charter_subtotal = 0 %}
                         {% for line in line_items %}
+                          {% assign has_date_in_line = false %}
                           {% for property in line.properties %}
-                            {% assign first_char = property[0] | slice: 0, 1 %}
                             {% assign prop_name = property[0] | downcase %}
-                            {% comment %} Skip internal properties and specific excluded properties {% endcomment %}
-                            {% if first_char != '_' and prop_name != 'später bezahlen' %}
-                              {% unless prop_name contains 'date' or prop_name contains 'datum' or prop_name contains 'führerschein' or prop_name contains 'funkschein' %}
-                                {% comment %} Try to extract price from property value {% endcomment %}
-                                {% assign prop_value = property[1] | replace: '€', '' | replace: ',', '.' | replace: ' ', '' %}
-                                {% assign prop_price = prop_value | times: 1 %}
-                                {% if prop_price > 0 %}
-                                  {% assign zusatzprodukte_sum = zusatzprodukte_sum | plus: prop_price %}
-                                {% endif %}
-                              {% endunless %}
+                            {% if prop_name contains 'date' or prop_name contains 'datum' %}
+                              {% assign has_date_in_line = true %}
+                              {% break %}
                             {% endif %}
                           {% endfor %}
+                          {% if has_date_in_line %}
+                            {% assign yacht_charter_subtotal = line.original_line_price | minus: total_line_discounts %}
+                            {% break %}
+                          {% endif %}
                         {% endfor %}
-                        
-                        {% comment %} Calculate new total (base + addons) {% endcomment %}
-                        {% assign calculated_total = base_price | plus: zusatzprodukte_sum %}
-                        
+                    
                         <table class="row subtotal-lines">
                           <tr>
                             <td class="subtotal-spacer"></td>
@@ -521,20 +648,20 @@
                               <table class="row subtotal-table">
                                 <tr class="subtotal-line">
                                   <td class="subtotal-line__title">
-                                    <p><span>Zwischensumme</span></p>
+                                    <p><span>Mietpreis 30%</span></p>
                                   </td>
                                   <td class="subtotal-line__value">
-                                    <strong>{{ base_price | money }}</strong>
+                                    <strong>{{ yacht_charter_subtotal | money }}</strong>
                                   </td>
                                 </tr>
                                 
-                                {% if zusatzprodukte_sum > 0 %}
+                                {% if non_date_items_total > 0 %}
                                 <tr class="subtotal-line">
                                   <td class="subtotal-line__title">
                                     <p><span>Zusatzprodukte</span></p>
                                   </td>
                                   <td class="subtotal-line__value">
-                                    <strong>{{ zusatzprodukte_sum | times: 100 | money }}</strong>
+                                    <strong>{{ non_date_items_total | money }}</strong>
                                   </td>
                                 </tr>
                                 {% endif %}
@@ -617,24 +744,27 @@
                                     {{ payment_terms.translated_name }}: fällig am {{ due_date | date: format: 'date' }}<br>
                                   {% endif %}
                                 {% endif %}
-                                {% if transaction_size > 0 %}
+                                {% if transactions.size > 0 %}
                                   {% for transaction in transactions %}
                                     {% if transaction.status == "success" or transaction.status == "pending" %}
                                       {% if transaction.kind == "capture" or transaction.kind == "sale" %}
                                         {% if transaction.payment_details.gift_card_last_four_digits %}
-                                          <img src="{{ transaction.payment_details.type | downcase | replace: '_', '-'  | payment_type_img_url }}" class="customer-info__item-credit" height="24">
+                                          <img src="{{ transaction.payment_details.payment_icon_source | payment_type_img_url }}" class="customer-info__item-credit" height="24">
                                           endet mit {{ transaction.payment_details.gift_card_last_four_digits }}<br>
                                         {% elsif transaction.payment_details.type == "shop_pay_installments" and transaction.payment_details.credit_card_company == "unknown" %}
                                           <img src="{{ 'notifications/shop-pay.svg' | shopify_asset_url  }}" class="customer-info__item-shop-pay">
                                           <br>
                                           <span>Mit Shop Pay-Ratenzahlung bezahlt</span><br>
-                                        {% elsif transaction.payment_details.credit_card_company %}
+                                        {% elsif transaction.payment_details.type == "card" %}
                                           <img src="{{ transaction.payment_details.credit_card_company | payment_icon_png_url  }}" class="customer-info__item-credit" height="24" alt="{{ transaction.payment_details.credit_card_company }}">
                                           <span>endet mit {{ transaction.payment_details.credit_card_last_four_digits }}</span><br>
                                         {% elsif transaction.gateway_display_name == "Gift card" %}
-                                          <img src="{{ transaction.gateway_display_name | downcase | replace: ' ', '-'  | payment_type_img_url }}" class="customer-info__item-credit" height="24">
+                                          <img src="{{ transaction.gateway_icon_source | payment_type_img_url }}" class="customer-info__item-credit" height="24">
                                           endet mit {{ transaction.payment_details.gift_card.last_four_characters | upcase }}<br>
                                             &emsp;&emsp;&emsp;&nbsp;Geschenkgutscheinguthaben - <b>{{ transaction.payment_details.gift_card.balance |  money }}</b>
+                                        {% elsif transaction.payment_details.local_payment? %}
+                                          <img src="{{ transaction.payment_details.payment_icon_source | payment_type_img_url }}" class="customer-info__item-credit" height="24">
+                                          <span>{{ transaction.payment_details.payment_method_display_name }}</span><br>
                                         {% elsif transaction.gateway_display_name != "Shop Cash" and transaction.gateway != "shop_offer" %}
                                           {{ transaction.gateway_display_name }}<br>
                                         {% endif %}
@@ -697,6 +827,7 @@
               </td>
             </tr>
           </table>
+          <img src="{{ 'notifications/spacer.png' | shopify_asset_url }}" class="spacer" height="1" />
         </td>
       </tr>
     </table>
@@ -706,10 +837,9 @@
 {%- if billing_address.country_code == 'DE' or billing_address.country_code == 'DK' -%}
   {%- if shop.terms_of_service.body != blank -%}
     {{ shop.terms_of_service | attach_as_pdf: "AGB" }}
-    {{ shop.refund_policy | attach_as_pdf: "Widerrufsrecht" }}
   {%- endif -%}
 
   {%- if shop.refund_policy.body != blank -%}
-    
+    {{ shop.refund_policy | attach_as_pdf: "Widerrufsrecht" }}
   {%- endif -%}
 {%- endif -%}
