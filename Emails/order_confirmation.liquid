@@ -349,7 +349,11 @@
                               <table class="row subtotal-table">
                                 <tr class="subtotal-line">
                                   <td class="subtotal-line__title">
+                                    {% if has_pay_later %}
                                     <p><span>Mietpreis 30%</span></p>
+                                    {% else %}
+                                    <p><span>Mietpreis 70%</span></p>
+                                    {% endif %}
                                   </td>
                                   <td class="subtotal-line__value">
                                     <strong>{{ yacht_charter_subtotal | money }}</strong>
