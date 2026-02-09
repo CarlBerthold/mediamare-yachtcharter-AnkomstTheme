@@ -9,7 +9,7 @@
   {% if has_pending_payment %}
     Vielen Dank für deine Bestellung!
   {% else %}
-    Vielen Dank für deinen Einkauf!
+    Vielen Dank für deine Buchung!
   {% endif %}
 {% endcapture %}
 
@@ -31,16 +31,17 @@
 
 {% capture email_notification %}
   {% if has_pay_later %}
-    Sie erhalten in Kürze eine 2. Bestellung für die noch ausstehenden 70% der Miete.
+  Wir haben deine erste Zahlung von 30% der Miete erhalten. Deine Buchung ist damit bestätigt.
+  Du erhälst in Kürze eine automatisch generierte Bestellbestätigung als Info und eine Rechnung um die ausstehenden 70% der Miete zu begleichen.
   {% else %}
-    Sie erhalten in Kürze eine Rechnung um die ausstehenden 70% der Miete zu begleichen.
+    Das ist die automatisch generierte Bestellbestätigung der noch ausstehenden 70% der Miete. Du erhälst in Kürze eine Zahlungsaufforderung per Mail.
   {% endif %}
 {% endcapture %}
 
 {% capture email_body %}
   {% if has_pending_payment %}
     {% if buyer_action_required %}
-      Du erhältst eine Bestätigungs-E-Mail, nachdem du deine Zahlung abgeschlossen hast.
+      Du erhälst eine Bestätigungs-E-Mail, nachdem du deine Zahlung abgeschlossen hast.
     {% else %}
       Deine Zahlung wird verarbeitet. Du erhältst eine E-Mail, wenn deine Bestellung bestätigt ist.
     {% endif %}
@@ -391,6 +392,33 @@
                                   </td>
                                 </tr>
                               </table>
+                            </td>
+                          </tr>
+                        </table>
+                        
+                        <!-- Kaution Information -->
+                        <table class="row section">
+                          <tr>
+                            <td class="section__cell">
+                              <center>
+                                <table class="container">
+                                  <tr>
+                                    <td>
+                                      <h4>Kaution</h4>
+                                      <p>
+                                        Hiermit weisen wir darauf hin, dass für diese Buchung eine Kaution von 1000.- € für IF-Boote und 1500.- € für Hochseeyachten bis 7 Tage vor Charterbeginn gezahlt werden muß.
+                                      </p>
+                                      
+                                      <p>
+                                        <strong>GLS Gemeinschaftsbank</strong><br>
+                                        Mediamare yachtcharter-ankomst<br>
+                                        IBAN: DE92 4306 0967 1303 5421 01<br> 
+                                        BIC: GENODEM1GLS
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </center>
                             </td>
                           </tr>
                         </table>
