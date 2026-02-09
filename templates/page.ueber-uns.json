@@ -86,7 +86,7 @@
         "text_HgJLQh": {
           "type": "text",
           "settings": {
-            "text": "{{ page.content }}"
+            "text": "<p>Die mediamare yachtcharter-Ankomst UG ist aus   Unternehmen mediamare yachtcharter hervorgegangen, was über viele Jahre von Anne Heinrich und Pit Dörnfeldt in Kröslin geführt wurde. Seit 2025 ist Tobias Morgenstern der Inhaber und führt gemeinsam mit Anne Heinrich und weiteren Mitarbeitern das Charterunternehmen unter dem Namen mediamare yachtcharter-Ankomst weiter. Es wurde im Naturhafen Krummin ein weiterer Standort für die IF-Bootflotte gefunden. Die Idee, einen weiteren Standort in Karlshamn(Schweden) zu eröffnen ist für die Zukunft angedacht.   </p>"
           }
         },
         "button_PWHTjz": {
@@ -124,7 +124,7 @@
           "settings": {
             "image": "shopify://shop_images/Mannschaft_Naldo.jpg",
             "title": "Naldo Gruden",
-            "text": "<p>Übergabe und <br/>Rücknahme</p>",
+            "text": "<p>von Beruf Künstler, studierte Malerei in den Niederlanden, arbeitet selbstständig als Graphiker und verbringt gerne und viel Zeit auf dem Wasser. </p>",
             "link_label": "",
             "link": ""
           }
@@ -132,9 +132,9 @@
         "column_pamGwc": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mannschaft_Anne.jpg",
+            "image": "shopify://shop_images/IMG_7039.jpg",
             "title": "Anne Heinrich",
-            "text": "<p>Reservierung <br/>Hotline Support</p><p>0049 17645961829<br/>anneheinrich-charter-krummin@posteo.de</p>",
+            "text": "<p>studierte Geographin, die schon seit vielen Jahren das Chartergeschäft kennt und stets zu guter Beratung zur Verfügung steht.  </p>",
             "link_label": "",
             "link": ""
           }
@@ -142,9 +142,9 @@
         "column_qG3DBU": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mo_in_Kroeslin.jpg",
+            "image": "shopify://shop_images/IMG_6417_Kopie.jpg",
             "title": "Tobias Morgenstern",
-            "text": "<p>Geschäftsführung<br/>Übergabe und Rücknahme</p><p>0049 1723012587</p><p>morgenstern-charter-krummin@posteo.de</p>",
+            "text": "<p>ist von Beruf aus Künstler, Musiker und Komponist. www.Tobiasmorgenstern.de</p><p>Vor vielen Jahren entdeckte er sein Interesse an Segelyachten besonders an den IF-Booten. ich würde mir wünschen, dass viele Segler die IF-Boote mit ihrer Einfachheit, dem klassischen Charme und ihrer Vielseitigkeit kennenlernen.    </p><p></p>",
             "link_label": "",
             "link": ""
           }
@@ -192,8 +192,9 @@
         "column_rtCKLz": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/IMG_7034.jpg",
             "title": "Ruth & Oswald Wegner",
-            "text": "<p>Reinigung </p>",
+            "text": "<p>zwei langerfahrene Bootsbauer aus der Region, die Reinigung und kleine Reparaturen übernehmen. </p>",
             "link_label": "",
             "link": ""
           }
@@ -201,8 +202,9 @@
         "column_LqLqYi": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/IMG_1367.jpg",
             "title": "Christian Fuchs",
-            "text": "<p>Übergabe und <br/>Rücknahme</p>",
+            "text": "<p>von Beruf Rettungssanitäter, steht auf Anfrage als Skipper zur Verfügung und hilft bei  Übergaben und Rücknahmen</p>",
             "link_label": "",
             "link": ""
           }
@@ -210,8 +212,9 @@
         "column_mC7Chf": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/IMG_1662.jpg",
             "title": "Julius Woinke",
-            "text": "<p>Technischer Support</p>",
+            "text": "<p>zuverlässiger Ansprechpartner in nahezu allen technischen Fragen, besonders für die Bereiche Motor, Steuerung, Elektrik u.a. </p>",
             "link_label": "",
             "link": ""
           }
