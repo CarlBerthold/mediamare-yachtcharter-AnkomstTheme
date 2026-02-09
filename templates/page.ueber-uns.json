@@ -78,7 +78,6 @@
       "blocks": {
         "heading_P7zYfC": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "{{ page.title }}",
             "heading_size": "h1"
