@@ -25,16 +25,16 @@
           "settings": {
             "heading": "Checkout & Anzahlung",
             "icon": "check_mark",
-            "row_content": "<p>mit dem Checkout über unseren Shop zahlen Sie 30% der Miete und die von Ihnen ausgewählten Zusatzprodukte (Ipad, extra Fock, Bettwäsche etc.)<br/>Sie erhalten eine Bestellbestätigung.</p>",
+            "row_content": "<p>Mit dem Checkout über unseren Shop zahlen Sie 30% der Miete und die von Ihnen ausgewählten Zusatzprodukte (Ipad, extra Fock, Bettwäsche etc.)<br/>Sie erhalten eine Bestellbestätigung. Damit ist die Buchung verbindlich.</p>",
             "page": ""
           }
         },
         "collapsible_row_tb7y4j": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Rechnung & 2.Rate",
+            "heading": "Rechnung & Restzahlung",
             "icon": "check_mark",
-            "row_content": "<p>Eine zusätzliche Bestellung wird Automatisch erstellt, diese Enthält die 70% der Miete. Sie Bekommen erneut eine Bestellbestätigung und eine   Rechnungsemail um die ausstehenden 70% der Miete bis zum Zahlungsziel (24h vor Reiseantritt) zu begleichen.<br/>Sie erhalten eine Bestätigung sobald diese Zahlung eingegangen ist.</p>",
+            "row_content": "<p>Eine zusätzliche Bestellung wird automatisch erstellt, diese enthält die 70% der Miete. Sie bekommen erneut eine Bestellbestätigung und eine   Rechnungsemail um die ausstehenden 70% der Miete bis zum Zahlungsziel (24h vor Reiseantritt) zu begleichen.<br/>Sie erhalten eine Bestätigung sobald diese Zahlung eingegangen ist.</p>",
             "page": ""
           }
         },
