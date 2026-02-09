@@ -233,13 +233,13 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Unsere Folkeboote",
+        "title": "Unsere Flotte",
         "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "subtitle",
-        "collection": "folkeboote",
-        "products_to_show": 6,
+        "collection": "flotte",
+        "products_to_show": 12,
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": false,
