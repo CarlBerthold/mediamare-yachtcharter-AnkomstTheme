@@ -34,7 +34,7 @@
           "settings": {
             "heading": "Rechnung & Restzahlung",
             "icon": "check_mark",
-            "row_content": "<p>Eine zusätzliche Bestellung wird automatisch erstellt, diese enthält die 70% der Miete. Sie bekommen erneut eine Bestellbestätigung und eine   Rechnungsemail um die ausstehenden 70% der Miete bis zum Zahlungsziel (24h vor Reiseantritt) zu begleichen.<br/>Sie erhalten eine Bestätigung sobald diese Zahlung eingegangen ist.</p>",
+            "row_content": "<p>Eine zusätzliche Bestellung wird automatisch erstellt, diese enthält die 70% der Miete. Sie bekommen erneut eine Bestellbestätigung und eine   Rechnungsemail um die ausstehenden 70% der Miete bis zum Zahlungsziel (24h vor Reiseantritt) zu begleichen.</p>",
             "page": ""
           }
         },
