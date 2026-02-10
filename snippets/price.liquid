@@ -148,7 +148,11 @@
   <ul>
   <li>  <span>{{ mietdauer }}</span></li>
   <li><span>{{ ubergabe_ruckgabe }}</span></li>
-  <li><span>{{ rabatte }}</span></li>
+  <li>
+    {% for r in rabatte.value %}
+      <span>{{ r }}</span><br>
+    {% endfor %}
+  </li>
   </ul>
 
 </div>
