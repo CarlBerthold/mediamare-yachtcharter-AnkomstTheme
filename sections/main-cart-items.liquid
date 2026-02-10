@@ -167,7 +167,7 @@
                           {%- endif -%}
 
                           <!-- Discounts -->
-                          {%- if item.line_level_discount_allocations.size > 0 -%}
+                          {% comment %} {%- if item.line_level_discount_allocations.size > 0 -%}
                             <div class="cart-option-discounts">
                               {%- for discount in item.line_level_discount_allocations -%}
                                 <div class="cart-option-item cart-option-discount">
@@ -176,7 +176,7 @@
                                 </div>
                               {%- endfor -%}
                             </div>
-                          {%- endif -%}
+                          {%- endif -%} {% endcomment %}
 
                           <!-- Total price -->
                           <div class="cart-option-item cart-option-total">
@@ -216,7 +216,18 @@
                               <details class="cart-option-breakdown-details">
                                 <div class="cart-option-item cart-option-base-price">
                                 <span class="cart-option-label">Mietpreis (ohne Zusatzprodukte):</span>
-                                <span class="cart-option-value">{{ base_rental_price | money }} {{ item.original_price }}</span>
+                                <span class="cart-option-value">
+                                  {%- if item.line_level_discount_allocations.size > 0 -%}
+                                  <div class="cart-option-discounts">
+                                    {%- for discount in item.line_level_discount_allocations -%}
+                                      <div class="cart-option-item cart-option-discount">
+                                        <span class="cart-option-label">Rabatt:</span>
+                                        <span class="cart-option-value">{{ item.original_line_price | minus: item.final_line_price | money }}</span>
+                                      </div>
+                                    {%- endfor -%}
+                                  </div>
+                                {%- endif -%}
+                                {{ base_rental_price | money }}</span>
                               </div>
                               
                               <div class="cart-option-item cart-option-later-payment">
