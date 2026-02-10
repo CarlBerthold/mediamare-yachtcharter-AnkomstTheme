@@ -138,11 +138,10 @@
     </span>
   {%- endif -%}
 
-  {% for item in preis_buchungs_infos %}
-    <ul class="price__booking-info">
-      <li>{{ item }}</li>
-    </ul>
-  {% endfor %}
+  <span>{{ preis_buchungs_infos.rabatte }}</span>
+  <span>{{ preis_buchungs_infos.mietdauer }}</span>
+  <span>{{ preis_buchungs_infos.ubergabe_rucknahme }}</span>
+
   <span>st  te</span>
 </div>
  
