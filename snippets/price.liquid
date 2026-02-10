@@ -146,9 +146,29 @@
 
 
   <span>{{ mietdauer }}</span>
-  <span>{{ rabatte }}</span>
-  <span>{{ rabatte }}</span>
   <span>{{ ubergabe_ruckgabe }}</span>
+  <span>{{ rabatte }}</span>
+  <span>{{ rabatte }}</span>
+</div>
+
+<div class="buchungsinfos">
+  {% assign preis_buchungs_infos = target.metafields.custom.preis_buchungs_infos.value %}
+
+  {% if preis_buchungs_infos %}
+    <div class="buchungsinfos__col">
+      <span>{{ preis_buchungs_infos.mietdauer }}</span>
+      <span>{{ preis_buchungs_infos.ubergabe_rucknahme }}</span>
+    </div>
+
+    <div class="buchungsinfos__col">
+      <span>Rabatte</span>
+      <ul class="buchungsinfos__list">
+        {% for r in preis_buchungs_infos.rabatte.value %}
+          <li>{{ r }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 </div>
 
 
