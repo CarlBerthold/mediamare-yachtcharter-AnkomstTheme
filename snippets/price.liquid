@@ -145,8 +145,8 @@
   {% assign rabatte = product.metafields.custom.buchungs_rabatte %}
 
   <details class="buchungsinfos__details">
-    <summary class="buchungsinfos__summary">Buchungsinfos</summary>
-    <ul class="buchungsinfos__rabatt_list">
+    <summary class="buchungsinfos__summary">Buchungsinfos {% render 'icon-caret' %}</summary>
+    <ul>
       <li><span>{{ mietdauer }}</span></li>
       <li><span>{{ ubergabe_ruckgabe }}</span></li>
       {% for discountLevel in rabatte.value %}
