@@ -67,7 +67,7 @@
         "slide_FpCPDr": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Flotte_Stine_4096x2731_c053f516-7387-4432-9bfd-6ef3bdafe484.jpg",
+            "image": "shopify://shop_images/PHOTO-2023-08-20-12-15-12_7.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -166,7 +166,7 @@
         "layout": "full_bleed",
         "slide_height": "medium",
         "slider_visual": "dots",
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
