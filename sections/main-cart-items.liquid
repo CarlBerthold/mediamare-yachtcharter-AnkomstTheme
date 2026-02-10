@@ -216,7 +216,7 @@
                               <details class="cart-option-breakdown-details">
                                 <div class="cart-option-item cart-option-base-price">
                                 <span class="cart-option-label">Mietpreis (ohne Zusatzprodukte):</span>
-                                <span class="cart-option-value">{{ base_rental_price | money }}</span>
+                                <span class="cart-option-value">{{ base_rental_price | money }} {{ item.original_price }}</span>
                               </div>
                               
                               <div class="cart-option-item cart-option-later-payment">
