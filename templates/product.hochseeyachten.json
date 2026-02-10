@@ -62,8 +62,8 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Minimale Mietdauer für die {{ product.title }} 1 Woche",
-            "text_style": "subtitle"
+            "text": "Rabatte",
+            "text_style": "body"
           }
         },
         "izyrent_product_calendar_HXKJGL": {
