@@ -23,7 +23,7 @@
         "slide_knDbBx": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Final_Reviere_03.jpg",
+            "image": "shopify://shop_images/IMG_0420.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -41,7 +41,7 @@
         "slide_BQUyeN": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/IF_Boote_4096x2731_Motiv_14.jpg",
+            "image": "shopify://shop_images/Instrumente.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -65,7 +65,7 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
-        "slider_visual": "counter",
+        "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
