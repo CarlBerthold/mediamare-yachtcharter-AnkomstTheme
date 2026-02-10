@@ -23,7 +23,7 @@
         "slide_hQMN4J": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Slider_History_2.jpg",
+            "image": "shopify://shop_images/Test_4096x2731_e7d559a8-136e-4a2a-ad54-ee2092076085.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -41,7 +41,7 @@
         "slide_knDbBx": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Slider_History_4.jpg",
+            "image": "shopify://shop_images/Fotos_Carl_4096x2731_9.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -59,7 +59,43 @@
         "slide_BQUyeN": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Slider_History_3.jpg",
+            "image": "shopify://shop_images/Fotos_Carl_4096x2731_5.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_JLdFix": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Fotos_Carl_4096x2731_8.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_CADykd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Fotos_Carl_4096x2731_6.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -78,7 +114,9 @@
       "block_order": [
         "slide_hQMN4J",
         "slide_knDbBx",
-        "slide_BQUyeN"
+        "slide_BQUyeN",
+        "slide_JLdFix",
+        "slide_CADykd"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
