@@ -137,14 +137,9 @@
     </span>
   {%- endif -%}
 
+  {% assign mietdauer = product.metafields.custom.mietdauereinheit %}
+  <span>{{ mietdauer }}</span>
 
-{% assign preis_buchungs_infos = target.metafields.custom.preis_buchungs_infos.value %}
-
-{% if preis_buchungs_infos %}
-  <span>{{ preis_buchungs_infos.rabatte | newline_to_br }}</span>
-  <span>{{ preis_buchungs_infos.mietdauer }}</span>
-  <span>{{ preis_buchungs_infos.ubergabe_rucknahme }}</span>
-{% endif %}
   <span>stte</span>
 </div>
  
