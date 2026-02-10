@@ -137,6 +137,10 @@
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
-  <span class="mietdauer">{{ mietdauereinheit | escape }}</span>
+  {% for produktPriceInfo in mietdauereinheit %}
+    <li>
+      <span>{{ produktPriceInfo }}</span>
+    </li>
+  {% endfor %}
 </div>
  
