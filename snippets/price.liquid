@@ -138,7 +138,12 @@
   {%- endif -%}
 
   {% assign mietdauer = product.metafields.custom.mietdauereinheit %}
+  {% assign rabatte = product.metafields.custom.rabatte %}
+  {% assign ubergabe_rucknahme = product.metafields.custom.ubergabe_und_rucknahme %}
+
   <span>{{ mietdauer }}</span>
+  <span>{{ rabatte }}</span>
+  <span>{{ ubergabe_rucknahme }}</span>
 
   <span>stte</span>
 </div>
