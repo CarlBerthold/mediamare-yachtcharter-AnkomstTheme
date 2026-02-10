@@ -214,10 +214,7 @@
                               {%- assign addon_total = item.original_price | minus: deposit_amount | minus: discount-%}
                               
                               <details class="cart-option-breakdown-details">
-                                <div class="cart-option-item cart-option-base-price">
-                                <span class="cart-option-label">Mietpreis (ohne Zusatzprodukte):</span>
-                                <span class="cart-option-value">
-                                  {%- if item.line_level_discount_allocations.size > 0 -%}
+                                {%- if item.line_level_discount_allocations.size > 0 -%}
                                   <div class="cart-option-discounts">
                                     {%- for discount in item.line_level_discount_allocations -%}
                                       <div class="cart-option-item cart-option-discount">
@@ -227,6 +224,10 @@
                                     {%- endfor -%}
                                   </div>
                                 {%- endif -%}
+
+                                <div class="cart-option-item cart-option-base-price">
+                                <span class="cart-option-label">Mietpreis (ohne Zusatzprodukte):</span>
+                                <span class="cart-option-value">
                                 {{ base_rental_price | money }}</span>
                               </div>
                               
