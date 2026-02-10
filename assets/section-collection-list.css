@@ -59,3 +59,8 @@
 .collection-list-view-all {
   margin-top: 2rem;
 }
+
+.buchungsinfos {
+  position: relative;
+  z-index: 10;
+}
