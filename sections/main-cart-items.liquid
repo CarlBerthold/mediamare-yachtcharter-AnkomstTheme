@@ -228,7 +228,7 @@
                                 <span class="cart-option-label">Mietpreis Anzahlung (30%):</span>
                                 <span class="cart-option-value">
                                   {%- if item.line_level_discount_allocations.size > 0 -%}
-                                    <span><s>{{ item.final_price | plus: discount | money }}</s></span>
+                                    <span><s>{{ item.original_price | money }}</s></span>
                                   {% endif %}
                                   {{ base_rental_price | times: 0.3 | round | money }}
                                 </span>
