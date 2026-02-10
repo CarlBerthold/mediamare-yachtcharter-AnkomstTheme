@@ -226,7 +226,11 @@
 
                                 <div class="cart-option-item cart-option-deposit">
                                 <span class="cart-option-label">Mietpreis Anzahlung (30%):</span>
-                                <span class="cart-option-value">{{ base_rental_price | times: 0.3 | round | money }}</span>
+                                <span class="cart-option-value">{{ base_rental_price | times: 0.3 | round | money }}
+                                  {% if discount %}
+                                    <span><s>{{ item.final_price | plus: discount }}</s></span>
+                                  {% endif %}
+                                </span>
                               </div>
 
                               {%- if addon_total > 0 -%}
