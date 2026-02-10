@@ -141,8 +141,9 @@
 
 <div class="buchungsinfos">
   {% assign mietdauer = product.metafields.custom.mietdauereinheit %}
-  {% assign rabatte = product.metafields.custom.buchungs_rabatte %}
   {% assign ubergabe_ruckgabe = product.metafields.custom.ubergabe_und_ruckgabe %}
+  {% assign rabatte = product.metafields.custom.buchungs_rabatte %}
+
 
   <span>{{ mietdauer }}</span>
   <span>{{ rabatte }}</span>
