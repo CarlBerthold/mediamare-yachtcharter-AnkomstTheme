@@ -49,7 +49,7 @@
   "
 >
   <div class="price__container">
-    {% assign mietdauereinheit = product.metafields.custom.mietdauereinheit %}
+    {% assign preis_buchungs_infos = product.metafields.custom.preis_buchungs_infos %}
     {%- comment -%}
       Explanation of description list:
         - div.price__regular: Displayed when there are no variants on sale
@@ -137,5 +137,11 @@
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
+
+  {% for item in preis_buchungs_infos %}
+    <ul class="price__booking-info">
+      <li>{{ item }}</li>
+    </ul>
+  {% endfor %}
 </div>
  
