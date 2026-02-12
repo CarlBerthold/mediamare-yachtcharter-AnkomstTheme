@@ -30,25 +30,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
-        },
-        "text_Ww6bmx": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Führerscheinklasse <a href=\"/pages/fuhrerscheinklasse\" title=\"Führerscheinklasse\">{{ product.metafields.custom.fuehrerscheine | metafield_text }}</a> erforderlich !",
-            "text_style": "uppercase"
-          }
         },
         "text_xrfCDT": {
           "type": "text",
@@ -89,14 +73,6 @@
           "disabled": true,
           "settings": {
             "product": "{{product}}"
-          }
-        },
-        "text_Uaiayx": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ metaobjects.preis_buchungs_infos.carl.mietdauer.value }}{{ product.metafields.custom.rabatte.value.ubergabe_rucknahme.value }}",
-            "text_style": "subtitle"
           }
         },
         "variant_picker": {
@@ -175,16 +151,13 @@
         }
       },
       "block_order": [
-        "text",
         "title",
-        "text_Ww6bmx",
         "text_xrfCDT",
         "description",
         "custom_liquid_Ba7HDb",
         "complementary_mGqWXJ",
         "price",
         "izyrent_product_calendar_HXKJGL",
-        "text_Uaiayx",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
