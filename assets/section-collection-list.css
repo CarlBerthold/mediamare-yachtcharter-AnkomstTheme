@@ -60,6 +60,9 @@
   margin-top: 2rem;
 }
 
-.collection-list__item.grid__item > .card-wrapper.animate-arrow.collection-card-wrapper > .card.card--card.card--media > .card__content {
+/* .collection-list__item.grid__item > .card-wrapper.animate-arrow.collection-card-wrapper > .card.card--card.card--media > .card__content {
+  padding: 0 1.7rem;
+} */
+.collection-list__item .card__content {
   padding: 0 1.7rem;
 }
