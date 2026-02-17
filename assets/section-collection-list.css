@@ -60,6 +60,6 @@
   margin-top: 2rem;
 }
 
-.collection-list__item.grid__item > * {
-  border: 1px solid rgba(128, 0, 128, 0.2);
+.collection-list__item.grid__item > .card-wrapper.animate-arrow.collection-card-wrapper > .card.card--card.card--media > .card__content {
+  padding: 0 1.7rem;
 }
