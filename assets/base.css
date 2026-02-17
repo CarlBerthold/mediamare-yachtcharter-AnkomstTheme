@@ -3256,7 +3256,7 @@ details-disclosure > details {
 }
 
 .rte a:hover {
-  color: rgb(var(--color-link));
+  color: #373a3b;
   text-decoration-thickness: 0.2rem;
 }
 
