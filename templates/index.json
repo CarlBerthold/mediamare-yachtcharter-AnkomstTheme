@@ -265,16 +265,16 @@
           "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
             "title": "",
-            "range": false,
+            "range": true,
             "maxdates": 3,
             "mindays": 1,
-            "sort_by": "UPDATED_AT",
+            "sort_by": "TITLE",
             "collection": "flotte",
-            "filter-options": false,
-            "filter-tags": true,
+            "filter-options": true,
+            "filter-tags": false,
             "description": false,
             "vendor": false,
-            "price": true,
+            "price": false,
             "tab": false,
             "search-tags": ""
           }
@@ -283,7 +283,6 @@
       "block_order": [
         "izyrent_global_calendar_EHqD3P"
       ],
-      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
@@ -291,75 +290,43 @@
         "include_margins": true
       }
     },
-    "featured_product_fNXYtb": {
-      "type": "featured-product",
+    "collection_list_mJ6GVG": {
+      "type": "collection-list",
       "blocks": {
-        "text_FAEmwz": {
-          "type": "text",
+        "featured_collection_ffYPrN": {
+          "type": "featured_collection",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
+            "collection": "krummin"
           }
         },
-        "title_4CK8JV": {
-          "type": "title",
+        "featured_collection_CwcEGr": {
+          "type": "featured_collection",
           "settings": {
-            "heading_size": "h1"
+            "collection": "marina-kroslin"
           }
         },
-        "price_A4LyXk": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_ywQMEc": {
-          "type": "variant_picker",
-          "disabled": true,
+        "featured_collection_9LA9CK": {
+          "type": "featured_collection",
           "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_XtAQiR": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
-        "buy_buttons_BxA6gb": {
-          "type": "buy_buttons",
-          "disabled": true,
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_6TFXnn": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "collection": "karlshamn-se"
           }
         }
       },
       "block_order": [
-        "text_FAEmwz",
-        "title_4CK8JV",
-        "price_A4LyXk",
-        "variant_picker_ywQMEc",
-        "quantity_selector_XtAQiR",
-        "buy_buttons_BxA6gb",
-        "share_6TFXnn"
+        "featured_collection_ffYPrN",
+        "featured_collection_CwcEGr",
+        "featured_collection_9LA9CK"
       ],
-      "disabled": true,
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "product": "gertrud",
+        "title": "Unsere Standorte",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "secondary_background": false,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -372,6 +339,6 @@
     "rich_text_xrTq6m",
     "featured-collection",
     "1738703331a115570f",
-    "featured_product_fNXYtb"
+    "collection_list_mJ6GVG"
   ]
 }
