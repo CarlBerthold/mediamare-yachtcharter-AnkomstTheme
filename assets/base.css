@@ -3571,6 +3571,6 @@ details-disclosure > details {
   }
 }
 
-.izyProduct .img > img {
+.izyProduct .image > img {
   object-fit: cover;
 }
