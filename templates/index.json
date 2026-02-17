@@ -265,15 +265,15 @@
           "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
             "title": "",
-            "range": false,
+            "range": true,
             "maxdates": 3,
             "mindays": 1,
-            "sort_by": "UPDATED_AT",
+            "sort_by": "TITLE",
             "collection": "flotte",
-            "filter-options": false,
+            "filter-options": true,
             "filter-tags": true,
-            "description": false,
-            "vendor": false,
+            "description": true,
+            "vendor": true,
             "price": true,
             "tab": false,
             "search-tags": ""
@@ -283,85 +283,11 @@
       "block_order": [
         "izyrent_global_calendar_EHqD3P"
       ],
-      "disabled": true,
       "custom_css": [
         "div {background-color: white;}"
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "featured_product_fNXYtb": {
-      "type": "featured-product",
-      "blocks": {
-        "text_FAEmwz": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_4CK8JV": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_A4LyXk": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_ywQMEc": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_XtAQiR": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
-        "buy_buttons_BxA6gb": {
-          "type": "buy_buttons",
-          "disabled": true,
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_6TFXnn": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_FAEmwz",
-        "title_4CK8JV",
-        "price_A4LyXk",
-        "variant_picker_ywQMEc",
-        "quantity_selector_XtAQiR",
-        "buy_buttons_BxA6gb",
-        "share_6TFXnn"
-      ],
-      "disabled": true,
-      "settings": {
-        "product": "gertrud",
-        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
-        "secondary_background": false,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "collection_list_mJ6GVG": {
@@ -413,7 +339,6 @@
     "rich_text_xrTq6m",
     "featured-collection",
     "1738703331a115570f",
-    "featured_product_fNXYtb",
     "collection_list_mJ6GVG"
   ]
 }
