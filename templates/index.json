@@ -271,10 +271,10 @@
             "sort_by": "TITLE",
             "collection": "flotte",
             "filter-options": true,
-            "filter-tags": true,
-            "description": true,
-            "vendor": true,
-            "price": true,
+            "filter-tags": false,
+            "description": false,
+            "vendor": false,
+            "price": false,
             "tab": false,
             "search-tags": ""
           }
