@@ -1,192 +1,202 @@
-<div>
-<div class="columns">
-   <h1>Rechnung</h1>
-   <div>
-      <p style="text-align: right; margin: 0;">
-         <strong>Rechnungsnummer: {{ order.order_name }}</strong><br />
-         {% if order.po_number %}Bestellnummer: {{ order.po_number }}<br />{% endif %}
-         Rechnungsdatum: {{ order.created_at | date: "%d.%m.%Y" }}<br />
-         Leistungsdatum: {{ order.created_at | date: "%d.%m.%Y" }}
-      </p>
-   </div>
+<div class="invoice">
+
+
+
+  <!-- HEADER -->
+  <div class="columns">
+    <div>
+      <img src="https://cdn.shopify.com/s/files/1/0767/5215/9056/files/241223_Logo_A.svg?v=1735219334" alt="{{ shop.name }}" width="180" height="100" style="max-width: 200px; margin-bottom: 20px; text-align:left;"><br>
+      <strong>{{ shop.name }}</strong><br>
+      {{ shop.address | format_address }}<br>
+      {{ shop.email }}<br>
+      {{ shop.phone }}<br>
+      MwSt.-ID: {{ shop.tax_id | default: "DE 199465922" }} <!-- TODO falls anders -->
+    </div>
+
+    <div style="display: flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: flex-end; text-align:right;">
+      <h2>RECHNUNG</h2>
+      <span><strong>Rechnungsnummer:</strong> {{ order.order_name }}</span>
+      <span><strong>Ausstellungsdatum:</strong> {{ order.created_at | date: "%d.%m.%Y" }}</span>
+      <span><strong>Lieferdatum:</strong> {{ order.created_at | date: "%d.%m.%Y" }}</span> <!-- TODO Lieferdatum -->
+    </div>
+  </div>
+
+  <hr>
+
+ <div class="columns" style="margin-top: 1.2em; display:flex; gap: 24px; align-items:flex-start;">
+
+ <!-- HÄNDLER -->
+  {% comment %} <div class="address" style="flex:1;">
+    <strong>Händler</strong><br>
+    {{ shop.name }}<br>
+    {{ shop.address | format_address }}<br><br>
+    {{ shop.email }}<br>
+    {{ shop.phone }}<br>
+    MwSt.-ID: {{ shop.tax_id | default: "DE 199465922" }}
+  </div> {% endcomment %}
+
+  <!-- ZUSTELLMETHODE -->
+  <div class="address" style="flex:1;">
+    <strong>Zustellmethode</strong><br>
+    Digitaler Download <!-- TODO falls Mapping -->
+  </div>
+
+   <!-- RECHNUNG AN -->
+  <div class="address" style="flex:1; text-align: right;">
+    <strong>Rechnung an</strong><br>
+    {{ order.billing_address.name }}<br>
+    {{ order.billing_address.company }}<br>
+    {{ order.billing_address.address1 }}<br>
+    {{ order.billing_address.zip }} {{ order.billing_address.city }}<br>
+    {{ order.billing_address.country }}
+  </div>
+
+  
+
 </div>
-<div class="columns" style="margin-top: 1.5em;">
-   <div class="address">
-      <strong>Absender</strong><br/>
-      {{ shop.name }}<br/>
-      {{ shop.address | format_address }}
-      {% if shop.phone %}Tel.: {{ shop.phone }}{% endif %}<br/>
-      {% if shop.email %}E-Mail: {{ shop.email }}{% endif %}<br/>
-      <!-- Bitte ergänzen Sie hier Ihre Steuernummer/USt-IdNr. -->
-      <!-- Steuernummer: [Ihre Steuernummer] -->
-      <!-- USt-IdNr.: [Ihre USt-IdNr.] -->
-   </div>
-   {% if order.billing_address %}
-   <div class="address">
-      <strong>Rechnungsadresse</strong>
-      {{ order.billing_address | format_address  }}
-   </div>
-   {% endif %}
-   {% if order.shipping_address %}
-   <div class="address">
-      <strong>Lieferadresse</strong>
-      {{ order.shipping_address | format_address  }}
-      {% if order.shipping_address.phone %}Tel.: {{ order.shipping_address.phone }}{% endif %}
-   </div>
-   {% endif %}
-</div>
-<hr />
-<h2>Bestellübersicht</h2>
-<table class="table-tabular" style="margin: 1em 0 0 0;">
-   <thead>
+
+  <hr>
+
+  <!-- CALCULATE TOTAL DISCOUNTS -->
+  {% comment %} Calculate total of all line-level discounts {% endcomment %}
+  {% assign total_line_discounts = 0 %}
+  {% for line in order.line_items %}
+    {% assign total_line_discounts = total_line_discounts | plus: line.line_level_total_discount %}
+  {% endfor %}
+
+  <!-- ITEMS TABLE -->
+  <table class="table-tabular" style="margin-top:1em;">
+    <thead>
       <tr>
-         <th>Menge</th>
-         <th>Artikel</th>
-         <th style="text-align: right;">Preis</th>
+        <th>Beschreibung</th>
+        <th>Anzahl</th>
+        <th>Grundpreis</th>
+        <th>MwSt.-Satz</th>
+        <th style="text-align:right;">Betrag</th>
       </tr>
-   </thead>
-   <tbody>
+    </thead>
+
+    <tbody>
       {% for line_item in order.line_items %}
+      {% comment %} Check if this line has date properties {% endcomment %}
+      {% assign has_date_property = false %}
+      {% for property in line_item.properties %}
+        {% assign prop_name = property[0] | downcase %}
+        {% if prop_name contains 'date' or prop_name contains 'datum' %}
+          {% assign has_date_property = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
       <tr>
-         <td>{{ line_item.quantity }}</td>
-         <td>{{ line_item.title }}
-            {% if line_item.line_level_discount_allocations.size > 0 %}
-            <span class="subduedText">
-            {% for discount_allocation in line_item.line_level_discount_allocations %}
-            <br>{{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})
-            {% endfor %}
-            </span>
-            {% endif %}
-            
-            <!-- Buchungsdaten anzeigen -->
-            {% if line_item.properties.size > 0 %}
-            <br><small style="color: #666;">
-            {% for property in line_item.properties %}
-              {% assign first_char = property[0] | slice: 0, 1 %}
+        <td>
+          {{ line_item.title }}
+
+          {% if line_item.properties.size > 0 %}
+          <br><small>
+            {% for prop in line_item.properties %}
+              {% assign first_char = prop[0] | slice: 0, 1 %}
               {% if first_char != '_' %}
-                <br>{{ property[0] }}: {{ property[1] }}
+                {{ prop[0] }}: {{ prop[1] }}<br>
               {% endif %}
             {% endfor %}
-            </small>
-            {% endif %}
-         </td>
-         <td style="text-align: right;">
-            {% if line_item.original_price != line_item.final_price %}
-            <span class="subduedText"><s>{{ line_item.original_price | money }}</s></span>
-            {% endif %}
-            {{ line_item.final_price | money }}
-         </td>
+          </small>
+          {% endif %}
+        </td>
+
+        <td>{{ line_item.quantity }}</td>
+
+        <td>{{ line_item.original_price | money }}</td>
+
+        <td>19 %</td> <!-- TODO dynamisch -->
+
+        <td style="text-align:right;">
+          {% if has_date_property %}
+            {% comment %} This is a yacht charter item - show adjusted price {% endcomment %}
+            {% comment %} {% assign adjusted_price = line_item.original_line_price | minus: total_line_discounts %}
+            {{ adjusted_price | money }} {% endcomment %}
+            {{ line_item.original_line_price | money }}
+          {% else %}
+            {% comment %} This is an add-on item - show original price {% endcomment %}
+            {{ line_item.original_line_price | money }}
+          {% endif %}
+        </td>
       </tr>
+
+      {% comment %} {% if line_item.line_level_discount_allocations.size > 0 and has_date_property == true %}
+        {% for discount in line_item.line_level_discount_allocations %}
+        <tr>
+          <td colspan="4" style="color:#777;">
+            Rabatt: {{ discount.discount_application.title }}
+          </td>
+          <td style="text-align:right; color:#777;">
+            -{{ total_line_discounts | money }}
+          </td>
+        </tr>
+        {% endfor %}
+      {% endif %} {% endcomment %}
+
       {% endfor %}
+
+      
+
+      <!-- SUBTOTAL -->
       <tr>
-         <td colspan="2" style="text-align: right;">Zwischensumme (netto)</td>
-         <td style="text-align: right;">{{ order.line_items_subtotal_price | money }}</td>
+        <td colspan="4" style="text-align:right;">Zwischensumme</td>
+        <td style="text-align:right;">
+          {% assign adjusted_price = order.total_price | plus: total_line_discounts %}
+          {{ adjusted_price | money }}
+        </td>
       </tr>
-      {% assign has_shipping_discount = false %}
-      {% for discount_application in order.discount_applications %}
-      {% if discount_application.target_type == 'shipping_line' %}
-      {% assign has_shipping_discount = true %}
-      {% endif %}
-      {% if discount_application.target_selection == 'all' and discount_application.target_type != 'shipping_line' %}
+
+      <!-- DISCOUNT SUMMARY -->
+      {% if total_line_discounts > 0 %}
       <tr>
-         <td colspan="2" style="text-align: right;">{% if discount_application.title %}<span class="subduedText">{{ discount_application.title }}</span>{% endif %}</td>
-         <td style="text-align: right;">-{{ discount_application.total_allocated_amount | money }}</td>
-      </tr>
-      {% endif %}
-      {% endfor %}
-      <tr>
-         <td colspan="2" style="text-align: right;">MwSt. (19%)</td>
-         <td style="text-align: right;">{{ order.tax_price | money }}</td>
-      </tr>
-      {% if order.shipping_address %}
-      <tr>
-         <td colspan="2" style="text-align: right;">Versandkosten</td>
-         <td style="text-align: right;">{% if has_shipping_discount %}KOSTENLOS{% else %}{{ order.shipping_price | money }}{% endif %}</td>
+        <td colspan="4" style="text-align:right;">Rabatt</td>
+        <td style="text-align:right; color:#777;">-{{ total_line_discounts | money }}</td>
       </tr>
       {% endif %}
+
+      <!-- TAX -->
       <tr>
-         <td colspan="2" style="text-align: right;"><strong>Gesamtsumme (brutto)</strong></td>
-         <td style="text-align: right;"><strong>{{ order.total_price | money }}</strong></td>
+        <td colspan="4" style="text-align:right;">DE MwSt 19% (Inklusive)</td>
+        <td style="text-align:right;">{{ order.tax_price | money }}</td>
       </tr>
-      {% if order.net_payment != order.total_net_amount %}
+
+      <!-- SHIPPING -->
+      {% if order.shipping_price > 0 %}
       <tr>
-         <td colspan="2" style="text-align: right;">Bereits bezahlt</td>
-         <td style="text-align: right;">{{ order.net_payment | money }}</td>
-      </tr>
-      {% endif %}
-      {% if order.total_refunded_amount > 0 %}
-      <tr>
-         <td colspan="2" style="text-align: right;">Erstatteter Betrag</td>
-         <td style="text-align: right;">-{{ order.total_refunded_amount | money }}</td>
+        <td colspan="4" style="text-align:right;">Versand</td>
+        <td style="text-align:right;">{{ order.shipping_price | money }}</td>
       </tr>
       {% endif %}
-      {% if order.net_payment != order.total_net_amount %}
+
+      <!-- TOTAL -->
       <tr>
-      {% if order.financial_status != 'paid' %}
-         <td colspan="2" style="text-align: right;"><strong>Offener Betrag</strong></td>
-         <td style="text-align: right;"><strong>{{ order.total_price | minus: order.net_payment | money }}</strong></td>
-      {% endif %}
+        <td colspan="4" style="text-align:right;"><strong>Gesamt</strong></td>
+        <td style="text-align:right;"><strong>{{ order.total_price | money }}</strong></td>
       </tr>
-      {% endif %}
-   </tbody>
-</table>
-{% comment %}
-<!-- Transaction details section - German version -->
-{% if order.financial_status != 'paid' %}
-<h2>Zahlungsdetails</h2>
-<table class="table-tabular" style="margin: 0 0 1.5em 0;">
-   <thead>
-      <tr>
-         <th>Zahlungsart</th>
-         <th>Betrag</th>
-         <th>Art</th>
-         <th>Status</th>
-      </tr>
-   </thead>
-   <tbody>
-      {% for transaction in order.transactions %}
-      <tr>
-         <td>{{ transaction.gateway }}</td>
-         <td>{{ transaction.amount | money }}</td>
-         <td>{{ transaction.kind }}</td>
-         <td>{{ transaction.status }}</td>
-      </tr>
-      {% endfor %}
-   </tbody>
-</table>
-{% endif %}
-{% endcomment %}
-{% if order.note %}
-<h2>Notiz</h2>
-<p>{{ order.note }}</p>
-{% endif %}
-<!-- German Business Footer Information -->
-<hr style="margin-top: 2em;" />
-<div style="font-size: 0.9em; margin-top: 1em;">
-   <h3>Zahlungsbedingungen</h3>
-   <p>Zahlung binnen 14 Tagen nach Rechnungsdatum ohne Abzug.</p>
-   
-   <!-- Ergänzen Sie hier Ihre Bankverbindung falls gewünscht -->
-   <!--
-   <h3>Bankverbindung</h3>
-   <p>
-      Kontoinhaber: {{ shop.name }}<br/>
-      IBAN: [Ihre IBAN]<br/>
-      BIC: [Ihre BIC]<br/>
-      Bank: [Ihre Bank]
-   </p>
-   -->
-   
-   <p style="margin-top: 1.5em;">
-      <strong>Kontakt:</strong><br/>
-      Bei Fragen zu dieser Rechnung wenden Sie sich bitte an:<br/>
-      E-Mail: <u>{{ shop.email }}</u>{% if shop.phone %}<br/>
-      Telefon: {{ shop.phone }}{% endif %}
-   </p>
-   
-   <p style="font-size: 0.8em; margin-top: 2em; color: #666;">
-      <strong>Hinweis:</strong> Diese Rechnung wurde elektronisch erstellt und ist ohne Unterschrift gültig.<br/>
-      Bitte bewahren Sie diese Rechnung für Ihre Unterlagen auf.
-   </p>
-</div>
+    </tbody>
+  </table>
+
+  <hr style="margin-top:1.5em;">
+
+  <!-- FOOTER -->
+  <div style="font-size:0.9em;">
+    <strong>Gesamter Rechnungsbetrag:</strong> {{ order.total_price | money }}<br>
+
+    <p style="margin-top:1em;">
+      Zur Verfügung gestellt von: {{ shop.name }}<br>
+      MwSt.-ID: {{ shop.tax_id | default: "DE 199465922" }}
+    </p>
+
+    <p>
+      Ausgestellt am {{ order.created_at | date: "%d.%m.%Y" }}<br>
+      Seite 1 von 1 für {{ order.order_name }}
+    </p>
+  </div>
+
 </div>
