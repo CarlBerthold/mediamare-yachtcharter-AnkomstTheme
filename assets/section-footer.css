@@ -239,14 +239,14 @@
 
 @media screen and (min-width: 751px) {
   .divider {
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .divider {
-    padding: 0 6rem;
+    /* padding: 0 6rem; */
     justify-content: space-evenly;
   }
 }
