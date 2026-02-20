@@ -349,6 +349,25 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "1771583235b5cd260c": {
+      "type": "apps",
+      "blocks": {
+        "mappy_store_locator_page_embed_block_zQ7Nr7": {
+          "type": "shopify://apps/mappy-store-locator/blocks/page-embed-block/edfca2bd-82ad-413c-b32c-580d239b17ab",
+          "settings": {
+            "is_show_heading_map": true,
+            "is_show_description_map": false
+          }
+        }
+      },
+      "block_order": [
+        "mappy_store_locator_page_embed_block_zQ7Nr7"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -359,6 +378,7 @@
     "featured-collection",
     "1738703331a115570f",
     "collection_list_mJ6GVG",
-    "1771580450e72db950"
+    "1771580450e72db950",
+    "1771583235b5cd260c"
   ]
 }
