@@ -76,6 +76,7 @@
         "heading_P7zYfC",
         "text_HgJLQh"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -114,6 +115,7 @@
         "column_LpBrgt",
         "column_wJ3pme"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Wo sie uns finden",
@@ -131,12 +133,31 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "17715805150d918837": {
+      "type": "apps",
+      "blocks": {
+        "mappy_store_locator_page_embed_block_VfdtUf": {
+          "type": "shopify://apps/mappy-store-locator/blocks/page-embed-block/edfca2bd-82ad-413c-b32c-580d239b17ab",
+          "settings": {
+            "is_show_heading_map": false,
+            "is_show_description_map": false
+          }
+        }
+      },
+      "block_order": [
+        "mappy_store_locator_page_embed_block_VfdtUf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "slideshow_YcBgbT",
     "rich_text_EJXTHj",
-    "multicolumn_h8QgAQ"
+    "multicolumn_h8QgAQ",
+    "17715805150d918837"
   ]
 }
