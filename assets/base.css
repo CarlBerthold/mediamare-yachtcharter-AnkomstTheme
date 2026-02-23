@@ -3577,6 +3577,8 @@ details-disclosure > details {
 
 #izyrent_global .izyLabels {
   width: 100%;
+  flex-direction: column;
+  gap: 1.7rem;
 }
 
 #izyrentSearch {
@@ -3598,7 +3600,7 @@ details-disclosure > details {
 }
 
 
-#izyrent_global .content {
+.izyGlobal #izyrent_global .content {
   display: flex;
   flex-direction: column;
   align-items: center;
