@@ -3596,3 +3596,8 @@ details-disclosure > details {
   color: #0671b7;
   font-size: 4rem;
 }
+
+
+.watermark-wrapper {
+  display: none !important;
+}
