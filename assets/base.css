@@ -3603,4 +3603,7 @@ details-disclosure > details {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
