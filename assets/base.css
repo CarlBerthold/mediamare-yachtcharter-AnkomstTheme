@@ -3598,6 +3598,9 @@ details-disclosure > details {
 }
 
 
-.watermark-wrapper {
-  display: none !important;
+#izyrent_global .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
