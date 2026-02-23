@@ -3580,7 +3580,7 @@ details-disclosure > details {
 }
 
 #izyrentSearch {
-  max-width: 100%;
+  max-width: 100% !important;
   width: 20%;
 }
 
