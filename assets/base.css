@@ -3574,3 +3574,25 @@ details-disclosure > details {
 .izyProduct .image > img {
   object-fit: cover;
 }
+
+#izyrent_global .izyLabels {
+  width: 100%;
+}
+
+#izyrentSearch {
+  max-width: 100%;
+  width: 20%;
+}
+
+.izyGlobal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.izyGlobal > h2 {
+  color: #0671b7;
+  font-size: 4rem;
+}
