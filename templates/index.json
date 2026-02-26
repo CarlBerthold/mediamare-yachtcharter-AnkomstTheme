@@ -264,7 +264,7 @@
         "izyrent_global_calendar_EHqD3P": {
           "type": "shopify://apps/izyrent/blocks/globalCalendar/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
           "settings": {
-            "title": "Finde das perfekte schiff für deinen Törn",
+            "title": "Finde das perfekte Schiff für deinen Törn",
             "range": true,
             "maxdates": 3,
             "mindays": 1,
@@ -333,18 +333,6 @@
     },
     "1771580450e72db950": {
       "type": "apps",
-      "blocks": {
-        "mappy_store_locator_page_embed_block_wcEKXG": {
-          "type": "shopify://apps/mappy-store-locator/blocks/page-embed-block/edfca2bd-82ad-413c-b32c-580d239b17ab",
-          "settings": {
-            "is_show_heading_map": true,
-            "is_show_description_map": false
-          }
-        }
-      },
-      "block_order": [
-        "mappy_store_locator_page_embed_block_wcEKXG"
-      ],
       "disabled": true,
       "settings": {
         "include_margins": true
@@ -352,18 +340,6 @@
     },
     "1771583235b5cd260c": {
       "type": "apps",
-      "blocks": {
-        "mappy_store_locator_page_embed_block_zQ7Nr7": {
-          "type": "shopify://apps/mappy-store-locator/blocks/page-embed-block/edfca2bd-82ad-413c-b32c-580d239b17ab",
-          "settings": {
-            "is_show_heading_map": true,
-            "is_show_description_map": false
-          }
-        }
-      },
-      "block_order": [
-        "mappy_store_locator_page_embed_block_zQ7Nr7"
-      ],
       "disabled": true,
       "settings": {
         "include_margins": true
