@@ -58,7 +58,7 @@
           "type": "column",
           "settings": {
             "title": "Kaution",
-            "text": "<p>Kaution ist fällig am 7 Tage vor Reiseantritt</p>",
+            "text": "<p>Kaution ist fällig  7 Tage vor Charterbeginn</p>",
             "link_label": "Übersicht der Kautionen",
             "link": "shopify://pages/ubersicht-kaution"
           }
