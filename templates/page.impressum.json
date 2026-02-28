@@ -118,7 +118,7 @@
           "type": "column",
           "settings": {
             "title": "Bankverbindungen",
-            "text": "<p>Buchungskonto <br/>GLS Gemeinschaftsbank <br/>Mediamare yachtcharter-ankomst <br/>IBAN: DE22 430 60967 1303 542100 <br/>BIC: GENODEM1GLS</p><p><br/>Kautionskonto <br/>GLS Gemeinschaftsbank <br/>Mediamare yachtcharter-ankomst <br/>IBAN: DE92 4306 0967 1303 5421 01 GENODEM1GLS<br/><br/></p>",
+            "text": "<p>Buchungskonto <br/>GLS Gemeinschaftsbank <br/>Mediamare yachtcharter-ankomst <br/>IBAN: DE22 430 60967 1303 542100 <br/>BIC: GENODEM1GLS</p><p><br/>Kautionskonto <br/>GLS Gemeinschaftsbank <br/>Mediamare yachtcharter-ankomst <br/>IBAN: DE92 4306 0967 1303 5421 01 GENODEM1GLS<br/></p>",
             "link_label": "",
             "link": "https://tuchwerkstatt.de/"
           }
