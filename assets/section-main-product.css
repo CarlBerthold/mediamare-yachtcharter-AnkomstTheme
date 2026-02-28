@@ -78,6 +78,14 @@ table {
 }
 
 
+.izyclear {
+  background-color: rgba(6, 113, 183, 0.5);
+}
+
+#recapDate {
+  display: none;
+}
+
 
 
 .product__title > *,
