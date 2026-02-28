@@ -89,7 +89,7 @@
           "type": "icon-with-text",
           "settings": {
             "layout": "vertical",
-            "icon_1": "map_pin",
+            "icon_1": "clipboard",
             "heading_1": "Datenblatt",
             "icon_2": "none",
             "heading_2": "",
