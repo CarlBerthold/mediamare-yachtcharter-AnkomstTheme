@@ -639,10 +639,13 @@ details > div {
 }
 
 .underlined-link:hover,
-.customer a:hover,
-.inline-richtext a:hover {
+.customer a:hover a:hover {
   color: rgb(var(--color-link));
   text-decoration-thickness: 0.2rem;
+}
+
+.inline-richtext a:hover {
+  color:#0671b7;
 }
 
 .icon-arrow {
