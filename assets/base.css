@@ -641,11 +641,12 @@ details > div {
 .underlined-link:hover,
 .customer a:hover a:hover {
   color: rgb(var(--color-link));
-  text-decoration-thickness: 0.2rem;
+  text-decoration: none;
 }
 
 .inline-richtext a:hover {
   color:#0671b7;
+  text-decoration: underline;
 }
 
 .icon-arrow {
