@@ -636,12 +636,13 @@ details > div {
 .inline-richtext a,
 .rte.inline-richtext a {
   color: currentColor;
+  text-decoration: none;
 }
 
 .underlined-link:hover,
 .customer a:hover a:hover {
   color: rgb(var(--color-link));
-  text-decoration: none;
+  text-decoration-thickness: 0.2rem;
 }
 
 .inline-richtext a:hover {
