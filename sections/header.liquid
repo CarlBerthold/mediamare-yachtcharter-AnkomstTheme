@@ -412,7 +412,7 @@
         <span>{{ productTitle }}</span>
         <span>{{ pageTitle }}</span>
         
-        {% if request.path == "/" %}
+        {% comment %} {% if request.path == "/" %}
           <div class="indexTitle">
           <span>ANKOMST</span>
           {% comment %} <span class="subtitle">Yachtcharter zwischen Rügen und Usedom</span> {% endcomment %}
@@ -443,7 +443,7 @@
           <span>Warenkorb</span>
         {% else %}
           {{ request.path | upcase }}
-        {% endif %}
+        {% endif %} {% endcomment %}
       </div>
     </div>
 
