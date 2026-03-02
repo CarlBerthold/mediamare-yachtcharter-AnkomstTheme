@@ -407,7 +407,7 @@
       <div class="h0">
 
         {% for entry in shop.metaobjects.seitentitel.values %}
-        <span>{{ entry.titel }}</span>
+       {% comment %}  <span>{{ entry.titel }}</span> {% endcomment %}
         {% endfor %}
         
         {% comment %} {% if request.path == "/" %}
