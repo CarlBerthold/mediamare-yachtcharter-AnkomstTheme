@@ -404,7 +404,13 @@
 
     <div class="pageTitle">
       {% assign path_parts = request.path | split: '/' %}
+      {% assign pageTitle =  page.title %}
+      {% assign productTitle = page_title %}
+
       <div class="h0">
+        <span>{{ section.settings.pageTitle != blank ? section.settings.pageTitle : (pageTitle != blank ? pageTitle : productTitle) }}</span>
+        <span>{{ productTitle }}</span>
+        <span>{{ pageTitle }}</span>
         
         {% if request.path == "/" %}
           <div class="indexTitle">
