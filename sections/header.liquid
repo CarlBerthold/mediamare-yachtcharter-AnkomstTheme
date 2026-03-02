@@ -405,8 +405,13 @@
     <div class="pageTitle">
       {% assign path_parts = request.path | split: '/' %}
       <div class="h0">
-
+        {% if request.path == "/" %}
+                  <div class="indexTitle">
+                  <span>ANKOMST</span>
+                  </div>
+        {% else %}
         <span>{{ page_title | upcase }}</span>
+        {% endif %}
         
         {% comment %} {% if request.path == "/" %}
           <div class="indexTitle">
