@@ -404,9 +404,11 @@
 
     <div class="pageTitle">
       {% assign path_parts = request.path | split: '/' %}
-      {% assign pageTitle =  page.title %}
       <div class="h0">
-      <span>{{ pageTitle }}</span>
+
+        {% for entry in shop.metaobjects.seitentitel.values %}
+        <span>{{ entry.titel }}</span>
+        {% endfor %}
         
         {% comment %} {% if request.path == "/" %}
           <div class="indexTitle">
