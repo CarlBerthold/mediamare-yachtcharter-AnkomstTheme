@@ -134,13 +134,24 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_ECfKUY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Spinnaker.png",
+            "title": "Bootswerft Freest",
+            "text": "<p>Eine Werft mit jahrelanger Erfahrung und Spezialisierung im Holzbootsbau und darüber hinaus für uns ein sehr zuverlässiger Partner für Beratung und  Reparaturen.   </p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_cUNVBq",
         "column_6dDaDt",
         "column_tLinbr",
-        "column_GgixEJ"
+        "column_GgixEJ",
+        "column_ECfKUY"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
