@@ -5,13 +5,19 @@
   margin: 0;
 }
 
+.buchungsinfos {
+  margin-bottom: 2.5rem;
+}
 
+.buchungsinfos__summary {
+  color: rgba(var(--color-foreground));
+}
 
 
 #izyRecap .recap {
   font-weight: normal;
   font-size: 2rem;
-  color: #0671b7;
+  color: rgba(var(--color-foreground));
 }
 
 #izyAddons,
@@ -31,7 +37,7 @@
 
 .izyNote,
 #izyAddons label {
-  color:#0671b7;
+  color: rgba(var(--color-foreground));
   font-size: 2rem;
 }
 
@@ -54,7 +60,7 @@
 } */
 
 #izyClose {
-  background-color: #0671b7;
+  background-color: rgba(var(--color-foreground));
 }
 
 #izyClose > i.gg-close {
