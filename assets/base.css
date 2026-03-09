@@ -3624,6 +3624,9 @@ details-disclosure > details {
     gap: 3rem;
 }
 
-.flatpickr-day .rate {
+
+@media  screen and (min-width: 1024px) {
+  .flatpickr-day .rate {
   font-size: 10px;
+  }
 }
