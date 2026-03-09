@@ -265,8 +265,8 @@
       }
     },
     "404": {
-      "title": "Das tut uns Leid. Leider konnten wir nichts in unserem Shop dazu finden. ",
-      "subtext": "probiere unserer suche oder die Navigation im Menu oder im Footer"
+      "title": "Keine Treffer !",
+      "subtext": "Das tut uns Leid. Leider konnten wir nichts in unserem Shop dazu finden. "
     }
   },
   "sections": {
