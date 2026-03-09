@@ -265,7 +265,7 @@
       }
     },
     "404": {
-      "title": "Das tut uns Leid. Leider konnten wir nichts zu \"{{ terms }}\" finden. ",
+      "title": "Das tut uns Leid. Leider konnten wir nichts in unserem Shop dazu finden. ",
       "subtext": "probiere unserer suche oder die Navigation im Menu oder im Footer"
     }
   },
