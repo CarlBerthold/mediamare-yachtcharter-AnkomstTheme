@@ -3619,7 +3619,7 @@ details-disclosure > details {
   margin: 0 0.5rem;
 }
 
-.flatpickr-weekdays,
-.flatpickr-days {
+.flatpickr-rContainer .flatpickr-weekdays,
+.flatpickr-rContainer .flatpickr-days {
   row-gap: 3rem;
 }
