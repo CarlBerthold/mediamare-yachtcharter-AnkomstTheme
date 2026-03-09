@@ -3618,3 +3618,8 @@ details-disclosure > details {
 #izyrent_global label {
   margin: 0 0.5rem;
 }
+
+.flatpickr-weekdays,
+.flatpickr-days {
+  row-gap: 3rem;
+}
