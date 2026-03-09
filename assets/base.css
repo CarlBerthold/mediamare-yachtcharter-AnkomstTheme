@@ -3621,5 +3621,5 @@ details-disclosure > details {
 
 .flatpickr-rContainer .flatpickr-weekdays,
 .flatpickr-rContainer .flatpickr-days {
-  row-gap: 3rem;
+    gap: 3rem;
 }
