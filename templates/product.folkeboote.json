@@ -270,14 +270,35 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_pUt46p": {
+          "type": "column",
+          "settings": {
+            "title": "Versicherung",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7nG4me": {
+          "type": "column",
+          "settings": {
+            "title": "Zahlung",
+            "text": "<p>Zahlen sie 30% für die {{ product.metafields.custom.technische_daten.value.name.value }} an und 70% bequem bis 7 Tage vor Charterbeginn.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_fjfQM3",
         "column_rnqjYL",
         "column_eaxHTX",
-        "column_zgctYx"
+        "column_zgctYx",
+        "column_pUt46p",
+        "column_7nG4me"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
