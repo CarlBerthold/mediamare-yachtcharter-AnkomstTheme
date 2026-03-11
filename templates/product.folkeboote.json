@@ -229,7 +229,71 @@
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_iqwXnt": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fjfQM3": {
+          "type": "column",
+          "settings": {
+            "title": "Technische Daten der {{ product.metafields.custom.technische_daten.value.name.value }}",
+            "text": "<p></p><p>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</p><p>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</p><p>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</p><p>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</p><p>Motoriserung: {{ product.metafields.custom.technische_daten.value.motorisierung.value }}</p><p>Wassertank: {{ product.metafields.custom.technische_daten.value.wassertank.value }}</p><p>Treibstofftank: {{ product.metafields.custom.technische_daten.value.treibstofftank.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rnqjYL": {
+          "type": "column",
+          "settings": {
+            "title": "Liegeplatz & Hafen",
+            "text": "<p>Liegeplatz: {{ product.metafields.custom.zusatzoptionen.value.liegeplatz.value }}<br/>Restaurant: <br/>Sanitäranlagen:<br/><br/></p>",
+            "link_label": "Unsere Boote vor Ort",
+            "link": "shopify://collections/krummin"
+          }
+        },
+        "column_eaxHTX": {
+          "type": "column",
+          "settings": {
+            "title": "Törns und das Revier",
+            "text": "",
+            "link_label": "Zu den Törns und Revieren",
+            "link": "shopify://pages/torns-und-reviere"
+          }
+        },
+        "column_zgctYx": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fjfQM3",
+        "column_rnqjYL",
+        "column_eaxHTX",
+        "column_zgctYx"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 36
       }
     },
     "featured_collection_cyLczG": {
@@ -284,6 +348,7 @@
     "1708685992d24cb613",
     "main",
     "rich_text_76UcBJ",
+    "multicolumn_iqwXnt",
     "featured_collection_cyLczG",
     "related-products"
   ]
