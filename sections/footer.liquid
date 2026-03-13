@@ -119,9 +119,14 @@
                             </li>
                           {%- endfor -%}
                           {% if block.settings.heading == "Support & Service" %}
-                                <li>
+                              <li>
                                 <a href="tel:{{ shop.phone | remove: ' ' }}" class="link link--text list-menu__item list-menu__item--link">
                                   Tel: {{ shop.phone }}
+                                </a>
+                              </li>
+                              <li>
+                                <a href="mailto:{{ shop.email | remove: ' ' }}" class="link link--text list-menu__item list-menu__item--link">
+                                  Email: {{ shop.email }}
                                 </a>
                               </li>
                             {% endif %}
