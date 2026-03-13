@@ -1,0 +1,113 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_cXCiBT": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons_BkXgMn": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_BkXgMn"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Impressionen.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_qMfkkn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JXjwDc": {
+          "type": "column",
+          "settings": {
+            "title": "Kautionen",
+            "text": "<p>Unsere Kautionsübersicht</p>",
+            "link_label": "Übersicht der Kautionen",
+            "link": "shopify://pages/kautionen"
+          }
+        },
+        "column_kUTetK": {
+          "type": "column",
+          "settings": {
+            "title": "AGB",
+            "text": "<p>Unsere Allgemeinen Geschäftsbedingungen</p>",
+            "link_label": "Zu den AGB",
+            "link": "shopify://pages/agb"
+          }
+        },
+        "column_z4gyVX": {
+          "type": "column",
+          "settings": {
+            "title": "Datenschutz",
+            "text": "<p>Datenschutz !<br/>was wir brauchen uns was nicht.</p>",
+            "link_label": "Datenschutz",
+            "link": "shopify://pages/datenschutz"
+          }
+        }
+      },
+      "block_order": [
+        "column_JXjwDc",
+        "column_kUTetK",
+        "column_z4gyVX"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_cXCiBT",
+    "main",
+    "multicolumn_qMfkkn"
+  ]
+}
