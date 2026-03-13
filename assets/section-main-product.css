@@ -89,7 +89,7 @@ table {
   border-radius: 6px 6px;
 }
 
-#recapDate {
+#recapDate > span {
   display: none;
 }
 
