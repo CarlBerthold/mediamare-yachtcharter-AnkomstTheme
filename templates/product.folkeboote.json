@@ -368,7 +368,7 @@
       "type": "contact-form",
       "name": "t:sections.contact-form.presets.name",
       "settings": {
-        "heading": "Sie haben offene Fragen bezüglich der {{ product.metafields.custom.technische_daten.value.name.value }} ? Schreiben sie uns gern.",
+        "heading": "Sie haben offene Fragen bezüglich {{ product.metafields.custom.technische_daten.value.name.value }} ? Schreiben sie uns gern.",
         "heading_size": "h2",
         "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
         "padding_top": 36,
