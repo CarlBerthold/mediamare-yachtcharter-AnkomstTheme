@@ -75,9 +75,9 @@
         "column_z4gyVX": {
           "type": "column",
           "settings": {
-            "title": "Datenschutz",
-            "text": "<p>Datenschutz !<br/>was wir brauchen uns was nicht.</p>",
-            "link_label": "Datenschutz",
+            "title": "<strong>SRC</strong>",
+            "text": "<p>Amtliche Berechtigung zur Ausübung des Seefunkdienstes im weltweiten Seenot- und Sicherheitsfunksystem (GMDSS) für UKW (Reichweite bis ca. 35 sm) auf Sportbooten. International und unbefristet gültig.<br/><br/><br/><a href=\"https://www.sportbootfuehrerscheine.org/fuehrerscheine-funk/src-short-range-certificate/\" target=\"_blank\" title=\"https://www.sportbootfuehrerscheine.org/fuehrerscheine-funk/src-short-range-certificate/\">https://www.sportbootfuehrerscheine.org/fuehrerscheine-funk/src-short-range-certificate/</a></p>",
+            "link_label": "",
             "link": "shopify://pages/datenschutz"
           }
         }
