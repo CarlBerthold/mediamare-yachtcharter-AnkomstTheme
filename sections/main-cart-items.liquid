@@ -262,6 +262,8 @@
                                 <span class="cart-option-value">
                                   {%- if item.line_level_discount_allocations.size > 0 -%}
                                     <s>{{ item.original_price | money }}</s>
+                                  {% else %}
+                                    {{ item.final_price | money }}
                                   {% endif %}
                                 </span>
                               </div>
