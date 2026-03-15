@@ -214,16 +214,7 @@
                               {%- assign addon_total = item.original_price | minus: deposit_amount | minus: discount-%}
                               
                               <details class="cart-option-breakdown-details">
-                                {%- if item.line_level_discount_allocations.size > 0 -%}
-                                  <div class="cart-option-discounts">
-                                    {%- for discount in item.line_level_discount_allocations -%}
-                                      <div class="cart-option-item cart-option-discount">
-                                        <span class="cart-option-label">Rabatt:</span>
-                                        <span class="cart-option-value">{{ item.original_line_price | minus: item.final_line_price | money }}</span>
-                                      </div>
-                                    {%- endfor -%}
-                                  </div>
-                                {%- endif -%}
+                                
 
                                 <div class="cart-option-item cart-option-base-price">
                                 <span class="cart-option-label">Mietpreis (ohne Zusatzprodukte):</span>
@@ -234,6 +225,11 @@
                               <div class="cart-option-item cart-option-later-payment">
                                 <span class="cart-option-label">Mietpreis später zahlen (70%):</span>
                                 <span class="cart-option-value">{{ later_payment | money }}</span>
+                              </div>
+
+                              <div class="cart-option-item cart-option-kaution">
+                                <span class="cart-option-label">Kaution (7 Tage vor Reiseantritt):</span>
+                                <span class="cart-option-value">€€</span>
                               </div>
 
                                 <div class="cart-option-item cart-option-deposit">
@@ -264,6 +260,16 @@
                                   {%- if item.line_level_discount_allocations.size > 0 -%}
                                     <span><s>{{ item.original_price | money }}</s></span>
                                   {% endif %}
+                                  {%- if item.line_level_discount_allocations.size > 0 -%}
+                                  <div class="cart-option-discounts">
+                                    {%- for discount in item.line_level_discount_allocations -%}
+                                      <div class="cart-option-item cart-option-discount">
+                                        <span class="cart-option-label">Rabatt:</span>
+                                        <span class="cart-option-value">{{ item.original_line_price | minus: item.final_line_price | money }}</span>
+                                      </div>
+                                    {%- endfor -%}
+                                  </div>
+                                {%- endif -%}
                                   {{ item.final_price | money }}</span>
                               </div>
                             {%- else -%}
