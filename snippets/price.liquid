@@ -151,9 +151,9 @@
       <li><span>{{ mietdauer }}</span></li>
       <li><span>{{ ubergabe_ruckgabe }}</span></li>
       {% for discountLevel in rabatte.value %}
-        <li><span>{{ discountLevel }} auf den Mietpreis des Schiffes</span></li>
+        <li><span>{{ discountLevel }}</span></li>
       {% endfor %}
-      <li><span>{{ kaution }}</span></li>
+      <li><span>{{ kaution | money }}</span></li>
     </ul>
   </details>
 </div>
