@@ -392,6 +392,7 @@ cart-remove-button .icon-remove {
   padding: 2rem 0;
 }
 
+
 .cart-option-item:last-child {
   border-bottom: none;
   margin: 0.5rem 0;
@@ -499,6 +500,8 @@ cart-remove-button .icon-remove {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(var(--color-foreground), 0.1);
+  color: rgba(55, 58, 59, 0.75);
+  font-weight: 300;
 }
 
 .cart-option-discount .cart-option-label {

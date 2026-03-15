@@ -256,8 +256,8 @@
                               
                               
                               <div class="cart-option-item cart-option-price">
-                                <span class="cart-option-label">Zu zahlen jetzt (Mietpreis Anzahlung und Zusatzprodukte):</span>
-                                <span class="cart-option-value">
+                                <span class="cart-option-label"></span>
+                                <span class="cart-option-value">Mietpreis Anzahlung und Zusatzprodukte:
                                   {%- if item.line_level_discount_allocations.size > 0 -%}
                                     <span><s>{{ item.original_price | money }}</s></span>
                                   {% endif %}
@@ -271,7 +271,7 @@
                                     {%- endfor -%}
                                   </div>
                                 {%- endif -%}
-                                  {{ item.final_price | money }}</span>
+                                  Zu zahlen jetzt {{ item.final_price | money }}</span>
                               </div>
                             {%- else -%}
                               <!-- Fallback if we can't calculate base rental price -->
