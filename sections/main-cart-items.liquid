@@ -256,22 +256,28 @@
                               
                               
                               <div class="cart-option-item cart-option-price">
-                                <span class="cart-option-label"></span>
-                                <span class="cart-option-value">Mietpreis Anzahlung und Zusatzprodukte:
+                                <span class="cart-option-label">Mietpreis Anzahlung und Zusatzprodukte:</span>
+                                <span class="cart-option-value">
                                   {%- if item.line_level_discount_allocations.size > 0 -%}
-                                    <span><s>{{ item.original_price | money }}</s></span>
+                                    <s>{{ item.original_price | money }}</s>
                                   {% endif %}
-                                  {%- if item.line_level_discount_allocations.size > 0 -%}
-                                  <div class="cart-option-discounts">
-                                    {%- for discount in item.line_level_discount_allocations -%}
-                                      <div class="cart-option-item cart-option-discount">
-                                        <span class="cart-option-label">Rabatt:</span>
-                                        <span class="cart-option-value">{{ item.original_line_price | minus: item.final_line_price | money }}</span>
-                                      </div>
-                                    {%- endfor -%}
+                                </span>
+                              </div>
+
+                              {%- if item.line_level_discount_allocations.size > 0 -%}
+                              <div class="cart-option-item cart-option-price cart-option-discounts">
+                                {%- for discount in item.line_level_discount_allocations -%}
+                                  <div class="cart-option-item cart-option-discount">
+                                    <span class="cart-option-label">Rabatt:</span>
+                                    <span class="cart-option-value">{{ item.original_line_price | minus: item.final_line_price | money }}</span>
                                   </div>
-                                {%- endif -%}
-                                  Zu zahlen jetzt {{ item.final_price | money }}</span>
+                                {%- endfor -%}
+                              </div>
+                              {%- endif -%}
+
+                              <div class="cart-option-item cart-option-price">
+                                <span class="cart-option-label">Zu zahlen jetzt:</span>
+                                <span class="cart-option-value">{{ item.final_price | money }}</span>
                               </div>
                             {%- else -%}
                               <!-- Fallback if we can't calculate base rental price -->
