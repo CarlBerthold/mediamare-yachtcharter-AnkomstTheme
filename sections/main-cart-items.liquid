@@ -227,9 +227,11 @@
                                 <span class="cart-option-value">{{ later_payment | money }}</span>
                               </div>
 
+                              {% assign kaution = item.product.metafields.custom.produkt_kaution.value | money %}
+
                               <div class="cart-option-item cart-option-kaution">
                                 <span class="cart-option-label">Kaution (7 Tage vor Reiseantritt):</span>
-                                <span class="cart-option-value">{{ item.product.metafields.custom.produkt_kaution.value | money}}</span>
+                                <span class="cart-option-value">{{ kaution }}</span>
                               </div>
                             </div>
 
