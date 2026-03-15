@@ -431,7 +431,7 @@
         {% if page %}
           <span>{{ page.title | upcase }}</span>
         {% endif %}
-        {% if cart %}
+        {% if path_parts[1] == "cart" %}
           <span>Warenkorb</span>
         {% endif %}
         
