@@ -43,7 +43,7 @@
           "settings": {
             "heading": "Kaution",
             "icon": "check_mark",
-            "row_content": "<p>Die Kaution (1500€) muss bis 24h vor Reiseantritt auf folgendes Konto mit dem Betreff des Mieters und der Bestellnummer eingegangen sein.<br/>- Maria Mustermann - #1921 -</p><p></p><p>GLS Gemeinschaftsbank<br/>Mediamare yachtcharter-ankomst<br/>IBAN: DE92 4306 0967 1303 5421 01<br/>GENODEM1GLS<br/></p>",
+            "row_content": "<p>Die Kaution (IF-Folkeboote 1000€ und für Segelyachten 1500€)  muss bis 24h vor Reiseantritt auf folgendes Konto mit dem Betreff des Mieters und der Bestellnummer eingegangen sein.<br/>- Maria Mustermann - #1001 -</p><p></p><p>GLS Gemeinschaftsbank<br/>Mediamare yachtcharter-ankomst<br/>IBAN: DE92 4306 0967 1303 5421 01<br/>GENODEM1GLS<br/></p>",
             "page": ""
           }
         },
