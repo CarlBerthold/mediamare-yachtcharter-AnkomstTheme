@@ -500,8 +500,6 @@ cart-remove-button .icon-remove {
   margin-top: 1rem;
   padding-top: 1rem;
   border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
-  color: rgba(55, 58, 59, 0.80);
-  font-weight: 300;
 }
 
 .cart-option-discount .cart-option-label {
@@ -513,6 +511,14 @@ cart-remove-button .icon-remove {
   font-weight: 500;
 }
 
+.cart-option-item.cart-option-price {
+  border-bottom: 1px solid rgba(var(--color-foreground), .05);
+}
+
+.cart-option-item.cart-option-discount {
+  font-weight: 300;
+  color: rgba(55, 58, 59, 0.80);
+}
 
 @media screen and (min-width: 990px) {
   .cart-item .cart-item__quantity,
