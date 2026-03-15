@@ -423,13 +423,13 @@
           </div>
         {% endif %}
         {% if product %}
-          <span>{{ product.title | upcase }}</span>
+          <span>{{ product.metafields.custom.seitentitel| upcase }}</span>
         {% endif %}
         {% if collection %}
-          <span>{{ collection.title | upcase }}</span>
+          <span>{{ collection.metafields.custom.seitentitel | upcase }}</span>
         {% endif %}
         {% if page %}
-          <span>{{ page.title | upcase }}</span>
+          <span>{{ page.metafields.custom.seitentitel | upcase }}</span>
         {% endif %}
         {% if path_parts[1] == "cart" %}
           <span>Warenkorb</span>
