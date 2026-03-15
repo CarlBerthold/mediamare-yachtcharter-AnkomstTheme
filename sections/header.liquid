@@ -418,15 +418,11 @@
       {% assign path_parts = request.path | split: '/' %}
       <div class="h0">
         {% if request.path == "/" %}
-                  <div class="indexTitle">
-                  <span>ANKOMST</span>
-                  </div>
-                {% elsif  request.path == "/products/*" %}
-                  <div class="indexTitle">
-                  <span>see</span>
-                  </div>
-                {% else %}
-        <span>{{ page_title | upcase }}</span>
+          <div class="indexTitle">
+            <span>ANKOMST</span>
+          </div>
+        {% else %}
+          <span>{{ title }}</span>
         {% endif %}
         
         {% comment %} {% if request.path == "/" %}
