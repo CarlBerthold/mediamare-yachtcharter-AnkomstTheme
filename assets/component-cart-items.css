@@ -388,6 +388,10 @@ cart-remove-button .icon-remove {
   line-height: 1.4;
 }
 
+.general-costs-wrapper {
+  padding: 2rem 0;
+}
+
 .cart-option-item:last-child {
   border-bottom: none;
   margin: 0.5rem 0;
