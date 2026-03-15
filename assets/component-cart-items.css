@@ -499,8 +499,8 @@ cart-remove-button .icon-remove {
 .cart-option-discounts {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(var(--color-foreground), 0.1);
-  color: rgba(55, 58, 59, 0.75);
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+  color: rgba(55, 58, 59, 0.80);
   font-weight: 300;
 }
 
