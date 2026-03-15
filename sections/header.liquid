@@ -421,9 +421,12 @@
                   <div class="indexTitle">
                   <span>ANKOMST</span>
                   </div>
-        {% else %}
+                {% elsif  request.path == /products/* %}
+                  <div class="indexTitle">
+                  <span>{{product.title }}</span>
+                  </div>
+                {% else %}
         <span>{{ page_title | upcase }}</span>
-        <span>{{ page.title | upcase }}</span>
         {% endif %}
         
         {% comment %} {% if request.path == "/" %}
