@@ -431,6 +431,9 @@
         {% if page %}
           <span>{{ page.title | upcase }}</span>
         {% endif %}
+        {% if cart %}
+          <span>Warenkorb</span>
+        {% endif %}
         
         {% comment %} {% if request.path == "/" %}
           <div class="indexTitle">
