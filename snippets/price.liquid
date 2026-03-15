@@ -143,7 +143,7 @@
   {% assign mietdauer = product.metafields.custom.mietdauereinheit %}
   {% assign ubergabe_ruckgabe = product.metafields.custom.ubergabe_und_ruckgabe %}
   {% assign rabatte = product.metafields.custom.buchungs_rabatte %}
-  {% assign kaution = product.metafields.custom.produkt_kaution.value %}
+  {% assign kaution = product.metafields.custom.produkt_kaution.value | money %}
 
   <details class="buchungsinfos__details">
     <summary class="buchungsinfos__summary">Mietdauer & Rabatte{% render 'icon-caret' %}</summary>
