@@ -423,7 +423,13 @@
           </div>
         {% endif %}
         {% if product %}
-          <span>{{ product.title }}</span>
+          <span>{{ product.title | upcase }}</span>
+        {% endif %}
+        {% if collection %}
+          <span>{{ collection.title | upcase }}</span>
+        {% endif %}
+        {% if page %}
+          <span>{{ page.title | upcase }}</span>
         {% endif %}
         
         {% comment %} {% if request.path == "/" %}
