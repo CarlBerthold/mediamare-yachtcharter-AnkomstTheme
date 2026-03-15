@@ -421,8 +421,9 @@
           <div class="indexTitle">
             <span>ANKOMST</span>
           </div>
-        {% else %}
-          <span>{{ title }}</span>
+        {% endif %}
+        {% if product %}
+          <span>{{ product.title }}</span>
         {% endif %}
         
         {% comment %} {% if request.path == "/" %}
