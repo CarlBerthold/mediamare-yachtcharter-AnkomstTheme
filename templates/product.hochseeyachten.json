@@ -214,6 +214,70 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_MRWa9c": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fpqKGK": {
+          "type": "column",
+          "settings": {
+            "title": "Liegeplatz & Hafen",
+            "text": "<p>Liegeplatz: {{ product.metafields.custom.zusatzoptionen.value.liegeplatz.value }}<br/>Restaurant: STEGHOUSE<br/>Sanitäranlagen: Kostenpflichtige WC´s und Duschen.<br/>Parkplätze: vorhanden</p>",
+            "link_label": "Die Marina Kröslin",
+            "link": "shopify://collections/marina-kroslin"
+          }
+        },
+        "column_Tnbqzr": {
+          "type": "column",
+          "settings": {
+            "title": "Übergabe & Rücknahme",
+            "text": "<p>{{ product.title }} ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/><br/>Kontaktieren Sie uns unter  +49 1723012587 oder +49 17645961829 für Ihre individuelle Ankunft.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qVRKCL": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4hCQxU": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fpqKGK",
+        "column_Tnbqzr",
+        "column_qVRKCL",
+        "column_4hCQxU"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "contact_form_YHbJMq": {
       "type": "contact-form",
       "name": "t:sections.contact-form.presets.name",
@@ -276,6 +340,7 @@
   "order": [
     "main",
     "rich_text_BMtDnh",
+    "multicolumn_MRWa9c",
     "contact_form_YHbJMq",
     "featured_collection_cyLczG",
     "related-products"
