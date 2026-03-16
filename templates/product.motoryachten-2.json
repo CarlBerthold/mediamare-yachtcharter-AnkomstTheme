@@ -274,8 +274,8 @@
           "settings": {
             "title": "Zahlung",
             "text": "<p>Zahlen Sie 30% für die {{ product.title }} an und 70% bequem bis 7 Tage vor Charterbeginn</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "zu unseren AGB Bestimmungen",
+            "link": "shopify://pages/agb"
           }
         },
         "column_JatWRe": {
