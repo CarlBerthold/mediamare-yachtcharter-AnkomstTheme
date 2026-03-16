@@ -46,7 +46,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Führerscheinklasse <a href=\"/pages/fuhrerscheinklasse\" title=\"Führerscheinklasse\">{{ product.metafields.custom.fuehrerscheine | metafield_text }}</a> erforderlich !",
+            "text": "",
             "text_style": "uppercase"
           }
         },
@@ -151,7 +151,7 @@
           "settings": {
             "heading": "Führerscheine & Voraussetzungen",
             "icon": "clipboard",
-            "content": "<p>Für die Miete der {{ product.title }} benötigen sie folgende Dokumente und Segelerfahrung.</p><p><a href=\"/pages/fuhrerscheinklasse\" title=\"Führerscheinklasse\">{{ product.metafields.custom.fuehrerscheine | metafield_text }}</a></p>",
+            "content": "<p>Für die Miete der {{ product.title }} benötigen sie folgende Dokumente und Segelerfahrung.</p><p><a href=\"/pages/fuhrerscheine\" target=\"_blank\" title=\"Führerscheine\">﻿{{ product.metafields.custom.zusatzoptionen.value.fuehrerschein.value }}</a></p>",
             "page": ""
           }
         },
