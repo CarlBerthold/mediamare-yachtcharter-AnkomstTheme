@@ -300,6 +300,7 @@
         "column_pUt46p",
         "column_7nG4me"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
