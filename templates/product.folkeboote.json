@@ -237,6 +237,7 @@
       "blocks": {
         "column_fjfQM3": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Technische Daten der {{ product.metafields.custom.technische_daten.value.name.value }}",
             "text": "<p></p><p>Baujahr: {{ product.metafields.custom.technische_daten.value.baujahr.value }}</p><p>Länge: {{ product.metafields.custom.technische_daten.value.lange | metafield_tag }}</p><p>Breite: {{ product.metafields.custom.technische_daten.value.breite | metafield_tag }}</p><p>Tiefgang: {{ product.metafields.custom.technische_daten.value.tiefgang | metafield_tag }}</p><p>Motoriserung: {{ product.metafields.custom.technische_daten.value.motorisierung.value }}</p><p>Wassertank: {{ product.metafields.custom.technische_daten.value.wassertank.value }}</p><p>Treibstofftank: {{ product.metafields.custom.technische_daten.value.treibstofftank.value }}</p>",
@@ -255,6 +256,7 @@
         },
         "column_eaxHTX": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Törns und das Revier",
             "text": "",
@@ -266,7 +268,7 @@
           "type": "column",
           "settings": {
             "title": "Übergabe & Rücknahme",
-            "text": "<p>Das IF-Boot ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/>Zur Abstimmung der Übergabe/ Rücknahmezeiten kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 <br/><br/>In der Regel können Sie das Boot ab 14:00 Uhr übernehmen.<br/>Die Rückgabe muss am Rückgabetag bis 18:00 Uhr erfolgen.  </p>",
+            "text": "<p>{{ product.title }} ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/>Zur Abstimmung der Übergabe/ Rücknahmezeiten kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 <br/><br/>In der Regel können Sie das Boot ab 14:00 Uhr übernehmen.<br/>Die Rückgabe muss am Rückgabetag bis 18:00 Uhr erfolgen.  </p>",
             "link_label": "",
             "link": ""
           }
