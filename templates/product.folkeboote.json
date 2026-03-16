@@ -265,8 +265,8 @@
         "column_zgctYx": {
           "type": "column",
           "settings": {
-            "title": "",
-            "text": "",
+            "title": "Übergabe & Rücknahme",
+            "text": "<p>Das IF-Boot ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/>Zur Abstimmung der Übergabe/ Rücknahmezeiten kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829</p>",
             "link_label": "",
             "link": ""
           }
@@ -338,7 +338,6 @@
         "column_x8G78N",
         "column_HUdeaK"
       ],
-      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
