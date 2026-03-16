@@ -247,10 +247,10 @@
         "column_4hCQxU": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Versicherung & Kaution",
+            "text": "<p>mit der {{ product.title }} sind sie für Ihren Törn Haftpflicht und Teilkassko versichert.<br/>Die Selbstbeteiligung beläuft sich auf {{ product.metafields.custom.produkt_kaution | metafield_tag }}.<br/><br/>Die Kaution beträgt {{ product.metafields.custom.produkt_kaution | metafield_tag }}</p>",
+            "link_label": "Kautionsübersicht",
+            "link": "shopify://pages/kautionen"
           }
         }
       },
