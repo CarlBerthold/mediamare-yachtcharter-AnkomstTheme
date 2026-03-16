@@ -230,9 +230,9 @@
           "type": "column",
           "settings": {
             "title": "Übergabe & Rücknahme",
-            "text": "<p>{{ product.title }} ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/><br/>Kontaktieren Sie uns unter  +49 1723012587 oder +49 17645961829 für Ihre individuelle Ankunft.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>{{ product.title }} ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/><br/>Kontaktieren Sie uns unter  +49 1723012587 oder +49 17645961829 für Ihre individuelle Ankunft.<br/><br/>Für eine Reibungslose Rückgabe empfehlen wir am Vortag der Rückgabe im Heimathafen Kröslin einzulaufen.<br/>Die Tankstelle in Kröslin ist bis 18:00 Uhr täglich geöffnet.</p>",
+            "link_label": "zu unsere AGB Bestimmungen",
+            "link": "shopify://pages/agb"
           }
         },
         "column_qVRKCL": {
@@ -240,8 +240,8 @@
           "settings": {
             "title": "Zahlung",
             "text": "<p>Zahlen Sie 30% für die {{ product.title }} an und 70% bequem bis 7 Tage vor Charterbeginn</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "zu unseren AGB Bestimmungen",
+            "link": "shopify://pages/agb"
           }
         },
         "column_4hCQxU": {
