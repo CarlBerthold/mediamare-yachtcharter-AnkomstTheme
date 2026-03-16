@@ -239,7 +239,7 @@
           "type": "column",
           "settings": {
             "title": "Zahlung",
-            "text": "<p>zahlen Sie 30% für die {{ product.title }} an und 70% bequem bis 7 Tage vor Charterbeginn</p>",
+            "text": "<p>Zahlen Sie 30% für die {{ product.title }} an und 70% bequem bis 7 Tage vor Charterbeginn</p>",
             "link_label": "",
             "link": ""
           }
