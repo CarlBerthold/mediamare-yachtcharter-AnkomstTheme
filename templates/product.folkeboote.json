@@ -266,7 +266,7 @@
           "type": "column",
           "settings": {
             "title": "Übergabe & Rücknahme",
-            "text": "<p>Das IF-Boot ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/>Zur Abstimmung der Übergabe/ Rücknahmezeiten kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 <br/><br/>In der Regel können Sie das Boot ab 14:00 Uhr übernehmen.<br/>Am Rückgabetag bis 18:00 Uhr.  </p>",
+            "text": "<p>Das IF-Boot ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/>Zur Abstimmung der Übergabe/ Rücknahmezeiten kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 <br/><br/>In der Regel können Sie das Boot ab 14:00 Uhr übernehmen.<br/>Die Rückgabe muss am Rückgabetag bis 18:00 Uhr erfolgen.  </p>",
             "link_label": "",
             "link": ""
           }
@@ -274,8 +274,8 @@
         "column_pUt46p": {
           "type": "column",
           "settings": {
-            "title": "Versicherung",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Versicherung & Kaution",
+            "text": "<p>mit der {{ product.metafields.custom.technische_daten.value.name.value }} sind sie für Ihren Törn Haftpflicht und Teilkassko versichert.<br/>Die Selbstbeteiligung beläuft sich auf 1.500,00€<br/><br/>Die Kaution beträgt {{ product.metafields.custom.produkt_kaution | metafield_tag }}</p>",
             "link_label": "",
             "link": ""
           }
