@@ -288,6 +288,42 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_MCXVaN": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AnBFmG": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_x8G78N": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HUdeaK": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -296,7 +332,11 @@
         "column_eaxHTX",
         "column_zgctYx",
         "column_pUt46p",
-        "column_7nG4me"
+        "column_7nG4me",
+        "column_MCXVaN",
+        "column_AnBFmG",
+        "column_x8G78N",
+        "column_HUdeaK"
       ],
       "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
