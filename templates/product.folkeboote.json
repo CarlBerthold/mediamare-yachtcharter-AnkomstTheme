@@ -275,7 +275,7 @@
           "type": "column",
           "settings": {
             "title": "Versicherung & Kaution",
-            "text": "<p>mit der {{ product.metafields.custom.technische_daten.value.name.value }} sind sie für Ihren Törn Haftpflicht und Teilkassko versichert.<br/>Die Selbstbeteiligung beläuft sich auf 1.500,00€<br/><br/>Die Kaution beträgt {{ product.metafields.custom.produkt_kaution | metafield_tag }}</p>",
+            "text": "<p>mit der {{ product.metafields.custom.technische_daten.value.name.value }} sind sie für Ihren Törn Haftpflicht und Teilkassko versichert.<br/>Die Selbstbeteiligung beläuft sich auf {{ product.metafields.custom.produkt_kaution | metafield_tag }}<br/><br/>Die Kaution beträgt {{ product.metafields.custom.produkt_kaution | metafield_tag }}</p>",
             "link_label": "",
             "link": ""
           }
