@@ -123,6 +123,7 @@
         "column_AGgHhk",
         "column_ckj94w"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Multicolumn",
