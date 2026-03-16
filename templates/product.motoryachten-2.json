@@ -248,6 +248,69 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_X7R47M": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_rHXCL4": {
+          "type": "column",
+          "settings": {
+            "title": "Liegeplatz & Hafen",
+            "text": "<p>Liegeplatz: {{ product.metafields.custom.zusatzoptionen.value.liegeplatz.value }}<br/>Restaurant: STEGHOUSE<br/>Sanitäranlagen: Kostenpflichtige WC´s und Duschen.<br/>Parkplätze: vorhanden</p>",
+            "link_label": "Die Marina Kröslin",
+            "link": "shopify://collections/marina-kroslin"
+          }
+        },
+        "column_NyRRjk": {
+          "type": "column",
+          "settings": {
+            "title": "Kaution & Reinigung",
+            "text": "<p>1500€ Kaution</p><p>130€ Reinigung<br/><br/></p>",
+            "link_label": "Saisonpreise",
+            "link": "shopify://pages/informatives"
+          }
+        },
+        "column_zV63py": {
+          "type": "column",
+          "settings": {
+            "title": "Führerscheine",
+            "text": "<p>SBF</p><p>SKS</p><p>Funkschein</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JatWRe": {
+          "type": "column",
+          "settings": {
+            "title": "Platzhalter",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rHXCL4",
+        "column_NyRRjk",
+        "column_zV63py",
+        "column_JatWRe"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_cyLczG": {
       "type": "featured-collection",
       "settings": {
@@ -293,70 +356,6 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 68
-      }
-    },
-    "multicolumn_X7R47M": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_rHXCL4": {
-          "type": "column",
-          "settings": {
-            "title": "Vertragsinfo",
-            "text": "<p>Haftpflichtversicherung</p><p>Bootszeugnis</p><p>Trinkwasserprotokoll</p><p>Gasprüfung</p><p>Sicherheitsausrüstung</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_NyRRjk": {
-          "type": "column",
-          "settings": {
-            "title": "Kaution & Reinigung",
-            "text": "<p>1500€ Kaution</p><p>130€ Reinigung<br/><br/></p>",
-            "link_label": "Saisonpreise",
-            "link": "shopify://pages/informatives"
-          }
-        },
-        "column_zV63py": {
-          "type": "column",
-          "settings": {
-            "title": "Führerscheine",
-            "text": "<p>SBF</p><p>SKS</p><p>Funkschein</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_JatWRe": {
-          "type": "column",
-          "settings": {
-            "title": "Platzhalter",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_rHXCL4",
-        "column_NyRRjk",
-        "column_zV63py",
-        "column_JatWRe"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Informationen",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "featured_collection_GGL48X": {
@@ -455,9 +454,9 @@
     "1708685992d24cb613",
     "main",
     "rich_text_e6cBgm",
+    "multicolumn_X7R47M",
     "featured_collection_cyLczG",
     "related-products",
-    "multicolumn_X7R47M",
     "featured_collection_GGL48X",
     "collection_list_zXMTBV"
   ]
