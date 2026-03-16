@@ -263,9 +263,9 @@
         "column_NyRRjk": {
           "type": "column",
           "settings": {
-            "title": "Kaution & Reinigung",
-            "text": "<p>1500€ Kaution</p><p>130€ Reinigung<br/><br/></p>",
-            "link_label": "Saisonpreise",
+            "title": "Übergabe & Rücknahme",
+            "text": "<p>HEIN MÜCK Amethyst 27 ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/><br/>Kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 für Ihre individuelle Ankunft.</p>",
+            "link_label": "",
             "link": "shopify://pages/informatives"
           }
         },
