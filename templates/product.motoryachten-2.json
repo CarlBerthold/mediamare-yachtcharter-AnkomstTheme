@@ -264,9 +264,9 @@
           "type": "column",
           "settings": {
             "title": "Übergabe & Rücknahme",
-            "text": "<p>{{ product.title }} ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/><br/>Kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 für Ihre individuelle Ankunft.</p>",
-            "link_label": "",
-            "link": "shopify://pages/informatives"
+            "text": "<p>{{ product.title }} ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/><br/>Kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 für Ihre individuelle Ankunft.<br/><br/>Für eine Reibungslose Rückgabe empfehlen wir am Vortag der Rückgabe im Heimathafen Kröslin einzulaufen.<br/>Die Tankstelle in Kröslin ist bis 17:00 Uhr täglich geöffnet<br/><br/></p>",
+            "link_label": "zu unseren AGB Bestimmungen",
+            "link": "shopify://pages/agb"
           }
         },
         "column_zV63py": {
