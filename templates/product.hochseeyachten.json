@@ -252,13 +252,23 @@
             "link_label": "Kautionsübersicht",
             "link": "shopify://pages/kautionen"
           }
+        },
+        "column_G4yMHg": {
+          "type": "column",
+          "settings": {
+            "title": "Führerscheine & Voraussetzungen",
+            "text": "<p>Funkschein: {{ product.metafields.custom.zusatzoptionen.value.funkschein.value }}<br/>Führerschein: {{ product.metafields.custom.zusatzoptionen.value.fuehrerschein.value }}<br/>Fahrzone: {{ product.metafields.custom.zusatzoptionen.value.fahrzone.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_fpqKGK",
         "column_Tnbqzr",
         "column_qVRKCL",
-        "column_4hCQxU"
+        "column_4hCQxU",
+        "column_G4yMHg"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
