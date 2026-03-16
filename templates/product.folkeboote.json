@@ -276,8 +276,8 @@
           "settings": {
             "title": "Versicherung & Kaution",
             "text": "<p>mit der {{ product.metafields.custom.technische_daten.value.name.value }} sind sie für Ihren Törn Haftpflicht und Teilkassko versichert.<br/>Die Selbstbeteiligung beläuft sich auf {{ product.metafields.custom.produkt_kaution | metafield_tag }}<br/><br/>Die Kaution beträgt {{ product.metafields.custom.produkt_kaution | metafield_tag }}</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Kautionsübersicht",
+            "link": "shopify://pages/kautionen"
           }
         },
         "column_7nG4me": {
@@ -285,42 +285,6 @@
           "settings": {
             "title": "Zahlung",
             "text": "<p>Zahlen sie 30% für die {{ product.metafields.custom.technische_daten.value.name.value }} an und 70% bequem bis 7 Tage vor Charterbeginn.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_MCXVaN": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_AnBFmG": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_x8G78N": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_HUdeaK": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -332,11 +296,7 @@
         "column_eaxHTX",
         "column_zgctYx",
         "column_pUt46p",
-        "column_7nG4me",
-        "column_MCXVaN",
-        "column_AnBFmG",
-        "column_x8G78N",
-        "column_HUdeaK"
+        "column_7nG4me"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
