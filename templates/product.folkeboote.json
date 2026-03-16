@@ -250,7 +250,7 @@
           "settings": {
             "title": "Liegeplatz & Hafen",
             "text": "<p>Liegeplatz: {{ product.metafields.custom.zusatzoptionen.value.liegeplatz.value }}<br/>Restaurant: Naturhafen Restaurant<br/>Sanitäranlagen:  kostenfreie WC´s und Duschen<br/>Parkplätze: auf Winterstellplatz vorhanden <br/><br/></p>",
-            "link_label": "Unsere Boote vor Ort",
+            "link_label": "Der Naturhafen Krummin",
             "link": "shopify://collections/krummin"
           }
         },
