@@ -295,7 +295,7 @@
           "type": "column",
           "settings": {
             "title": "Führerscheine & Voraussetzungen",
-            "text": "<p>Funkschein: {{ product.metafields.custom.zusatzoptionen.value.funkschein.value }}<br/>Führerschein: {{ product.metafields.custom.zusatzoptionen.value.fuehrerschein.value }}<br/>Fahrzone: {{ product.metafields.custom.zusatzoptionen.value.fahrzone.value }}</p>",
+            "text": "<p>Funkschein:  {{ product.metafields.custom.zusatzoptionen.value.funkschein.value }}<br/>Führerschein: {{ product.metafields.custom.zusatzoptionen.value.fuehrerschein.value }}<br/>Fahrzone: {{ product.metafields.custom.zusatzoptionen.value.fahrzone.value }}</p>",
             "link_label": "",
             "link": ""
           }
