@@ -268,7 +268,7 @@
           "type": "column",
           "settings": {
             "title": "Übergabe & Rücknahme",
-            "text": "<p>{{ product.title }} ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/>Zur Abstimmung der Übergabe/ Rücknahmezeiten kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 <br/><br/>In der Regel können Sie das Boot ab 14:00 Uhr übernehmen.<br/>Die Rückgabe muss am Rückgabetag bis 18:00 Uhr erfolgen.  </p>",
+            "text": "<p>{{ product.title }} ist bei Übergabe vollgetankt, gesäubert und auf sicherheitsrelevante Ausstattung überprüft.<br/>Kontaktieren Sie uns unter +49 1723012587 oder +49 17645961829 für ihre individuelle Ankunft.</p>",
             "link_label": "",
             "link": ""
           }
