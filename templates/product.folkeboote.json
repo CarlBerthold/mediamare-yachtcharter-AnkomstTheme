@@ -249,7 +249,7 @@
           "type": "column",
           "settings": {
             "title": "Liegeplatz & Hafen",
-            "text": "<p>Liegeplatz: {{ product.metafields.custom.zusatzoptionen.value.liegeplatz.value }}<br/>Restaurant: <br/>Sanitäranlagen:<br/><br/></p>",
+            "text": "<p>Liegeplatz: {{ product.metafields.custom.zusatzoptionen.value.liegeplatz.value }}<br/>Restaurant: Naturhafen Restaurant<br/>Sanitäranlagen:  kostenfreie WC´s und Duschen<br/>Parkplätze: auf Winterstellplatz vorhanden <br/><br/></p>",
             "link_label": "Unsere Boote vor Ort",
             "link": "shopify://collections/krummin"
           }
@@ -273,15 +273,6 @@
             "link": ""
           }
         },
-        "column_pUt46p": {
-          "type": "column",
-          "settings": {
-            "title": "Versicherung & Kaution",
-            "text": "<p>mit der {{ product.metafields.custom.technische_daten.value.name.value }} sind sie für Ihren Törn Haftpflicht und Teilkassko versichert.<br/>Die Selbstbeteiligung beläuft sich auf {{ product.metafields.custom.produkt_kaution | metafield_tag }}<br/><br/>Die Kaution beträgt {{ product.metafields.custom.produkt_kaution | metafield_tag }}</p>",
-            "link_label": "Kautionsübersicht",
-            "link": "shopify://pages/kautionen"
-          }
-        },
         "column_7nG4me": {
           "type": "column",
           "settings": {
@@ -290,6 +281,15 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_pUt46p": {
+          "type": "column",
+          "settings": {
+            "title": "Versicherung & Kaution",
+            "text": "<p>mit der {{ product.metafields.custom.technische_daten.value.name.value }} sind sie für Ihren Törn Haftpflicht und Teilkassko versichert.<br/>Die Selbstbeteiligung beläuft sich auf {{ product.metafields.custom.produkt_kaution | metafield_tag }}<br/><br/>Die Kaution beträgt {{ product.metafields.custom.produkt_kaution | metafield_tag }}</p>",
+            "link_label": "Kautionsübersicht",
+            "link": "shopify://pages/kautionen"
+          }
         }
       },
       "block_order": [
@@ -297,10 +297,9 @@
         "column_rnqjYL",
         "column_eaxHTX",
         "column_zgctYx",
-        "column_pUt46p",
-        "column_7nG4me"
+        "column_7nG4me",
+        "column_pUt46p"
       ],
-      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
