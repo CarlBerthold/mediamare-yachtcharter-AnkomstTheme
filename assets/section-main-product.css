@@ -93,6 +93,10 @@ table {
   display: none;
 }
 
+.textarea.izyArea {
+    max-width: 100%;
+}
+
 
 
 
