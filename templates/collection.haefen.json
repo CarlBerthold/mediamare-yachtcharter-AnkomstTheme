@@ -111,8 +111,8 @@
         "column_ckj94w": {
           "type": "column",
           "settings": {
-            "title": "Übernachten",
-            "text": "<p>Die schwimmenden Ferienwohnungen bieten den Komfort eines eigenen Appartments auf dem Wasser.  Beim Frühstück auf der Terrasse oder im Wohnzimmer beginnt der Tag mit einem Panorama-Blick in die Krumminer Wiek.</p>",
+            "title": "Übernachtung",
+            "text": "{{ collection.metafields.custom.ubernachtung | metafield_tag }}",
             "link_label": "",
             "link": ""
           }
