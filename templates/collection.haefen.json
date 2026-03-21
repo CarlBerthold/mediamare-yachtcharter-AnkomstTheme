@@ -94,7 +94,7 @@
           "type": "column",
           "settings": {
             "title": "Restaurant",
-            "text": "<p>mit Regionalen Speisen für den kleinen und großen Hunger. <br/><br/>Am Wochenende wirft der Hafenmeister den Grill an und die Original „Krumminer Bratwurst“ wird neben anderen Grillspezialitäten auf den Rost gelegt.</p>",
+            "text": "{{ collection.metafields.custom.restaurant | metafield_tag }}",
             "link_label": "",
             "link": ""
           }
