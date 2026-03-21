@@ -103,7 +103,7 @@
           "type": "column",
           "settings": {
             "title": "Sanitär",
-            "text": "<p>Unser in 2018 neu errichtetes Komfort-Sanitärgbäude überzeugt mit schlichten aber zeitgemäßem Design.  Moderne Duschen und großzügig gestaltete Waschräume stehen für unsere Gäste zur Verfügung. Mit dem Neubau wurden die Dusch- und WC-Plätze nunmehr verdreifacht.</p>",
+            "text": "{{ collection.metafields.custom.sanitar | metafield_tag }}",
             "link_label": "",
             "link": ""
           }
