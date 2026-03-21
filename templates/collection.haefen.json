@@ -94,7 +94,7 @@
           "type": "column",
           "settings": {
             "title": "Restaurant",
-            "text": "",
+            "text": "<p>mit Regionalen Speisen für den kleinen und großen Hunger. <br/><br/>Am Wochenende wirft der Hafenmeister den Grill an und die Original „Krumminer Bratwurst“ wird neben anderen Grillspezialitäten auf den Rost gelegt.</p>",
             "link_label": "",
             "link": ""
           }
@@ -102,8 +102,8 @@
         "column_AGgHhk": {
           "type": "column",
           "settings": {
-            "title": "sanitär",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Sanitär",
+            "text": "<p>Unser in 2018 neu errichtetes Komfort-Sanitärgbäude überzeugt mit schlichten aber zeitgemäßem Design.  Moderne Duschen und großzügig gestaltete Waschräume stehen für unsere Gäste zur Verfügung. Mit dem Neubau wurden die Dusch- und WC-Plätze nunmehr verdreifacht.</p>",
             "link_label": "",
             "link": ""
           }
@@ -123,10 +123,9 @@
         "column_AGgHhk",
         "column_ckj94w"
       ],
-      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
