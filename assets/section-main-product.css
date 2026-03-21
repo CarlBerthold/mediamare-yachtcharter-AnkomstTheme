@@ -71,6 +71,11 @@ select.izySelect {
   max-width: 100%;
 }
 
+.textarea.izyArea {
+    max-width: 100% !important;
+    width: none;
+}
+
 .flatpickr-days {
   gap:20px;
 }
@@ -93,10 +98,8 @@ table {
   display: none;
 }
 
-.textarea.izyArea {
-    max-width: 100% !important;
-    width: none;
-}
+
+
 
 
 
