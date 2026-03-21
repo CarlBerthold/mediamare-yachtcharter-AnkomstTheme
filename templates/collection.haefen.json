@@ -308,6 +308,7 @@
     },
     "featured_collection_8XTqXk": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "",
@@ -334,6 +335,47 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_list_HCA8YG": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_aWV8ac": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "marina-kroslin"
+          }
+        },
+        "featured_collection_VK3AXg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "krummin"
+          }
+        },
+        "featured_collection_YWnPqk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "karlshamn-se"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_aWV8ac",
+        "featured_collection_VK3AXg",
+        "featured_collection_YWnPqk"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "weitere Standorte",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-aae49396-ac95-409d-8bb1-95a810731e7d",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -345,6 +387,7 @@
     "rich_text_n38k3c",
     "multicolumn_NAknjJ",
     "main-collection-product-grid",
-    "featured_collection_8XTqXk"
+    "featured_collection_8XTqXk",
+    "collection_list_HCA8YG"
   ]
 }
