@@ -3630,3 +3630,7 @@ details-disclosure > details {
   font-size: 10px;
   }
 }
+
+.buchungsinfos__summary {
+  color: rgba(var(--color-foreground));
+}
