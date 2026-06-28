@@ -72,7 +72,7 @@ select.izySelect {
 }
 
 #izyNotes textarea.izyArea {
-    max-width: 100%;
+    max-width: 100% !important;
 }
 
 .flatpickr-days {

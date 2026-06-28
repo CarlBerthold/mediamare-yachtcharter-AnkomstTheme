@@ -301,7 +301,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "if-folkeboote",
+        "collection": "folkeboote",
         "products_to_show": 5,
         "columns_desktop": 3,
         "full_width": true,
@@ -333,7 +333,7 @@
         "featured_collection_qb8GBC": {
           "type": "featured_collection",
           "settings": {
-            "collection": "if-folkeboote"
+            "collection": "folkeboote"
           }
         },
         "featured_collection_dgchYL": {
